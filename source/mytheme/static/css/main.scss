@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+$font: 'Lato', sans-serif;
+$dark: #444;
+$light: #fff;
+$accent: #C41230;
+
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+	font-family: $font;
+	color: $dark;
+}
+
+a {
+	color: $accent;
+
+	&:hover{
+		color: rgba($accent, .8);
+	}
+}
+
+nav{
+	h3{
+		display: inline-block;
+	}
+	a {
+		padding: 3px;
+	}
+}
+
+.articles{
+	li {
+		list-style-type: none;
+		border-bottom: 2px solid $dark;
+	}
+}
+
+.footer{
+	width: 100%;
+	margin-top: 20px;
+	background: $light;
+	padding: 10px;
+	text-align: center;
+
+	img{
+	max-width: 50px;}
+
+	a{  
+	display: inline-block;}
+}
+
+@media screen and (min-width: 680px){
+	body{
+		max-width: 700px;
+		margin: 10px auto;
+	}
+}

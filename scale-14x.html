@@ -1,75 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
-	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
-	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
-	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
-
-	<link href="/" type="application/atom+xml" rel="alternate" title="blog ATOM Feed" />
-
-
-		<title>blog</title>
-		<meta charset="utf-8" />
-</head>
-<body>
-	<section id="sidebar">
-		<figure id="user_logo">
-            <a href=""><div class="logo">&nbsp;</div></a>
-		</figure>
-
-		<div class="user_meta">
-            <h1 id="user"><a href="" class="">Lucy Wyman</a></h1>
-			<h2></h2>
-			<ul>
-					<li><a href="http://getpelican.com/">Pelican</a></li>
-					<li><a href="http://python.org/">Python.org</a></li>
-					<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-					<li><a href="#">You can modify those links in your config file</a></li>
-			</ul>
-		</div>
-		<footer>
-			<address>
-				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-		                theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
-			</address>
-		</footer>
-	</section>
-
-	<section id="posts">
-	<header>
-		<h1>Lucy Wyman's blog</h1>
-		<h3>Posted Sat 23 January 2016</h3>
-	</header>
-	<article>
-		<h1 id="title">
-			<a href="/scale-14x.html" rel="bookmark"
-				title="Permalink to SCaLE 14x: My Experience">SCaLE 14x: My Experience</a>
-		</h1>
-		<div class="section" id="day-0">
+<html lang='en'>
+    <head>
+    <title>blog </title>
+    <meta charset='utf-8'>
+    <script src="theme/js/jquery-1.11.2.js"></script>
+    <link rel='stylesheet' href='theme/css/main.css' type='text/css'>
+    <link rel="stylesheet" href="theme/css/slicknav.css" />
+    <script src="theme/css/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu').slicknav({
+                label: ''
+            });
+        });
+    </script>
+    <meta name='viewport' content='width=device-width'>
+    </head>	<body>
+		<nav>
+			<h3><a href='/'>Lucy Wyman</a></h3>
+			<a href='/about.html'>About</a>
+		</nav>
+		<main>
+<h2>SCaLE 14x: My Experience</h2>
+<p>01.23.2016</p>
+<div class="section" id="day-0">
 <h2>Day 0:</h2>
 <p>We pulled up to the venue at about 5:30 Friday night, T-90 minutes to Ignite
 talks.  I chugged a chocolate milk from the &quot;gift store&quot;, ran through my
 slides one last time, got dinner with the bosses, and found myself on a stage.</p>
 <div class="section" id="the-ignite-talks">
 <h3>The Ignite Talks</h3>
-<p>1: Deb Nicholson, <strong>The Foss Awakens</strong>. How collaboration and mentoring
+<ul class="simple">
+<li>Deb Nicholson, <strong>The Foss Awakens</strong>. How collaboration and mentoring
 are a force for good, told with Star Wars images. Grade-A speaker, definitely
-delivered. Great way to start the evening.
-2: Gilbert Standen, <strong>Building Oracle on LXC</strong>. He lost me at &quot;Oracle&quot;.
-3: Me. <strong>Rocking the House</strong>.  But seriously, people laughed at my jokes,
-I got high-fived, it went better than expected.
-4: Dave Nielsen, <strong>Redis</strong>. Kind of informative, kind of boring.
-5: Emily Dunham, <strong>Where's the Cloud</strong>. Much like Deb, Emily is a veteran
-speaker and it shows. Funny, informative, ended on a pun.
-6: Don Marti, <strong>Web ads</strong>. I would have appreciated it more if I was less sleepy
-I think.
-7: Justin King, <strong>Choosing a Framework for your project</strong>. Knowledgable and
+delivered. Great way to start the evening.</li>
+<li>Gilbert Standen, <strong>Building Oracle on LXC</strong>. He lost me at &quot;Oracle&quot;.</li>
+<li>Me. <strong>Rocking the House</strong>.  But seriously, people laughed at my jokes,
+I got high-fived, it went better than expected.</li>
+<li>Dave Nielsen, <strong>Redis</strong>. Kind of informative, kind of boring.</li>
+<li>Emily Dunham, <strong>Where's the Cloud</strong>. Much like Deb, Emily is a veteran
+speaker and it shows. Funny, informative, ended on a pun.</li>
+<li>Don Marti, <strong>Web ads</strong>. I would have appreciated it more if I was less sleepy
+I think.</li>
+<li>Justin King, <strong>Choosing a Framework for your project</strong>. Knowledgable and
 well spoken, it's pretty great to watch a not-adult give a talk.  They have
-great perspective.
-8: Corey Quinn: <strong>Docker Must Die: Heresy in the Church of Docker</strong>. So, so
-funny. Dude is a master.</p>
+great perspective.</li>
+<li>Corey Quinn: <strong>Docker Must Die: Heresy in the Church of Docker</strong>. So, so
+funny. Dude is a master.</li>
+</ul>
 <p>After some good laughs, I headed back up to my room, realized how
 overwhelmingly underprepared I was for my talk, finished up my slides and hit
 the hay.</p>
@@ -106,31 +84,50 @@ hope to see her at other Open Source conferences soon.</p>
 <div class="section" id="justin-mayer-essential-linux-security">
 <h3>Justin Mayer, Essential Linux Security</h3>
 <p>This was pretty nearly the perfect talk.  I learned about a lot of valuable
-tools,</p>
+tools, including changes you can make to your SSH configs, creating SSL
+certificates with Let's Encrypt, HSTS, CSP, and other tools to make my
+computer and websites safer.  In Justin's words, &quot;Think of the children&quot;.</p>
+<p>You can check out his slides at <a class="reference external" href="https://justinmayer.com/talks/server-security/#/">https://justinmayer.com/talks/server-security/#/</a></p>
 </div>
 <div class="section" id="brandon-philips-etcd">
 <h3>Brandon Philips, Etcd</h3>
+<p>Also a great talk. Brandon is obviously a well-practiced speaker who
+seemed very comfortable on stage.  He's also incredibly knowledgeable, and it
+was clear that this talk was only skimming the surface of what he knows on
+the subject of etcd. I also didn't know very much about etcd or CoreOS going
+in to the talk -- I even thought the d was for daemon :p -- so stood to get
+a lot out of it. And I did!</p>
+<p>You can see some of the demos he did at <a class="reference external" href="https://github.com/philips/hacks/tree/master/etcd-demos">https://github.com/philips/hacks/tree/master/etcd-demos</a>,
+or learn more about CoreOS at <a class="reference external" href="https://coreos.com/">https://coreos.com/</a></p>
 </div>
 </div>
 <div class="section" id="day-2">
 <h2>Day 2:</h2>
+<p>This morning was absolutely <em>beautiful</em> in Pasadena.  I got to walk around
+for a while before everyone else woke up, and soak in some Sunday Morning
+magic. I don't know. There's something about it.</p>
+<div class="section" id="keynote-sarah-sharp-on-diversity">
+<h3>Keynote: Sarah Sharp on Diversity</h3>
+<p>She said a lot of really important things, but they're also things that everyone
+has heard before.  She knows her stuff, and seems very passionate, but that
+keynote isn't going to change anything.  Call me a cynic, but from the two
+guys behind me asking &quot;Why should minorities get a stipend just for getting an
+internship?&quot; to ethnic homogeneity of the audience, I don't hold much hope
+for tech companies realizing how important diversity of their workforce is
+any time soon.</p>
+</div>
+<div class="section" id="randal-schwartz-intro-to-dart">
+<h3>Randal Schwartz, Intro to Dart</h3>
+</div>
 </div>
 
 
-		<div id="article_meta">
-				Category:
-					<a href="/category/conferences.html">conferences</a>
-				<br />Tags:
-					<a href="/tag/conferences.html">conferences</a>
+		</main>
+		<div class='footer'>
+			<a href='https://github.com/lucywyman'><img class='social' src='theme/images/github-icon.png'></a>
+			<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'><img class='social' src='theme/images/linkedin.png'></a>
+			<a href='https://plus.google.com/107251431728646146032/posts'><img class='social' src='theme/images/google-plus.png'></a>
 		</div>
-	</article>
-
-	<footer>
-		<a href="/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
-	</footer>
-
-
-	</section>
-
-</body>
+	</body>
 </html>
+

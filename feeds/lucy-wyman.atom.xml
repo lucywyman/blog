@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="/" rel="alternate"></link><link href="/feeds/lucy-wyman.atom.xml" rel="self"></link><id>/</id><updated>2016-01-23T00:00:00-08:00</updated><entry><title>SCaLE 14x: My Experience</title><link href="/scale-14x.html" rel="alternate"></link><updated>2016-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:,2016-01-23:scale-14x.html</id><summary type="html">&lt;div class="section" id="day-0"&gt;
+&lt;h2&gt;Day 0:&lt;/h2&gt;
+&lt;p&gt;We pulled up to the venue at about 5:30 Friday night, T-90 minutes to Ignite
+talks.  I chugged a chocolate milk from the &amp;quot;gift store&amp;quot;, ran through my
+slides one last time, got dinner with the bosses, and found myself on a stage.&lt;/p&gt;
+&lt;div class="section" id="the-ignite-talks"&gt;
+&lt;h3&gt;The Ignite Talks&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Deb Nicholson, &lt;strong&gt;The Foss Awakens&lt;/strong&gt;. How collaboration and mentoring
+are a force for good, told with Star Wars images. Grade-A speaker, definitely
+delivered. Great way to start the evening.&lt;/li&gt;
+&lt;li&gt;Gilbert Standen, &lt;strong&gt;Building Oracle on LXC&lt;/strong&gt;. He lost me at &amp;quot;Oracle&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Me. &lt;strong&gt;Rocking the House&lt;/strong&gt;.  But seriously, people laughed at my jokes,
+I got high-fived, it went better than expected.&lt;/li&gt;
+&lt;li&gt;Dave Nielsen, &lt;strong&gt;Redis&lt;/strong&gt;. Kind of informative, kind of boring.&lt;/li&gt;
+&lt;li&gt;Emily Dunham, &lt;strong&gt;Where's the Cloud&lt;/strong&gt;. Much like Deb, Emily is a veteran
+speaker and it shows. Funny, informative, ended on a pun.&lt;/li&gt;
+&lt;li&gt;Don Marti, &lt;strong&gt;Web ads&lt;/strong&gt;. I would have appreciated it more if I was less sleepy
+I think.&lt;/li&gt;
+&lt;li&gt;Justin King, &lt;strong&gt;Choosing a Framework for your project&lt;/strong&gt;. Knowledgable and
+well spoken, it's pretty great to watch a not-adult give a talk.  They have
+great perspective.&lt;/li&gt;
+&lt;li&gt;Corey Quinn: &lt;strong&gt;Docker Must Die: Heresy in the Church of Docker&lt;/strong&gt;. So, so
+funny. Dude is a master.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After some good laughs, I headed back up to my room, realized how
+overwhelmingly underprepared I was for my talk, finished up my slides and hit
+the hay.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-1"&gt;
+&lt;h2&gt;Day 1:&lt;/h2&gt;
+&lt;p&gt;Woke up early and got breakfast at this adorable bakery, &lt;a class="reference external" href="http://www.yelp.com/biz/euro-pane-bakery-pasadena"&gt;Euro Pane&lt;/a&gt;.
+Ran through the talk once for good measure, then headed over to the Key Note,
+by Mark Shuttleworth. Honestly, it was pretty much a sales pitch, and I
+wasn't really into it. But at least I didn't feel bad leaving early. I headed
+over to my room, set everything up, then walked around to get out the nerves.&lt;/p&gt;
+&lt;div class="section" id="my-talk"&gt;
+&lt;h3&gt;My Talk&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://slides.lucywyman.me/modifying-the-kernel.html"&gt;Modifying the Kernel: A How-to&lt;/a&gt;
+Not my best, not my worst. I got across the information I wanted to, and got
+lots of positive feedback after the talk and throughout the day. More than
+anything, I'm relieved that it's over and I can cross it off of my
+to-do list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lunch"&gt;
+&lt;h3&gt;Lunch&lt;/h3&gt;
+&lt;p&gt;We had guacamole, made tableside. It was &lt;em&gt;bomb&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="keila-banks-automated-teen"&gt;
+&lt;h3&gt;Keila Banks, Automated Teen&lt;/h3&gt;
+&lt;p&gt;I was really excited for this talk, and was a little let down. Between mic
+issues, some nerves, and being a little out of touch with the conference,
+I didn't get what I wanted to out of the talk.  All of that said, I have a
+lot of respect for Keila giving a talk to such a big room, and for getting up
+there in the first place. I'm excited to see what she does in the future, and
+hope to see her at other Open Source conferences soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="justin-mayer-essential-linux-security"&gt;
+&lt;h3&gt;Justin Mayer, Essential Linux Security&lt;/h3&gt;
+&lt;p&gt;This was pretty nearly the perfect talk.  I learned about a lot of valuable
+tools, including changes you can make to your SSH configs, creating SSL
+certificates with Let's Encrypt, HSTS, CSP, and other tools to make my
+computer and websites safer.  In Justin's words, &amp;quot;Think of the children&amp;quot;.&lt;/p&gt;
+&lt;p&gt;You can check out his slides at &lt;a class="reference external" href="https://justinmayer.com/talks/server-security/#/"&gt;https://justinmayer.com/talks/server-security/#/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="brandon-philips-etcd"&gt;
+&lt;h3&gt;Brandon Philips, Etcd&lt;/h3&gt;
+&lt;p&gt;Also a great talk. Brandon is obviously a well-practiced speaker who
+seemed very comfortable on stage.  He's also incredibly knowledgeable, and it
+was clear that this talk was only skimming the surface of what he knows on
+the subject of etcd. I also didn't know very much about etcd or CoreOS going
+in to the talk -- I even thought the d was for daemon :p -- so stood to get
+a lot out of it. And I did!&lt;/p&gt;
+&lt;p&gt;You can see some of the demos he did at &lt;a class="reference external" href="https://github.com/philips/hacks/tree/master/etcd-demos"&gt;https://github.com/philips/hacks/tree/master/etcd-demos&lt;/a&gt;,
+or learn more about CoreOS at &lt;a class="reference external" href="https://coreos.com/"&gt;https://coreos.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-2"&gt;
+&lt;h2&gt;Day 2:&lt;/h2&gt;
+&lt;p&gt;This morning was absolutely &lt;em&gt;beautiful&lt;/em&gt; in Pasadena.  I got to walk around
+for a while before everyone else woke up, and soak in some Sunday Morning
+magic. I don't know. There's something about it.&lt;/p&gt;
+&lt;div class="section" id="keynote-sarah-sharp-on-diversity"&gt;
+&lt;h3&gt;Keynote: Sarah Sharp on Diversity&lt;/h3&gt;
+&lt;p&gt;She said a lot of really important things, but they're also things that everyone
+has heard before.  She knows her stuff, and seems very passionate, but that
+keynote isn't going to change anything.  Call me a cynic, but from the two
+guys behind me asking &amp;quot;Why should minorities get a stipend just for getting an
+internship?&amp;quot; to ethnic homogeneity of the audience, I don't hold much hope
+for tech companies realizing how important diversity of their workforce is
+any time soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="randal-schwartz-intro-to-dart"&gt;
+&lt;h3&gt;Randal Schwartz, Intro to Dart&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="conferences"></category></entry></feed>
