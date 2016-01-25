@@ -115,5 +115,27 @@ any time soon.
 Randal Schwartz, Intro to Dart
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Honestly, I spent this whole talk just working on making this blog. Woops.
+
+Other Things I Saw Today
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Two pugs
+* Three grown men yell group hug and execute
+* The sun
+
+I spent the rest of the day doing homework and travelling. It's amazing how
+much effort it takes to move a human from A to B, and I have to say I was 
+so exhausted by the time we got to Corvallis around 12:30.  Lesson learned:
+I am not a Sunday-worker. Sundays are for blankets and tea and tv, not 
+late night flights and talking to other humans.  Overall, SCaLE was 
+less stressful than I thought it would be, and I don't regret going 
+like I thought I would. Maybe that sounds lukewarm, and I have to say
+it is a *very* well run conference, and my particular sentiments don't
+reflect a lack of effort on the part of the organizers,
+presenters, or exhibitors. Objectively, it's a great conference.  I'm 
+not really sure how to end this post. I might think of something 
+better later. For now, ciao gentle reader. You excellent human you.
+
 .. _Euro Pane: http://www.yelp.com/biz/euro-pane-bakery-pasadena
 .. _Modifying the Kernel\: A How-to: http://slides.lucywyman.me/modifying-the-kernel.html
