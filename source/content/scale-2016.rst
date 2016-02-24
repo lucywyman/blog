@@ -5,7 +5,6 @@ SCaLE 14x: My Experience
 :category: conferences
 :slug: scale-14x
 :author: Lucy Wyman
-:summary:  
 
 Day 0:
 ------
