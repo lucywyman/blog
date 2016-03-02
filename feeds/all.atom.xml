@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2016-02-23T00:00:00-08:00</updated><entry><title>Book Review: Ready Player One</title><link href="/ready-player-one.html" rel="alternate"></link><updated>2016-02-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:,2016-02-23:ready-player-one.html</id><summary type="html">&lt;p&gt;For the sake of recalling more from the books I read, and avoiding homework,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2016-03-01T00:00:00-08:00</updated><entry><title>Book Review: Hunger Makes Me A Modern Girl</title><link href="/hunger-makes-me-a-modern-girl.html" rel="alternate"></link><updated>2016-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:,2016-03-01:hunger-makes-me-a-modern-girl.html</id><summary type="html">&lt;p&gt;I spent the weekend Spring Cleaning my new apartment, accompanied by
+this highly anticipated read, &lt;a class="reference external" href="http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638"&gt;Hunger Makes Me A Modern Girl&lt;/a&gt; by
+&lt;a class="reference external" href="http://www.carriebrownstein.com/"&gt;Carrie Brownstein&lt;/a&gt;. Brownstein's memoir of her
+time in the band &lt;a class="reference external" href="http://www.sleater-kinney.com/"&gt;Sleater-Kinney&lt;/a&gt;, this book was raw to the point
+of discomfort. Whatever opinions I may have, they're outweighed
+by the respect I have for Brownstein's openness, vulnerability, and honesty.
+The whole book, beginning to end, is one long intimate passage into
+the private lives of herself, her family, and her bandmates, sharing
+details I would cringe to tell my own friends, let alone publish
+for the world to read. More than anything I'm in awe of her
+talent for writing and fearless storytelling.  After the
+amazement at her baring-all, though, I had a few other thoughts
+on the book.&lt;/p&gt;
+&lt;p&gt;I went in with few expectations and
+scattered knowledge of Carrie Brownstein. I knew from &lt;a class="reference external" href="http://www.npr.org/sections/allsongs/"&gt;All Songs Considered&lt;/a&gt;
+that she was a member of Sleater-Kinney, that she had worked briefly
+for that podcast, and of course knew about her role in &lt;a class="reference external" href="http://www.ifc.com/shows/portlandia"&gt;Portlandia&lt;/a&gt;.
+But I had never listened to Sleater-Kinney's music, much less studied their
+past or had any part in the Pacific Northwest punk scene. In hindsight,
+doing a little bit of studying before hand would have been helpful --
+the book catalogs her experiences before, during, and briefly after
+Sleater-Kinney exclusively, and she frequently references bands and
+events I had never heard of, despite being so geographically and
+temporally close to them.  This was a bug and a feature: knowing so
+little made the book more educational, interesting, and worthwhile,
+but also in many ways less meaningful or impactful for me personally.
+That said, Brownstein includes so much more than just a history of
+the band.  Her struggles with anxiety and depression, a variety
+of physical conditions including shingles and an allergy to soy,
+and hypochondria while touring with a band, are very much relatable
+to any who has battled those same battles. She also speaks at length
+of coming of age and finding what she wanted to do, of how her parents
+own repressed selves affected her childhood, and of other
+profound thoughts on the human experience in the modern age, and how
+to navigate it.&lt;/p&gt;
+&lt;p&gt;Overall, &amp;quot;Hunger Makes Me A Modern Girl&amp;quot; was an enjoyable
+and worthwhile read. Entertaining, insightful, and almost unbearably
+honest, I would highly recommend picking this up if you have a chance.&lt;/p&gt;
+</summary><category term="book"></category><category term="review"></category><category term="women"></category></entry><entry><title>Why I'm Not Afraid of Self-Driving Cars</title><link href="/self-driving-cars.html" rel="alternate"></link><updated>2016-02-26T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:,2016-02-26:self-driving-cars.html</id><summary type="html">&lt;p&gt;Among the ranks of podcasts NPR creates, one is an aggregated feed of
+technical bits from a variety of news podcasts -- basically a curated, audio
+Hacker News.  This past week, everyone has been
+FREAKING OUT about the WFC fight of the century, Apple vs. FBI, in a
+non-stop stream of uninformed (or worse, half-informed) newscasters questioning
+whether Apple is doing the right thing by protecting their users privacy*.
+However, in the breaths between FREAKING OUT, there were a few bits on
+self-driving cars, and whether America is ready for them.  The bit focused
+on folks saying they didn't trust self-driving cars&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;I'll spare you the drama and to say I side very strongly with Apple, and
+if you don't care to read more about the issue you should as well.  Take
+it from an engineer.&lt;/li&gt;
+&lt;/ul&gt;
+</summary><category term="tech"></category><category term="opinions"></category></entry><entry><title>Book Review: Ready Player One</title><link href="/ready-player-one.html" rel="alternate"></link><updated>2016-02-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:,2016-02-23:ready-player-one.html</id><summary type="html">&lt;p&gt;For the sake of recalling more from the books I read, and avoiding homework,
 I plan to start reviewing the books I read (or, rather, listen to).
 I'm currently making my way through the Harry Potter series again, but in
 the meantime got a chance to read &lt;a class="reference external" href="http://www.amazon.com/Ready-Player-One-A-Novel/dp/0307887448"&gt;Ready Player One by Ernest Cline&lt;/a&gt;.  Set

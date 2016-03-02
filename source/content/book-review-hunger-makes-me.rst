@@ -21,8 +21,8 @@ amazement at her baring-all, though, I had a few other thoughts
 on the book.
 
 I went in with few expectations and
-scattered knowledge of Carrie Brownstein. I knew from `All song considered`_
-that she was a member of `Sleater-Kinney`_, that she had worked briefly
+scattered knowledge of Carrie Brownstein. I knew from `All Songs Considered`_
+that she was a member of Sleater-Kinney, that she had worked briefly
 for that podcast, and of course knew about her role in `Portlandia`_. 
 But I had never listened to Sleater-Kinney's music, much less studied their
 past or had any part in the Pacific Northwest punk scene. In hindsight,
@@ -46,3 +46,9 @@ to navigate it.
 Overall, "Hunger Makes Me A Modern Girl" was an enjoyable
 and worthwhile read. Entertaining, insightful, and almost unbearably 
 honest, I would highly recommend picking this up if you have a chance.
+
+.. _Hunger Makes Me A Modern Girl: http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638
+.. _Carrie Brownstein: http://www.carriebrownstein.com/
+.. _Sleater-Kinney: http://www.sleater-kinney.com/
+.. _All Songs Considered: http://www.npr.org/sections/allsongs/
+.. _Portlandia: http://www.ifc.com/shows/portlandia
