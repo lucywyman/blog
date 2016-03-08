@@ -6,6 +6,7 @@
 <li><h4><a href="{{ SITEURL }}/{{article.url}}">{{ article.title }}</a></h4>
 	<p>{{article.locale_date}}</p>
 	<p>{{article.summary}}</p></li>
+	<a href='{{article.url}}'>Read more...</a>
 {% endfor %}
 {% include 'pagination.html' %}
 {% endblock %}
