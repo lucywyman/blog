@@ -110,3 +110,8 @@ That's what Apple HQ looks like.  There's nothing to see or do in Cupertino, so
 when I got there an hour early I ended up just going to Safeway and getting 
 mouth wash.  After checking in and hanging out for a while, the marathon began.
 
+Google
+~~~~~~
+
+Google had a *beautiful* campus. I got there ~2 hours early, and spent the whole
+time exploring.  
