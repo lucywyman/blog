@@ -2,3 +2,6 @@ v/
 *.pid
 output/
 *.pyc
+*.swp
+*.swo
+.sass-cache/*

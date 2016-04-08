@@ -1,5 +1,10 @@
 The Interview
 =============
+:date: 2016-03-20
+:tags: tech, interviews
+:category: Experiences
+:slug: interviews
+:author: Lucy Wyman
 
 Interviewing is a lot like dating.  You put on your nice clothes. You're 
 kind of nervous at first. "Will they like me?", "Am I smiling too much?",
@@ -10,12 +15,13 @@ FOOD IN TEETH WHAT DO WE DO".
 .. figure:: /images/spongebob.gif
     :align: center
 
-Needless to say, it's difficult to stand in judgement of other humans. 
-So, in an effort to remember and transfer the memories of [], I'm
-recording here my experiences interviewing with a variety of 
-organizations.  
+Needless to say, it's difficult to stand in judgement of other humans, 
+particularly with your career on the line!
+So, in an effort to remember and transfer the memories of interviewing, I'm
+recording my experiences with a variety of organizations here for posterity
+(read: Future Lucy).
 
-** NOTE: I won't be discussing
+**NOTE**: I won't be discussing
 any details of questions asked during the interviews, and 
 will omit the names of anyone who interviewed me.
 
@@ -27,7 +33,7 @@ Pinterest       1 (NT)              No          NT = non technical
 Facebook                                        T = technical call
 Nordstrom                                       CC = Coding challenge
 TripAdvisor                                     OS = on site    
-Etsy            0                   No  
+Etsy            0                   No  		0 = Rejection w/out interview
 NPR             1 (NT)      
 Kickstarter         
 Github          1 (T)               No  
@@ -45,7 +51,7 @@ LinkedIn        1 (NT)              No
 Thrive Market           
 Novu            
 Canonical       1 (NT)              No  
-Puppet          1 (CC) 1 (T) 1 (OS)     
+Puppet          1 (CC) 1 (T) 1 (OS) YES!
 Rafflecopter            
 Clerky          0                   No  
 Elastic         1 (CC)      
@@ -53,7 +59,7 @@ Vigilant
 Sumo Logic          
 Acquia          1 (NT) 1 (T) 1 (OS)     
 Phuse           
-LF              1 (NT) 1 (CC)       
+Linux Found.    1 (NT) 1 (CC)       
 =============== =================== =========   ===
 
 
@@ -87,8 +93,8 @@ most tech organizations has three parts.
 
 3. The on site. If your technical interviews go well and 
    you seem like a good fit, you'll have an on site interview.
-   This is like 1-2 years of dating in 5 hours.  Jk, it's more like 
-   a month.  This is where the company flies you down to their
+   This is like 1-2 years of dating in 5 hours.  This is where the company 
+   flies you down to their
    location and interviews you for 5-6 hours in 45-60 minute 
    chunks, usually with 1-2 engineers per interview.  Yes, they
    are exhausting, no matter how many times people ask if you
@@ -96,6 +102,11 @@ most tech organizations has three parts.
    how arduous transporting humans from point A to point B is.
    This is their (and your) last chance to see if you're ready 
    to commit.  
+
+After the onsite, you're just waiting to hear back. Usually it takes between
+a week and a month, but if you haven't heard anything in 1.5 to 2 weeks it's 
+appropriate to contact the recruiter you've been talking to and ask when 
+you should expect to know.  
 
 The Companies
 -------------
@@ -106,9 +117,18 @@ Apple
 I interviewed with Apple on a Monday in early January.  You know 
 those industrial parks you go to when your Comcast shit isn't working, 
 where they have miles of rectangular concrete buildings where souls go to die?
-That's what Apple HQ looks like.  There's nothing to see or do in Cupertino, so 
+That's what Apple HQ looks like.  I know, I know, they're building a new
+campus that's going to be the bestest tech campus in The World and Mars, but
+for now it's pretty subpar.  There's nothing to see or do in Cupertino, so 
 when I got there an hour early I ended up just going to Safeway and getting 
 mouth wash.  After checking in and hanging out for a while, the marathon began.
+
+I ended up having 6 45-minute interviews with a lunch break after Round 2. 
+Each interview was with two engineers from the team I was applying to be on, 
+and overall I thought I showed as well as I could have.  There were some 
+engineers I instantly clicked with and really liked, and others that were
+much less inviting, but on the whole I
+
 
 Google
 ~~~~~~

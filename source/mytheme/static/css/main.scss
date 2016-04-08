@@ -19,11 +19,27 @@ a {
 }
 
 nav{
-	h3{
-		display: inline-block;
-	}
-	a {
-		padding: 3px;
+	ul {
+		list-style-type: none;
+	
+		li {
+			display: inline-block;
+
+			ul {
+				display: none;
+
+				li {
+					display: block;
+				}
+			}
+
+			h3{
+				display: inline-block;
+			}
+			a {
+				padding: 3px;
+			}
+		}
 	}
 }
 
@@ -31,6 +47,10 @@ nav{
 	li {
 		list-style-type: none;
 		border-bottom: 2px solid $dark;
+
+		li {
+			border-bottom: none;
+		}
 	}
 }
 

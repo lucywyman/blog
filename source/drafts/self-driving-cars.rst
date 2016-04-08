@@ -1,8 +1,7 @@
 Why I'm Not Afraid of Self-Driving Cars
 =======================================
 :date: 2016-02-26
-:tags: tech, opinions
-:category: 
+:tags: Tech, Opinions
 :slug: self-driving-cars
 :author: Lucy Wyman
 

@@ -1,8 +1,8 @@
 Book Review: Hunger Makes Me A Modern Girl
 ==========================================
 :date: 2016-03-01
-:tags: book, review, women
-:category: book-review
+:tags: book review, women
+:category: Book Review
 :slug: hunger-makes-me-a-modern-girl
 :author: Lucy Wyman
 

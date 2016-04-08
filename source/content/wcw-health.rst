@@ -1,8 +1,8 @@
 Healthy + Happy: Inspired by My Mom
 ===================================
 :date: 2016-03-06
-:tags: loves
-:category: loves
+:tags: loves, women
+:category: Loves
 :slug: happy-and-healthy
 :author: Lucy Wyman
 

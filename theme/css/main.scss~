@@ -19,11 +19,27 @@ a {
 }
 
 nav{
-	h3{
-		display: inline-block;
-	}
-	a {
-		padding: 3px;
+	ul {
+		list-style-type: none;
+	
+		li {
+			display: inline-block;
+
+			ul {
+				display: none;
+
+				li {
+					display: block;
+				}
+			}
+
+			h3{
+				display: inline-block;
+			}
+			a {
+				padding: 3px;
+			}
+		}
 	}
 }
 
@@ -48,8 +64,9 @@ nav{
 	display: inline-block;}
 }
 
-@media screen and (max-width: 680px){
+@media screen and (min-width: 680px){
 	body{
-		padding: 20%;
+		max-width: 700px;
+		margin: 10px auto;
 	}
 }

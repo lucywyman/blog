@@ -1,8 +1,8 @@
 SCaLE 14x: My Experience
 ========================
 :date: 2016-1-23
-:tags: conferences
-:category: conferences
+:tags: conferences, tech
+:category: Experiences
 :slug: scale-14x
 :author: Lucy Wyman
 

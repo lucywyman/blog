@@ -1,8 +1,8 @@
 Book Review: Ready Player One
 =============================
 :date: 2016-02-23
-:tags: book, review, tech
-:category: book-review
+:tags: book review, tech
+:category: Book Review
 :slug: ready-player-one
 :author: Lucy Wyman
 

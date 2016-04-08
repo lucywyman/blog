@@ -2,7 +2,7 @@ Loves
 =====
 :date: 2016-03-05
 :tags: loves
-:category: loves
+:category: Loves
 :slug: loves
 :author: Lucy Wyman
 
