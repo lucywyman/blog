@@ -39,11 +39,11 @@ all free and available on Android.
 #. `One Today`_: A super easy way to make one-time donations to charity.
 
 .. _Overdrive: http://multco.lib.overdrive.com
-.. _AntennaPod:
+.. _AntennaPod: https://play.google.com/store/apps/details?id=de.danoeh.antennapod&hl=en
 .. _Shuttle: https://play.google.com/store/apps/details?id=another.music.player&hl=en
-.. _Acorns:
-.. _Bandsintown:
-.. _Heads up:
-.. _Mint:
+.. _Acorns: https://play.google.com/store/apps/details?id=com.acorns.android&hl=en
+.. _Bandsintown: https://play.google.com/store/apps/details?id=com.bandsintown&hl=en
+.. _Heads up: https://play.google.com/store/apps/details?id=com.wb.headsup&hl=en
+.. _Mint: https://play.google.com/store/apps/details?id=com.mint&hl=en
 .. _Duolingo: https://www.duolingo.com/
-.. _One Today:
+.. _One Today: https://play.google.com/store/apps/details?id=com.google.android.apps.onetoday&hl=en

@@ -24,6 +24,8 @@ are ones that have helped shape me.
 * The album `Pageant Material`_ by `Kacey Musgraves`_. No matter how many 
   times I listen to this album, it always comforts and centers me. 
 
+* `Toby Littledude`_.  Make sure you read the captions.
+
 .. _"Committed": http://www.amazon.com/Committed-Love-Story-Elizabeth-Gilbert/dp/0143118706
 .. _Elizabeth Gilbert: https://en.wikipedia.org/wiki/Elizabeth_Gilbert
 .. _Jess Lively's The Lively Show: http://jesslively.com/livelyshow
@@ -34,3 +36,4 @@ are ones that have helped shape me.
 .. _Chocolate-Covered Katie: http://chocolatecoveredkatie.com
 .. _Pageant Material: http://www.amazon.com/Pageant-Material-Kacey-Musgraves/dp/B00XJJAWES
 .. _Kacey Musgraves: http://www.kaceymusgraves.com/
+.. _Toby Littledude: https://www.instagram.com/toby_littledude/?hl=en

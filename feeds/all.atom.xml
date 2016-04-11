@@ -1,5 +1,429 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-03-14T00:00:00-07:00</updated><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><updated>2016-03-14T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of them
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-03-20T00:00:00-07:00</updated><entry><title>The Interview</title><link href="http://blog.lucywyman.me/interviews.html" rel="alternate"></link><updated>2016-03-20T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-20:interviews.html</id><summary type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
+kind of nervous at first. &amp;quot;Will they like me?&amp;quot;, &amp;quot;Am I smiling too much?&amp;quot;,
+&amp;quot;Was I supposed to tell the story about the frog?&amp;quot;, &amp;quot;Oh god, I feel something
+between my teeth, oh my god, OH MY GOD, CODE BLUE CODE BLUE FOOD IN TEETH
+FOOD IN TEETH WHAT DO WE DO&amp;quot;.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/images/spongebob.gif" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Needless to say, it's difficult to stand in judgement of other humans,
+particularly with your career on the line!
+So, in an effort to remember and transfer the memories of interviewing, I'm
+recording my experiences with a variety of organizations here for posterity
+(read: Future Lucy).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I won't be discussing
+any details of questions asked during the interviews, and
+will omit the names of anyone who interviewed me.&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="19%" /&gt;
+&lt;col width="24%" /&gt;
+&lt;col width="11%" /&gt;
+&lt;col width="46%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Company&lt;/th&gt;
+&lt;th class="head"&gt;Interviews&lt;/th&gt;
+&lt;th class="head"&gt;Job offer&lt;/th&gt;
+&lt;th class="head"&gt;Key&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;Pinterest&lt;/td&gt;
+&lt;td&gt;1 (NT)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;NT = non technical&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Facebook&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;T = technical call&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Nordstrom&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;CC = Coding challenge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;TripAdvisor&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;OS = on site&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Etsy&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;0 = Rejection w/out interview&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;NPR&lt;/td&gt;
+&lt;td&gt;1 (NT)&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Kickstarter&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Github&lt;/td&gt;
+&lt;td&gt;1 (T)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Pixar&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Digital Ocean&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PRX&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Apple&lt;/td&gt;
+&lt;td&gt;2 (T) 1 (OS)&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Google&lt;/td&gt;
+&lt;td&gt;1 (CC) 1 (T) 1 (OS)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Art &amp;amp; Logic&lt;/td&gt;
+&lt;td&gt;2 (CC)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;10Up&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SitePen&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Clevertech&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Mozilla&lt;/td&gt;
+&lt;td&gt;1 (NT)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;LinkedIn&lt;/td&gt;
+&lt;td&gt;1 (NT)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Thrive Market&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Novu&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Canonical&lt;/td&gt;
+&lt;td&gt;1 (NT)&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Puppet&lt;/td&gt;
+&lt;td&gt;1 (CC) 1 (T) 1 (OS)&lt;/td&gt;
+&lt;td&gt;YES!&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rafflecopter&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Clerky&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Elastic&lt;/td&gt;
+&lt;td&gt;1 (CC)&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Vigilant&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Sumo Logic&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Acquia&lt;/td&gt;
+&lt;td&gt;1 (NT) 1 (T) 1 (OS)&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Phuse&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Linux Found.&lt;/td&gt;
+&lt;td&gt;1 (NT) 1 (CC)&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="section" id="the-process"&gt;
+&lt;h2&gt;The Process&lt;/h2&gt;
+&lt;p&gt;So, as I recently learned, the interview process for
+most tech organizations has three parts.&lt;/p&gt;
+&lt;ol class="arabic simple" start="0"&gt;
+&lt;li&gt;The application. This is like the profile part of
+online dating. You submit your resume, the shiniest
+version of yourself in the form of paper, but you lie about
+knowing Rust instead of liking beer.&lt;/li&gt;
+&lt;li&gt;The HR person. This is usually a 10-15 minute call
+with a really nice person
+where they ask things like &amp;quot;What are you interested in?&amp;quot;,
+&amp;quot;When do you graduate?&amp;quot;, &amp;quot;Are you willing to relocate?&amp;quot;, etc.
+They're just trying to ascertain if you're a good fit for the
+position you're interviewing for. This is the initial chat
+of online dating, but less awkward.&lt;/li&gt;
+&lt;li&gt;The technical interview.  This is 1 or 2 phone calls
+with an engineer where they ask you to solve a problem or
+two in a shared document. The problems are almost always
+related to algorithms, data structures, or networking.
+Seriously, know your networks man.  This is the first/second
+date stage of the interview, where you try to decide if
+this is even someone you want to get involved with and if
+there's any possibility for romance.&lt;/li&gt;
+&lt;li&gt;The on site. If your technical interviews go well and
+you seem like a good fit, you'll have an on site interview.
+This is like 1-2 years of dating in 5 hours.  This is where the company
+flies you down to their
+location and interviews you for 5-6 hours in 45-60 minute
+chunks, usually with 1-2 engineers per interview.  Yes, they
+are exhausting, no matter how many times people ask if you
+need water or coffee. It also gives you an appreciation for
+how arduous transporting humans from point A to point B is.
+This is their (and your) last chance to see if you're ready
+to commit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After the onsite, you're just waiting to hear back. Usually it takes between
+a week and a month, but if you haven't heard anything in 1.5 to 2 weeks it's
+appropriate to contact the recruiter you've been talking to and ask when
+you should expect to know.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-companies"&gt;
+&lt;h2&gt;The Companies&lt;/h2&gt;
+&lt;div class="section" id="apple"&gt;
+&lt;h3&gt;Apple&lt;/h3&gt;
+&lt;p&gt;I interviewed with Apple on a Monday in early January.  You know
+those industrial parks you go to when your Comcast shit isn't working,
+where they have miles of rectangular concrete buildings where souls go to die?
+That's what Apple HQ looks like.  I know, I know, they're building a new
+campus that's going to be the bestest tech campus in The World and Mars, but
+for now it's pretty subpar.  There's nothing to see or do in Cupertino, so
+when I got there an hour early I ended up just going to Safeway and getting
+mouth wash.  After checking in and hanging out for a while, the marathon began.&lt;/p&gt;
+&lt;p&gt;I ended up having 6 45-minute interviews with a lunch break after Round 2.
+Each interview was with two engineers from the team I was applying to be on,
+and overall I thought I showed as well as I could have.  There were some
+engineers I instantly clicked with and really liked, and others that were
+much less inviting, but on the whole it was as pleasant as 7 hours of
+interviewing can be.  More often than not the interviewing wrapped up
+early, and in asking their engineers about how they liked Apple it
+was clear that every engineer there drank the Apple kool-aid. Maybe this
+seems obvious since they work there, but interviewing at Apple made me
+realize how important Open Source Software is to me.  I thought it was
+something I could take or leave, but sentences like &amp;quot;I enjoy the big
+reveals, a lot of times I have no idea what the final product will
+look like as we're working on it&amp;quot; or &amp;quot;I can't talk to my neighbor
+about what I'm doing&amp;quot; gave me literal chills.  It's definitely for
+some people, just not me. There were also startingly few women at
+Apple, particularly in engineering roles, which was another big red
+flag for me.  This isn't to say Apple's a bad place or company, just
+that it wasn't the right fit for me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="google"&gt;
+&lt;h3&gt;Google&lt;/h3&gt;
+&lt;p&gt;Google (Mountianview) had a &lt;em&gt;beautiful&lt;/em&gt; campus. I got there ~2 hours early, and spent the whole
+time exploring sites like the Android Garden, little google shops, and generally
+wandering around. It's like it's own small, clean city with beautiful landscapes,
+an amphitheater, movies, shops, and so on.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/android-garden.jpg" style="width: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Once I was in the right place, the interviewing
+began right away.  As I said, I won't discuss the details of questions asked, but
+the google interview questions were very fun to consider, reason about, and optimize.
+I found myself thinking about the questions over the next few days and trying to
+improve my answers, and at the end of the day found that I was energized rather than
+exhausted by the problems put before me.  You can find some &lt;a class="reference external" href="http://www.impactinterview.com/2009/10/140-google-interview-questions/"&gt;retired google interview
+questions&lt;/a&gt; online, but I will say that in my experience they're unlike questions
+asked by any other company.  Use for fun or brain work, not general interview practice.
+The engineers were all very nice and interesting, and it was clear that each was
+passionate about technology and working at Google (of course).  Though this was
+exciting as a soon-to-be graduate, it also hinted at how each persons &lt;em&gt;life&lt;/em&gt;
+was Google, and seemed that culturally it would be very hard to have kids or
+real hobbies outside of work.  I know this is something they are working on, and
+can't confirm that this is culturally true, it was just the vibe I got during
+my very short time there.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/expectant-mother.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;This onsite consisted of 4 hour-long interviews with a lunch break, each
+interview being one-on-one, which I found much more manageable than two-on-one.
+The interviews were very directed and structured, which I really liked, and left
+plenty of time for me to ask questions of my interviewers.  It's also worth
+mentioning that my interviewers were diverse in terms of race, gender, and age,
+which was refreshing. Once I had finished, I was on my way!  Google has a very
+nifty interview process, whereby a committee reviews your interview
+based on notes the interviewers take in order to minimize any biases the
+interviewers may have. The committee then determines whether to hire you or
+not, &lt;em&gt;then&lt;/em&gt; once you're hired they place you in a department or project you're
+interested in. So you don't interview for a particular position, and you're
+not competing with other brains for the same job: it's just a matter of
+whether you're up to snuff.&lt;/p&gt;
+&lt;p&gt;Overall I had a really good time interviewing for Google, and despite
+not getting the job consider it a great experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="linux-foundation"&gt;
+&lt;h3&gt;Linux Foundation&lt;/h3&gt;
+&lt;p&gt;I didn't get as far into the LF interview process, but want to write
+about it because their code challenge &lt;em&gt;consumed&lt;/em&gt; my life for a solid
+week. This is mostly my own fault: the challenge was to create a
+site using Drupal, which I have ample experience doing, and so
+as a challenge I chose to use Drupal 8 instead of 7.  Never. Again.
+Drupal 8 has some great and cool features, namely better templating.
+But it's not well documented, not widely used, and is &lt;em&gt;way&lt;/em&gt;
+different from Drupal 7. I was in way over my head, and honestly
+spent probably close to 50 hours on a project that was supposed
+to take 8.  I'm sure some LF folks will read this and chuckle,
+but it was an emotional technical journey that I'm glad I took.
+As arduous as it was, it feels strangely pleasurable to get sucked
+into a project like that, and I learned a whole lot about Drupal.
+This doesn't really reflect LF at all, but I guess can be
+taken as a lesson regarding how great interviews can be regardless
+of whether you get the job?  Or something.  I just thought you
+all should know.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puppet"&gt;
+&lt;h3&gt;Puppet&lt;/h3&gt;
+&lt;p&gt;I won't go on about how much I enjoyed
+interviewing at Puppet. I interned there the previous summer, so
+much of that enjoyment was in seeing old friends and getting
+lots of hugs. I also know that raving about stuff sounds
+cheesy and fake like squeezy cheese, and this blog post is
+not about squeezy cheese. Barf.&lt;/p&gt;
+&lt;p&gt;Puppet's interview was 6 45-minute interviews, each with 2
+engineers from the team I would be working on, and including
+a one-on-one lunch.  The interviews were pretty standard stuff
+(tell us about yourself, answer technical questions, etc.), but
+in interviewing my interviewers it was clear that Puppet
+prioritized &lt;em&gt;having a life&lt;/em&gt; outside of work. Most people had
+kids, and everyone had a variety of hobbies as well, from
+motorcycling to painting to construction and so on.  I know
+work-life balance isn't a key word for everyone, but
+for me personally it was a huge relief to know that I wouldn't be
+expected to work 60-80 hours/week and could pursue other
+interests after hours.  Puppet 100%
+won on diversity as well, with a wide variety of races, ages,
+and gender non-binary interviewers.  All in all, it was
+a really fun day, and cemented for me that Puppet was
+the right place for me.&lt;/p&gt;
+&lt;p&gt;I'll emphasize again that I'm very biased, particularly since
+I accepted the job at Puppet and had worked there previously.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I started looking for a job in mid-November and accepted the
+position at Puppet mid-March. Finding a job is &lt;em&gt;hard&lt;/em&gt;, even
+as a fully-qualified, young, white woman with years of
+previous work experience.  Not only is it hard to get an offer,
+but it's hard to research companies you're interested in, optimize
+your resume, apply, hope, schedule calls, take time between
+classes talking to recruiters and engineers for hourse, fly or drive
+offsite for a full day of interviews, hear &amp;quot;We're sorry but...&amp;quot; over
+and over and over. I have to admit that I was expecting the
+interview process to take time, but underestimated how much energy
+and emotion and effort it would take.  I've learned a lot about
+the job market, about what I value and need in a career, and
+about where I stand in comparison with my peers. But I'm
+also thrilled with where I landed, and could not be
+more excited to start working at Puppet this summer. I
+wish anyone reading this before job searching good luck,
+and hope that your experiences are enlightening if not
+fruitful.&lt;/p&gt;
+&lt;p&gt;As always, remember:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;If you don't get a position, it's not &lt;em&gt;your&lt;/em&gt; fault.
+I interview candidates for the &lt;a class="reference external" href="https://osuosl.org"&gt;OSU Open Source Lab&lt;/a&gt;
+and most of the time a candidate is well-suited to the
+position, but there's just someone else we think would be
+a little bit better.  It's not personal, it's not mean,
+it's not that you're not good enough. It's not &lt;em&gt;you&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Think about your values, and whether a company aligns with
+them. It's so tempting to just go for prestige: Google, Apple,
+Intel, etc. But if you're not crazy about how that company
+operates, or what it makes, you don't want to spend years
+working there.  Do your research, and &lt;em&gt;know what you want&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Companies want the same thing you do: for this to be a good
+fit! If they don't think it is, then maybe they're right:
+maybe it's not the right place for you.  Find a company
+that's stoked to bring you on board!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That's all she wrote, folks.  Contact me at
+wyman[dot]lucy[at]gmail[dot]com if you have questions or comments.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="interviews"></category><category term="experiences"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:apps-to-love.html</id><summary type="html">&lt;p&gt;With so many applications out there, it's difficult to discern which are
+valuable, usable, and do what you expect them to.  So, for the sake
+of those like me, here are some of the applications I have found
+particularly useful or entertaining. I should also mention that these are
+all free and available on Android.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://multco.lib.overdrive.com"&gt;Overdrive&lt;/a&gt;: You can connect overdrive to local libraries and checkout
+books to read or listen to on mobile. I use it to download and listen to
+audiobooks, and honestly went from reading 0 books/year to about 1/week.
+It's completely changed my life, and made the mundane moments like doing
+laundry or walking to class more entertaining.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=de.danoeh.antennapod&amp;amp;hl=en"&gt;AntennaPod&lt;/a&gt;: Similar to Overdrive, this app brings you great listening
+material in a different form: podcasts.  It has lots of fancy features now
+like adjustable playback speed, automatic deletion once you've listened
+to an episode, and turning off if you fall asleep.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=another.music.player&amp;amp;hl=en"&gt;Shuttle&lt;/a&gt;: This is just a music player I'm happy with. If you're happy
+with your music player, I wouldn't worry about it.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.acorns.android&amp;amp;hl=en"&gt;Acorns&lt;/a&gt;: The idea here is that it rounds up any debit/credit card purchases
+you make to the next dollar, invests the money, and then you have access
+to it whenver you need it, and it can continue to grow if you don't.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.bandsintown&amp;amp;hl=en"&gt;Bandsintown&lt;/a&gt;: You've probably heard of this one, but if not, it's a great
+way to find shows in your city.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.wb.headsup&amp;amp;hl=en"&gt;Heads up&lt;/a&gt;: This a fun &amp;quot;We're waiting for something and need to pass
+the time&amp;quot; app. It's especially great with kids.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.mint&amp;amp;hl=en"&gt;Mint&lt;/a&gt;: I use this mostly to set and maintain budgets. You need to give it
+some very personal banking information, so if you're not into that this isn't
+for you, but if you are I've found it very useful. You can even see your
+credit score on it, which is always good to know!&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.duolingo.com/"&gt;Duolingo&lt;/a&gt;: You've more than likely already heard of this, but if not
+it's an addictive, gamified way of learning new languages.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.onetoday&amp;amp;hl=en"&gt;One Today&lt;/a&gt;: A super easy way to make one-time donations to charity.&lt;/li&gt;
+&lt;/ol&gt;
+</summary><category term="loves"></category><category term="tech"></category></entry><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><updated>2016-03-14T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of them
 better than others.  I decided to get one because:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;strong&gt;I didn't want to be scared of permanently changing my body.&lt;/strong&gt;  We make
@@ -43,19 +467,19 @@ in mind I had a few ideas of things that my tattoo could be &amp;quot;about&amp;
 more likely to &amp;quot;tire out&amp;quot; so to speak.  Besides, if I really liked a quote, I
 had plenty of skin to get other tattoos in the future.&lt;/p&gt;
 &lt;p&gt;Researching designs brought up a few contenders:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="images/equal-tattoo.jpg" style="width: 400px;" /&gt;
+&lt;div class="figure align-left"&gt;
+&lt;img alt="" src="theme/images/equal-tattoo.jpg" style="width: 30%;" /&gt;
+&lt;/div&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="theme/images/sun-watercolor.jpg" style="width: 30%;" /&gt;
 &lt;/div&gt;
 &lt;div class="figure align-center"&gt;
-&lt;img alt="" src="images/sun-watercolor.jpg" style="width: 400px;" /&gt;
-&lt;/div&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="images/rose-tattoo.jpg" style="width: 400px;" /&gt;
+&lt;img alt="" src="theme/images/rose-tattoo.jpg" style="width: 30%;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;After consulting friends and learning more about what kinds of tattoos are
 difficult to execute, and which aren't, I settled on this:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
-&lt;img alt="" src="images/my-tattoo.jpg" /&gt;
+&lt;img alt="" src="theme/images/my-tattoo.jpg" /&gt;
 &lt;/div&gt;
 &lt;p&gt;Without the portland, in plain black ink.&lt;/p&gt;
 &lt;p&gt;My advice:&lt;/p&gt;
@@ -103,7 +527,7 @@ is with their first tattoo, I was nervous that I would regret getting something
 put permanently on my body, but I knew when I saw it that I had made the right
 decision. Crisis: avoided.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
-&lt;img alt="" src="images/my-tat-picture.jpg" style="width: 400px;" /&gt;
+&lt;img alt="" src="theme/images/my-tat-picture.jpeg" style="width: 40%;" /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="post-tattoo"&gt;
@@ -172,6 +596,7 @@ and uplifting.  From &lt;a class="reference external" href="http://jesslively.co
 &lt;li&gt;&lt;a class="reference external" href="http://recipes.lucywyman.me/cheesy-pasta.html"&gt;Cheesy Baked Pasta&lt;/a&gt; from &lt;a class="reference external" href="http://chocolatecoveredkatie.com"&gt;Chocolate-Covered Katie&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;The album &lt;a class="reference external" href="http://www.amazon.com/Pageant-Material-Kacey-Musgraves/dp/B00XJJAWES"&gt;Pageant Material&lt;/a&gt; by &lt;a class="reference external" href="http://www.kaceymusgraves.com/"&gt;Kacey Musgraves&lt;/a&gt;. No matter how many
 times I listen to this album, it always comforts and centers me.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.instagram.com/toby_littledude/?hl=en"&gt;Toby Littledude&lt;/a&gt;.  Make sure you read the captions.&lt;/li&gt;
 &lt;/ul&gt;
 </summary><category term="loves"></category></entry><entry><title>Book Review: Hunger Makes Me A Modern Girl</title><link href="http://blog.lucywyman.me/hunger-makes-me-a-modern-girl.html" rel="alternate"></link><updated>2016-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-01:hunger-makes-me-a-modern-girl.html</id><summary type="html">&lt;p&gt;I spent the weekend Spring Cleaning my new apartment, accompanied by
 this highly anticipated read, &lt;a class="reference external" href="http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638"&gt;Hunger Makes Me A Modern Girl&lt;/a&gt; by
