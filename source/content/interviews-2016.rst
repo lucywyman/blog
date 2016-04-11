@@ -12,7 +12,7 @@ kind of nervous at first. "Will they like me?", "Am I smiling too much?",
 between my teeth, oh my god, OH MY GOD, CODE BLUE CODE BLUE FOOD IN TEETH
 FOOD IN TEETH WHAT DO WE DO".
 
-.. figure:: /images/spongebob.gif
+.. figure:: /theme/images/spongebob.gif
     :align: center
 
 Needless to say, it's difficult to stand in judgement of other humans, 
@@ -148,7 +148,7 @@ time exploring sites like the Android Garden, little google shops, and generally
 wandering around. It's like it's own small, clean city with beautiful landscapes,
 an amphitheater, movies, shops, and so on.  
 
-.. figure:: theme/images/android-garden.jpg
+.. figure:: /theme/images/android-garden.jpg
 	:align: center
 	:width: 400px
 
@@ -168,7 +168,7 @@ real hobbies outside of work.  I know this is something they are working on, and
 can't confirm that this is culturally true, it was just the vibe I got during 
 my very short time there.  
 
-.. figure:: theme/images/expectant-mother.jpg
+.. figure:: /theme/images/expectant-mother.jpg
 	:align: center
 	:height: 400px
 

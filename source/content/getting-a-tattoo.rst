@@ -57,22 +57,22 @@ had plenty of skin to get other tattoos in the future.
 
 Researching designs brought up a few contenders:
 
-.. figure:: theme/images/equal-tattoo.jpg
+.. figure:: /theme/images/equal-tattoo.jpg
 	:align: left
 	:width: 30%
 
-.. figure:: theme/images/sun-watercolor.jpg 
+.. figure:: /theme/images/sun-watercolor.jpg 
 	:align: right
 	:width: 30%
 
-.. figure:: theme/images/rose-tattoo.jpg 
+.. figure:: /theme/images/rose-tattoo.jpg 
 	:align: center
 	:width: 30%
 
 After consulting friends and learning more about what kinds of tattoos are
 difficult to execute, and which aren't, I settled on this:
 
-.. figure:: theme/images/my-tattoo.jpg
+.. figure:: /theme/images/my-tattoo.jpg
 	:align: center
 
 Without the portland, in plain black ink.
@@ -123,7 +123,7 @@ is with their first tattoo, I was nervous that I would regret getting something
 put permanently on my body, but I knew when I saw it that I had made the right
 decision. Crisis: avoided.
 
-.. figure:: theme/images/my-tat-picture.jpeg 
+.. figure:: /theme/images/my-tat-picture.jpeg 
 	:align: center
 	:width: 40%
 
