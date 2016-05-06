@@ -1,8 +1,8 @@
 Book Review: Harry Potter Series
 ================================
 :date: 2016-03-19
-:tags: Book, Review
-:category: Book Reviews
+:tags: book review
+:category: Book Review
 :slug: harry-potter-series
 :author: Lucy Wyman
 
@@ -36,6 +36,9 @@ reflect modern society so well.  JK Rowling is able to capture the many ways
 we judge other humans in her characters, and the lengths we'll go to defend
 those judgements. 
 
+.. _Percy Jackson: https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians
+.. _Neopets: http://www.neopets.com
+
 The Series
 ----------
 
@@ -44,7 +47,11 @@ seven years, that you do have to read in order and all of.  This isn't
 `Animal Ark`_ people.  There's no picking one book and saying "Read this 
 and you've read them all".  That said, *it's 100% worth it*.  And I will say, 
 some of the books are better than others.  My personal favorite was 
-"The Half-Blood Prince"
+"The Half-Blood Prince", but there is no weak-link in the set, or book I 
+finished and thought "Man, I really hope the next one is better". **TL;DR 
+Yes you have to read them all.**
+
+.. _Animal Ark: https://en.wikipedia.org/wiki/Animal_Ark
 
 What I loved
 ------------
@@ -54,7 +61,16 @@ What I loved
    human and deeply entangled in the story.  The Malfoys, the Weasleys, 
    each delicately balanced between family and principles, conflicted
    in how to choose what's best for those they love. So. Good. 
-#. **The HP Universe**.  JK Rowlings universe is very well thoug
+#. **The HP Universe**.  JK Rowlings universe is very well thought out,
+   with details like government policy, racial prejudices, and even 
+   the *botany* of the universe created from scratch and implemented 
+   perfectly.  Percy stresses about regulating cauldron-bottoms to be 
+   thick enough. Neville knows the properties of Gillyweed and Devil's Snare. 
+   History class is boring, standardized tests are stressful, and 
+   non-wizards, muggle-born wizards, and women are all placed in a 
+   social hierarchy similar to the racial strata that exists today.
+   The detail and consistency here is incredible, and makes the magical
+   world of Harry Potter that much more immersive and *real*.
 #. **The Form**.  Did you ever notice that there are no swear words in
    Harry Potter?  And no modern technology more recent than a telephone or
    TV, despite that these were written as iphones and laptops were
@@ -63,4 +79,20 @@ What I loved
 #. **The Themes**. Rowling uses Harry Potter to explore coming of age, 
    racism and the hatred that arises from misunderstanding, corrupt
    politics, greed, the psychology of abusive relationships, and more.
+#. **It's timeless**.  My second time through I feel as though I've barely scratched the 
+   surface of deriving meaning from this series, and the layers of 
+   complexity make this an excellent book for readers of all ages 
+   and stages of life. I love that the series grows with you, taking 
+   on new meaning each time it's revisited, and it makes me so excited
+   to read the series again in the future and see how it changes.  The 
+   technology (or lack thereof) also adds to this timelessness, and 
+   even a hundred years from now the books will still be just as relevant 
+   and relatable. 
 
+Conclusion
+----------
+
+You've made it this far: you know how I feel.  If you have any questions, comments,
+or concerns, please email me at wyman[dot]lucy[at]gmail[dot]com, and we can 
+RAVE about how great HP is together. In the meantime, have an excellent day, you lovely
+human you.
