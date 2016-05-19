@@ -1,10 +1,14 @@
 Book Review: Harry Potter Series
 ================================
 :date: 2016-03-19
-:tags: book review
+:tags: book-review
 :category: Book Review
 :slug: harry-potter-series
 :author: Lucy Wyman
+
+.. figure:: /theme/images/harry-potter.jpg
+	:align: center
+	:height: 400px
 
 I know: you already have some preconceived notions about Harry Potter. We all
 do. The series has become an empire, with it's own movie series and theme park,

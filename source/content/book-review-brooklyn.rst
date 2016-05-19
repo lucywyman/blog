@@ -1,10 +1,14 @@
 Book Review: Brooklyn
 =====================
 :date: 2016-04-17
-:tags: Book, Review
-:category: Book Reviews
+:tags: book-review
+:category: Book Review
 :slug: brooklyn
 :author: Lucy Wyman
+
+.. figure:: /theme/images/brooklyn-cover.jpg
+	:align: center
+	:height: 400px
 
 All I knew when I picked this book up was that 
 it was made into a movie, and had something to do with a 

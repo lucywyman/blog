@@ -1,10 +1,14 @@
 Book Review: Furiously Happy
 ============================
 :date: 2016-04-03
-:tags: book review
+:tags: book-review
 :category: Book Review
 :slug: furiously-happy
 :author: Lucy Wyman
+
+.. figure:: /theme/images/furiously-happy.jpg
+	:align: center
+	:height: 400px
 
 For those who don't know, `Furiously Happy`_ is about the life of 
 author `Jenny Lawson`_, and her struggle with a variety of disorders

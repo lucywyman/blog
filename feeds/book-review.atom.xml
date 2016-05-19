@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/book-review.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-04-03T00:00:00-07:00</updated><entry><title>Book Review: Furiously Happy</title><link href="http://blog.lucywyman.me/furiously-happy.html" rel="alternate"></link><updated>2016-04-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-03:furiously-happy.html</id><summary type="html">&lt;p&gt;For those who don't know, &lt;a class="reference external" href="http://thebloggess.com/furiously-happy/"&gt;Furiously Happy&lt;/a&gt; is about the life of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/book-review.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Book Review: Me and Earl and the Dying Girl</title><link href="http://blog.lucywyman.me/me-earl-dying-girl.html" rel="alternate"></link><updated>2016-05-09T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-09:me-earl-dying-girl.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/me-earl.jpeg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.amazon.com/Me-Earl-Dying-Girl-Revised/dp/1419719602"&gt;Me and Earl and the Dying Girl&lt;/a&gt; takes the typical cancer story and
+turns it on it's head.  This was another book I started with no expectations,
+though unlike &lt;a class="reference external" href="http://blog.lucywyman.me/brooklyn.html"&gt;Brooklyn&lt;/a&gt; I was pleasantly surprised. It wasn't inspiring or
+great or anything, nor does it claim to be. It's a very real portrait of
+high school, and of someone you know of (but don't really &lt;em&gt;know&lt;/em&gt;) dying.
+As with any media set in high school your mileage may vary -- no one
+has the same experience, and there were definitely a lot of inconsistencies
+with my experience of high school. But no matter what your experience was,
+it takes you back to the time before adulthood, and the first time you
+experienced that confusion and sadness of loss. The main character, Greg,
+is a self-depricating, uninspired human in the thick of the teenage years.
+He's incredibly well-written, and allows you to forget that he's totally
+fiction. It was a great break from
+a few more heady books I'm in the middle of, and is a great weekend read
+if you're looking for something more seroius than a romance novel but less
+serious than LOTR.&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Book Review: Brooklyn</title><link href="http://blog.lucywyman.me/brooklyn.html" rel="alternate"></link><updated>2016-04-17T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:brooklyn.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/brooklyn-cover.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;All I knew when I picked this book up was that
+it was made into a movie, and had something to do with a
+young woman, the early 20th century, and probably
+Brooklyn, NY.  Honestly, even that was too much:
+I spent much of my time reading it trying to figure out
+why someone would choose to turn &lt;em&gt;this&lt;/em&gt; book into a film
+and came away disappointed.  It was blasé, and while I
+don't want to diminish the experience of immigrants
+to NY in the early 1900s there was nothing unique,
+clever, eye-opening, or otherwise remarkable about the novel.
+I liked the main character well enough, but found that
+in the end I didn't care what happened to her or any of
+the other characters. The main character Eilis and her
+sister Rose feel very much like female characters written by
+a man. You can very clearly see the lens through which
+he views them, the brush strokes he uses to create them,
+and that makes them seem very unreal.  They feel more
+like what you would get if you asked your well-meaning
+grandfather to describe his first love interest than
+real women, and without the connection to the characters
+I found myself struggling to hold on to anything in the
+novel.  I appreciate that Tóibín wrote a novel that centered
+on strong female characters, and that such a novel
+could be turned into an award-winning film. But before
+we congratulate ourselves on appreciating a novel about
+a woman who travels alone to America, goes to college
+and works, and chats with her sister and female roommates,
+let's consider that Eilis probably experienced a lot of
+fear, racism, sexism, uncertainty, and hardship that
+is generally glossed over. Overall I was underwhelmed,
+and wouldn't recommend it if you've got other books
+on your list to read.&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Book Review: Furiously Happy</title><link href="http://blog.lucywyman.me/furiously-happy.html" rel="alternate"></link><updated>2016-04-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-03:furiously-happy.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/furiously-happy.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;For those who don't know, &lt;a class="reference external" href="http://thebloggess.com/furiously-happy/"&gt;Furiously Happy&lt;/a&gt; is about the life of
 author &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Jenny_Lawson"&gt;Jenny Lawson&lt;/a&gt;, and her struggle with a variety of disorders
 including depression and anxiety.  I'm not really sure if it's a
 memoir or autobiography or neither, but you can think of it as a
@@ -23,7 +80,10 @@ for, which is just about all you can ask of a book. As a sub-side-note,
 I highly recommend the audio-book version as well. It's narrated by
 the author, has several &amp;quot;extra&amp;quot; little bits in it, and Lawson's narration
 definitely adds a lot to the experience of consuming the book.&lt;/p&gt;
-</summary><category term="book review"></category></entry><entry><title>Book Review: Harry Potter Series</title><link href="http://blog.lucywyman.me/harry-potter-series.html" rel="alternate"></link><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:harry-potter-series.html</id><summary type="html">&lt;p&gt;I know: you already have some preconceived notions about Harry Potter. We all
+</summary><category term="book-review"></category></entry><entry><title>Book Review: Harry Potter Series</title><link href="http://blog.lucywyman.me/harry-potter-series.html" rel="alternate"></link><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:harry-potter-series.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/harry-potter.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I know: you already have some preconceived notions about Harry Potter. We all
 do. The series has become an empire, with it's own movie series and theme park,
 and no matter what subset of Harry Potter related media you've experienced
 you have some thoughts about it. Regardless of what those notions are --
@@ -106,7 +166,10 @@ or concerns, please email me at wyman[dot]lucy[at]gmail[dot]com, and we can
 RAVE about how great HP is together. In the meantime, have an excellent day, you lovely
 human you.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="book review"></category></entry><entry><title>Book Review: Hunger Makes Me A Modern Girl</title><link href="http://blog.lucywyman.me/hunger-makes-me-a-modern-girl.html" rel="alternate"></link><updated>2016-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-01:hunger-makes-me-a-modern-girl.html</id><summary type="html">&lt;p&gt;I spent the weekend Spring Cleaning my new apartment, accompanied by
+</summary><category term="book-review"></category></entry><entry><title>Book Review: Hunger Makes Me A Modern Girl</title><link href="http://blog.lucywyman.me/hunger-makes-me-a-modern-girl.html" rel="alternate"></link><updated>2016-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-01:hunger-makes-me-a-modern-girl.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/hunger-makes-me.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I spent the weekend Spring Cleaning my new apartment, accompanied by
 this highly anticipated read, &lt;a class="reference external" href="http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638"&gt;Hunger Makes Me A Modern Girl&lt;/a&gt; by
 &lt;a class="reference external" href="http://www.carriebrownstein.com/"&gt;Carrie Brownstein&lt;/a&gt;. Brownstein's memoir of her
 time in the band &lt;a class="reference external" href="http://www.sleater-kinney.com/"&gt;Sleater-Kinney&lt;/a&gt;, this book was raw to the point
@@ -144,7 +207,10 @@ to navigate it.&lt;/p&gt;
 &lt;p&gt;Overall, &amp;quot;Hunger Makes Me A Modern Girl&amp;quot; was an enjoyable
 and worthwhile read. Entertaining, insightful, and almost unbearably
 honest, I would highly recommend picking this up if you have a chance.&lt;/p&gt;
-</summary><category term="book review"></category><category term="women"></category></entry><entry><title>Book Review: Ready Player One</title><link href="http://blog.lucywyman.me/ready-player-one.html" rel="alternate"></link><updated>2016-02-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-02-23:ready-player-one.html</id><summary type="html">&lt;p&gt;For the sake of recalling more from the books I read, and avoiding homework,
+</summary><category term="book-review"></category><category term="women"></category></entry><entry><title>Book Review: Ready Player One</title><link href="http://blog.lucywyman.me/ready-player-one.html" rel="alternate"></link><updated>2016-02-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-02-23:ready-player-one.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/ready-player-one.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;For the sake of recalling more from the books I read, and avoiding homework,
 I plan to start reviewing the books I read (or, rather, listen to).
 I'm currently making my way through the Harry Potter series again, but in
 the meantime got a chance to read &lt;a class="reference external" href="http://www.amazon.com/Ready-Player-One-A-Novel/dp/0307887448"&gt;Ready Player One by Ernest Cline&lt;/a&gt;.  Set
@@ -168,4 +234,4 @@ for the the protagonists, against the antagonists, and just be along for
 the plot-ride.&lt;/p&gt;
 &lt;p&gt;And that's all she wrote.  My next review will be sometime next week on
 Carrie Brownstein's memoir &lt;a class="reference external" href="http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638"&gt;Hunger Makes Me A Modern Girl&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="book review"></category><category term="tech"></category></entry></feed>
+</summary><category term="book-review"></category><category term="tech"></category></entry></feed>

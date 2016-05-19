@@ -6,6 +6,10 @@ Apps I Love
 :slug: apps-to-love
 :author: Lucy Wyman
 
+.. note::
+
+	picture of me w/ phone
+
 With so many applications out there, it's difficult to discern which are 
 valuable, usable, and do what you expect them to.  So, for the sake 
 of those like me, here are some of the applications I have found 
@@ -36,7 +40,7 @@ all free and available on Android.
    credit score on it, which is always good to know!
 #. `Duolingo`_: You've more than likely already heard of this, but if not
    it's an addictive, gamified way of learning new languages.
-#. `One Today`_: A super easy way to make one-time donations to charity.
+#. `One Today`_: A super easy way to make donations to charities.
 
 .. _Overdrive: http://multco.lib.overdrive.com
 .. _AntennaPod: https://play.google.com/store/apps/details?id=de.danoeh.antennapod&hl=en

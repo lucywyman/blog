@@ -6,6 +6,9 @@ SCaLE 14x: My Experience
 :slug: scale-14x
 :author: Lucy Wyman
 
+.. figure:: /theme/images/scale-14x.png
+	:align: center
+
 Day 0:
 ------
 
