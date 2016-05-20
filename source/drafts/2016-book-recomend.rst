@@ -37,7 +37,11 @@ I know, but I just love them so much...
   funny. Granted being funny in writing (even in an audiobook) is like marathon
   level hard. But `Jenny Lawson`_ definitely pulls it off in her reading of 
   her second book "Furiously Happy". 
-* `Still Alice`_.
+* `Still Alice`_. It's so hard to understand living with mental illness, and
+  Still Alice paints a vivid picture of sinking into early onset Alzheimers.
+  There were so many points where you think "This could be me, or someone 
+  I love", and it gives you real empathy and compassion for those battling
+  mental illness. 
 * `Orange is the New Black`_. I *love* the show, but it definitely takes 
   a lot of artistic license. Piper's actual experience, though less exciting,
   is fascinating and well-told.
