@@ -5,6 +5,7 @@ Book Review: Hunger Makes Me A Modern Girl
 :category: Book Review
 :slug: hunger-makes-me-a-modern-girl
 :author: Lucy Wyman
+:grade: B
 
 .. figure:: /theme/images/hunger-makes-me.jpg
 	:align: center

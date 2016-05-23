@@ -5,6 +5,7 @@ Book Review: Brooklyn
 :category: Book Review
 :slug: brooklyn
 :author: Lucy Wyman
+:grade: D
 
 .. figure:: /theme/images/brooklyn-cover.jpg
 	:align: center

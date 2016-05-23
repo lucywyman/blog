@@ -5,6 +5,7 @@ Book Review: Me and Earl and the Dying Girl
 :category: Book Review
 :slug: me-earl-dying-girl
 :author: Lucy Wyman
+:grade: B+
 
 .. figure:: /theme/images/me-earl.jpeg
 	:align: center

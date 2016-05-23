@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/book-review.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Book Review: Me and Earl and the Dying Girl</title><link href="http://blog.lucywyman.me/me-earl-dying-girl.html" rel="alternate"></link><updated>2016-05-09T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-09:me-earl-dying-girl.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/book-review.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-21T00:00:00-07:00</updated><entry><title>Book Review: When Breath Becomes Air</title><link href="http://blog.lucywyman.me/when-breath-becomes-air.html" rel="alternate"></link><updated>2016-05-21T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-21:when-breath-becomes-air.html</id><summary type="html">&lt;div class="figure"&gt;
+&lt;img alt="" src="/theme/images/when-breath.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nytimes.com/2016/01/07/books/review-in-when-breath-becomes-air-dr-paul-kalanithi-confronts-an-early-death.html"&gt;When Breath Becomes Air&lt;/a&gt; is the memoir of Paul Kalanithi,
+who at 36, on the verge of completing his residency to become
+a neurosurgeon, is diagnosed with stage IV lung cancer. Written
+in his last year of life, the book is about coming to terms with
+death and living a meaningful life, through the eyes of both a
+doctor and a patient. It's an incredibly emotional read, and
+Paul's voice and writing are absolutely stunning. The content
+as well as delivery are beautiful, and I found myself crying
+on the way to class listening to the very end. A short and
+worthwhile read for any audience.&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Book Review: Me and Earl and the Dying Girl</title><link href="http://blog.lucywyman.me/me-earl-dying-girl.html" rel="alternate"></link><updated>2016-05-09T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-09:me-earl-dying-girl.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="/theme/images/me-earl.jpeg" style="height: 400px;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.amazon.com/Me-Earl-Dying-Girl-Revised/dp/1419719602"&gt;Me and Earl and the Dying Girl&lt;/a&gt; takes the typical cancer story and
@@ -53,6 +66,38 @@ fear, racism, sexism, uncertainty, and hardship that
 is generally glossed over. Overall I was underwhelmed,
 and wouldn't recommend it if you've got other books
 on your list to read.&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Book Review: How Not To Be Wrong</title><link href="http://blog.lucywyman.me/how-not-to-be-wrong.html" rel="alternate"></link><updated>2016-04-17T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:how-not-to-be-wrong.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/how-not-to-be.jpg" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535"&gt;How Not To Be Wrong&lt;/a&gt; by Jordan Ellenburg is a book
+describing how math is used (and misused) in everyday
+life. From the lottery, to elections, to predicting
+the weather and the existence of God, Ellenburg
+explains how to develop a better intuition for all the number
+and percentages swirling around the news and media. It
+focuses mostly on statistics, but also delves into
+geometry + algebra (and their relationship), multi-dimensional
+spaces and linear algebra, and number theory. As a
+&amp;quot;relatively mathy&amp;quot; person, I definitely felt like I got a
+lot out of it,though I'm not entirely sure I would recommend
+it to less mathematically-inclined readers. Although I believe
+it was intended for that audience, and is definitely an
+accessible view into high mathematics, it's also a book
+about math. My point being: don't expect to be spoon fed
+math and magically become knowledgable. Like with all knowledge,
+you've gotta put in a little work. But it's &lt;em&gt;totally worth it&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="section" id="some-favorite-quotes"&gt;
+&lt;h2&gt;Some favorite quotes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&amp;quot;And you can't deny that there are aspects of the natural world - I'm
+thinking pandas here - that seem more likely to have resulted from grudging
+bureaucratic compromise than from the mind of an all knowing deity with
+total creative control&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;For those who are willing to adopt a view of probability as degree of belief
+Bayes theorem can be seen not as a mere mathematical equation, but as a form
+of mathematically flavored advice&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </summary><category term="book-review"></category></entry><entry><title>Book Review: Furiously Happy</title><link href="http://blog.lucywyman.me/furiously-happy.html" rel="alternate"></link><updated>2016-04-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-03:furiously-happy.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="/theme/images/furiously-happy.jpg" style="height: 400px;" /&gt;
 &lt;/div&gt;

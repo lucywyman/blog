@@ -5,6 +5,7 @@ Book Review: Furiously Happy
 :category: Book Review
 :slug: furiously-happy
 :author: Lucy Wyman
+:grade: B-
 
 .. figure:: /theme/images/furiously-happy.jpg
 	:align: center

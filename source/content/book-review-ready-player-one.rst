@@ -5,6 +5,7 @@ Book Review: Ready Player One
 :category: Book Review
 :slug: ready-player-one
 :author: Lucy Wyman
+:grade: B+
 
 .. figure:: /theme/images/ready-player-one.jpg
 	:align: center

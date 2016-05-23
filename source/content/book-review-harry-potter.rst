@@ -5,6 +5,7 @@ Book Review: Harry Potter Series
 :category: Book Review
 :slug: harry-potter-series
 :author: Lucy Wyman
+:grade: A+
 
 .. figure:: /theme/images/harry-potter.jpg
 	:align: center
