@@ -23,4 +23,9 @@ That said, I've definitely learned a lot at university. Even more than that,
 **I've changed a lot** in the last three years, which adds to the weird
 emotional turducken I'm experiencing. 
 
+What's more, each time I think about things I'll miss about university, they're
+things that aren't unique to university.  Midnight pizza? Going to the gym with
+friends? Playing `Coupe`_ and drinking wine? None of that ends this June. 
+
+
 I'll leave you with a quote from Taylor Swift: "Honey, life is just a classroom".
