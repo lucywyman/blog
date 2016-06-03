@@ -11,13 +11,15 @@ you know you'll be tripping to Powell's to pick up some summer reads.
 I wanted to make this a regular reading list with a variety of ficiton
 and nonfiction books, and I realized that 90% of my choices were 
 biographies or memoirs.  If you're not into them, don't despair! There are
-a few fictional masterpieces sprinkled in.
+a few juicy fictional reads at the top of the list.
 
 * `The Harry Potter Series`_. Depending on your appetite this series can take
   a while, but I recently re-read the whole series and `loved it`_. Definitely
   worth revisiting if you haven't in a while, or if you've never read them
   to begin with.
 * `The Help`_. If you haven't already, you should.
+* `Me Before You`_. I know, I know, it's on every list. I was skeptical too.
+  But trust me, this book is *candy*. Excellent for any reader.
 * `Use of Weapons`_. Even if you aren't familiar with the `Culture series`_,
   and don't want to read all 9 books, Use of Weapons is a fantastic stand alone
   novel.  The chapters alternate between going forwards in time and backwards,
@@ -39,11 +41,6 @@ a few fictional masterpieces sprinkled in.
   level hard. But `Jenny Lawson`_ definitely pulls it off in her reading of 
   her second book "Furiously Happy", and includes a lot of personal moments
   that help plebs like me understand mental illness.
-* `Still Alice`_. It's so hard to understand living with mental illness, and
-  Still Alice paints a vivid picture of life with early onset Alzheimers.
-  There were so many points where you think "This could be me, or someone 
-  I love", and it gives you real empathy and compassion for those battling
-  mental illness. 
 * `Orange is the New Black`_. I *love* the show, but it definitely takes 
   a lot of artistic license. Piper's actual experience, though less exciting,
   is fascinating and well-told.
@@ -56,6 +53,7 @@ a few fictional masterpieces sprinkled in.
 .. _The Harry Potter Series: https://en.wikipedia.org/wiki/Harry_potter_series
 .. _loved it: http://blog.lucywyman.me/harry-potter-series.html
 .. _The Help: https://en.wikipedia.org/wiki/The_Help
+.. _Me Before You: http://blog.lucywyman.me/me-before-you
 .. _Use of Weapons: https://en.wikipedia.org/wiki/Use_of_Weapons
 .. _Culture series: https://en.wikipedia.org/wiki/Culture_series
 .. _Committed: http://www.elizabethgilbert.com/books/committed-a-love-story/
