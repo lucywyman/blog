@@ -2,10 +2,12 @@
 $font: 'Lato', sans-serif;
 $dark: #444;
 $light: #fff;
+$bg: #f5f4f2;
 $accent: #C41230;
 
 body {
-	background-color: #F5F4F2;
+	background-color: $bg;
+	margin: 0px
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -22,8 +24,10 @@ a {
 }
 
 nav{
+	background-color: $light;
 	ul {
 		list-style-type: none;
+		margin: 0px;
 	
 		li {
 			display: inline-block;

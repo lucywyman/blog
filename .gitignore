@@ -4,4 +4,4 @@ output/
 *.pyc
 *.swp
 *.swo
-.sass-cache/*
+.sass-cache/
