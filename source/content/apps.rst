@@ -2,7 +2,7 @@ Apps I Love
 ===========
 :date: 2016-03-19
 :tags: loves, tech
-:category: loves
+:category: Tech
 :slug: apps-to-love
 :author: Lucy Wyman
 

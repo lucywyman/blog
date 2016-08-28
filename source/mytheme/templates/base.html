@@ -5,16 +5,27 @@
 		<nav>
 			<ul>
 				<li><h3><a href='{{ SITEURL }}'>Lucy Wyman</a></h3></li>
-				<li><a href='{{ SITEURL }}/about.html'>About</a></li>
-				<li><a href='{{ SITEURL }}/categories.html'>Categories &#8964;</a>
-				<ul>
-					{% for cat in categories %}
-					<li><a href='{{ SITEURL }}/{{ cat | replace(" ", "-") }}.html'>
-							{{ cat }}
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
+				<li><a href='{{SITEURL}}/about.html'>About</a></li>
+				<li>
+					<a href='{{SITEURL}}/category/books.html'>
+						Books</a>
+				</li>
+				<li>
+					<a href='{{SITEURL}}/category/tech.html'>
+						Tech</a>
+				</li>
+				<li>
+					<a href='{{SITEURL}}/category/fashion.html'>
+						Fashion</a>
+				</li>
+				<li>
+					<a href='{{SITEURL}}/category/experiences.html'>
+						Experiences</a>
+				</li>
+				<li>
+					<a href='{{SITEURL}}/category/loves.html'>
+						Loves</a>
+				</li>
 			</ul>
 		</nav>
 		<main>

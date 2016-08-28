@@ -2,7 +2,7 @@ Book Review: Me and Earl and the Dying Girl
 ===========================================
 :date: 2016-05-09
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: me-earl-dying-girl
 :author: Lucy Wyman
 :grade: B+

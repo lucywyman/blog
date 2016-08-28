@@ -2,7 +2,7 @@ Book Review: Me Before You
 ==========================
 :date: 2016-06-01
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: me-before-you
 :author: Lucy Wyman
 

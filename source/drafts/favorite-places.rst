@@ -1,20 +1,32 @@
 Favorite Places in Portland
 ===========================
-:date:
-:tags:
-:category:
-:slug: 
-:author: 
+:date: 2016-08-28
+:tags: loves, experiences, Portland
+:category: Loves
+:slug: places-portland
+:author: Lucy Wyman
+
+Powell's Books
+--------------
+
+Rose Test Garden
+----------------
+
+Serra
+-----
+
+Tea Chai Te
+-----------
+
+Baghdad Theater
+---------------
+
+Papa Haydns
+-----------
 
 - Burgerville across from Cleveland
-- Tea chai te
 - Presents of mind
 - Salt & Straw
-- Moreland Theater
-- Papa haydns
-- Powell's?
-- Petit Provence
-- 
 
 Favorite Places in Corvallis
 ============================

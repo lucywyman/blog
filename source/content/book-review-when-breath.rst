@@ -2,7 +2,7 @@ Book Review: When Breath Becomes Air
 ====================================
 :date: 2016-05-21
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: when-breath-becomes-air
 :author: Lucy Wyman
 :grade: A

@@ -1,8 +1,8 @@
 11(+) Books to Read This Summer
 ===============================
 :date: 2016-05-17
-:tags: book, loves
-:category: Recommendations
+:tags: books, loves
+:category: Books
 :slug: 2016-summer-books
 :author: Lucy Wyman
 

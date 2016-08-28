@@ -2,7 +2,7 @@ Book Review: Everybody Rise
 ===========================
 :date: 2016-05-30
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: everybody-rise
 :author: Lucy Wyman
 :grade: B

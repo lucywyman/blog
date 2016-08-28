@@ -2,7 +2,7 @@ Book Review: Furiously Happy
 ============================
 :date: 2016-04-03
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: furiously-happy
 :author: Lucy Wyman
 :grade: B-

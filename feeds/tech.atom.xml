@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-23T00:00:00-07:00</updated><entry><title>Write The Docs: NA 2016</title><link href="http://blog.lucywyman.me/wtd-2016.html" rel="alternate"></link><published>2016-05-23T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-23:wtd-2016.html</id><summary type="html">&lt;p&gt;Another year of &lt;a class="reference external" href="http://www.writethedocs.org/conf/na/2016"&gt;Write the Docs&lt;/a&gt;!  Although I don't write as much
+documentation as I should, writing is such a key part of day-to-day human
+interaction, and WTD is always a good reminder of basic principles and
+encouragement to write more (docs).  It's also an incredibly well run
+conference, done through trial and error. Every year they try new things, and
+keep the things that work.  It's also one-track, which has pros and cons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;:
+* Everyone has the same experience, and it's easy to discuss
+* You don't need to make any decisions or miss great talks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;:
+* You have to sit through some sub-optimal talks
+* Less walking and time between sessions&lt;/p&gt;
+&lt;p&gt;WTD is also held at the &lt;a class="reference external" href="http://www.mcmenamins.com/CrystalBallroom"&gt;Crystal Ballroom&lt;/a&gt; in Portland, which is a great
+venue.  It's friendly. It's not corporate-y. Good vibes all around. There were
+also talks. I wrote about them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Side Note:&lt;/strong&gt; There were many well-dressed humans, who had very well designed
+[clothes | bags | accessories]. It was wonderful to get out of the university
+fashion bubble.&lt;/p&gt;
+&lt;div class="section" id="day-1"&gt;
+&lt;h2&gt;Day 1&lt;/h2&gt;
+&lt;div class="section" id="open-source-docs-in-federal-gov-t"&gt;
+&lt;h3&gt;Open Source Docs in Federal Gov't&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Britta Gustafson&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Contributing to &lt;a class="reference external" href="https://github.com/whitehouse"&gt;government software&lt;/a&gt; was a thought that had never crossed my
+mind, and it turns out that not &lt;em&gt;all&lt;/em&gt; the governments software is horrible and
+outdated.  In fact, they have a lot of really cool and interesting APIs, and
+are incredibly immersed in Open Source.  Britta recently became a federal
+employee, working for the &lt;a class="reference external" href="https://github.com/GSA"&gt;General Services Agency (GSA)&lt;/a&gt; on the &lt;a class="reference external" href="https://github.com/18F"&gt;18F&lt;/a&gt;, and
+she gave a compelling talk on why contributing to the government helps you help
+others.  We often think of the government as a crufty old gross thing that
+takes our money and makes bad decisions. But if we want that to change, we
+&lt;em&gt;have the power&lt;/em&gt;, especially as software developers. Being part of that
+ecosystem can help strengthen a weak and imperfect system, and do good for a
+lot of people. All good things to think about, and really a core part of open
+source. Great talk, great speaker, great topic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="customer-support-docs"&gt;
+&lt;h3&gt;Customer Support + Docs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Neal Kaplan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This was a rough talk. It can really be summed up in one sentence: If you write
+docs, you should talk to your customers and customer support team more to get a
+feel for what customers need and what your docs are missing.  A good point, but
+not a half-hour long point.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="documenting-apis"&gt;
+&lt;h3&gt;Documenting APIs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Allison Reinheimer Moore&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Allison's talk was well put together and well-rehearsed, but without many
+memorable takeaways. APIs are so diverse that this is an understandably
+difficult talk to execute, and I recall it being unfortunately general.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="collaboration-between-open-source-corporate-software"&gt;
+&lt;h3&gt;Collaboration Between Open Source + Corporate Software&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Shaun McCance&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shaun's talk was primarily a call to action for professional technical writers
+to help the open source projects they use write good documentation. Often
+community members are working on open source projects just for fun, and most
+developers don't find writing docs very fun. Understandably. So, as paid people
+who use words, if you're already writing docs for something, why not contribute
+that to open source?  It strengthens both products, makes the world better,
+unicorns poop rainbows, yay.  This was another talk that could really have been
+5 minutes of &amp;quot;Hey, here's a thought you might not have had, do the things!&amp;quot;,
+but it's a thesis I totally agree with.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lunch"&gt;
+&lt;h3&gt;Lunch&lt;/h3&gt;
+&lt;p&gt;Usually lunch doesn't get it's own section, but lunch at WTD was &lt;em&gt;bomb&lt;/em&gt;. There
+was Caesar salad. Fresh veggies + fruit. And pasta with tomatoes, spinach, and
+hazelnuts. &lt;strong&gt;So good&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lightning-talks"&gt;
+&lt;h3&gt;Lightning Talks&lt;/h3&gt;
+&lt;div class="section" id="dialog-trees"&gt;
+&lt;h4&gt;Dialog Trees&lt;/h4&gt;
+&lt;p&gt;A talk on tool for making effective dialog trees for video games, specifically
+Yarn.  Something I know nothing about, and very well done!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lektor"&gt;
+&lt;h4&gt;Lektor&lt;/h4&gt;
+&lt;p&gt;Static-site CMS? It's a thing. SSG with dynamic admin site. It seems pretty
+cool. Possible fodder for travel blog.  Maybe best talk of the day in terms of
+content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cats-the-perfect-pets"&gt;
+&lt;h4&gt;Cats: The perfect pets&lt;/h4&gt;
+&lt;p&gt;False.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pantheon"&gt;
+&lt;h4&gt;Pantheon&lt;/h4&gt;
+&lt;p&gt;I'm not even sure what this talk was about.  It happened.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="copy-that-helping-users-succeed-with-copy"&gt;
+&lt;h3&gt;Copy That: Helping Users Succeed with Copy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Sarah Day&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Documentation for people who don't read documentation!  Product copy is the
+words you use in the product to guide users, like the label on a button, the
+title of a page, etc.  It's definitely one of those things that I don't think
+about as often as I should, and was wonderfully specific and detailed.  Sarah
+pulled up a page from &lt;a class="reference external" href="https://goodreads.com"&gt;GoodReads&lt;/a&gt; and talked about the use and misuse of copy
+on that page. There were diagrams, circles, and it was a very well-practiced
+and tight talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="readable-readme"&gt;
+&lt;h3&gt;Readable README&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Daniel Beck&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-zen"&gt;
+&lt;h3&gt;More Zen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tana Franko&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A gentle reminder of a few often-heard principles that are easy to forget.
+Reframe how you think of problems. Simplify your work. Don't forget to have
+hobbies.  This was a very successful and loosey-goosey 15 minute talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="embed-the-docs"&gt;
+&lt;h3&gt;Embed the Docs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Kristof Von Tomme&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Another 15 minute &amp;quot;Thunderstorm&amp;quot;, this time on how important copy is.  Less
+well done than the previous copy talk, but no less important a message.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="writing-so-your-words-are-read"&gt;
+&lt;h3&gt;Writing So Your Words Are Read&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tracy Osborn&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Long and kind of interesting story?  Not to disrespect Tracy, but stripping out
+the self-congratulation at the beginning and giving context in a slide or two
+would be much better. Her point of &amp;quot;Know your audience, they aren't necessarily
+&lt;em&gt;you&lt;/em&gt;&amp;quot; is a good one, but again not worthy of a full half hour.  She also makes
+a lot of assumptions about how technical people write, which are completely
+false in my experience.  I'm definitely not the right audience for this talk,
+and as such didn't get much out of it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="panel-transforming-your-doc-process"&gt;
+&lt;h3&gt;Panel: Transforming Your Doc Process&lt;/h3&gt;
+&lt;p&gt;The panel was probably fine? I don't know, I was really tired + over caffeinated
+and in desperate need of food.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-2"&gt;
+&lt;h2&gt;Day 2&lt;/h2&gt;
+&lt;div class="section" id="what-writing-fiction-teaches-you-about-writing-documentation"&gt;
+&lt;h3&gt;What Writing Fiction Teaches You About Writing Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Thursday Bram&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thursday takes principles that everyone (even me -- really, &lt;em&gt;everyone&lt;/em&gt;) has
+heard when writing fiction and talks about how you can apply it to writing
+documentation. It was more effective (for me personally) as a review of writing
+principles, but was a very entertaining and example-filled presentation none
+the less.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="values-of-effective-tech-writing-teams"&gt;
+&lt;h3&gt;7 Values of Effective Tech Writing Teams&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Joao Fernandes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thesis: Help build products that need no documentation. In-app help, buttons |
+labels | tooltips, clear copy, etc. A few of the same ideas  we've heard
+repeated at the conference: be brief, be concise, work with your team, know
+your audience &amp;amp; product &amp;amp; market, etc. But, if I had to choose &lt;em&gt;one&lt;/em&gt; of the
+talks that covered these topics, it would be this one. The slides were
+&lt;em&gt;gorgeous&lt;/em&gt;, and the speaker was relatively charismatic if a bit monotone.  He
+also did an interesting thing where he would introduce an practice, then
+explain what would happen if you didn't adopt that practice, which seemed more
+effective &amp;amp; interesting than just saying to do the thing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="building-documentation-culture-in-startups"&gt;
+&lt;h3&gt;Building Documentation Culture in Startups&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ruthie BenDor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Talk of the day!  Ruthie is an engineer with a range of experiences, and this
+was basically story time of good and bad experiences with docs.  She's a great
+storyteller, really interesting tales with good morals &amp;amp; takeaways, and very
+funny.  She also covered a 4-step guide to creating great internal docs that's
+general and applicable to any org. Super talk!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="following-the-technical-doc-road"&gt;
+&lt;h3&gt;Following the Technical Doc Road&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Christy Lutz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Very cute Wizard of Oz themed inspiration speech. Believe in yourself, work
+with your team, etc. Funny + well-executed + entertaining + ideal for 15 minute
+talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="using-csat-data"&gt;
+&lt;h3&gt;Using CSAT Data&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Betsy Roseberg&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CSAT == Customer Satisfaction.  This was mostly about the value of having
+on-page user feedback + comment forms in your docs, and how to use that
+feedback productively. Excellent 15 minute talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="just-in-time-documentation"&gt;
+&lt;h3&gt;Just-In-Time Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Brianne Hillmer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The thesis: write your documentation when you know what problems your customers
+are having, don't try to guess what problems they will have in the future.
+This ends up being lots of short articles like &amp;quot;There's a gear button in the
+top left that looks little but actually takes you to what you want&amp;quot; that are
+only 2-3 paragraphs, but are exactly what people need. Overall very well
+executed, and especially able to keep the audience focused while smelling
+Burrito lunch!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Lightning Talks&lt;/h3&gt;
+&lt;div class="section" id="organizing-meetups"&gt;
+&lt;h4&gt;Organizing Meetups&lt;/h4&gt;
+&lt;p&gt;Definitely valuable if you're looking to start a meet-up, and the speaker seems
+like a very sweet if not well-spoken man.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="documentation-in-academia"&gt;
+&lt;h4&gt;Documentation in Academia&lt;/h4&gt;
+&lt;p&gt;Given by my hilarious co-worker Jack, I'm 100% biased here. But like everything
+Jack does I thought it was clever, funny, and educational.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="earning-user-trust"&gt;
+&lt;h4&gt;Earning User Trust&lt;/h4&gt;
+&lt;p&gt;Meh.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="interactive-document-environments"&gt;
+&lt;h3&gt;Interactive Document Environments&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tim Nugent &amp;amp; Paris Buttfield-Addison&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Also a great talk! Interactive Documentation Environments are Code + Notes +
+Docs, and are a very pretty way of rendering and compiling together those
+three things into kind of actual docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="accessible-math-on-the-web"&gt;
+&lt;h3&gt;Accessible Math on the Web&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tim Arnold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MathJax + MathML. If you haven't looked into them, you should!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="oops-i-became-an-engineer"&gt;
+&lt;h3&gt;Oops, I Became an Engineer&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tara Scherner de la Fuente&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#64;goatuserstories is a funny twitter. Follow your dreams! Consider community
+college! Win + profit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="main-takeaways"&gt;
+&lt;h2&gt;Main Takeaways&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Consider working for the government. It won't get better by you being angry
+at it, and they actually do some very cool things.&lt;/li&gt;
+&lt;li&gt;What's the current state of your internal docs? It's so easy to focus on external
+docs, but your employees need docs too! A good litmus test is how long it takes
+a new hire to get their first PR up.&lt;/li&gt;
+&lt;li&gt;Look out for Lektor and Interactive Documentation Environments. The future
+is bright and beautiful&lt;/li&gt;
+&lt;li&gt;Remember your basic writing and humaning principles: know your audience;
+be brief; ask questions; have respect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="conferences"></category><category term="experiences"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><published>2016-03-19T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:apps-to-love.html</id><summary type="html">&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;picture of me w/ phone&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;With so many applications out there, it's difficult to discern which are
+valuable, usable, and do what you expect them to.  So, for the sake
+of those like me, here are some of the applications I have found
+particularly useful or entertaining. I should also mention that these are
+all free and available on Android.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://multco.lib.overdrive.com"&gt;Overdrive&lt;/a&gt;: You can connect overdrive to local libraries and checkout
+books to read or listen to on mobile. I use it to download and listen to
+audiobooks, and honestly went from reading 0 books/year to about 1/week.
+It's completely changed my life, and made the mundane moments like doing
+laundry or walking to class more entertaining.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=de.danoeh.antennapod&amp;amp;hl=en"&gt;AntennaPod&lt;/a&gt;: Similar to Overdrive, this app brings you great listening
+material in a different form: podcasts.  It has lots of fancy features now
+like adjustable playback speed, automatic deletion once you've listened
+to an episode, and turning off if you fall asleep.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=another.music.player&amp;amp;hl=en"&gt;Shuttle&lt;/a&gt;: This is just a music player I'm happy with. If you're happy
+with your music player, I wouldn't worry about it.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.acorns.android&amp;amp;hl=en"&gt;Acorns&lt;/a&gt;: The idea here is that it rounds up any debit/credit card purchases
+you make to the next dollar, invests the money, and then you have access
+to it whenver you need it, and it can continue to grow if you don't.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.bandsintown&amp;amp;hl=en"&gt;Bandsintown&lt;/a&gt;: You've probably heard of this one, but if not, it's a great
+way to find shows in your city.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.wb.headsup&amp;amp;hl=en"&gt;Heads up&lt;/a&gt;: This a fun &amp;quot;We're waiting for something and need to pass
+the time&amp;quot; app. It's especially great with kids.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.mint&amp;amp;hl=en"&gt;Mint&lt;/a&gt;: I use this mostly to set and maintain budgets. You need to give it
+some very personal banking information, so if you're not into that this isn't
+for you, but if you are I've found it very useful. You can even see your
+credit score on it, which is always good to know!&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.duolingo.com/"&gt;Duolingo&lt;/a&gt;: You've more than likely already heard of this, but if not
+it's an addictive, gamified way of learning new languages.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.onetoday&amp;amp;hl=en"&gt;One Today&lt;/a&gt;: A super easy way to make donations to charities.&lt;/li&gt;
+&lt;/ol&gt;
+</summary><category term="loves"></category><category term="tech"></category></entry></feed>

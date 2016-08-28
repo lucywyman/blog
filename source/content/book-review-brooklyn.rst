@@ -2,7 +2,7 @@ Book Review: Brooklyn
 =====================
 :date: 2016-04-17
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: brooklyn
 :author: Lucy Wyman
 :grade: D

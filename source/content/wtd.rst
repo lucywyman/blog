@@ -2,7 +2,7 @@ Write The Docs: NA 2016
 =======================
 :date: 2016-05-23
 :tags: conferences, experiences
-:category: Conferences
+:category: Tech
 :slug: wtd-2016
 :author: Lucy Wyman
 

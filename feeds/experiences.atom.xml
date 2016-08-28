@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-03T00:00:00-07:00</updated><entry><title>Portland Trip: May 2016</title><link href="http://blog.lucywyman.me/ptown-may-2016.html" rel="alternate"></link><updated>2016-05-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-03:ptown-may-2016.html</id><summary type="html">&lt;p&gt;This last weekend Eli and I went to Portland to celebrate his 21st
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-03T00:00:00-07:00</updated><entry><title>Portland Trip: May 2016</title><link href="http://blog.lucywyman.me/ptown-may-2016.html" rel="alternate"></link><published>2016-05-03T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-03:ptown-may-2016.html</id><summary type="html">&lt;p&gt;This last weekend Eli and I went to Portland to celebrate his 21st
 birthday and see &lt;a class="reference external" href="http://hippocampusband.com/"&gt;Hippocampus&lt;/a&gt; at &lt;a class="reference external" href="http://www.mississippistudios.com/"&gt;Mississippi Studios&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="friday"&gt;
 &lt;h2&gt;Friday&lt;/h2&gt;
@@ -96,7 +96,7 @@ And then, all too soon we were home.&lt;/p&gt;
 The Cultural Bubble that is University, remember that life isn't all deadlines
 and exams, and experience a little art and outdoors.  10/10 would recommend.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="concerts"></category><category term="travel"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><updated>2016-04-11T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-11:boy.html</id><summary type="html">&lt;p&gt;Before coming to college I was completely unaware of the diversity problem in
+</summary><category term="experiences"></category><category term="concerts"></category><category term="travel"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-04-11T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-11:boy.html</id><summary type="html">&lt;p&gt;Before coming to college I was completely unaware of the diversity problem in
 STEM.  In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
@@ -196,7 +196,7 @@ I apologize for this, but the point remains the same: the class was
 &lt;em&gt;dominated&lt;/em&gt; by male humans&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="tech"></category></entry><entry><title>The Interview</title><link href="http://blog.lucywyman.me/interviews.html" rel="alternate"></link><updated>2016-03-20T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-20:interviews.html</id><summary type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
+</summary><category term="experiences"></category><category term="tech"></category></entry><entry><title>The Interview</title><link href="http://blog.lucywyman.me/interviews.html" rel="alternate"></link><published>2016-03-20T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-20:interviews.html</id><summary type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
 kind of nervous at first. &amp;quot;Will they like me?&amp;quot;, &amp;quot;Am I smiling too much?&amp;quot;,
 &amp;quot;Was I supposed to tell the story about the frog?&amp;quot;, &amp;quot;Oh god, I feel something
 between my teeth, oh my god, OH MY GOD, CODE BLUE CODE BLUE FOOD IN TEETH
@@ -588,7 +588,7 @@ that's stoked to bring you on board!&lt;/li&gt;
 &lt;p&gt;That's all she wrote, folks.  Contact me at
 wyman[dot]lucy[at]gmail[dot]com if you have questions or comments.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="tech"></category><category term="interviews"></category><category term="experiences"></category></entry><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><updated>2016-03-14T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of them
+</summary><category term="tech"></category><category term="interviews"></category><category term="experiences"></category></entry><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><published>2016-03-14T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of them
 better than others.  I decided to get one because:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;strong&gt;I didn't want to be scared of permanently changing my body.&lt;/strong&gt;  We make
@@ -727,7 +727,7 @@ with co-workers and friends about their tattoos, and how they decided to get
 them.  I'm not sure what the best way to end this post is, but I hope it's
 been helpful | insightful | interesting! Have an excellent day :)&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category></entry><entry><title>SCaLE 14x: My Experience</title><link href="http://blog.lucywyman.me/scale-14x.html" rel="alternate"></link><updated>2016-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-01-23:scale-14x.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+</summary><category term="experiences"></category></entry><entry><title>SCaLE 14x: My Experience</title><link href="http://blog.lucywyman.me/scale-14x.html" rel="alternate"></link><published>2016-01-23T00:00:00-08:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-01-23:scale-14x.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="/theme/images/scale-14x.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="day-0"&gt;

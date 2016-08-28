@@ -2,7 +2,7 @@ Book Review: Harry Potter Series
 ================================
 :date: 2016-03-19
 :tags: book-review
-:category: Book Review
+:category: Books
 :slug: harry-potter-series
 :author: Lucy Wyman
 :grade: A+
