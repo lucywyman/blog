@@ -4,6 +4,9 @@ $dark: #444;
 $light: #fff;
 $accent: #C41230;
 
+body {
+	background-color: #F5F4F2;
+}
 
 h1, h2, h3, h4, h5, h6, p, a, li {
 	font-family: $font;
@@ -69,7 +72,7 @@ nav{
 }
 
 @media screen and (min-width: 680px){
-	body{
+	main{
 		max-width: 700px;
 		margin: 10px auto;
 	}
