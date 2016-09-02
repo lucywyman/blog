@@ -16,6 +16,7 @@
 
 <script src="/theme/js/jquery-1.11.2.js"></script>
 <link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,12 +54,11 @@ ga('send', 'pageview');
 				</li>
 			</ul>
 		</nav>
-		<main>
+		<div class='wrapper'>
+			<main>
 <h2>Book Review: When Breath Becomes Air</h2>
 <p>05.21.2016</p>
-<div class="figure">
-<img alt="" src="/theme/images/when-breath.jpg" />
-</div>
+<img alt="" src="/theme/images/when-breath.jpg" style="height: 400px;">
 <p><a class="reference external" href="http://www.nytimes.com/2016/01/07/books/review-in-when-breath-becomes-air-dr-paul-kalanithi-confronts-an-early-death.html">When Breath Becomes Air</a> is the memoir of Paul Kalanithi,
 who at 36, on the verge of completing his residency to become
 a neurosurgeon, is diagnosed with stage IV lung cancer. Written
@@ -71,8 +71,34 @@ on the way to class listening to the very end. A short and
 worthwhile read for any audience.</p>
 
 
-		</main>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>

@@ -16,6 +16,7 @@
 
 <script src="/theme/js/jquery-1.11.2.js"></script>
 <link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,15 +54,21 @@ ga('send', 'pageview');
 				</li>
 			</ul>
 		</nav>
-		<main>
-<ul class='articles'>
-<li><h4><a href="http://blog.lucywyman.me/wtd-2016.html">Write The Docs: NA 2016</a></h4>
+		<div class='wrapper'>
+			<main>
+<div class='article'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/wtd-2016.html">Write The Docs: NA 2016</a></h4>
 	<p>05.23.2016</p>
 	<p><p>Another year of <a class="reference external" href="http://www.writethedocs.org/conf/na/2016">Write the Docs</a>!  Although I don't write as much
 documentation as I should, writing is such a key part of day-to-day human
 interaction, and WTD is always a good reminder of basic principles and
-encouragement to write more (docs).  It's also an incredibly well run ...</p><a href='wtd-2016.html'>Read more...</a></p></li>
-<li><h4><a href="http://blog.lucywyman.me/scale-14x.html">SCaLE 14x: My Experience</a></h4>
+encouragement to write more (docs).  It's also an incredibly well run ...</p><a href='wtd-2016.html'>read more</a></p>
+	</div>
+</div>
+<div class='article'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/scale-14x.html">SCaLE 14x: My Experience</a></h4>
 	<p>01.23.2016</p>
 	<p><div class="figure align-center">
 <img alt="" src="/theme/images/scale-14x.png" />
@@ -74,11 +81,39 @@ slides one last time, got dinner with the bosses, and found myself on a stage.</
 <div class="section" id="the-ignite-talks">
 <h3>The Ignite Talks</h3>
 <ul class="simple">
-<li>Deb ...</li></ul></div></div><a href='scale-14x.html'>Read more...</a></p></li>
+<li>Deb ...</li></ul></div></div><a href='scale-14x.html'>read more</a></p>
+	</div>
+</div>
 <p class="paginator">
 </p>
-		</main>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>

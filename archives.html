@@ -16,6 +16,7 @@
 
 <script src="/theme/js/jquery-1.11.2.js"></script>
 <link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,10 +54,13 @@ ga('send', 'pageview');
 				</li>
 			</ul>
 		</nav>
-		<main>
+		<div class='wrapper'>
+			<main>
 <h1>Archives for blog</h1>
 
 <dl>
+    <dt>09.1.2016</dt>
+    <dd><a href="http://blog.lucywyman.me/bumbershoot-packing.html">Packing For Bumbershoot</a></dd>
     <dt>08.23.2016</dt>
     <dd><a href="http://blog.lucywyman.me/jeans.html">A Pear of Jeans</a></dd>
     <dt>06.1.2016</dt>
@@ -102,8 +106,34 @@ ga('send', 'pageview');
     <dt>01.23.2016</dt>
     <dd><a href="http://blog.lucywyman.me/scale-14x.html">SCaLE 14x: My Experience</a></dd>
 </dl>
-		</main>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>

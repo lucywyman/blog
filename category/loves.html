@@ -16,6 +16,7 @@
 
 <script src="/theme/js/jquery-1.11.2.js"></script>
 <link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,23 +54,33 @@ ga('send', 'pageview');
 				</li>
 			</ul>
 		</nav>
-		<main>
-<ul class='articles'>
-<li><h4><a href="http://blog.lucywyman.me/podcasts.html">Podcasts I Love</a></h4>
+		<div class='wrapper'>
+			<main>
+<div class='article'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/podcasts.html">Podcasts I Love</a></h4>
 	<p>04.21.2016</p>
 	<p><p>The goal of this post is not to enumerate the top 10 podcasts that you already
 listen to, but to tell you about some lesser-known podcasts that I <em>love</em>.</p>
 <ul class="simple">
 <li><a class="reference external" href="https://gimletmedia.com/show/mystery-show/">The Mystery Show</a>. Starlee Kine, who you've definitely
-heard on This American Life (?), solves mysteries that can't be solved ...</li></ul><a href='podcasts.html'>Read more...</a></p></li>
-<li><h4><a href="http://blog.lucywyman.me/happy-and-healthy.html">Healthy + Happy: Inspired by My Mom</a></h4>
+heard on This American Life (?), solves mysteries that can't be solved ...</li></ul><a href='podcasts.html'>read more</a></p>
+	</div>
+</div>
+<div class='article'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/happy-and-healthy.html">Healthy + Happy: Inspired by My Mom</a></h4>
 	<p>03.6.2016</p>
 	<p><p>In honor of International Women's Day, or National Nutrition Month, or
 generally Having a Great Mom, or something, I wanted to give my mom a
 shoutout for teaching me that happy + healthy &gt; skinny.  My mom works <em>hard</em>
 for her body, doing an hour-long cardio and strength class (<a class="reference external" href="http://www.jazzercise.com/">Jazzercise</a>)
-at ...</p><a href='happy-and-healthy.html'>Read more...</a></p></li>
-<li><h4><a href="http://blog.lucywyman.me/loves.html">Loves</a></h4>
+at ...</p><a href='happy-and-healthy.html'>read more</a></p>
+	</div>
+</div>
+<div class='article'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/loves.html">Loves</a></h4>
 	<p>03.5.2016</p>
 	<p><p>Hello, gentle reader. This is a living list of media that has significantly
 changed my life in some way. Whether clarifying values I held, inspiring
@@ -77,11 +88,39 @@ me to change my thoughts or actions, or teaching me , the experiences below
 are ones that have helped shape me.</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.amazon.com/Committed-Love-Story-Elizabeth-Gilbert/dp/0143118706">&quot;Committed&quot;</a> by <a class="reference external" href="https://en.wikipedia.org/wiki/Elizabeth_Gilbert">Elizabeth Gilbert</a>.</li>
-<li><a class="reference external" href="http://jesslively.com/livelyshow">Jess ...</a></li></ul><a href='loves.html'>Read more...</a></p></li>
+<li><a class="reference external" href="http://jesslively.com/livelyshow">Jess ...</a></li></ul><a href='loves.html'>read more</a></p>
+	</div>
+</div>
 <p class="paginator">
 </p>
-		</main>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>

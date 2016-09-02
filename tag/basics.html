@@ -16,6 +16,7 @@
 
 <script src="/theme/js/jquery-1.11.2.js"></script>
 <link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,22 +54,50 @@ ga('send', 'pageview');
 				</li>
 			</ul>
 		</nav>
-		<main>
-<ul class='articles'>
-<li><h4><a href="http://blog.lucywyman.me/jeans.html">A Pear of Jeans</a></h4>
+		<div class='wrapper'>
+			<main>
+<div class='article'>
+	<img src='/theme/images/green-muscle-jeans/1.png'>
+	<div class='blurb-content'>
+    <h4><a href="http://blog.lucywyman.me/jeans.html">A Pear of Jeans</a></h4>
 	<p>08.23.2016</p>
-	<p><div class="figure align-center">
-<img alt="" src="/theme/images/green-muscle-jeans/1.png" style="height: 400px;" />
-</div>
-<p>For at least the last decade, my relationship with jeans would make
+	<p><p>For at least the last decade, my relationship with jeans would make
 Elizabeth Taylor and Richard Burton seem stable.  They're too tight
 around my butt and the tops of my thighs, too loose around my waist
 and hips, make my legs look like sausages, or <em>constantly</em> riding
-too low ...</p><a href='jeans.html'>Read more...</a></p></li>
+too low ...</p><a href='jeans.html'>read more</a></p>
+	</div>
+</div>
 <p class="paginator">
 </p>
-		</main>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>
