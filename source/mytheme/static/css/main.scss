@@ -7,7 +7,7 @@ $accent: #C41230;
 
 body {
 	background-color: $bg;
-	margin: 0px
+	margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 a {
 	color: $accent;
+	text-decoration: none;
 
 	&:hover{
 		color: rgba($accent, .8);
@@ -24,11 +25,12 @@ a {
 }
 
 nav{
+	width: 100%;
 	background-color: $light;
 	ul {
 		list-style-type: none;
 		margin: 0px;
-	
+
 		li {
 			display: inline-block;
 
@@ -50,18 +52,70 @@ nav{
 	}
 }
 
-.articles{
-	li {
-		list-style-type: none;
-    padding: 20px;
-    margin: 10px;
-    background: $light;
-    border-left: 3px solid $dark;
+.wrapper {
+	display: flex;
+}
 
-    .article-img {
-      height: 100%;
-      width: 300px;
-    }
+main {
+	flex: 3 0 60%;
+	max-width: 700px;
+	min-width: 150px;
+
+	.article {
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		margin: 10px;
+		background: $light;
+		border-left: 3px solid $dark;
+
+		img {
+			max-width: 300px;
+			max-height: 400px;
+		}
+
+		.blurb-content{
+			margin: 20px;
+		}
+	}
+}
+
+aside {
+	flex: 1 0 20%;
+	max-width: 200px;
+	min-width: 50px;
+	margin: 20px auto;
+	padding: 10px;
+	background: $light;
+
+	.social-media {
+		display: flex;
+		justify-content: center;
+
+		img {
+			flex: 1 0 auto;
+			max-width: 30px; 
+		}
+
+		a {  
+			display: inline-block; 
+		}
+	}
+
+	.subscribe {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		h3 {
+			flex: 1 0 auto;
+		}
+		input {
+			flex: 1 0 auto;
+			border: 1px solid $dark;
+			padding: 3px;
+			margin: 0px 2px;
+		}
 	}
 }
 

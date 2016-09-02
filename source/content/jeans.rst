@@ -7,10 +7,6 @@ A Pear of Jeans
 :author: Lucy Wyman
 :img: green-muscle-jeans/1.png
 
-.. figure:: /theme/images/green-muscle-jeans/1.png
-	:align: center
-	:height: 400px
-
 For at least the last decade, my relationship with jeans would make
 Elizabeth Taylor and Richard Burton seem stable.  They're too tight
 around my butt and the tops of my thighs, too loose around my waist

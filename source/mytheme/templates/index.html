@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<ul class='articles'>
 {% for article in articles_page.object_list %}
-<li>
-    <a class='article-img' data-style='background-image: url("{{ SITEURL }}/theme/images/{{ article.img }}");' href='{{article.url}}'></a>
+<div class='article'>
+	{% if article.img %}
+	<img src='/theme/images/{{ article.img }}'>
+	{% endif %}
+	<div class='blurb-content'>
     <h4><a href="{{ SITEURL }}/{{article.url}}">{{ article.title }}</a></h4>
 	<p>{{article.locale_date}}</p>
 	<p>{{article.summary}}<a href='{{article.url}}'>read more</a></p>
-</li>
+	</div>
+</div>
 {% endfor %}
 {% include 'pagination.html' %}
 {% endblock %}

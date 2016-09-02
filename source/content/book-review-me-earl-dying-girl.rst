@@ -6,10 +6,7 @@ Book Review: Me and Earl and the Dying Girl
 :slug: me-earl-dying-girl
 :author: Lucy Wyman
 :grade: B+
-
-.. figure:: /theme/images/me-earl.jpeg
-	:align: center
-	:height: 400px
+:img: me-earl.jpeg
 
 `Me and Earl and the Dying Girl`_ takes the typical cancer story and 
 turns it on it's head.  This was another book I started with no expectations,

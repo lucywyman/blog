@@ -28,11 +28,38 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
-		{% block content %}
-		{% endblock content%}
-		</main>
+		<div class='wrapper'>
+			<main>
+			{% block content %}
+			{% endblock content%}
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, about me, popular article,
+				 archive-->
+					<div class='subscribe'>
+						<h3>Subscribe</h3>
+						<form method="post" action='/subscribe.php'>
+							<input type="email" name="EMAIL" placeholder="Your email address" required />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
 		<div class='footer'>
+			<!-- TODO -->
 			<a href='https://github.com/lucywyman'>
 				<img class='social' src='theme/images/github-icon.png'>
 			</a>

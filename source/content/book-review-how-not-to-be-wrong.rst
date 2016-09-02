@@ -6,10 +6,7 @@ Book Review: How Not To Be Wrong
 :slug: how-not-to-be-wrong
 :author: Lucy Wyman
 :grade: B
-
-.. figure:: /theme/images/how-not-to-be.jpg
-	:align: center
-	:height: 400px
+:img: how-not-to-be.jpg
 
 `How Not To Be Wrong`_ by Jordan Ellenburg is a book
 describing how math is used (and misused) in everyday 

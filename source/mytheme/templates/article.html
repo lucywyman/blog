@@ -3,6 +3,9 @@
 {% block content %}
 <h2>{{ article.title }}</h2>
 <p>{{ article.locale_date }}</p>
+{% if article.img %}
+<img alt="" src="/theme/images/{{ article.img }}" style="height: 400px;">
+{% endif %}
 {{ article.content }}
 
 {% endblock %}

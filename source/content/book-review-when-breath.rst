@@ -6,8 +6,8 @@ Book Review: When Breath Becomes Air
 :slug: when-breath-becomes-air
 :author: Lucy Wyman
 :grade: A
+:img: when-breath.jpg
 
-.. figure:: /theme/images/when-breath.jpg
 
 `When Breath Becomes Air`_ is the memoir of Paul Kalanithi,
 who at 36, on the verge of completing his residency to become

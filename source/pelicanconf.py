@@ -17,7 +17,7 @@ DEFAULT_DATE = None
 AUTHOR_FEED_RSS = None
 FEED_RSS = 'feed.xml'
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 7
 
 THEME='mytheme'
 ARTICLE_URL='{slug}.html'
