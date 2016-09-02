@@ -53,11 +53,15 @@ nav{
 .articles{
 	li {
 		list-style-type: none;
-		border-bottom: 2px solid $dark;
+    padding: 20px;
+    margin: 10px;
+    background: $light;
+    border-left: 3px solid $dark;
 
-		li {
-			border-bottom: none;
-		}
+    .article-img {
+      height: 100%;
+      width: 300px;
+    }
 	}
 }
 

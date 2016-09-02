@@ -30,11 +30,12 @@ The List
 - `Sketchers`_ aka the best multi-purpose shoes ever.
 - `Hoodie`_ by `American Giant`_.
 
+.. _Bumbershoot: http://bumbershoot.com/
 .. _Black leggings: http://shop.nordstrom.com/s/zella-live-in-leggings/3035710
 .. _Zella: http://shop.nordstrom.com/c/zella?origin=productBrandLink
 .. _Midi cutoff shorts: https://www.ae.com/women-aeo-x4-denim-midi-short-rich-inked/web/s-prod/1332_4373_969?cm=sUS-cUSD&catId=cat3270002
 .. _AEO: https://www.ae.com/
-.. _similiar: http://www.forever21.com/Product/Product.aspx?br=PLUS&category=plus_size-dresses-floral&productid=2000205903 
+.. _similar: http://www.forever21.com/Product/Product.aspx?br=PLUS&category=plus_size-dresses-floral&productid=2000205903 
 .. _muscle tee: https://www.madewell.com/madewell_category/TEESANDMORE/tanks/PRDOVR~E3942/E3942.jsp
 .. _Plain tee: http://www.anntaylor.com/cotton-scoop-neck-tee/399492?skuId=20573706&defaultColor=9000&colorExplode=false&catid=cat70008
 .. _Madewell: https://www.madewell.com/

@@ -5,6 +5,7 @@ A Pear of Jeans
 :category: Fashion
 :slug: jeans
 :author: Lucy Wyman
+:img: green-muscle-jeans/1.png
 
 .. figure:: /theme/images/green-muscle-jeans/1.png
 	:align: center
