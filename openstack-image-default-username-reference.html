@@ -56,50 +56,51 @@ ga('send', 'pageview');
 		</nav>
 		<div class='wrapper'>
 			<main>
-<div class='article'>
-	<img src='/theme/images/hunger-makes-me.jpg'>
-	<div class='blurb-content'>
-    <h4><a href="http://blog.lucywyman.me/hunger-makes-me-a-modern-girl.html">Book Review: Hunger Makes Me A Modern Girl</a></h4>
-	<p>03.1.2016</p>
-	<p><p>I spent the weekend Spring Cleaning my new apartment, accompanied by
-this highly anticipated read, <a class="reference external" href="http://www.amazon.com/Hunger-Makes-Me-Modern-Girl/dp/1594486638">Hunger Makes Me A Modern Girl</a> by
-<a class="reference external" href="http://www.carriebrownstein.com/">Carrie Brownstein</a>. Brownstein's memoir of her
-time in the band <a class="reference external" href="http://www.sleater-kinney.com/">Sleater-Kinney</a>, this book was raw to the point
-of discomfort. Whatever opinions I may have, they're ...</p><a href='hunger-makes-me-a-modern-girl.html'>read more</a></p>
-	</div>
-</div>
-<div class='article'>
-	<img src='/theme/images/ready-player-one.jpg'>
-	<div class='blurb-content'>
-    <h4><a href="http://blog.lucywyman.me/ready-player-one.html">Book Review: Ready Player One</a></h4>
-	<p>02.23.2016</p>
-	<p><p>For the sake of recalling more from the books I read, and avoiding
-homework, I plan to start reviewing the books I read (or, rather,
-listen to).  I'm currently making my way through the Harry Potter
-series again, but in the meantime got a chance to read <a class="reference external" href="http://www.amazon.com/Ready-Player-One-A-Novel/dp/0307887448">Ready Player ...</a></p><a href='ready-player-one.html'>read more</a></p>
-	</div>
-</div>
-<div class='article'>
-	<div class='blurb-content'>
-    <h4><a href="http://blog.lucywyman.me/scale-14x.html">SCaLE 14x: My Experience</a></h4>
-	<p>01.23.2016</p>
-	<p><div class="figure align-center">
-<img alt="" src="/theme/images/scale-14x.png" />
-</div>
-<div class="section" id="day-0">
-<h2>Day 0:</h2>
-<p>We pulled up to the venue at about 5:30 Friday night, T-90 minutes to Ignite
-talks.  I chugged a chocolate milk from the &quot;gift store&quot;, ran through my
-slides one last time, got dinner with the bosses, and found myself on a stage.</p>
-<div class="section" id="the-ignite-talks">
-<h3>The Ignite Talks</h3>
-<ul class="simple">
-<li>Deb ...</li></ul></div></div><a href='scale-14x.html'>read more</a></p>
-	</div>
-</div>
-<p class="paginator">
-<a href="http://blog.lucywyman.me/author/lucy-wyman3.html" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;newer</a>
-</p>
+<h2>Openstack Image Default Username Reference</h2>
+<p>09.6.2016</p>
+<p>This seems like something that should exist on the internet and kind of
+doesn't (or should at least be more searchable). These are only valid if you
+obtain an official image from the respective projects repository, and may or
+may not be the same if you use a manual image.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Image</th>
+<th class="head">Default Username</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>centos_(6|7)_x86_64</td>
+<td>centos</td>
+</tr>
+<tr><td>cirros_0.3.[0-4]_x86_64</td>
+<td>cirros</td>
+</tr>
+<tr><td>debian_8.2.0_x86_64</td>
+<td>debian</td>
+</tr>
+<tr><td>ubuntu_1(4|6).04_x86_64</td>
+<td>ubuntu</td>
+</tr>
+<tr><td>fedora_23_x86_64</td>
+<td>fedora</td>
+</tr>
+<tr><td>rhel_7.2_x86_64</td>
+<td>cloud-user (snowflake much?)</td>
+</tr>
+</tbody>
+</table>
+<p>If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:
+``
+Please login as the user &quot;cloud-user&quot; rather than the user &quot;root&quot;.
+Connection to 10.32.161.253 closed.
+``</p>
+<p>Source: <a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html">http://docs.openstack.org/image-guide/obtain-images.html</a></p>
+
+
 			</main>
 			<aside>
 				<div class='sidebar'>

@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-01T00:00:00-07:00</updated><entry><title>Packing For Bumbershoot</title><link href="http://blog.lucywyman.me/bumbershoot-packing.html" rel="alternate"></link><published>2016-09-01T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-01:bumbershoot-packing.html</id><summary type="html">&lt;p&gt;Labor Day is upon us, friends, and like most I'm taking flight to get in
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-06T00:00:00-07:00</updated><entry><title>Openstack Image Default Username Reference</title><link href="http://blog.lucywyman.me/openstack-image-default-username-reference.html" rel="alternate"></link><published>2016-09-06T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-06:openstack-image-default-username-reference.html</id><summary type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
+doesn't (or should at least be more searchable). These are only valid if you
+obtain an official image from the respective projects repository, and may or
+may not be the same if you use a manual image.&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="45%" /&gt;
+&lt;col width="55%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Image&lt;/th&gt;
+&lt;th class="head"&gt;Default Username&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;centos_(6|7)_x86_64&lt;/td&gt;
+&lt;td&gt;centos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;cirros_0.3.[0-4]_x86_64&lt;/td&gt;
+&lt;td&gt;cirros&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;debian_8.2.0_x86_64&lt;/td&gt;
+&lt;td&gt;debian&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ubuntu_1(4|6).04_x86_64&lt;/td&gt;
+&lt;td&gt;ubuntu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;fedora_23_x86_64&lt;/td&gt;
+&lt;td&gt;fedora&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;rhel_7.2_x86_64&lt;/td&gt;
+&lt;td&gt;cloud-user (snowflake much?)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:
+``
+Please login as the user &amp;quot;cloud-user&amp;quot; rather than the user &amp;quot;root&amp;quot;.
+Connection to 10.32.161.253 closed.
+``&lt;/p&gt;
+&lt;p&gt;Source: &lt;a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html"&gt;http://docs.openstack.org/image-guide/obtain-images.html&lt;/a&gt;&lt;/p&gt;
+</summary><category term="tech"></category><category term="openstack"></category></entry><entry><title>Packing For Bumbershoot</title><link href="http://blog.lucywyman.me/bumbershoot-packing.html" rel="alternate"></link><published>2016-09-01T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-01:bumbershoot-packing.html</id><summary type="html">&lt;p&gt;Labor Day is upon us, friends, and like most I'm taking flight to get in
 one last summer-thrill before pulling my scarves and flannels out.  My
 beau and I returning to Seattle for &lt;a class="reference external" href="http://bumbershoot.com/"&gt;Bumbershoot&lt;/a&gt; and a little
 sight-seeing.  It's a great festival, full of local musicians and amazing
