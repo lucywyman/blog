@@ -24,9 +24,9 @@ rhel_7.2_x86_64          cloud-user (snowflake much?)
 
 
 If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:
-``
+```
 Please login as the user "cloud-user" rather than the user "root".
 Connection to 10.32.161.253 closed.
-``
+```
 
 Source: http://docs.openstack.org/image-guide/obtain-images.html
