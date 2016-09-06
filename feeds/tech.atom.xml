@@ -35,10 +35,10 @@ may not be the same if you use a manual image.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:
-``
-Please login as the user &amp;quot;cloud-user&amp;quot; rather than the user &amp;quot;root&amp;quot;.
+&lt;tt class="docutils literal"&gt;`
+Please login as the user &lt;span class="pre"&gt;&amp;quot;cloud-user&amp;quot;&lt;/span&gt; rather than the user &amp;quot;root&amp;quot;.
 Connection to 10.32.161.253 closed.
-``&lt;/p&gt;
+`&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html"&gt;http://docs.openstack.org/image-guide/obtain-images.html&lt;/a&gt;&lt;/p&gt;
 </summary><category term="tech"></category><category term="openstack"></category></entry><entry><title>Write The Docs: NA 2016</title><link href="http://blog.lucywyman.me/wtd-2016.html" rel="alternate"></link><published>2016-05-23T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-23:wtd-2016.html</id><summary type="html">&lt;p&gt;Another year of &lt;a class="reference external" href="http://www.writethedocs.org/conf/na/2016"&gt;Write the Docs&lt;/a&gt;!  Although I don't write as much
 documentation as I should, writing is such a key part of day-to-day human

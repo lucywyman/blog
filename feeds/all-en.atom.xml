@@ -35,10 +35,10 @@ may not be the same if you use a manual image.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:
-``
-Please login as the user &amp;quot;cloud-user&amp;quot; rather than the user &amp;quot;root&amp;quot;.
+&lt;tt class="docutils literal"&gt;`
+Please login as the user &lt;span class="pre"&gt;&amp;quot;cloud-user&amp;quot;&lt;/span&gt; rather than the user &amp;quot;root&amp;quot;.
 Connection to 10.32.161.253 closed.
-``&lt;/p&gt;
+`&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html"&gt;http://docs.openstack.org/image-guide/obtain-images.html&lt;/a&gt;&lt;/p&gt;
 </summary><category term="tech"></category><category term="openstack"></category></entry><entry><title>Packing For Bumbershoot</title><link href="http://blog.lucywyman.me/bumbershoot-packing.html" rel="alternate"></link><published>2016-09-01T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-01:bumbershoot-packing.html</id><summary type="html">&lt;p&gt;Labor Day is upon us, friends, and like most I'm taking flight to get in
 one last summer-thrill before pulling my scarves and flannels out.  My
