@@ -70,8 +70,14 @@ must be a blue and white piece in the structure", etc. Then each player
 Definitely the most entertaining of the "talks", and it was hard to tear myself
 away at 10 to 4pm, when my talk was scheduled.
 
-My talk: Linux Jargon
----------------------
 
-It went ok. I was weirdly nervous, considering I had already succesfully 
-given the talk at LUG and knew the subject 
+BBQ
+---
+
+As usual, we hosted a BBQ at Avery Park after the event.  Good food, good
+company, great weather, what more can you ask for?  
+
+It was excellent to see some familiar faces again, and have a day off from
+thinking about school.  Since I'm writing this last sentence on September
+13th, 5 months after barcamp actually finished, I'm just going to leave it
+there and publish this now.  Writing a blog is hard guys.
