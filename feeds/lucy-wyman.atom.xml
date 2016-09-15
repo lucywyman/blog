@@ -677,7 +677,68 @@ I didn't like any of them I just wouldn't listen to them.&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://freakonomics.com/category/podcasts/"&gt;Freakonomics Radio&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you have any other recommendations for this list, please let me know!&lt;/p&gt;
-</summary><category term="loves"></category><category term="tech"></category></entry><entry><title>Book Review: Brooklyn</title><link href="http://blog.lucywyman.me/brooklyn.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:brooklyn.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+</summary><category term="loves"></category><category term="tech"></category></entry><entry><title>Beaver Barcamp 16</title><link href="http://blog.lucywyman.me/beaver-barcamp-16.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:beaver-barcamp-16.html</id><summary type="html">&lt;p&gt;The conference everyone waits for all year, &lt;a class="reference external" href="http://beaverbarcamp.org"&gt;BEAVER BARCAMP&lt;/a&gt; went down
+yesterday.  This is my third year and final year organizing the unconference,
+and all was strangely calm.  I'm not sure what magical forces to attribute this
+to, but usually there is a sharp spike in meetings, tasks, and general PANIC on
+the media team starting in mid-January leading up to Barcamp.  Perhaps thanks
+to our beautiful + talented writer Amanda, perhaps because our workflow was
+&amp;quot;What did we do last year? Yeah, do that&amp;quot;, perhaps because we were old-hat now,
+everything seemed to go smoothly and be stress-free. 120 attendees, 32 talks,
+too many burgers to count, it was a great time. For me Barcamp is a chance to
+see a lot of alumni and old friends that I don't get to see very often, so it
+was nice to have a solid chunk of time in the morning to say hello to everyone
+and get sufficiently caffeinated.&lt;/p&gt;
+&lt;div class="section" id="lightning-talks"&gt;
+&lt;h2&gt;Lightning Talks&lt;/h2&gt;
+&lt;p&gt;The first talk I went to was Lightning Talks, which is a grab-bag of topics in
+5-minute installments. As expected some talks were great and some were very
+meh, but I definitely learned some new and interesting things about unexpected
+topics. The best talk was Eli's on Art History (totally not biased), though one
+talk on Explaining Myths in the Theater (ie. &amp;quot;Break a leg&amp;quot;) was also very well
+done + interesting, as well as one on how to Correctly have a Polictical
+Discussion.  Overall it was a good way to start the day.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rust-types-traits"&gt;
+&lt;h2&gt;Rust Types + Traits&lt;/h2&gt;
+&lt;p&gt;I haven't gotten on the Rust or Go trains yet, and honestly don't plan to in
+the near future, but I do try my best to know what's what with the Hip New
+Languages. Though not the best speaker, Mythmon is very knowledgable on the
+topic not just of Rust but of language design in general, and the content of
+his talk was definitely ideal for my background knowledge.  This was the talk
+that I got the most out of at Barcamp, and it helped me be more comfortable
+participating in discussions of Rust.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-watch-professional-starcraft"&gt;
+&lt;h2&gt;How to Watch Professional Starcraft&lt;/h2&gt;
+&lt;p&gt;As an aspiring video gamer, I was pretty stoked about this talk. I laughed, I
+embarrassed myself, I learned a lot about Starcraft. This was a good post-lunch
+break from thinking.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="zendo"&gt;
+&lt;h2&gt;Zendo&lt;/h2&gt;
+&lt;p&gt;Zendo is an &lt;em&gt;addictive&lt;/em&gt; game. The idea is you have several pyramidal structures
+like so:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="static/zendo.png" style="height: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;The Master thinks of a simple rule for structures that can be built with the
+pyramids. For example, some good rules are &amp;quot;A large piece must touch a small
+piece&amp;quot;, or &amp;quot;There must be at least six pips in the structure&amp;quot; or &amp;quot;There
+must be a blue and white piece in the structure&amp;quot;, etc. Then each player&lt;/p&gt;
+&lt;p&gt;Definitely the most entertaining of the &amp;quot;talks&amp;quot;, and it was hard to tear myself
+away at 10 to 4pm, when my talk was scheduled.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bbq"&gt;
+&lt;h2&gt;BBQ&lt;/h2&gt;
+&lt;p&gt;As usual, we hosted a BBQ at Avery Park after the event.  Good food, good
+company, great weather, what more can you ask for?&lt;/p&gt;
+&lt;p&gt;It was excellent to see some familiar faces again, and have a day off from
+thinking about school.  Since I'm writing this last sentence on September
+13th, 5 months after barcamp actually finished, I'm just going to leave it
+there and publish this now.  Writing a blog is hard guys.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="experiences"></category><category term="conferences"></category><category term="tech"></category></entry><entry><title>Book Review: Brooklyn</title><link href="http://blog.lucywyman.me/brooklyn.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:brooklyn.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="/theme/images/brooklyn-cover.jpg" style="height: 400px;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;All I knew when I picked this book up was that

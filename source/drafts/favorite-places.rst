@@ -37,6 +37,8 @@ bloom.
 Serra
 -----
 
+As you may
+
 Tea Chai Te
 -----------
 
@@ -49,5 +51,6 @@ Salt & Straw
 Pittock Mansion
 ---------------
 
+.. _Powell's: http://www.powells.com/
 .. _International Rose Test Garden: https://www.portlandoregon.gov/parks/finder/index.cfm?action=viewpark&propertyid=1113
 
