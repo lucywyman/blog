@@ -1,14 +1,11 @@
 The Only Belt I Own
 ===================
-:date: 2016-04-17
-:tags: experiences, conferences, tech
-:category: Conferences
-:slug: beaver-barcamp-16
+:date: 2016-09-15
+:tags: fashion, loves
+:category: Fashion
+:slug: belt
 :author: Lucy Wyman
-
-.. figure:: static/belt/upclose-belt.png
-	:align: center
-	:height: 400px
+:img: belt/belt1.jpg
 
 You read right: I only own one belt.  I've always struggled to `find
 pants`_ that fit my waist, hips, and butt, so a belt is an essential
@@ -24,7 +21,7 @@ it's perfect:
    of my waist (for dresses and skirts).
 3. It isn't flimsy, and doesn't crease or fold when worn.
 
-.. figure:: static/belt/belt.jpg
+.. figure:: static/belt/upclose-belt.jpg
 
 Once I got home, I realized I didn't need any of my mis-matched 
 menagerie of other belts.  Purple with a pretty clasp?  Thin woven
