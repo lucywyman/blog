@@ -1,16 +1,16 @@
 If I Were A Boy
 ===============
-:date: 2016-04-11
+:date: 2016-09-25
 :tags: experiences, tech
 :category: Experiences
 :slug: boy
 :author: Lucy Wyman
 
 Before coming to college I was completely unaware of the diversity problem in
-STEM.  In high school all of my classes were relatively 50-50 in terms of
+STEM. In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
-science class came as quite a shock, which had approximately 5% female
+science class at university was shocking at ~5% female
 attendance*, and as I started to consume more tech media (ie. `Hacker News`_)
 it became clear the Oregon State was not an exception. 
 
@@ -74,7 +74,7 @@ place.
 The Maker Fair
 --------------
 
-Recently I was manning a Lego Robotics booth at the Corvallis Maker Fair.
+I was manning a Lego Robotics booth at the Corvallis Maker Fair.
 I had a little demo set up, and spiel about what my organization did, and 
 spent most of the day showing kids how to program the robots and talking 
 to very kind parents. As a swarm of kids left the table, one of the event
@@ -82,10 +82,41 @@ organizers asked if he could get a short clip of me explaining the demo
 and then showing how it worked, and I said sure.  I did the thing, he took
 the video, then left with his wife to see other exhibits. A nearby 
 man who had seen the exchange came up, and after I started giving my spiel
-he stopped me midsentence and said "You know he just wanted your picture, right?".
+he stopped me mid sentence and said "You know he just wanted your picture, right?".
 Lost for words, I think I just gaped, then turned to someone else and started
 helping them with something.  His comment made me so uncomfortable, and 
 marred what had been a great morning and memory.
+
+The 21st Birthday
+-----------------
+
+By now I had graduated from university, but was visiting Corvallis to see my
+boyfriend and celebrate his roommate's 21st birthday.  It was a Friday night,
+and as we were touring the bars and restaurants of Corvallis we met a few
+people who were friends-of-friends. This resulted in a group of 8-10 people
+eating at a pizza joint, only some of whom I knew personally. After long
+conversations that I had a hard time contributing to, I found a tiny foothold
+for myself: "Oh, yeah, I used to love that mine game...mine stopper?".
+"Minesweeper" my friend said. Then, a voice down the table from someone I
+didn't know said "No worries, it's got a lot of numbers in it". I hope that he
+didn't mean to imply that a game with lots of numbers in it would be hard for
+me to remember, enjoy, or be good at. But in the moment it felt like I was
+being pushed even further out of a conversation I was already not a part of,
+and like that *was* what he was implying.  I left shortly after, holding back
+tears, and was told that I should have just said "Fuck you" to the guy and
+carried on.  I shouldn't have let it ruin the evening, and should have asserted
+that it wasn't and OK thing to say.  But why is that burden on me?  Why didn't
+my friends defend me, or even notice that I was visibly upset at the comment?
+Why didn't anyone else think it wasn't OK? 
+
+Now that I'm working in the real world, I realize what being treated equally is
+like. I love my job, and am a respected colleague at my workplace.  People who
+have been in the industry since I was born ask for my opinion, have me review
+their work, and I never second guess my standing among them. This makes
+discrimination that much clearer to me: each time someone doesn't assume I'm
+their equal, it stands out.  It stings. In so many ways, I wish I could go back
+to when I didn't notice it. When a comment like that could have been totally
+innocuous.  But it's not, anymore.
 
 Conclusion
 ----------
@@ -103,7 +134,7 @@ If you have an stories of your own that you think belong on this list,
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
 your name if you'd like for me to include it in this post or submit it 
 anonymously, and I will add it to this post as soon as possible.  If you
-have any other questions or concerns, feels free to email me at that 
+have any other questions or concerns, feel free to email me at that 
 address as well. Have a lovely day! 
 
 
