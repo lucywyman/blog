@@ -11,7 +11,7 @@ STEM. In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
 science class at university was shocking at ~5% female
-attendance*, and as I started to consume more tech media (ie. `Hacker News`_)
+attendance¹, and as I started to consume more tech media (ie. `Hacker News`_)
 it became clear the Oregon State was not an exception. 
 
 Even after 3 years of classes like this, I'm really not sure how to feel about
@@ -138,7 +138,7 @@ have any other questions or concerns, feel free to email me at that
 address as well. Have a lovely day! 
 
 
-* This number comes from me very unscientifically counting the number
+1 This number comes from me very unscientifically counting the number
   of people in class who appeared to be female and asking the professor
   how many students total were in the class.  I understand that appearance
   is not an indicator of gender, and there's possibly errors in 
