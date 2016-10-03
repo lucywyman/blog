@@ -6,10 +6,7 @@ Book Review: Brooklyn
 :slug: brooklyn
 :author: Lucy Wyman
 :grade: D
-
-.. figure:: /theme/images/brooklyn-cover.jpg
-	:align: center
-	:height: 400px
+:img: brooklyn-cover.jpg
 
 All I knew when I picked this book up was that 
 it was made into a movie, and had something to do with a 
