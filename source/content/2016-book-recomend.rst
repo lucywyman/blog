@@ -13,13 +13,14 @@ and nonfiction books, and I realized that 90% of my choices were
 biographies or memoirs.  If you're not into them, don't despair! There are
 a few juicy fictional reads at the top of the list.
 
-* `The Harry Potter Series`_. Depending on your appetite this series can take
-  a while, but I recently re-read the whole series and `loved it`_. Definitely
-  worth revisiting if you haven't in a while, or if you've never read them
-  to begin with.
+* `The Harry Potter Series`_. Depending on your appetite this series
+  can take a while, but I recently re-read the whole series and
+  `loved it`_.  Definitely worth revisiting if you haven't in a
+  while, or if you've never read them to begin with.
 * `The Help`_. If you haven't already, you should.
-* `Me Before You`_. I know, I know, it's on every list. I was skeptical too.
-  But trust me, this book is *candy*. Excellent for any reader.
+* `Me Before You`_. I know, I know, it's on every list. I was
+  skeptical too. But trust me, this book is *candy*. Excellent for
+  any reader.
 * `Use of Weapons`_. Even if you aren't familiar with the `Culture series`_,
   and don't want to read all 9 books, Use of Weapons is a fantastic stand alone
   novel.  The chapters alternate between going forwards in time and backwards,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-06T00:00:00-07:00</updated><entry><title>Openstack Image Default Username Reference</title><link href="http://blog.lucywyman.me/openstack-image-default-username-reference.html" rel="alternate"></link><published>2016-09-06T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-06:openstack-image-default-username-reference.html</id><summary type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-06T00:00:00-07:00</updated><entry><title>Openstack Image Default Username Reference</title><link href="http://blog.lucywyman.me/openstack-image-default-username-reference.html" rel="alternate"></link><published>2016-09-06T00:00:00-07:00</published><updated>2016-09-06T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-06:openstack-image-default-username-reference.html</id><summary type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
 doesn't (or should at least be more searchable). These are only valid if you
 obtain an official image from the respective projects repository, and may or
 may not be the same if you use a manual image.&lt;/p&gt;
@@ -40,7 +40,7 @@ Please login as the user &lt;span class="pre"&gt;&amp;quot;cloud-user&amp;quot;&
 Connection to 10.32.161.253 closed.
 `&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html"&gt;http://docs.openstack.org/image-guide/obtain-images.html&lt;/a&gt;&lt;/p&gt;
-</summary><category term="tech"></category><category term="openstack"></category></entry><entry><title>Write The Docs: NA 2016</title><link href="http://blog.lucywyman.me/wtd-2016.html" rel="alternate"></link><published>2016-05-23T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-23:wtd-2016.html</id><summary type="html">&lt;p&gt;Another year of &lt;a class="reference external" href="http://www.writethedocs.org/conf/na/2016"&gt;Write the Docs&lt;/a&gt;!  Although I don't write as much
+</summary><category term="tech"></category><category term="openstack"></category></entry><entry><title>Write The Docs: NA 2016</title><link href="http://blog.lucywyman.me/wtd-2016.html" rel="alternate"></link><published>2016-05-23T00:00:00-07:00</published><updated>2016-05-23T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-23:wtd-2016.html</id><summary type="html">&lt;p&gt;Another year of &lt;a class="reference external" href="http://www.writethedocs.org/conf/na/2016"&gt;Write the Docs&lt;/a&gt;!  Although I don't write as much
 documentation as I should, writing is such a key part of day-to-day human
 interaction, and WTD is always a good reminder of basic principles and
 encouragement to write more (docs).  It's also an incredibly well run
@@ -285,7 +285,7 @@ is bright and beautiful&lt;/li&gt;
 be brief; ask questions; have respect.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="conferences"></category><category term="experiences"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><published>2016-03-19T00:00:00-07:00</published><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:apps-to-love.html</id><summary type="html">&lt;div class="note"&gt;
+</summary><category term="conferences"></category><category term="experiences"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><published>2016-03-19T00:00:00-07:00</published><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:apps-to-love.html</id><summary type="html">&lt;div class="note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;picture of me w/ phone&lt;/p&gt;
 &lt;/div&gt;
