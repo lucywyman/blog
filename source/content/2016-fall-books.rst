@@ -5,7 +5,6 @@
 :category: Books
 :slug: 2016-fall-reading-list
 :author: Lucy Wyman
-:img: fall-reading.jpg
 
 Hello fellow humans! Fall is here, in case you hadn't noticed yet, and
 with rainy Sundays and long bus rides to school ahead it's time to
