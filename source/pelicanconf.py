@@ -17,6 +17,9 @@ DEFAULT_DATE = None
 AUTHOR_FEED_RSS = None
 FEED_RSS = 'feed.xml'
 
+CATEGORY_URL='category/{slug}.html'
+CATEGORY_SAVE_AS='category/{slug}.html'
+
 DEFAULT_PAGINATION = 7
 
 THEME='mytheme'

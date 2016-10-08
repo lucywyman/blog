@@ -74,25 +74,16 @@ aside {
   margin: 20px auto;
   padding: 10px;
   background: #fff; }
+  aside ul {
+    list-style: none; }
+  aside .social {
+    flex: 1 0 auto;
+    max-width: 30px; }
   aside .social-media {
     display: flex;
     justify-content: center; }
-    aside .social-media img {
-      flex: 1 0 auto;
-      max-width: 30px; }
     aside .social-media a {
       display: inline-block; }
-  aside .subscribe {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center; }
-    aside .subscribe h3 {
-      flex: 1 0 auto; }
-    aside .subscribe input {
-      flex: 1 0 auto;
-      border: 1px solid #444;
-      padding: 3px;
-      margin: 0px 2px; }
 
 .footer {
   width: 100%;

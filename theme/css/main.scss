@@ -6,54 +6,54 @@ $bg: #f5f4f2;
 $accent: #C41230;
 
 body {
-	background-color: $bg;
-	margin: 0px;
+  background-color: $bg;
+  margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li, tr, td, table{
-	font-family: $font;
-	color: $dark;
+  font-family: $font;
+  color: $dark;
 }
 
 a {
-	color: $accent;
-	text-decoration: none;
+  color: $accent;
+  text-decoration: none;
 
-	&:hover{
-		color: rgba($accent, .8);
-	}
+  &:hover{
+    color: rgba($accent, .8);
+  }
 }
 
 nav{
-	width: 100%;
-	background-color: $light;
-	ul {
-		list-style-type: none;
-		margin: 0px;
+  width: 100%;
+  background-color: $light;
+  ul {
+    list-style-type: none;
+    margin: 0px;
 
-		li {
-			display: inline-block;
+    li {
+      display: inline-block;
 
-			ul {
-				display: none;
+      ul {
+        display: none;
 
-				li {
-					display: block;
-				}
-			}
+        li {
+          display: block;
+        }
+      }
 
-			h3{
-				display: inline-block;
-			}
-			a {
-				padding: 3px;
-			}
-		}
-	}
+      h3{
+        display: inline-block;
+      }
+      a {
+        padding: 3px;
+      }
+    }
+  }
 }
 
 .wrapper {
-	display: flex;
+  display: flex;
   margin: 0 auto;
   max-width: 1050px;
   padding: 0 75px;
@@ -67,14 +67,14 @@ table, th, td {
 }
 
 th, td {
-      padding: 15px;
-          text-align: left;
-        }
+  padding: 15px;
+  text-align: left;
+}
 
 main {
-	flex: 3 0 60%;
-	max-width: 700px;
-	min-width: 150px;
+  flex: 3 0 60%;
+  max-width: 700px;
+  min-width: 150px;
 
   .article {
     background: $light;
@@ -82,81 +82,70 @@ main {
     padding: 20px;
   }
 
-	.article-blurb {
-		display: flex;
-		flex-direction: row;
-		list-style-type: none;
-		margin: 10px;
-		background: $light;
-		border-left: 3px solid $dark;
+  .article-blurb {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 10px;
+    background: $light;
+    border-left: 3px solid $dark;
 
-		img {
-			max-width: 300px;
-			max-height: 400px;
-		}
+    img {
+      max-width: 300px;
+      max-height: 400px;
+    }
 
-		.blurb-content{
-			margin: 20px;
-		}
-	}
+    .blurb-content{
+      margin: 20px;
+    }
+  }
 }
 
 aside {
-	flex: 1 0 20%;
-	max-width: 200px;
-	min-width: 50px;
-	margin: 20px auto;
-	padding: 10px;
-	background: $light;
 
-	.social-media {
-		display: flex;
-		justify-content: center;
+  ul {
+    list-style: none;
+  }
 
-		img {
-			flex: 1 0 auto;
-			max-width: 30px; 
-		}
+  flex: 1 0 20%;
+  max-width: 200px;
+  min-width: 50px;
+  margin: 20px auto;
+  padding: 10px;
+  background: $light;
 
-		a {  
-			display: inline-block; 
-		}
-	}
+  .social {
+    flex: 1 0 auto;
+    max-width: 30px; 
+  }
 
-	.subscribe {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
+  .social-media {
+    display: flex;
+    justify-content: center;
 
-		h3 {
-			flex: 1 0 auto;
-		}
-		input {
-			flex: 1 0 auto;
-			border: 1px solid $dark;
-			padding: 3px;
-			margin: 0px 2px;
-		}
-	}
+    a {  
+      display: inline-block; 
+    }
+  }
 }
 
 .footer{
-	width: 100%;
-	margin-top: 20px;
-	background: $light;
-	padding: 10px;
-	text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  background: $light;
+  padding: 10px;
+  text-align: center;
 
-	img{
-	max-width: 50px;}
+  img{
+  max-width: 50px;}
 
-	a{  
-	display: inline-block;}
+  a{  
+  display: inline-block;}
 }
 
 @media screen and (min-width: 680px){
-	main{
-		max-width: 700px;
-		margin: 10px auto;
-	}
+  main{
+    max-width: 700px;
+    margin: 10px auto;
+  }
 }

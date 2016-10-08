@@ -42,8 +42,31 @@
 							<img class='social' src='theme/images/google-plus.png'>
 						</a>
 					</div>
-					<!--TODO: search, subscribe, about me, popular article,
-				 archive-->
+					<!--TODO: search, subscribe, archive-->
+                 <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='theme/images/icon-rss.png'></a></p><hr>
+                <h3>Categories</h3>
+			<ul>
+                <li> 
+                    <a href='{{SITEURL}}/category/books.html'>Books</a>
+                </li> 
+                <li> 
+                    <a href='{{SITEURL}}/category/tech.html'>Tech</a>
+                </li> 
+                <li> 
+                    <a href='{{SITEURL}}/category/experiences.html'>Experiences</a> 
+                </li> 
+                <li> 
+                    <a href='{{SITEURL}}/category/loves.html'>Loves</a>
+                </li>
+			</ul>
+            <hr>
+            <h3>Tags</h3>
+            <ul>
+                {% for tag in tags %}
+                    <li>
+                        <a href='{{SITEURL}}/tag/{{ tag }}'>{{tag}}</a>
+                    </li>
+                {% endfor %}
                 </div>
 			</aside>
 		</div>
