@@ -12,7 +12,7 @@ with rainy Sundays and long bus rides to school ahead it's time to
 pick up some easy reads. Make some tea, cozy up, and crack a book!
 Here's what I've been reading and loving:
 
-.. figure:: static/amy-schumer-book.jpg
+.. figure:: /theme/images/amy-schumer-book.jpg
     :align: center
     :height: 400px
 
@@ -24,7 +24,7 @@ heartbreaking stories and a sprinkling of levity, this might be my
 favorite read of the year to date.  You can read more of my thoughts
 on the book `here`_.
 
-.. figure:: static/american-housewife.jpg
+.. figure:: /theme/images/american-housewife.jpg
     :align: center
     :height: 400px
 
@@ -34,7 +34,7 @@ modern woman.  My favorite story was hands down The Fitter, but each
 is a gem unto itself.  Want to know what it's about? You know how to
 find out.
 
-.. figure:: static/hunger-makes-me.jpg
+.. figure:: /theme/images/hunger-makes-me.jpg
     :align: center
     :height: 400px
 
@@ -44,7 +44,7 @@ for my itch. Like Amy Schumer's memoir, HMMaMG is raw and
 unapologetic, describing some of the hardest parts of her life and
 how she came to be the person she is today.  
 
-.. figure:: static/when-breath.jpg
+.. figure:: /theme/images/when-breath.jpg
     :align: center
     :height: 400px
 
@@ -54,7 +54,7 @@ of Paul's writing. His story is interesting and deeply sad, and I
 found myself crying on the way to class at the end. Definitely a
 short but worthwhile read.
 
-.. figure:: static/the-assistants.jpg
+.. figure:: /theme/images/the-assistants.jpg
     :align: center
     :height: 400px
 
@@ -63,7 +63,7 @@ crime novel, I couldn't read this book fast enough.  I loved Camille's
 characters, the genius (and not contrived) story, the setting and
 conflicts and intimacies of people we work with.  
 
-.. figure:: static/shrill.jpg
+.. figure:: /theme/images/shrill.jpg
     :align: center
     :height: 400px
 
