@@ -5,7 +5,7 @@ Book Review: The Art of Racing in the Rain
 :category: Books
 :slug: the-art-of-racing-in-the-rain
 :author: Lucy Wyman
-:img: the-art-of-racing-in-the-rain.jpg
+:img: art-of-racing-in-the-rain.jpg
 
 While doing chores and running errands this weekend, I had a chance to
 read `The Art of Racing in the Rain`_ by Garth Stein. As a dog owner
