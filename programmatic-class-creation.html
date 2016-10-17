@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>blog</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A humble blog by me, Lucy Wyman">
+<meta name="keywords" content="blog, code, lucy, wyman">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="http://blog.lucywyman.me" />
+<meta property="og:site_name" content="Blog" />
+
+<script src="/theme/js/jquery-1.11.2.js"></script>
+<link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48093989-5', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>	<body>
+		<nav>
+			<ul>
+				<li><h3><a href='http://blog.lucywyman.me'>Lucy Wyman</a></h3></li>
+				<li><a href='http://blog.lucywyman.me/about.html'>About</a></li>
+				<li>
+					<a href='http://blog.lucywyman.me/category/books.html'>
+						Books</a>
+				</li>
+				<li>
+					<a href='http://blog.lucywyman.me/category/tech.html'>
+						Tech</a>
+				</li>
+				<li>
+					<a href='http://blog.lucywyman.me/category/experiences.html'>
+						Experiences</a>
+				</li>
+				<li>
+					<a href='http://blog.lucywyman.me/category/loves.html'>
+						Loves</a>
+				</li>
+			</ul>
+		</nav>
+		<div class='wrapper'>
+			<main>
+<div class='article'>
+<h2>Minimal Programmatic Puppet Class Creation</h2>
+<p>10.13.2016</p>
+<p>This post began when I was trying to programmatically create my own
+Puppet class, googled this exact title, and came up totally empty
+handed. After wading through dozens of StackOverflow posts and puppet
+docs, I still wasn't sure what I needed to accomplish this or how it
+would fit into our Beaker tests. I admittedly don't have much
+experience with Puppet, and ended up spending a few hours with a
+coworker learning about the most efficient way to achieve this.  This
+is essentially the post I wish I had found a week ago (or will wish
+existed 6 months from now when I need to do the same thing and have
+forgotten all of this).</p>
+<p><strong>WARNING</strong>: This post is for n00bs, not l33t
+puppet haxxors.  You've been warned.</p>
+<p><strong>OTHER WARNING</strong>: This post assumes that you already have a
+remote puppet master, and are most likely using Beaker or some other
+testing harness to interact with that master. You'll also need to make
+sure $test_harness has root privileges on the master, as you'll be
+writing to <code>/etc</code>.</p>
+<div class="section" id="the-endgame">
+<h2>The Endgame</h2>
+<p>Specifically, I wanted to ensure that a UTF-8 encoded class (with non
+<code>\A[a-z][a-z0-9_]*\Z</code> characters) would not be displayed in the
+Puppet Enterprise GUI (per <a class="reference external" href="https://docs.puppet.com/puppet/latest/reference/lang_reserved.html#acceptable-characters-in-names">Puppet's acceptable character specs</a>).  I
+needed a bare module with a single class that I could programmatically
+throw at a master, and then verify had successfully been applied.</p>
+</div>
+<div class="section" id="the-solution-s">
+<h2>The Solution(s)</h2>
+<p>Since it's impossible to verify that the unicode isn't showing up
+because it's unicode, and not because I goofed on adding the class
+(yeah, yeah, our logging could be improved), I first needed to get
+this test working with a kosher name.</p>
+<div class="section" id="files">
+<h3>Files</h3>
+<p>Ok, so really the crux of this problems is what files you need, and
+where they need to go on your system.  Since this requires just <em>the one
+class</em>, and none of the other infra around puppetized applications,
+only a simple <code>init.pp</code> is necessary.  Mine looks like this:</p>
+<pre class="code puppet literal-block">
+<span class="k">class</span> <span class="na">myclass</span> <span class="p">{</span>
+  <span class="k">file</span> <span class="p">{</span> <span class="s">'/tmp/make_sure_this_exists'</span><span class="p">:</span>
+    <span class="na">ensure</span> <span class="o">=&gt;</span> <span class="k">present</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+<p>A few important notes:</p>
+<ul class="simple">
+<li>No trailing whitespace! Anywhere!</li>
+<li>2 spaces, not tab characters</li>
+<li>Single quotes</li>
+</ul>
+<p>There are <a class="reference external" href="https://docs.puppet.com/guides/style_guide.html">more official style guideline</a>, and even a
+<a class="reference external" href="http://puppet-lint.com/">puppet-linter</a> you can use to verify your <code>init.pp</code> is
+correct.</p>
+<p>Ok, so we've got this file, where does it go on the master?  As far as
+I can tell most Puppet-y things that we humans deal with live in
+<code>/etc/puppetlabs/code/environments</code>, and since we're taking the
+easy road here we're going to be working in the <code>production</code>
+environment. Before you do anything that directory should look
+something like this:</p>
+<pre class="code literal-block">
+.
+└── production
+    ├── environment.conf
+    ├── hieradata
+    ├── manifests
+    │&nbsp;&nbsp; └── site.pp
+    └── modules
+</pre>
+<p><strong>Modules</strong> is going to be the directory we need to work with.  A
+puppet module is a self-contained bundle of code you use to tell
+puppet some part of how you want your system to look. There are huge,
+widely used puppet modules such as <a class="reference external" href="https://forge.puppet.com/puppetlabs/apache">Apache</a>, or there are cute little
+5-line modules like ours, and both specify various related aspects of
+a system state to achieve a goal.  That's as much as I'll say about
+modules, but you can <a class="reference external" href="https://docs.puppet.com/puppet/latest/reference/modules_fundamentals.html">read more here</a> if interested.</p>
+<p><strong>NOTE</strong>: In order for agents to be classified by this class, it needs
+to go on the master.  This might not be strictly true all of the time,
+but it definitely wasn't going to show up in the GUI or get applied to
+agents from another agent.</p>
+</div>
+<div class="section" id="doing-the-thing-manually">
+<h3>Doing the Thing Manually</h3>
+<ol class="arabic">
+<li><p class="first"><strong>Make the directory</strong>. To make our module, we'll need to make the
+following directory from the <code>production</code> directory:</p>
+<blockquote>
+<pre class="code literal-block">
+mkdir -p modules/myclass/manifests`
+</pre>
+<p>where <code>myclass</code> matches the class name you have in your
+<code>init.pp</code>.</p>
+</blockquote>
+</li>
+<li><p class="first"><strong>Copy the file</strong>. Then put the <code>init.pp</code> in that directory,
+and your set!</p>
+</li>
+<li><p class="first"><strong>Verify it worked</strong>. There are a few ways to verify that you were
+successful:</p>
+<blockquote>
+<ul class="simple">
+<li>SSH into the master, run <code>puppet agent -t</code>, then SSH into your
+agent and verify that the file <code>/tmp/make_sure_this_exists</code>
+does indeed exist</li>
+<li>In the GUI, head to Nodes &gt; Classification, create a new group, then
+go to $node_group_page &gt; classes tab and verify your class is in the
+dropdown for adding a class.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="automate-it">
+<h2>Automate it</h2>
+<p>So now that we know what we're doing, automating it with Beaker is
+pretty easy, especially if we're working in the production
+environment.</p>
+<ol class="arabic">
+<li><p class="first"><strong>Make the directory</strong>.</p>
+<pre class="code ruby literal-block">
+<span class="vi">&#64;class_name</span> <span class="o">=</span> <span class="s1">'classy'</span>
+<span class="vi">&#64;modules_path</span> <span class="o">=</span> <span class="s2">&quot;/etc/puppetlabs/code/environments/production/modules/</span><span class="si">#{</span><span class="vi">&#64;class_name</span><span class="si">}</span><span class="s2">/manifests&quot;</span>
+<span class="n">on</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="s2">&quot;mkdir -p </span><span class="si">#{</span><span class="vi">&#64;modules_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre>
+</li>
+<li><p class="first"><strong>Copy the file</strong>. Please note, I needed to define my
+<code>init.pp</code> content inside the file for reasons, but you can
+also have a local file and use ruby to read from it, which is a
+little more best-practice-y. Also note that you'll need to give the
+file proper permissions once you've made it!</p>
+<pre class="code ruby literal-block">
+  <span class="n">manifest</span> <span class="o">=&lt;&lt;-</span><span class="sh"></span><span class="no">EOS</span><span class="sh"></span>
+<span class="sh">class #{&#64;class_name} {
+  file { '/tmp/make_sure_this_exists':
+    ensure =&gt; present
+  }
+}
+</span><span class="no">  EOS
+</span>  <span class="n">create_remote_file</span><span class="p">(</span><span class="n">master</span><span class="p">,</span><span class="s2">&quot;</span><span class="si">#{</span><span class="vi">&#64;modules_path</span><span class="si">}</span><span class="s2">/init.pp&quot;</span><span class="p">,</span> <span class="n">manifest</span><span class="p">)</span>
+  <span class="n">on</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="s2">&quot;chmod 644 </span><span class="si">#{</span><span class="vi">&#64;modules_path</span><span class="si">}</span><span class="s2">/init.pp&quot;</span><span class="p">)</span>
+</pre>
+</li>
+<li><p class="first"><strong>Verify that it worked</strong>.</p>
+<pre class="code ruby literal-block">
+<span class="n">on</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="s1">'puppet agent -t'</span><span class="p">)</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">agents</span><span class="o">.</span><span class="n">find</span> <span class="p">{</span><span class="o">|</span><span class="n">agent</span><span class="o">|</span> <span class="n">not_controller</span> <span class="n">agent</span><span class="p">}</span>
+<span class="n">ls_output</span> <span class="o">=</span> <span class="n">on</span><span class="p">(</span><span class="n">agent</span><span class="p">,</span> <span class="s1">'ls /tmp/make_sure_this_exists'</span><span class="p">)</span><span class="o">.</span><span class="n">stdout</span>
+<span class="n">assert_equal</span><span class="p">(</span><span class="n">ls_output</span><span class="p">,</span> <span class="s1">'/tmp/make_sure_this_exists'</span><span class="p">,</span> <span class="n">error_message</span><span class="p">)</span>
+</pre>
+</li>
+</ol>
+<p>There are lots of ways to verify that it worked, this runs
+<code>puppet agent -t</code> on the master (which compiles the catalog and
+applies it to all the agents), then verifies that the output of 'ls'
+on the master includes the file our class put there.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Hopefully this was helpful and what you are looking for! This is
+really the <em>bare minimum</em>, need-to-know-basis level of creating a
+custom class, for when you just need to get the thing done and don't
+want to learn <strong>All Of Puppet</strong>.  If you do want to learn all of
+puppet though, there are some links below!  Enjoy.</p>
+</div>
+<div class="section" id="puppet-resources">
+<h2>Puppet Resources</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://puppet.com/download-learning-vm">Learning VM</a></li>
+<li><a class="reference external" href="http://www.example42.com/tutorials/PuppetTutorial/#slide-0">Puppet Tutorial</a> slide deck by Alessandro Franceschi</li>
+<li><a class="reference external" href="https://sysadmincasts.com/episodes/8-learning-puppet-with-vagrant">Learn Puppet with Vagrant</a> by Justin Weissig</li>
+<li><a class="reference external" href="http://www.pindi.us/blog/getting-started-puppet">Getting Started with Puppet</a> by Pindi Albert</li>
+</ul>
+</div>
+
+</div>
+			</main>
+			<aside>
+				<div class='sidebar'>
+					<div class='social-media'>
+						<a href='https://github.com/lucywyman'>
+							<img class='social' src='theme/images/github-icon.png'>
+						</a>
+						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+							<img class='social' src='theme/images/linkedin.png'>
+						</a>
+						<a href='https://plus.google.com/107251431728646146032/posts'>
+							<img class='social' src='theme/images/google-plus.png'>
+						</a>
+					</div>
+					<!--TODO: search, subscribe, archive-->
+                 <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='theme/images/icon-rss.png'></a></p><hr>
+                <h3>Categories</h3>
+			<ul>
+                <li> 
+                    <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+                </li> 
+                <li> 
+                    <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+                </li> 
+                <li> 
+                    <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a> 
+                </li> 
+                <li> 
+                    <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+                </li>
+			</ul>
+            <hr>
+            <h3>Tags</h3>
+                </div>
+			</aside>
+		</div>
+		<div class='footer'>
+			<!-- TODO -->
+			<a href='https://github.com/lucywyman'>
+				<img class='social' src='theme/images/github-icon.png'>
+			</a>
+			<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+				<img class='social' src='theme/images/linkedin.png'>
+			</a>
+			<a href='https://plus.google.com/107251431728646146032/posts'>
+				<img class='social' src='theme/images/google-plus.png'>
+			</a>
+		</div>
+	</body>
+</html>
+

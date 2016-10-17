@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-25T00:00:00-07:00</updated><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:boy.html</id><summary type="html">&lt;p&gt;Before coming to college I was completely unaware of the diversity problem in
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-09-25T00:00:00-07:00</updated><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:boy.html</id><summary type="html">&lt;p&gt;Before attending university I was completely unaware of the diversity problem in
 STEM. In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
-science class at university was shocking at ~5% female
-attendance¹, and as I started to consume more tech media (ie. &lt;a class="reference external" href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;)
+science class at university was ~5% female¹, and as I started to consume more tech media (ie. &lt;a class="reference external" href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;)
 it became clear the Oregon State was not an exception.&lt;/p&gt;
 &lt;p&gt;Even after 3 years of classes like this, I'm really not sure how to feel about
 the dearth of diversity in STEM.  But regardless of the emotions I cycle
 through or the discussions I have with people, one question that frequently
-gets asked is whether people treat me differently because I'm a woman | whether
+gets asked is whether people treat me differently because I'm a
+woman,or whether
 I'm discriminated against. The answer is yes, of course: it's natural that
 people treat me differently because I'm a (very feminine) woman, but more than
 that I want to address the skeptical tone people take when they ask if I
@@ -102,6 +102,45 @@ their equal, it stands out.  It stings. In so many ways, I wish I could go back
 to when I didn't notice it. When a comment like that could have been totally
 innocuous.  But it's not, anymore.&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class="section" id="the-little-things"&gt;
+&lt;h2&gt;The Little Things&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;09/20/2016&lt;/strong&gt;: I walk to work everyday, going down Belmont and
+crossing the Morrison Bridge. I usually leave between 7:30 and 8,
+when it's definitely light outside and there are lots of other
+people walking, biking, and driving the same direction.  I listen to
+a variety of books and podcasts, and am literally wearing
+clothes appropriate for a professional work environment (not that it
+matters, but I just want to set the scene here and provide context).
+About half way through my walk a construction truck was stopped at a
+red light, and as I waited at the same red light one of the men in
+the truck wolf-whistled (loud enough to hear through my headphones),
+then the other yelled &amp;quot;Nice ass, honey!&amp;quot;.  I ignored them,
+pretending I hadn't heard, but they're comments got weirdly in my
+head. &amp;quot;Were these jeans not appropriate?  I didn't even put makeup
+on this morning, why are you yelling at me?  Can I melt into the
+ground right now?&amp;quot;  I realized that I was blaming myself for what
+they had said, and wondering what I could do to avoid it in the
+future.  Wear baggier clothes? Maybe I should take the bus?  I
+talked to another female co-worker about it once I got to work, and
+she helped me feel better about it. It wasn't my fault, it didn't
+reflect on me at all, it was just two guys who decided to be
+assholes and make comments about me on my walk into work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;09/29/2016&lt;/strong&gt;: A female friend and I went to see &amp;quot;The Music of
+David Bowie: The Oregon Symphony&amp;quot; at the Schnitz. It was a
+&lt;em&gt;wonderful&lt;/em&gt; concert, and as we were walking back to my car, we both
+had our phones out looking up directions to my friend's apartment. A
+man tapped one of us on the shoulder and said &amp;quot;Were you ladies
+filming in there? I'm going to have to confiscate your phones.&amp;quot;  We
+both looked at each other terrified.  Were you...? No, neither of us
+had our phones out at all during the concert. We shook our heads
+&amp;quot;No, we didn't do anything&amp;quot;, then he laughed and said &amp;quot;I'm just
+kidding, you ladies both look beautiful tonight&amp;quot;.  We speed walked
+away, both totally uncomfortable and dreading the long walk to the
+car in the dark. The true skeptic may be thinking &amp;quot;He complimented
+you. Why is this a bad thing?&amp;quot;  Well,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;My experiences are my own and don't necessarily reflect or represent those
@@ -112,6 +151,16 @@ equal work to my male peers, am respected within the community, and
 have never felt that I was denied an opportunity, promotion, or
 position because I am a woman. At the same time none of the above
 experiences would have happened if I were a boy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="further-reading"&gt;
+&lt;h2&gt;Further Reading&lt;/h2&gt;
+&lt;p&gt;Unfortunately, I'm not the first or last technical lady to have these
+experiences. You can read about others experiences with discrimination
+in tech here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://juliepagano.com/blog/2013/03/24/my-experiences-in-tech-death-by-1000-paper-cuts/"&gt;Death by 1000 paper cuts&lt;/a&gt; by Julie Pagano&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;If you have an stories of your own that you think belong on this list,
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
 your name if you'd like for me to include it in this post or submit it
@@ -725,7 +774,7 @@ me distracted it went by pretty quick.  My tattoo artist was also
 incredibly sweet, understanding, and supportive, and made the whole
 experience that much more pleasant. Once it was done, I took a look to
 make sure it all looked good.  I won't get too cheesy, but it was love
-at first site. As anyone is with their first tattoo, I was nervous
+at first sight. As anyone is with their first tattoo, I was nervous
 that I would regret getting something put permanently on my body, but
 I knew when I saw it that I had made the right decision. Crisis:
 avoided.&lt;/p&gt;

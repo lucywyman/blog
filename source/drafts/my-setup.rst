@@ -8,8 +8,15 @@ Tech Tools I Use
 
 Below is a list of tools I use to make computering easier & more
 fun.  Not all of them are the objective best tool for my use case,
-but often by this point it's not worth the overheard + loss of
-productivity to learn a new *slightly better* tool.  
+but often by this point it's not worth the overhead + loss of
+productivity to learn a new *slightly better* tool.  I've categorized
+them by perceived likelihood that you, the general reader, will know
+about the tool already.  
+
+Almost Definitely Not Heard Of
+------------------------------
+
+
 
 Maybe Not Heard Of
 ------------------
@@ -44,8 +51,8 @@ like me, but some people find it annoying.
 
 .. _Vimperator: https://addons.mozilla.org/en-US/firefox/addon/vimperator/
 
-Probably Heard Of + Use:
-------------------------
+Probably Heard Of
+-----------------
 
 I3
 ~~

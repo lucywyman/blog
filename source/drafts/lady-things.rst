@@ -8,7 +8,7 @@ Items to Buy the For Men Version
 
 
 As you've undoubtedly noticed, many products come in both a women's
-and men's versions (ie. deodorant, socks, haricuts, etc.). IMHO this
+and men's version (ie. deodorant, socks, haricuts, etc.). IMHO this
 isn't sexist so much as acknowledgment that men and women are
 physically different creatures, BUT, sometimes the men-version of a
 thing is much better (for one reason or another) than the
@@ -19,7 +19,7 @@ why:
 
 #. **Flannels**. They're often cheaper and always thicker, and while
    the cut is slightly less flattering the men's cut definitely looks
-   great.  It'll actually keep you warm. Mine are from `St. John's
+   great **and** will actually keep you warm. Mine are from `St. John's
    Bay`_ (I promise they came in cuter colors when I bought them!)
 #. **Underwear**. I have a medium-to-large sized + very round butt,
    and underwear *always* rides up and I have to fidget and pull it
@@ -30,7 +30,8 @@ why:
    full coverage, and look really cute + sexy!  Well worth the
    investment.
 #. **Hair Cuts**.  Considering the head of hair I have, I definitely
-   need to ask a barber first before having them cut my hair.  That
+   need to ask a barber first before having them cut my hair.  Even
+   certified curly-hair cuters find my hair daunting.  That
    said, the best hair cut I ever got was from `University Cuts
    Barber Shop`_ for ~$15. With curly hair, even fancy salon hair
    cuts are very hit-or-miss, and there's nothing worse than

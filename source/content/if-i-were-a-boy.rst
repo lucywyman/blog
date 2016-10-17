@@ -6,18 +6,18 @@ If I Were A Boy
 :slug: boy
 :author: Lucy Wyman
 
-Before coming to college I was completely unaware of the diversity problem in
+Before attending university I was completely unaware of the diversity problem in
 STEM. In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
-science class at university was shocking at ~5% female
-attendance¹, and as I started to consume more tech media (ie. `Hacker News`_)
+science class at university was ~5% female¹, and as I started to consume more tech media (ie. `Hacker News`_)
 it became clear the Oregon State was not an exception. 
 
 Even after 3 years of classes like this, I'm really not sure how to feel about
 the dearth of diversity in STEM.  But regardless of the emotions I cycle
 through or the discussions I have with people, one question that frequently
-gets asked is whether people treat me differently because I'm a woman | whether
+gets asked is whether people treat me differently because I'm a
+woman,or whether
 I'm discriminated against. The answer is yes, of course: it's natural that
 people treat me differently because I'm a (very feminine) woman, but more than
 that I want to address the skeptical tone people take when they ask if I
@@ -118,6 +118,44 @@ their equal, it stands out.  It stings. In so many ways, I wish I could go back
 to when I didn't notice it. When a comment like that could have been totally
 innocuous.  But it's not, anymore.
 
+The Little Things
+-----------------
+
+* **09/20/2016**: I walk to work everyday, going down Belmont and
+  crossing the Morrison Bridge. I usually leave between 7:30 and 8,
+  when it's definitely light outside and there are lots of other
+  people walking, biking, and driving the same direction.  I listen to
+  a variety of books and podcasts, and am literally wearing
+  clothes appropriate for a professional work environment (not that it
+  matters, but I just want to set the scene here and provide context).
+  About half way through my walk a construction truck was stopped at a
+  red light, and as I waited at the same red light one of the men in
+  the truck wolf-whistled (loud enough to hear through my headphones),
+  then the other yelled "Nice ass, honey!".  I ignored them,
+  pretending I hadn't heard, but they're comments got weirdly in my
+  head. "Were these jeans not appropriate?  I didn't even put makeup
+  on this morning, why are you yelling at me?  Can I melt into the
+  ground right now?"  I realized that I was blaming myself for what
+  they had said, and wondering what I could do to avoid it in the
+  future.  Wear baggier clothes? Maybe I should take the bus?  I
+  talked to another female co-worker about it once I got to work, and
+  she helped me feel better about it. It wasn't my fault, it didn't
+  reflect on me at all, it was just two guys who decided to be
+  assholes and make comments about me on my walk into work.
+* **09/29/2016**: A female friend and I went to see "The Music of
+  David Bowie: The Oregon Symphony" at the Schnitz. It was a
+  *wonderful* concert, and as we were walking back to my car, we both
+  had our phones out looking up directions to my friend's apartment. A
+  man tapped one of us on the shoulder and said "Were you ladies
+  filming in there? I'm going to have to confiscate your phones."  We
+  both looked at each other terrified.  Were you...? No, neither of us
+  had our phones out at all during the concert. We shook our heads
+  "No, we didn't do anything", then he laughed and said "I'm just
+  kidding, you ladies both look beautiful tonight".  We speed walked
+  away, both totally uncomfortable and dreading the long walk to the
+  car in the dark. The true skeptic may be thinking "He complimented
+  you. Why is this a bad thing?"  Well, 
+
 Conclusion
 ----------
 
@@ -129,6 +167,16 @@ equal work to my male peers, am respected within the community, and
 have never felt that I was denied an opportunity, promotion, or 
 position because I am a woman. At the same time none of the above 
 experiences would have happened if I were a boy.
+
+Further Reading
+---------------
+
+Unfortunately, I'm not the first or last technical lady to have these
+experiences. You can read about others experiences with discrimination
+in tech here:
+
+* `Death by 1000 paper cuts`_ by Julie Pagano
+* 
 
 If you have an stories of your own that you think belong on this list, 
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
@@ -149,3 +197,4 @@ address as well. Have a lovely day!
 .. _Hacker News: https://news.ycombinator.com/
 .. _etherpads: http://etherpad.osuosl.org
 .. _Linux Users Group: http://lug.oregonstate.edu
+.. _Death by 1000 paper cuts: http://juliepagano.com/blog/2013/03/24/my-experiences-in-tech-death-by-1000-paper-cuts/

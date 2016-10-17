@@ -6,9 +6,32 @@ Favorite Places in Corvallis
 :slug: places-corvallis
 :author: Lucy Wyman
 
-- Japanese place on Van Buren
-- Interzone
-- Broken Yolk
-- Fred Meyer loft
-- OSU used
+Places
+~~~~~~
 
+Rice & Spice
+------------
+
+Bald Hill
+---------
+
+Fred Meyer Loft
+---------------
+
+OSU Used
+--------
+
+Food
+~~~~
+
+Lemongrass
+----------
+
+American Dream
+--------------
+
+Interzone
+---------
+
+Broken Yolk
+-----------

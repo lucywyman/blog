@@ -128,7 +128,7 @@ me distracted it went by pretty quick.  My tattoo artist was also
 incredibly sweet, understanding, and supportive, and made the whole
 experience that much more pleasant. Once it was done, I took a look to
 make sure it all looked good.  I won't get too cheesy, but it was love
-at first site. As anyone is with their first tattoo, I was nervous
+at first sight. As anyone is with their first tattoo, I was nervous
 that I would regret getting something put permanently on my body, but
 I knew when I saw it that I had made the right decision. Crisis:
 avoided.

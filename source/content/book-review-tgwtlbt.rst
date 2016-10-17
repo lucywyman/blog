@@ -3,7 +3,7 @@ Book Review: The Girl with the Lower Back Tattoo
 :date: 2016-09-27
 :tags: book-review, women
 :category: Books
-:slug: tgwtlbt
+:slug: the-girl-with-the-lower-back-tattoo
 :author: Lucy Wyman
 :img: amy-schumer-book.jpg
 

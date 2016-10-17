@@ -41,8 +41,27 @@ read this book to understand that.
 
 If you're looking for other great reads by great women, I'd
 recommend picking up Amy Schumer's `The Girl with the Lower Back
-Tattoo`_, Jenny Lawson's `Furiously Happy`_, or Mindy Kaling's `Is
-Everyone Hanging Out Without Me`_.  
+Tattoo`_, Jenny Lawson's `Furiously Happy`_, Mindy Kaling's `Is
+Everyone Hanging Out Without Me`_, or Lindy West's `Shrill`_.
+
+**Edit (10/11/2016):** I've meditated on the purpose of 'Sex Object'
+since writing this, and I think there are a few possible and very
+worthwhile reasons she wrote it. First and foremost is to process,
+understand, and ultimately come to terms with her experiences.  I hope
+she found some modicum (however small) of peace or catharsis in
+writing the book.  Second, though, I think it is to tell other women
+they are not alone. That sexism and degradation are systemic,
+pervasive, and that it is not *them* or *their fault*.  I know for
+many women, including my own mother, the issue of blame and cause is
+placed on them instead of the actual actors and perpetrators.  I also want to
+acknowledge that to some extent my critique is unrealistic: there
+*isn't* a solution, an action I should have taken or can take in the
+future, to make this better.  There is no call to action because the
+best any of us can do is exactly what she did: talk about it, openly
+and frankly, and about why it's wrong.  In the end, I think the book
+left a bit of a bad taste in my mouth, but I don't think that's
+Jessica Valenti's fault, or any reason to not read her book. If
+anything, it's a reason you *should* read her book.  
 
 .. _Powell's "New + Recommended": http://www.powells.com/bestsellers
 .. _Jessica Valenti: https://en.wikipedia.org/wiki/Jessica_Valenti
@@ -50,3 +69,4 @@ Everyone Hanging Out Without Me`_.
 .. _The Girl with the Lower Back Tattoo: https://www.goodreads.com/book/show/29405093-the-girl-with-the-lower-back-tattoo 
 .. _Furiously Happy: https://www.goodreads.com/book/show/23848559-furiously-happy
 .. _Is Everyone Hanging Out Without Me: https://www.goodreads.com/book/show/10335308-is-everyone-hanging-out-without-me
+.. _Shrill: https://www.goodreads.com/book/show/29340182-shrill

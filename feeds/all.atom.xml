@@ -1,5 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-10-07T00:00:00-07:00</updated><entry><title>6 Books to Read This Fall</title><link href="http://blog.lucywyman.me/2016-fall-reading-list.html" rel="alternate"></link><published>2016-10-07T00:00:00-07:00</published><updated>2016-10-07T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-07:2016-fall-reading-list.html</id><summary type="html">&lt;p&gt;Hello fellow humans! Fall is here, in case you hadn't noticed yet, and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-10-16T00:00:00-07:00</updated><entry><title>Book Review: The Art of Racing in the Rain</title><link href="http://blog.lucywyman.me/the-art-of-racing-in-the-rain.html" rel="alternate"></link><published>2016-10-16T00:00:00-07:00</published><updated>2016-10-16T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-16:the-art-of-racing-in-the-rain.html</id><summary type="html">&lt;p&gt;While doing chores and running errands this weekend, I had a chance to
+read &lt;a class="reference external" href="http://www.garthstein.com/works/the-art-of-racing-in-the-rain/"&gt;The Art of Racing in the Rain&lt;/a&gt; by Garth Stein. As a dog owner
+and lover I was simultaneously excited and wary of another book about
+a dog where the dog inevitably the dog dies at the end. But I set
+aside my trepidation and dove in, and was rewarded tremendously for
+doing so! The book is narrated by a dog, Enzo, as he chronicles the
+life of his beloved owner Denny. But it is about &lt;em&gt;so much more&lt;/em&gt; than
+the relationship between a man and his dog.  It's about the pain of
+cancer and death, the different ways we grieve, and ultimately focuses
+on how bad things happen to good people. It's about making the hardest
+right decisions, about being the bigger person, all told through the
+lens of racing (yes, car racing) by the canine narrator.  And it made
+me &lt;em&gt;feel&lt;/em&gt; so strongly.  I had such visceral reactions to the events of
+the book, and realized that was part of what made it so good.  The
+characters were so compelling, the events so relatable, I found my
+blood boiling at points, experienced jubilation and depression and
+grief right alongside the characters.  So much malice! So much hope!
+The role of the dog as narrator doesn't even really stand out in
+hindsight, as it's completely eclipsed by the richness of the rest of
+the novel.&lt;/p&gt;
+&lt;p&gt;Anyway, if you couldn't tell, I loved the book and would highly
+recommend it. I'll admit it starts out a little slow, but try to power
+through at least 1/3 of it before giving up entirely (it's a short
+read). It made my rainy Sunday fly by, and is appropriately the perfect
+rainy-weekend companion :)&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Minimal Programmatic Puppet Class Creation</title><link href="http://blog.lucywyman.me/programmatic-class-creation.html" rel="alternate"></link><published>2016-10-13T00:00:00-07:00</published><updated>2016-10-13T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-13:programmatic-class-creation.html</id><summary type="html">&lt;p&gt;This post began when I was trying to programmatically create my own
+Puppet class, googled this exact title, and came up totally empty
+handed. After wading through dozens of StackOverflow posts and puppet
+docs, I still wasn't sure what I needed to accomplish this or how it
+would fit into our Beaker tests. I admittedly don't have much
+experience with Puppet, and ended up spending a few hours with a
+coworker learning about the most efficient way to achieve this.  This
+is essentially the post I wish I had found a week ago (or will wish
+existed 6 months from now when I need to do the same thing and have
+forgotten all of this).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: This post is for n00bs, not l33t
+puppet haxxors.  You've been warned.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTHER WARNING&lt;/strong&gt;: This post assumes that you already have a
+remote puppet master, and are most likely using Beaker or some other
+testing harness to interact with that master. You'll also need to make
+sure $test_harness has root privileges on the master, as you'll be
+writing to &lt;code&gt;/etc&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="section" id="the-endgame"&gt;
+&lt;h2&gt;The Endgame&lt;/h2&gt;
+&lt;p&gt;Specifically, I wanted to ensure that a UTF-8 encoded class (with non
+&lt;code&gt;\A[a-z][a-z0-9_]*\Z&lt;/code&gt; characters) would not be displayed in the
+Puppet Enterprise GUI (per &lt;a class="reference external" href="https://docs.puppet.com/puppet/latest/reference/lang_reserved.html#acceptable-characters-in-names"&gt;Puppet's acceptable character specs&lt;/a&gt;).  I
+needed a bare module with a single class that I could programmatically
+throw at a master, and then verify had successfully been applied.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-solution-s"&gt;
+&lt;h2&gt;The Solution(s)&lt;/h2&gt;
+&lt;p&gt;Since it's impossible to verify that the unicode isn't showing up
+because it's unicode, and not because I goofed on adding the class
+(yeah, yeah, our logging could be improved), I first needed to get
+this test working with a kosher name.&lt;/p&gt;
+&lt;div class="section" id="files"&gt;
+&lt;h3&gt;Files&lt;/h3&gt;
+&lt;p&gt;Ok, so really the crux of this problems is what files you need, and
+where they need to go on your system.  Since this requires just &lt;em&gt;the one
+class&lt;/em&gt;, and none of the other infra around puppetized applications,
+only a simple &lt;code&gt;init.pp&lt;/code&gt; is necessary.  Mine looks like this:&lt;/p&gt;
+&lt;pre class="code puppet literal-block"&gt;
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="na"&gt;myclass&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;file&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="s"&gt;'/tmp/make_sure_this_exists'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;ensure&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;present&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;A few important notes:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;No trailing whitespace! Anywhere!&lt;/li&gt;
+&lt;li&gt;2 spaces, not tab characters&lt;/li&gt;
+&lt;li&gt;Single quotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are &lt;a class="reference external" href="https://docs.puppet.com/guides/style_guide.html"&gt;more official style guideline&lt;/a&gt;, and even a
+&lt;a class="reference external" href="http://puppet-lint.com/"&gt;puppet-linter&lt;/a&gt; you can use to verify your &lt;code&gt;init.pp&lt;/code&gt; is
+correct.&lt;/p&gt;
+&lt;p&gt;Ok, so we've got this file, where does it go on the master?  As far as
+I can tell most Puppet-y things that we humans deal with live in
+&lt;code&gt;/etc/puppetlabs/code/environments&lt;/code&gt;, and since we're taking the
+easy road here we're going to be working in the &lt;code&gt;production&lt;/code&gt;
+environment. Before you do anything that directory should look
+something like this:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+.
+└── production
+    ├── environment.conf
+    ├── hieradata
+    ├── manifests
+    │&amp;nbsp;&amp;nbsp; └── site.pp
+    └── modules
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Modules&lt;/strong&gt; is going to be the directory we need to work with.  A
+puppet module is a self-contained bundle of code you use to tell
+puppet some part of how you want your system to look. There are huge,
+widely used puppet modules such as &lt;a class="reference external" href="https://forge.puppet.com/puppetlabs/apache"&gt;Apache&lt;/a&gt;, or there are cute little
+5-line modules like ours, and both specify various related aspects of
+a system state to achieve a goal.  That's as much as I'll say about
+modules, but you can &lt;a class="reference external" href="https://docs.puppet.com/puppet/latest/reference/modules_fundamentals.html"&gt;read more here&lt;/a&gt; if interested.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: In order for agents to be classified by this class, it needs
+to go on the master.  This might not be strictly true all of the time,
+but it definitely wasn't going to show up in the GUI or get applied to
+agents from another agent.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="doing-the-thing-manually"&gt;
+&lt;h3&gt;Doing the Thing Manually&lt;/h3&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Make the directory&lt;/strong&gt;. To make our module, we'll need to make the
+following directory from the &lt;code&gt;production&lt;/code&gt; directory:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre class="code literal-block"&gt;
+mkdir -p modules/myclass/manifests`
+&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;myclass&lt;/code&gt; matches the class name you have in your
+&lt;code&gt;init.pp&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Copy the file&lt;/strong&gt;. Then put the &lt;code&gt;init.pp&lt;/code&gt; in that directory,
+and your set!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Verify it worked&lt;/strong&gt;. There are a few ways to verify that you were
+successful:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;SSH into the master, run &lt;code&gt;puppet agent -t&lt;/code&gt;, then SSH into your
+agent and verify that the file &lt;code&gt;/tmp/make_sure_this_exists&lt;/code&gt;
+does indeed exist&lt;/li&gt;
+&lt;li&gt;In the GUI, head to Nodes &amp;gt; Classification, create a new group, then
+go to $node_group_page &amp;gt; classes tab and verify your class is in the
+dropdown for adding a class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="automate-it"&gt;
+&lt;h2&gt;Automate it&lt;/h2&gt;
+&lt;p&gt;So now that we know what we're doing, automating it with Beaker is
+pretty easy, especially if we're working in the production
+environment.&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Make the directory&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+&lt;span class="vi"&gt;&amp;#64;class_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'classy'&lt;/span&gt;
+&lt;span class="vi"&gt;&amp;#64;modules_path&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/etc/puppetlabs/code/environments/production/modules/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vi"&gt;&amp;#64;class_name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/manifests&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mkdir -p &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vi"&gt;&amp;#64;modules_path&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Copy the file&lt;/strong&gt;. Please note, I needed to define my
+&lt;code&gt;init.pp&lt;/code&gt; content inside the file for reasons, but you can
+also have a local file and use ruby to read from it, which is a
+little more best-practice-y. Also note that you'll need to give the
+file proper permissions once you've made it!&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+  &lt;span class="n"&gt;manifest&lt;/span&gt; &lt;span class="o"&gt;=&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class="sh"&gt;&lt;/span&gt;&lt;span class="no"&gt;EOS&lt;/span&gt;&lt;span class="sh"&gt;&lt;/span&gt;
+&lt;span class="sh"&gt;class #{&amp;#64;class_name} {
+  file { '/tmp/make_sure_this_exists':
+    ensure =&amp;gt; present
+  }
+}
+&lt;/span&gt;&lt;span class="no"&gt;  EOS
+&lt;/span&gt;  &lt;span class="n"&gt;create_remote_file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vi"&gt;&amp;#64;modules_path&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/init.pp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;manifest&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;chmod 644 &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vi"&gt;&amp;#64;modules_path&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/init.pp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Verify that it worked&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'puppet agent -t'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;agent&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;agents&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;not_controller&lt;/span&gt; &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;ls_output&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'ls /tmp/make_sure_this_exists'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt;
+&lt;span class="n"&gt;assert_equal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ls_output&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'/tmp/make_sure_this_exists'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;error_message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are lots of ways to verify that it worked, this runs
+&lt;code&gt;puppet agent -t&lt;/code&gt; on the master (which compiles the catalog and
+applies it to all the agents), then verifies that the output of 'ls'
+on the master includes the file our class put there.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Hopefully this was helpful and what you are looking for! This is
+really the &lt;em&gt;bare minimum&lt;/em&gt;, need-to-know-basis level of creating a
+custom class, for when you just need to get the thing done and don't
+want to learn &lt;strong&gt;All Of Puppet&lt;/strong&gt;.  If you do want to learn all of
+puppet though, there are some links below!  Enjoy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puppet-resources"&gt;
+&lt;h2&gt;Puppet Resources&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://puppet.com/download-learning-vm"&gt;Learning VM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.example42.com/tutorials/PuppetTutorial/#slide-0"&gt;Puppet Tutorial&lt;/a&gt; slide deck by Alessandro Franceschi&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sysadmincasts.com/episodes/8-learning-puppet-with-vagrant"&gt;Learn Puppet with Vagrant&lt;/a&gt; by Justin Weissig&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pindi.us/blog/getting-started-puppet"&gt;Getting Started with Puppet&lt;/a&gt; by Pindi Albert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="puppet"></category></entry><entry><title>6 Books to Read This Fall</title><link href="http://blog.lucywyman.me/2016-fall-reading-list.html" rel="alternate"></link><published>2016-10-07T00:00:00-07:00</published><updated>2016-10-07T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-07:2016-fall-reading-list.html</id><summary type="html">&lt;p&gt;Hello fellow humans! Fall is here, in case you hadn't noticed yet, and
 with rainy Sundays and long bus rides to school ahead it's time to
 pick up some easy reads. Make some tea, cozy up, and crack a book!
 Here's what I've been reading and loving:&lt;/p&gt;
@@ -89,9 +287,27 @@ little or nothing she and I can do about it, but I didn't need to
 read this book to understand that.&lt;/p&gt;
 &lt;p&gt;If you're looking for other great reads by great women, I'd
 recommend picking up Amy Schumer's &lt;a class="reference external" href="https://www.goodreads.com/book/show/29405093-the-girl-with-the-lower-back-tattoo"&gt;The Girl with the Lower Back
-Tattoo&lt;/a&gt;, Jenny Lawson's &lt;a class="reference external" href="https://www.goodreads.com/book/show/23848559-furiously-happy"&gt;Furiously Happy&lt;/a&gt;, or Mindy Kaling's &lt;a class="reference external" href="https://www.goodreads.com/book/show/10335308-is-everyone-hanging-out-without-me"&gt;Is
-Everyone Hanging Out Without Me&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="book-review"></category></entry><entry><title>Book Review: The Girl with the Lower Back Tattoo</title><link href="http://blog.lucywyman.me/tgwtlbt.html" rel="alternate"></link><published>2016-09-27T00:00:00-07:00</published><updated>2016-09-27T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-27:tgwtlbt.html</id><summary type="html">&lt;p&gt;For whatever reason, this past month I had a hard time getting into any
+Tattoo&lt;/a&gt;, Jenny Lawson's &lt;a class="reference external" href="https://www.goodreads.com/book/show/23848559-furiously-happy"&gt;Furiously Happy&lt;/a&gt;, Mindy Kaling's &lt;a class="reference external" href="https://www.goodreads.com/book/show/10335308-is-everyone-hanging-out-without-me"&gt;Is
+Everyone Hanging Out Without Me&lt;/a&gt;, or Lindy West's &lt;a class="reference external" href="https://www.goodreads.com/book/show/29340182-shrill"&gt;Shrill&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Edit (10/11/2016):&lt;/strong&gt; I've meditated on the purpose of 'Sex Object'
+since writing this, and I think there are a few possible and very
+worthwhile reasons she wrote it. First and foremost is to process,
+understand, and ultimately come to terms with her experiences.  I hope
+she found some modicum (however small) of peace or catharsis in
+writing the book.  Second, though, I think it is to tell other women
+they are not alone. That sexism and degradation are systemic,
+pervasive, and that it is not &lt;em&gt;them&lt;/em&gt; or &lt;em&gt;their fault&lt;/em&gt;.  I know for
+many women, including my own mother, the issue of blame and cause is
+placed on them instead of the actual actors and perpetrators.  I also want to
+acknowledge that to some extent my critique is unrealistic: there
+&lt;em&gt;isn't&lt;/em&gt; a solution, an action I should have taken or can take in the
+future, to make this better.  There is no call to action because the
+best any of us can do is exactly what she did: talk about it, openly
+and frankly, and about why it's wrong.  In the end, I think the book
+left a bit of a bad taste in my mouth, but I don't think that's
+Jessica Valenti's fault, or any reason to not read her book. If
+anything, it's a reason you &lt;em&gt;should&lt;/em&gt; read her book.&lt;/p&gt;
+</summary><category term="book-review"></category></entry><entry><title>Book Review: The Girl with the Lower Back Tattoo</title><link href="http://blog.lucywyman.me/the-girl-with-the-lower-back-tattoo.html" rel="alternate"></link><published>2016-09-27T00:00:00-07:00</published><updated>2016-09-27T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-27:the-girl-with-the-lower-back-tattoo.html</id><summary type="html">&lt;p&gt;For whatever reason, this past month I had a hard time getting into any
 books.  This is in part because so much of my attention was directed at my
 new job, in part because nothing I was really excited to read came in, in
 part because I was spending a lot of time with my boyfriend before he went
@@ -114,17 +330,17 @@ book.  More than a fun pick-me-up read, Amy's book helped me understand how
 to interact with the mentally ill, how to handle sexist comments, how to be a
 person in the world just a tiny bit better.  If you haven't got your hands on
 a copy yet, I can't recommend it enough!&lt;/p&gt;
-</summary><category term="book-review"></category><category term="women"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:boy.html</id><summary type="html">&lt;p&gt;Before coming to college I was completely unaware of the diversity problem in
+</summary><category term="book-review"></category><category term="women"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:boy.html</id><summary type="html">&lt;p&gt;Before attending university I was completely unaware of the diversity problem in
 STEM. In high school all of my classes were relatively 50-50 in terms of
 gender, including science and math classes, and I had never experienced or
 noticed anyone treating me differently than my male peers.  My fist computer
-science class at university was shocking at ~5% female
-attendance¹, and as I started to consume more tech media (ie. &lt;a class="reference external" href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;)
+science class at university was ~5% female¹, and as I started to consume more tech media (ie. &lt;a class="reference external" href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;)
 it became clear the Oregon State was not an exception.&lt;/p&gt;
 &lt;p&gt;Even after 3 years of classes like this, I'm really not sure how to feel about
 the dearth of diversity in STEM.  But regardless of the emotions I cycle
 through or the discussions I have with people, one question that frequently
-gets asked is whether people treat me differently because I'm a woman | whether
+gets asked is whether people treat me differently because I'm a
+woman,or whether
 I'm discriminated against. The answer is yes, of course: it's natural that
 people treat me differently because I'm a (very feminine) woman, but more than
 that I want to address the skeptical tone people take when they ask if I
@@ -217,6 +433,45 @@ their equal, it stands out.  It stings. In so many ways, I wish I could go back
 to when I didn't notice it. When a comment like that could have been totally
 innocuous.  But it's not, anymore.&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class="section" id="the-little-things"&gt;
+&lt;h2&gt;The Little Things&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;09/20/2016&lt;/strong&gt;: I walk to work everyday, going down Belmont and
+crossing the Morrison Bridge. I usually leave between 7:30 and 8,
+when it's definitely light outside and there are lots of other
+people walking, biking, and driving the same direction.  I listen to
+a variety of books and podcasts, and am literally wearing
+clothes appropriate for a professional work environment (not that it
+matters, but I just want to set the scene here and provide context).
+About half way through my walk a construction truck was stopped at a
+red light, and as I waited at the same red light one of the men in
+the truck wolf-whistled (loud enough to hear through my headphones),
+then the other yelled &amp;quot;Nice ass, honey!&amp;quot;.  I ignored them,
+pretending I hadn't heard, but they're comments got weirdly in my
+head. &amp;quot;Were these jeans not appropriate?  I didn't even put makeup
+on this morning, why are you yelling at me?  Can I melt into the
+ground right now?&amp;quot;  I realized that I was blaming myself for what
+they had said, and wondering what I could do to avoid it in the
+future.  Wear baggier clothes? Maybe I should take the bus?  I
+talked to another female co-worker about it once I got to work, and
+she helped me feel better about it. It wasn't my fault, it didn't
+reflect on me at all, it was just two guys who decided to be
+assholes and make comments about me on my walk into work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;09/29/2016&lt;/strong&gt;: A female friend and I went to see &amp;quot;The Music of
+David Bowie: The Oregon Symphony&amp;quot; at the Schnitz. It was a
+&lt;em&gt;wonderful&lt;/em&gt; concert, and as we were walking back to my car, we both
+had our phones out looking up directions to my friend's apartment. A
+man tapped one of us on the shoulder and said &amp;quot;Were you ladies
+filming in there? I'm going to have to confiscate your phones.&amp;quot;  We
+both looked at each other terrified.  Were you...? No, neither of us
+had our phones out at all during the concert. We shook our heads
+&amp;quot;No, we didn't do anything&amp;quot;, then he laughed and said &amp;quot;I'm just
+kidding, you ladies both look beautiful tonight&amp;quot;.  We speed walked
+away, both totally uncomfortable and dreading the long walk to the
+car in the dark. The true skeptic may be thinking &amp;quot;He complimented
+you. Why is this a bad thing?&amp;quot;  Well,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;My experiences are my own and don't necessarily reflect or represent those
@@ -227,6 +482,16 @@ equal work to my male peers, am respected within the community, and
 have never felt that I was denied an opportunity, promotion, or
 position because I am a woman. At the same time none of the above
 experiences would have happened if I were a boy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="further-reading"&gt;
+&lt;h2&gt;Further Reading&lt;/h2&gt;
+&lt;p&gt;Unfortunately, I'm not the first or last technical lady to have these
+experiences. You can read about others experiences with discrimination
+in tech here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://juliepagano.com/blog/2013/03/24/my-experiences-in-tech-death-by-1000-paper-cuts/"&gt;Death by 1000 paper cuts&lt;/a&gt; by Julie Pagano&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;If you have an stories of your own that you think belong on this list,
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
 your name if you'd like for me to include it in this post or submit it
@@ -1568,7 +1833,7 @@ me distracted it went by pretty quick.  My tattoo artist was also
 incredibly sweet, understanding, and supportive, and made the whole
 experience that much more pleasant. Once it was done, I took a look to
 make sure it all looked good.  I won't get too cheesy, but it was love
-at first site. As anyone is with their first tattoo, I was nervous
+at first sight. As anyone is with their first tattoo, I was nervous
 that I would regret getting something put permanently on my body, but
 I knew when I saw it that I had made the right decision. Crisis:
 avoided.&lt;/p&gt;
