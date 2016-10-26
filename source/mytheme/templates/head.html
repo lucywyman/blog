@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A humble blog by me, Lucy Wyman">
 <meta name="keywords" content="blog, code, lucy, wyman">
+{% for tag,article in tags %}
+<meta name="keywords" content="{{ tag }}">
+{% endfor %}
+{% for category,article in categories %}
+<meta name="keywords" content="{{ category }}">
+{% endfor %}
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
