@@ -6,12 +6,12 @@ On Learning How to Be Respected
 :slug: respect
 :author: Lucy Wyman
 
-**DISCLAIMER**: My experiences are entirely my own, and don't
+**DISCLAIMER**: My experiences are entirely my own and don't
 necessarily reflect the experiences of others, including other women
 at Company X. 
 
 It's no secret that there's an `incredible shortage`_ of women in the
-tech industry, and even less of a secret `women`_ `are`_ `treated`_
+tech industry, and even less of a secret that `women`_ `are`_ `treated`_
 `differently`_ `than`_ `men`_, particularly in tech (read about `my
 experiences with this here`_). This discrimination manifests itself in
 a lot of ways, but for the most part it comes down to a single fact:
@@ -27,11 +27,32 @@ it was something I would have to deal with. I was a lady programmer at
 the bottom of the corporate totem pole. Why should men with 20+ years
 of experience in the field listen to me?
 
-So I brought this unconscious and grim expectation with me 
+Against all of my unconscious and grim expectations my co-workers at
+Company X treat me as a qualified peer.  They ask for my input and
+thoughts on important decisions. They pause and *listen* when I speak,
+considering what I say with as much weight as they would anyone else
+on the team. They don't laugh when I ask a question, and even point
+out that it's *great* that I'm asking questions and should continue to
+do so if I don't know something.  They explain things with patience
+and clarity and not an ounce of condescension, and have taken entire
+man-days to help get me up to speed on specific projects and
+technologies.  Working for Company X, and specifically with this team,
+has given me a greater understanding of how to be respectful as well
+as be respected.  I realized all of the little things that my peers at
+university said and did -- that *I also* said and did -- that
+indicated a lack of respect and awareness, and am slowly learning to
+not do those things. I'm also learning how to command respect *the
+right way*.  Commanding respect doesn't mean not asking "dumb"
+questions, or always being right, or being the most knowledgeable
+person in the room.  It's about 
 
-Instead of just exceeding my unconscious and grim expectation, Company X
-took my expectation out behind the outhouse and shot it in the head
-(too graphic?).  I've had the privilege to work alongside people
+What's most amazing is that all of this is done without any fanfare.
+It was taken for granted that I was an intelligent, worthy team member
+who has as much to contribute as anyone else on the team. My ideas
+were always measured equally, and without the obvious effort
+or uneasiness of those learning to respect women.  It's an attitude I
+hope I can teach my daughters, that I can carry with me in all of my
+future interactions.
 
 [1] Being concious of that bias has helped me stop doing those things,
 but it takes time and concious effort to do so. 
