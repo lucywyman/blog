@@ -27,11 +27,21 @@ it was something I would have to deal with. I was a lady programmer at
 the bottom of the corporate totem pole. Why should men with 20+ years
 of experience in the field listen to me?
 
+.. _incredible shortage:
+.. _women:
+.. _are:
+.. _treated:
+.. _differently:
+.. _than:
+.. _men:
+.. _my experiences with this here: http://blog.lucywyman.me/boy.html
+
 Against all of my unconscious and grim expectations my co-workers at
 Company X treat me as a qualified peer.  They ask for my input and
 thoughts on important decisions. They pause and *listen* when I speak,
 considering what I say with as much weight as they would anyone else
-on the team. They don't laugh when I ask a question, and even point
+on the team. They don't laugh when I ask a question or shame me for
+not knowing a fact, instead pointing
 out that it's *great* that I'm asking questions and should continue to
 do so if I don't know something.  They explain things with patience
 and clarity and not an ounce of condescension, and have taken entire
@@ -41,10 +51,16 @@ has given me a greater understanding of how to be respectful as well
 as be respected.  I realized all of the little things that my peers at
 university said and did -- that *I also* said and did -- that
 indicated a lack of respect and awareness, and am slowly learning to
-not do those things. I'm also learning how to command respect *the
-right way*.  Commanding respect doesn't mean not asking "dumb"
+not do those things. It's entirely a work in progress, and I still say
+or do things that I'm not proud of, but I'm much more aware of when I
+slip up, why, and am able to apologize and move on more quickly.
+
+I'm also learning how to command respect *the
+right way*.  Commanding respect doesn't mean avoiding "dumb"
 questions, or always being right, or being the most knowledgeable
-person in the room.  It's about 
+person in the room.  It's about putting forth effort, communicating
+effectively, solving problems efficiently, and being curious. It means
+volunteering for new projects, helping others when you can.
 
 What's most amazing is that all of this is done without any fanfare.
 It was taken for granted that I was an intelligent, worthy team member

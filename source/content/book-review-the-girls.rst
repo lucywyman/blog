@@ -39,4 +39,7 @@ couldn't save a half-hearted story.
 
 If you're thinking about picking it up, and leave it at the bottom of
 your to-read list. It's definitely worth giving a try, but I wouldn't
-hurry to read it either. 
+hurry to read it.
+
+.. _celebrity-book-listed: https://www.instagram.com/p/BJPHBBYgpnE/
+.. _The Girls: https://www.goodreads.com/book/show/26893819-the-girls
