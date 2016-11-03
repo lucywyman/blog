@@ -96,9 +96,14 @@ aside {
   .footer a {
     display: inline-block; }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 680px) {
+  .wrapper {
+    padding: 5px; }
+
   main {
-    max-width: 700px;
-    margin: 10px auto; } }
+    margin: 10px auto; }
+
+  aside {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
