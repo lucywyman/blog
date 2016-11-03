@@ -1,6 +1,6 @@
 Rivers of Milk and Honey
 ========================
-:date: 2016-10-17
+:date: 2016-11-02
 :tags: experiences, tech, women
 :category: Experiences
 :slug: respect

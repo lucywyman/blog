@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-10-26T00:00:00-07:00</updated><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-11-02T00:00:00-07:00</updated><entry><title>Rivers of Milk and Honey</title><link href="http://blog.lucywyman.me/respect.html" rel="alternate"></link><published>2016-11-02T00:00:00-07:00</published><updated>2016-11-02T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-02:respect.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;: My experiences are entirely my own and don't
+necessarily reflect the experiences of others, including other women
+at my company.&lt;/p&gt;
+&lt;p&gt;It's no secret that there's an &lt;a class="reference external" href="http://stackoverflow.com/research/developer-survey-2016#developer-profile-gender"&gt;incredible shortage&lt;/a&gt; of women in the
+tech industry, and even less of a secret that &lt;a class="reference external" href="http://blog.lucywyman.me/boy.html"&gt;women are treated
+differently than men&lt;/a&gt;, particularly in tech. This discrimination manifests itself in a lot of
+ways, but for the most part it comes down to a single fact: &lt;strong&gt;we think
+it's ok to disrespect women&lt;/strong&gt;.  Often times this is completely
+subconscious, which doesn't absolve us of responsibility but does
+point out how deeply ingrained in us sexism is. I, too, am guilty of
+assuming my friend's pronoun-less colleague is a &amp;quot;he&amp;quot;, and assuming
+Bob knows what he's talking about but Alice doesn't¹.  So when I
+recently took a job at my company, I unconsciously expected some of
+this bias to color my daily interactions. I didn't even think about
+it; of course it was something I would have to deal with. I was a lady
+programmer at the bottom of the corporate totem pole. Why should men
+with 20+ years of experience in the field listen to me?&lt;/p&gt;
+&lt;p&gt;Against all of my unconscious and grim expectations my co-workers at
+my company treat me as a qualified peer.  They ask for my input and
+thoughts on important decisions. They pause and &lt;em&gt;listen&lt;/em&gt; when I speak,
+considering what I say with as much weight as they would anyone else
+on the team. They don't laugh when I ask a question or shame me for
+not knowing a fact, instead pointing out that it's &lt;em&gt;great&lt;/em&gt; that I'm
+asking questions and should continue to do so if I don't know
+something.  They explain things with patience and clarity and not an
+ounce of condescension, and have taken entire man-days to help get me
+up to speed on specific projects and technologies.  Working for
+my company, and specifically with this team, has given me a greater
+understanding of how to be respectful as well as be respected.  I
+realized all of the little things that my peers at university said and
+did -- that &lt;em&gt;I also&lt;/em&gt; said and did -- that indicated a lack of respect
+and awareness, and am slowly learning to not do those things. It's
+entirely a work in progress, and I still say or do things that I'm not
+proud of.  But I'm much more aware of when I slip up, why, and am able
+to apologize and move on more quickly.&lt;/p&gt;
+&lt;p&gt;What's most amazing is that all of this is done without any fanfare.
+It was taken for granted that I was an intelligent, worthy team member
+who has as much to contribute as anyone else on the team. My ideas
+were always measured equally, and without the obvious effort or
+uneasiness of those learning to respect women. My company has created a
+place where I feel welcome, comfortable, and safe.&lt;/p&gt;
+&lt;p&gt;So why am I telling you this?  Because 6 months ago I thought I would
+always have to live with an undercurrent of misogyny.  I thought I
+would always be shamed for not knowing some fact, or not getting the
+video game reference. And I want you to know that &lt;em&gt;you can expect
+more&lt;/em&gt;. I read so many heartbreaking articles and stories about what
+women go through at work, and know first hand how &lt;em&gt;hard&lt;/em&gt; it is to be a
+minority in the tech industry. And I want to emphasize that my
+experience does &lt;strong&gt;not&lt;/strong&gt; diminish or invalidate the experiences of
+others. The way women are treated in my industry is not OK. But I want
+you to know that &lt;em&gt;it isn't always like that&lt;/em&gt;, that it &lt;em&gt;doesn't have to
+be that way&lt;/em&gt;. My company isn't perfect.  Heck, of our 130 engineers
+only ~10% identify as female.  &lt;strong&gt;10%&lt;/strong&gt;.  They just increased maternity
+leave from &lt;strong&gt;two weeks&lt;/strong&gt; to six weeks.  But I am valued and
+appreciated, implicitly and explicitly. And for that, I am incredibly
+privileged and thankful.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thank you for reading!  If you are interested in learning more about
+being an ally to minorities, I highly recommend the article&lt;/em&gt; &lt;a class="reference external" href="https://codeascraft.com/2016/10/19/being-an-effective-ally-to-women-and-non-binary-people/"&gt;Being an
+Effective Ally&lt;/a&gt;.  &lt;em&gt;It has been a guiding light to me&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;[1] Being aware of that bias has helped me stop doing those things,
+but it takes time and concious effort to do so.&lt;/p&gt;
+</summary><category term="experiences"></category><category term="tech"></category><category term="women"></category></entry><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
 and couldn't find the answer on the internet.  I'm writing tests for
 Puppet's &lt;a class="reference external" href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html"&gt;application orchestrator&lt;/a&gt; which involve setting up an
 application remotely then running some variations of &lt;code&gt;puppet job
@@ -127,68 +188,7 @@ couldn't save a half-hearted story.&lt;/p&gt;
 &lt;p&gt;If you're thinking about picking it up, and leave it at the bottom of
 your to-read list. It's definitely worth giving a try, but I wouldn't
 hurry to read it.&lt;/p&gt;
-</summary><category term="book-review"></category></entry><entry><title>Rivers of Milk and Honey</title><link href="http://blog.lucywyman.me/respect.html" rel="alternate"></link><published>2016-10-17T00:00:00-07:00</published><updated>2016-10-17T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-17:respect.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;: My experiences are entirely my own and don't
-necessarily reflect the experiences of others, including other women
-at my company.&lt;/p&gt;
-&lt;p&gt;It's no secret that there's an &lt;a class="reference external" href="http://stackoverflow.com/research/developer-survey-2016#developer-profile-gender"&gt;incredible shortage&lt;/a&gt; of women in the
-tech industry, and even less of a secret that &lt;a class="reference external" href="http://blog.lucywyman.me/boy.html"&gt;women are treated
-differently than men&lt;/a&gt;, particularly in tech. This discrimination manifests itself in a lot of
-ways, but for the most part it comes down to a single fact: &lt;strong&gt;we think
-it's ok to disrespect women&lt;/strong&gt;.  Often times this is completely
-subconscious, which doesn't absolve us of responsibility but does
-point out how deeply ingrained in us sexism is. I, too, am guilty of
-assuming my friend's pronoun-less colleague is a &amp;quot;he&amp;quot;, and assuming
-Bob knows what he's talking about but Alice doesn't¹.  So when I
-recently took a job at my company, I unconsciously expected some of
-this bias to color my daily interactions. I didn't even think about
-it; of course it was something I would have to deal with. I was a lady
-programmer at the bottom of the corporate totem pole. Why should men
-with 20+ years of experience in the field listen to me?&lt;/p&gt;
-&lt;p&gt;Against all of my unconscious and grim expectations my co-workers at
-my company treat me as a qualified peer.  They ask for my input and
-thoughts on important decisions. They pause and &lt;em&gt;listen&lt;/em&gt; when I speak,
-considering what I say with as much weight as they would anyone else
-on the team. They don't laugh when I ask a question or shame me for
-not knowing a fact, instead pointing out that it's &lt;em&gt;great&lt;/em&gt; that I'm
-asking questions and should continue to do so if I don't know
-something.  They explain things with patience and clarity and not an
-ounce of condescension, and have taken entire man-days to help get me
-up to speed on specific projects and technologies.  Working for
-my company, and specifically with this team, has given me a greater
-understanding of how to be respectful as well as be respected.  I
-realized all of the little things that my peers at university said and
-did -- that &lt;em&gt;I also&lt;/em&gt; said and did -- that indicated a lack of respect
-and awareness, and am slowly learning to not do those things. It's
-entirely a work in progress, and I still say or do things that I'm not
-proud of.  But I'm much more aware of when I slip up, why, and am able
-to apologize and move on more quickly.&lt;/p&gt;
-&lt;p&gt;What's most amazing is that all of this is done without any fanfare.
-It was taken for granted that I was an intelligent, worthy team member
-who has as much to contribute as anyone else on the team. My ideas
-were always measured equally, and without the obvious effort or
-uneasiness of those learning to respect women. My company has created a
-place where I feel welcome, comfortable, and safe.&lt;/p&gt;
-&lt;p&gt;So why am I telling you this?  Because 6 months ago I thought I would
-always have to live with an undercurrent of misogyny.  I thought I
-would always be shamed for not knowing some fact, or not getting the
-video game reference. And I want you to know that &lt;em&gt;you can expect
-more&lt;/em&gt;. I read so many heartbreaking articles and stories about what
-women go through at work, and know first hand how &lt;em&gt;hard&lt;/em&gt; it is to be a
-minority in the tech industry. And I want to emphasize that my
-experience does &lt;strong&gt;not&lt;/strong&gt; diminish or invalidate the experiences of
-others. The way women are treated in my industry is not OK. But I want
-you to know that &lt;em&gt;it isn't always like that&lt;/em&gt;, that it &lt;em&gt;doesn't have to
-be that way&lt;/em&gt;. My company isn't perfect.  Heck, of our 130 engineers
-only ~10% identify as female.  &lt;strong&gt;10%&lt;/strong&gt;.  They just increased maternity
-leave from &lt;strong&gt;two weeks&lt;/strong&gt; to six weeks.  But I am valued and
-appreciated, implicitly and explicitly. And for that, I am incredibly
-privileged and thankful.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thank you for reading!  If you are interested in learning more about
-being an ally to minorities, I highly recommend the article&lt;/em&gt; &lt;a class="reference external" href="https://codeascraft.com/2016/10/19/being-an-effective-ally-to-women-and-non-binary-people/"&gt;Being an
-Effective Ally&lt;/a&gt;.  &lt;em&gt;It has been a guiding light to me&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;[1] Being aware of that bias has helped me stop doing those things,
-but it takes time and concious effort to do so.&lt;/p&gt;
-</summary><category term="experiences"></category><category term="tech"></category><category term="women"></category></entry><entry><title>Book Review: The Art of Racing in the Rain</title><link href="http://blog.lucywyman.me/the-art-of-racing-in-the-rain.html" rel="alternate"></link><published>2016-10-16T00:00:00-07:00</published><updated>2016-10-16T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-16:the-art-of-racing-in-the-rain.html</id><summary type="html">&lt;p&gt;While doing chores and running errands this weekend, I had a chance to
+</summary><category term="book-review"></category></entry><entry><title>Book Review: The Art of Racing in the Rain</title><link href="http://blog.lucywyman.me/the-art-of-racing-in-the-rain.html" rel="alternate"></link><published>2016-10-16T00:00:00-07:00</published><updated>2016-10-16T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-16:the-art-of-racing-in-the-rain.html</id><summary type="html">&lt;p&gt;While doing chores and running errands this weekend, I had a chance to
 read &lt;a class="reference external" href="http://www.garthstein.com/works/the-art-of-racing-in-the-rain/"&gt;The Art of Racing in the Rain&lt;/a&gt; by Garth Stein. As a dog owner
 and lover I was simultaneously excited and wary of another book about
 a dog where the dog inevitably the dog dies at the end. But I set
