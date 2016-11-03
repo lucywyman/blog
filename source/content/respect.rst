@@ -71,8 +71,8 @@ appreciated, implicitly and explicitly. And for that, I am incredibly
 privileged and thankful.
 
 *Thank you for reading!  If you are interested in learning more about
-being an ally to minorities, I highly recommend the article `Being an
-Effective Ally`_.  It has been a guiding light to me*
+being an ally to minorities, I highly recommend the article* `Being an
+Effective Ally`_.  *It has been a guiding light to me*
 
 [1] Being aware of that bias has helped me stop doing those things,
 but it takes time and concious effort to do so. 
