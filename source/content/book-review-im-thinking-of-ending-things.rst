@@ -1,6 +1,6 @@
 Book Review: I'm Thinking of Ending Things
 ==========================================
-:date: 2016-11-03
+:date: 2016-11-01
 :tags: book-review
 :category: Books
 :slug: im-thinking-of-ending-things

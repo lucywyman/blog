@@ -1,10 +1,11 @@
 Book Lovers: A Gifting Guide
 ============================
-:date: 2016-11-02
+:date: 2016-11-04
 :tags: books
 :category: Books
-:slug: 2016-gifting-books
+:slug: 2016-book-gifting-guide
 :author: Lucy Wyman
+:img: christmas-book.jpg
 
 I know, I know. It's too early.  But...is it? I feel like I go through
 this every year: it's always too early to start thinking about the
@@ -15,7 +16,7 @@ foresight to do what my mom does and just shop for presents
 year-round, finding things she thinks people will like. We can't all
 be planners.
 
-So, November 2nd seems like a good enough in between. And what better
+So, November 4th seems like a good enough in between. And what better
 gift is there to give than a good story?  Whether your
 recipient is an enthusiastic reader or hasn't picked up a book in
 years, I think there's something for everyone at the local book store.
@@ -63,9 +64,16 @@ Your friend's mom has one. And now, your mom can have one too!
 Coloring is meditative, methodic, excellent to keep your hands busy
 while watching TV.  Here are a few that look neat:
 
-*
-*
-*
+* `The Secret Garden`_. Kind of the OG coloring book.
+* `Color Me Calm`_
+* `Pride and Prejudice: A Coloring Classic`_
+
+Find more of them `at Powell's`_
+
+.. _The Secret Garden: http://www.powells.com/book/secret-garden-an-inky-treasure-hunt-coloring-book-9781780671062/1-20
+.. _Color Me Calm: http://www.powells.com/book/color-me-calm-100-coloring-templates-for-meditation-relaxation-9781937994778/1-0
+.. _Pride and Prejudice\: A Coloring Classic: http://www.powells.com/book/pride-prejudice-a-coloring-classic-9781524701123/1-1
+.. _at Powell's: http://www.powells.com/books/childrens/activities/coloring-books
 
 Graphic Novels
 ~~~~~~~~~~~~~~
@@ -138,10 +146,11 @@ most accessible.
 
 * `Gödel, Escher, Bach`_ by Douglas Hofstadter is a mind-bending, brain-exploding math +
   philosophy book. This is perfect your friend who just started grad
-  school, or your cousin who thinks he's the smartest person on
-  planet Earth.
+  school.
 * `Love and Math`_ by Edward Frenkel is just a great math book.  Part memoir, part
-  linear algebra, Edward Frenkel 
+  linear algebra, Edward Frenkel discusses how he came to love math,
+  what he endured to be part of the mathematics community, and what he
+  spent his life researching and discovering. 
 * `How Not to Be Wrong`_ by Jordan Ellenberg is for the armchair mathematician. It's a
   critical analysis of how we approach problems, and common data
   analytics methods.  More "How to think about this real-world issue" than
@@ -179,13 +188,20 @@ juicy ones I've enjoyed.
 For the Friend with a BB8 Pillow
 --------------------------------
 
-* `Ready Player One`_ by Ernest Cline. 
-* `Use of Weapons`_ by Iain Banks
-* `The Lathe of Heaven`_ by Ursula K. LeGuin
+AKA Sci-Fi.
 
-.. _Ready Player One: 
-.. _Use of Weapons:
-.. _The Lathe of Heaven:
+* `Ready Player One`_ by Ernest Cline is a totally accessible and fun
+  story. It's a classic hero's tale, with 80's geek and gamer culture
+  mixed in. Highly recommend for readers of any age.
+* `Use of Weapons`_ by Iain Banks is by far my favorite sci-fi book.
+  Great characters, an excellent ending, compelling plot, and very
+  interesting premise. Highly, highly recommend for all readers
+* `The Lathe of Heaven`_ by Ursula K. LeGuin is a solid, satisfying
+  sci-fi adventure.
+
+.. _Ready Player One: https://www.goodreads.com/book/show/9969571-ready-player-one
+.. _Use of Weapons: https://www.goodreads.com/book/show/12007.Use_of_Weapons
+.. _The Lathe of Heaven: https://www.goodreads.com/book/show/59924.The_Lathe_of_Heaven
 
 For the People Person
 ---------------------
@@ -193,8 +209,16 @@ For the People Person
 This section is really just an excuse to recommend `When Breath
 Becomes Air`_.
 
-* `When Breath Becomes Air`_ by Paul Kalanathi.
-* `The Audacity of Hope`_ by Barack Obama.
+* `When Breath Becomes Air`_ by Paul Kalanathi is the heartbreaking
+  story of a young neurosurgeon diagnosed with stage IV lung cancer.
+  Intimate with the American healthcare system as both a doctor and a
+  patient, this book has fascinating insights and thoughts around the
+  ultimate question: *What makes life worth living?*
+* `The Audacity of Hope`_ by Barack Obama, for when you need to
+  revitalize your faith in our country's politicians.
 
 .. _When Breath Becomes Air:
 .. _The Audacity of Hope:
+
+And that's all she wrote, folks! I hope you have a wonderful holiday
+season, surrounded by family and friends you love ♥
