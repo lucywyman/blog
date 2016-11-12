@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+<div class='article'>
 <dl id="tag_list">
 	<ul>
 		{% for tag in tag_cloud %}
@@ -8,4 +8,5 @@
 		{% endfor %}
 	</ul>
 </dl>
+</div>
 {% endblock %}

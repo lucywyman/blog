@@ -1,5 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/conferences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-04-17T00:00:00-07:00</updated><entry><title>Beaver Barcamp 16</title><link href="http://blog.lucywyman.me/beaver-barcamp-16.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><updated>2016-04-17T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:beaver-barcamp-16.html</id><summary type="html">&lt;p&gt;The conference everyone waits for all year, &lt;a class="reference external" href="http://beaverbarcamp.org"&gt;BEAVER BARCAMP&lt;/a&gt; went down
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/conferences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-05-23T00:00:00-07:00</updated><entry><title>Write The Docs: NA 2016</title><link href="http://blog.lucywyman.me/wtd-2016.html" rel="alternate"></link><published>2016-05-23T00:00:00-07:00</published><updated>2016-05-23T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-23:wtd-2016.html</id><summary type="html">&lt;p&gt;Another year of &lt;a class="reference external" href="http://www.writethedocs.org/conf/na/2016"&gt;Write the Docs&lt;/a&gt;!  Although I don't write as much
+documentation as I should, writing is such a key part of day-to-day human
+interaction, and WTD is always a good reminder of basic principles and
+encouragement to write more (docs).  It's also an incredibly well run
+conference, done through trial and error. Every year they try new things, and
+keep the things that work.  It's also one-track, which has pros and cons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;:
+* Everyone has the same experience, and it's easy to discuss
+* You don't need to make any decisions or miss great talks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;:
+* You have to sit through some sub-optimal talks
+* Less walking and time between sessions&lt;/p&gt;
+&lt;p&gt;WTD is also held at the &lt;a class="reference external" href="http://www.mcmenamins.com/CrystalBallroom"&gt;Crystal Ballroom&lt;/a&gt; in Portland, which is a great
+venue.  It's friendly. It's not corporate-y. Good vibes all around. There were
+also talks. I wrote about them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Side Note:&lt;/strong&gt; There were many well-dressed humans, who had very well designed
+[clothes | bags | accessories]. It was wonderful to get out of the university
+fashion bubble.&lt;/p&gt;
+&lt;div class="section" id="day-1"&gt;
+&lt;h2&gt;Day 1&lt;/h2&gt;
+&lt;div class="section" id="open-source-docs-in-federal-gov-t"&gt;
+&lt;h3&gt;Open Source Docs in Federal Gov't&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Britta Gustafson&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Contributing to &lt;a class="reference external" href="https://github.com/whitehouse"&gt;government software&lt;/a&gt; was a thought that had never crossed my
+mind, and it turns out that not &lt;em&gt;all&lt;/em&gt; the governments software is horrible and
+outdated.  In fact, they have a lot of really cool and interesting APIs, and
+are incredibly immersed in Open Source.  Britta recently became a federal
+employee, working for the &lt;a class="reference external" href="https://github.com/GSA"&gt;General Services Agency (GSA)&lt;/a&gt; on the &lt;a class="reference external" href="https://github.com/18F"&gt;18F&lt;/a&gt;, and
+she gave a compelling talk on why contributing to the government helps you help
+others.  We often think of the government as a crufty old gross thing that
+takes our money and makes bad decisions. But if we want that to change, we
+&lt;em&gt;have the power&lt;/em&gt;, especially as software developers. Being part of that
+ecosystem can help strengthen a weak and imperfect system, and do good for a
+lot of people. All good things to think about, and really a core part of open
+source. Great talk, great speaker, great topic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="customer-support-docs"&gt;
+&lt;h3&gt;Customer Support + Docs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Neal Kaplan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This was a rough talk. It can really be summed up in one sentence: If you write
+docs, you should talk to your customers and customer support team more to get a
+feel for what customers need and what your docs are missing.  A good point, but
+not a half-hour long point.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="documenting-apis"&gt;
+&lt;h3&gt;Documenting APIs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Allison Reinheimer Moore&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Allison's talk was well put together and well-rehearsed, but without many
+memorable takeaways. APIs are so diverse that this is an understandably
+difficult talk to execute, and I recall it being unfortunately general.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="collaboration-between-open-source-corporate-software"&gt;
+&lt;h3&gt;Collaboration Between Open Source + Corporate Software&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Shaun McCance&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shaun's talk was primarily a call to action for professional technical writers
+to help the open source projects they use write good documentation. Often
+community members are working on open source projects just for fun, and most
+developers don't find writing docs very fun. Understandably. So, as paid people
+who use words, if you're already writing docs for something, why not contribute
+that to open source?  It strengthens both products, makes the world better,
+unicorns poop rainbows, yay.  This was another talk that could really have been
+5 minutes of &amp;quot;Hey, here's a thought you might not have had, do the things!&amp;quot;,
+but it's a thesis I totally agree with.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lunch"&gt;
+&lt;h3&gt;Lunch&lt;/h3&gt;
+&lt;p&gt;Usually lunch doesn't get it's own section, but lunch at WTD was &lt;em&gt;bomb&lt;/em&gt;. There
+was Caesar salad. Fresh veggies + fruit. And pasta with tomatoes, spinach, and
+hazelnuts. &lt;strong&gt;So good&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lightning-talks"&gt;
+&lt;h3&gt;Lightning Talks&lt;/h3&gt;
+&lt;div class="section" id="dialog-trees"&gt;
+&lt;h4&gt;Dialog Trees&lt;/h4&gt;
+&lt;p&gt;A talk on tool for making effective dialog trees for video games, specifically
+Yarn.  Something I know nothing about, and very well done!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lektor"&gt;
+&lt;h4&gt;Lektor&lt;/h4&gt;
+&lt;p&gt;Static-site CMS? It's a thing. SSG with dynamic admin site. It seems pretty
+cool. Possible fodder for travel blog.  Maybe best talk of the day in terms of
+content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cats-the-perfect-pets"&gt;
+&lt;h4&gt;Cats: The perfect pets&lt;/h4&gt;
+&lt;p&gt;False.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pantheon"&gt;
+&lt;h4&gt;Pantheon&lt;/h4&gt;
+&lt;p&gt;I'm not even sure what this talk was about.  It happened.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="copy-that-helping-users-succeed-with-copy"&gt;
+&lt;h3&gt;Copy That: Helping Users Succeed with Copy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Sarah Day&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Documentation for people who don't read documentation!  Product copy is the
+words you use in the product to guide users, like the label on a button, the
+title of a page, etc.  It's definitely one of those things that I don't think
+about as often as I should, and was wonderfully specific and detailed.  Sarah
+pulled up a page from &lt;a class="reference external" href="https://goodreads.com"&gt;GoodReads&lt;/a&gt; and talked about the use and misuse of copy
+on that page. There were diagrams, circles, and it was a very well-practiced
+and tight talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="readable-readme"&gt;
+&lt;h3&gt;Readable README&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Daniel Beck&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-zen"&gt;
+&lt;h3&gt;More Zen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tana Franko&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A gentle reminder of a few often-heard principles that are easy to forget.
+Reframe how you think of problems. Simplify your work. Don't forget to have
+hobbies.  This was a very successful and loosey-goosey 15 minute talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="embed-the-docs"&gt;
+&lt;h3&gt;Embed the Docs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Kristof Von Tomme&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Another 15 minute &amp;quot;Thunderstorm&amp;quot;, this time on how important copy is.  Less
+well done than the previous copy talk, but no less important a message.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="writing-so-your-words-are-read"&gt;
+&lt;h3&gt;Writing So Your Words Are Read&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tracy Osborn&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Long and kind of interesting story?  Not to disrespect Tracy, but stripping out
+the self-congratulation at the beginning and giving context in a slide or two
+would be much better. Her point of &amp;quot;Know your audience, they aren't necessarily
+&lt;em&gt;you&lt;/em&gt;&amp;quot; is a good one, but again not worthy of a full half hour.  She also makes
+a lot of assumptions about how technical people write, which are completely
+false in my experience.  I'm definitely not the right audience for this talk,
+and as such didn't get much out of it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="panel-transforming-your-doc-process"&gt;
+&lt;h3&gt;Panel: Transforming Your Doc Process&lt;/h3&gt;
+&lt;p&gt;The panel was probably fine? I don't know, I was really tired + over caffeinated
+and in desperate need of food.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-2"&gt;
+&lt;h2&gt;Day 2&lt;/h2&gt;
+&lt;div class="section" id="what-writing-fiction-teaches-you-about-writing-documentation"&gt;
+&lt;h3&gt;What Writing Fiction Teaches You About Writing Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Thursday Bram&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thursday takes principles that everyone (even me -- really, &lt;em&gt;everyone&lt;/em&gt;) has
+heard when writing fiction and talks about how you can apply it to writing
+documentation. It was more effective (for me personally) as a review of writing
+principles, but was a very entertaining and example-filled presentation none
+the less.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="values-of-effective-tech-writing-teams"&gt;
+&lt;h3&gt;7 Values of Effective Tech Writing Teams&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Joao Fernandes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thesis: Help build products that need no documentation. In-app help, buttons |
+labels | tooltips, clear copy, etc. A few of the same ideas  we've heard
+repeated at the conference: be brief, be concise, work with your team, know
+your audience &amp;amp; product &amp;amp; market, etc. But, if I had to choose &lt;em&gt;one&lt;/em&gt; of the
+talks that covered these topics, it would be this one. The slides were
+&lt;em&gt;gorgeous&lt;/em&gt;, and the speaker was relatively charismatic if a bit monotone.  He
+also did an interesting thing where he would introduce an practice, then
+explain what would happen if you didn't adopt that practice, which seemed more
+effective &amp;amp; interesting than just saying to do the thing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="building-documentation-culture-in-startups"&gt;
+&lt;h3&gt;Building Documentation Culture in Startups&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ruthie BenDor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Talk of the day!  Ruthie is an engineer with a range of experiences, and this
+was basically story time of good and bad experiences with docs.  She's a great
+storyteller, really interesting tales with good morals &amp;amp; takeaways, and very
+funny.  She also covered a 4-step guide to creating great internal docs that's
+general and applicable to any org. Super talk!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="following-the-technical-doc-road"&gt;
+&lt;h3&gt;Following the Technical Doc Road&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Christy Lutz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Very cute Wizard of Oz themed inspiration speech. Believe in yourself, work
+with your team, etc. Funny + well-executed + entertaining + ideal for 15 minute
+talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="using-csat-data"&gt;
+&lt;h3&gt;Using CSAT Data&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Betsy Roseberg&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CSAT == Customer Satisfaction.  This was mostly about the value of having
+on-page user feedback + comment forms in your docs, and how to use that
+feedback productively. Excellent 15 minute talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="just-in-time-documentation"&gt;
+&lt;h3&gt;Just-In-Time Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Brianne Hillmer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The thesis: write your documentation when you know what problems your customers
+are having, don't try to guess what problems they will have in the future.
+This ends up being lots of short articles like &amp;quot;There's a gear button in the
+top left that looks little but actually takes you to what you want&amp;quot; that are
+only 2-3 paragraphs, but are exactly what people need. Overall very well
+executed, and especially able to keep the audience focused while smelling
+Burrito lunch!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Lightning Talks&lt;/h3&gt;
+&lt;div class="section" id="organizing-meetups"&gt;
+&lt;h4&gt;Organizing Meetups&lt;/h4&gt;
+&lt;p&gt;Definitely valuable if you're looking to start a meet-up, and the speaker seems
+like a very sweet if not well-spoken man.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="documentation-in-academia"&gt;
+&lt;h4&gt;Documentation in Academia&lt;/h4&gt;
+&lt;p&gt;Given by my hilarious co-worker Jack, I'm 100% biased here. But like everything
+Jack does I thought it was clever, funny, and educational.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="earning-user-trust"&gt;
+&lt;h4&gt;Earning User Trust&lt;/h4&gt;
+&lt;p&gt;Meh.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="interactive-document-environments"&gt;
+&lt;h3&gt;Interactive Document Environments&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tim Nugent &amp;amp; Paris Buttfield-Addison&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Also a great talk! Interactive Documentation Environments are Code + Notes +
+Docs, and are a very pretty way of rendering and compiling together those
+three things into kind of actual docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="accessible-math-on-the-web"&gt;
+&lt;h3&gt;Accessible Math on the Web&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tim Arnold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MathJax + MathML. If you haven't looked into them, you should!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="oops-i-became-an-engineer"&gt;
+&lt;h3&gt;Oops, I Became an Engineer&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tara Scherner de la Fuente&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#64;goatuserstories is a funny twitter. Follow your dreams! Consider community
+college! Win + profit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="main-takeaways"&gt;
+&lt;h2&gt;Main Takeaways&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Consider working for the government. It won't get better by you being angry
+at it, and they actually do some very cool things.&lt;/li&gt;
+&lt;li&gt;What's the current state of your internal docs? It's so easy to focus on external
+docs, but your employees need docs too! A good litmus test is how long it takes
+a new hire to get their first PR up.&lt;/li&gt;
+&lt;li&gt;Look out for Lektor and Interactive Documentation Environments. The future
+is bright and beautiful&lt;/li&gt;
+&lt;li&gt;Remember your basic writing and humaning principles: know your audience;
+be brief; ask questions; have respect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="conferences"></category><category term="experiences"></category><category term="tech"></category></entry><entry><title>Beaver Barcamp 16</title><link href="http://blog.lucywyman.me/beaver-barcamp-16.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><updated>2016-04-17T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-04-17:beaver-barcamp-16.html</id><summary type="html">&lt;p&gt;The conference everyone waits for all year, &lt;a class="reference external" href="http://beaverbarcamp.org"&gt;BEAVER BARCAMP&lt;/a&gt; went down
 yesterday.  This is my third year and final year organizing the unconference,
 and all was strangely calm.  I'm not sure what magical forces to attribute this
 to, but usually there is a sharp spike in meetings, tasks, and general PANIC on
@@ -60,4 +305,125 @@ thinking about school.  Since I'm writing this last sentence on September
 13th, 5 months after barcamp actually finished, I'm just going to leave it
 there and publish this now.  Writing a blog is hard guys.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="conferences"></category><category term="tech"></category></entry></feed>
+</summary><category term="experiences"></category><category term="conferences"></category><category term="tech"></category></entry><entry><title>SCaLE 14x: My Experience</title><link href="http://blog.lucywyman.me/scale-14x.html" rel="alternate"></link><published>2016-01-23T00:00:00-08:00</published><updated>2016-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-01-23:scale-14x.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="/theme/images/scale-14x.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-0"&gt;
+&lt;h2&gt;Day 0:&lt;/h2&gt;
+&lt;p&gt;We pulled up to the venue at about 5:30 Friday night, T-90 minutes to Ignite
+talks.  I chugged a chocolate milk from the &amp;quot;gift store&amp;quot;, ran through my
+slides one last time, got dinner with the bosses, and found myself on a stage.&lt;/p&gt;
+&lt;div class="section" id="the-ignite-talks"&gt;
+&lt;h3&gt;The Ignite Talks&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Deb Nicholson, &lt;strong&gt;The Foss Awakens&lt;/strong&gt;. How collaboration and mentoring
+are a force for good, told with Star Wars images. Grade-A speaker, definitely
+delivered. Great way to start the evening.&lt;/li&gt;
+&lt;li&gt;Gilbert Standen, &lt;strong&gt;Building Oracle on LXC&lt;/strong&gt;. He lost me at &amp;quot;Oracle&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Me. &lt;strong&gt;Rocking the House&lt;/strong&gt;.  But seriously, people laughed at my jokes,
+I got high-fived, it went better than expected.&lt;/li&gt;
+&lt;li&gt;Dave Nielsen, &lt;strong&gt;Redis&lt;/strong&gt;. Kind of informative, kind of boring.&lt;/li&gt;
+&lt;li&gt;Emily Dunham, &lt;strong&gt;Where's the Cloud&lt;/strong&gt;. Much like Deb, Emily is a veteran
+speaker and it shows. Funny, informative, ended on a pun.&lt;/li&gt;
+&lt;li&gt;Don Marti, &lt;strong&gt;Web ads&lt;/strong&gt;. I would have appreciated it more if I was less sleepy
+I think.&lt;/li&gt;
+&lt;li&gt;Justin King, &lt;strong&gt;Choosing a Framework for your project&lt;/strong&gt;. Knowledgable and
+well spoken, it's pretty great to watch a not-adult give a talk.  They have
+great perspective.&lt;/li&gt;
+&lt;li&gt;Corey Quinn: &lt;strong&gt;Docker Must Die: Heresy in the Church of Docker&lt;/strong&gt;. So, so
+funny. Dude is a master.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After some good laughs, I headed back up to my room, realized how
+overwhelmingly underprepared I was for my talk, finished up my slides and hit
+the hay.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-1"&gt;
+&lt;h2&gt;Day 1:&lt;/h2&gt;
+&lt;p&gt;Woke up early and got breakfast at this adorable bakery, &lt;a class="reference external" href="http://www.yelp.com/biz/euro-pane-bakery-pasadena"&gt;Euro Pane&lt;/a&gt;.
+Ran through the talk once for good measure, then headed over to the Key Note,
+by Mark Shuttleworth. Honestly, it was pretty much a sales pitch, and I
+wasn't really into it. But at least I didn't feel bad leaving early. I headed
+over to my room, set everything up, then walked around to get out the nerves.&lt;/p&gt;
+&lt;div class="section" id="my-talk"&gt;
+&lt;h3&gt;My Talk&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://slides.lucywyman.me/modifying-the-kernel.html"&gt;Modifying the Kernel: A How-to&lt;/a&gt;
+Not my best, not my worst. I got across the information I wanted to, and got
+lots of positive feedback after the talk and throughout the day. More than
+anything, I'm relieved that it's over and I can cross it off of my
+to-do list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lunch"&gt;
+&lt;h3&gt;Lunch&lt;/h3&gt;
+&lt;p&gt;We had guacamole, made tableside. It was &lt;em&gt;bomb&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="keila-banks-automated-teen"&gt;
+&lt;h3&gt;Keila Banks, Automated Teen&lt;/h3&gt;
+&lt;p&gt;I was really excited for this talk, and was a little let down. Between mic
+issues, some nerves, and being a little out of touch with the conference,
+I didn't get what I wanted to out of the talk.  All of that said, I have a
+lot of respect for Keila giving a talk to such a big room, and for getting up
+there in the first place. I'm excited to see what she does in the future, and
+hope to see her at other Open Source conferences soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="justin-mayer-essential-linux-security"&gt;
+&lt;h3&gt;Justin Mayer, Essential Linux Security&lt;/h3&gt;
+&lt;p&gt;This was pretty nearly the perfect talk.  I learned about a lot of valuable
+tools, including changes you can make to your SSH configs, creating SSL
+certificates with Let's Encrypt, HSTS, CSP, and other tools to make my
+computer and websites safer.  In Justin's words, &amp;quot;Think of the children&amp;quot;.&lt;/p&gt;
+&lt;p&gt;You can check out his slides at &lt;a class="reference external" href="https://justinmayer.com/talks/server-security/#/"&gt;https://justinmayer.com/talks/server-security/#/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="brandon-philips-etcd"&gt;
+&lt;h3&gt;Brandon Philips, Etcd&lt;/h3&gt;
+&lt;p&gt;Also a great talk. Brandon is obviously a well-practiced speaker who
+seemed very comfortable on stage.  He's also incredibly knowledgeable, and it
+was clear that this talk was only skimming the surface of what he knows on
+the subject of etcd. I also didn't know very much about etcd or CoreOS going
+in to the talk -- I even thought the d was for daemon :p -- so stood to get
+a lot out of it. And I did!&lt;/p&gt;
+&lt;p&gt;You can see some of the demos he did at &lt;a class="reference external" href="https://github.com/philips/hacks/tree/master/etcd-demos"&gt;https://github.com/philips/hacks/tree/master/etcd-demos&lt;/a&gt;,
+or learn more about CoreOS at &lt;a class="reference external" href="https://coreos.com/"&gt;https://coreos.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-2"&gt;
+&lt;h2&gt;Day 2:&lt;/h2&gt;
+&lt;p&gt;This morning was absolutely &lt;em&gt;beautiful&lt;/em&gt; in Pasadena.  I got to walk around
+for a while before everyone else woke up, and soak in some Sunday Morning
+magic. I don't know. There's something about it.&lt;/p&gt;
+&lt;div class="section" id="keynote-sarah-sharp-on-diversity"&gt;
+&lt;h3&gt;Keynote: Sarah Sharp on Diversity&lt;/h3&gt;
+&lt;p&gt;She said a lot of really important things, but they're also things that everyone
+has heard before.  She knows her stuff, and seems very passionate, but that
+keynote isn't going to change anything.  Call me a cynic, but from the two
+guys behind me asking &amp;quot;Why should minorities get a stipend just for getting an
+internship?&amp;quot; to ethnic homogeneity of the audience, I don't hold much hope
+for tech companies realizing how important diversity of their workforce is
+any time soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="randal-schwartz-intro-to-dart"&gt;
+&lt;h3&gt;Randal Schwartz, Intro to Dart&lt;/h3&gt;
+&lt;p&gt;Honestly, I spent this whole talk just working on making this blog. Woops.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-things-i-saw-today"&gt;
+&lt;h3&gt;Other Things I Saw Today&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Two pugs&lt;/li&gt;
+&lt;li&gt;Three grown men yell group hug and execute&lt;/li&gt;
+&lt;li&gt;The sun&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I spent the rest of the day doing homework and travelling. It's amazing how
+much effort it takes to move a human from A to B, and I have to say I was
+so exhausted by the time we got to Corvallis around 12:30.  Lesson learned:
+I am not a Sunday-worker. Sundays are for blankets and tea and tv, not
+late night flights and talking to other humans.  Overall, SCaLE was
+less stressful than I thought it would be, and I don't regret going
+like I thought I would. Maybe that sounds lukewarm, and I have to say
+it is a &lt;em&gt;very&lt;/em&gt; well run conference, and my particular sentiments don't
+reflect a lack of effort on the part of the organizers,
+presenters, or exhibitors. Objectively, it's a great conference.  I'm
+not really sure how to end this post. I might think of something
+better later. For now, ciao gentle reader. You excellent human you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="conferences"></category><category term="tech"></category><category term="experiences"></category></entry></feed>

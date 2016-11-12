@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>blog</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A humble blog by me, Lucy Wyman">
+<meta name="keywords" content="blog, code, lucy, wyman">
+<meta name="keywords" content="orchestrator">
+<meta name="keywords" content="loves">
+<meta name="keywords" content="conferences">
+<meta name="keywords" content="travel">
+<meta name="keywords" content="interviews">
+<meta name="keywords" content="concerts">
+<meta name="keywords" content="book-review">
+<meta name="keywords" content="application">
+<meta name="keywords" content="flag">
+<meta name="keywords" content="books">
+<meta name="keywords" content="tech">
+<meta name="keywords" content="puppet">
+<meta name="keywords" content="openstack">
+<meta name="keywords" content="experiences">
+<meta name="keywords" content="example">
+<meta name="keywords" content="women">
+<meta name="keywords" content="Books">
+<meta name="keywords" content="Conferences">
+<meta name="keywords" content="Experiences">
+<meta name="keywords" content="Loves">
+<meta name="keywords" content="Tech">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="http://blog.lucywyman.me" />
+<meta property="og:site_name" content="Blog" />
+
+<script src="/theme/js/jquery-1.11.2.js"></script>
+<link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48093989-5', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>  <body>
+    <nav>
+      <ul>
+        <li><h3><a href='http://blog.lucywyman.me'>Lucy Wyman</a></h3></li>
+        <li><a href='http://blog.lucywyman.me/about.html'>About</a></li>
+        <li> 
+          <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+        </li> 
+
+      </ul>
+    </nav>
+    <div class='wrapper'>
+      <main>
+<div class='article'>
+<h2>Puppet Orchestrator --application Example</h2>
+<p>10.26.2016</p>
+<p>As always, this technical blog post began when I was having a problem
+and couldn't find the answer on the internet.  I'm writing tests for
+Puppet's <a class="reference external" href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html">application orchestrator</a> which involve setting up an
+application remotely then running some variations of <code>puppet job
+run</code>.  In particular, I need to specify an environment (<code>-e or
+--environment</code>) and an application instance (<code>-a or
+--application</code>).</p>
+<p>Here's my directory structure:</p>
+<pre class="code literal-block">
+[root&#64;hostname environments]# tree
+.
+├── production
+│&nbsp;&nbsp; ├── environment.conf
+│&nbsp;&nbsp; ├── hieradata
+│&nbsp;&nbsp; ├── manifests
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── site.pp
+│&nbsp;&nbsp; └── modules
+└── tmpenv
+    ├── manifests
+    │&nbsp;&nbsp; └── site.pp
+    └── modules
+        ├── app_one
+        │&nbsp;&nbsp; ├── manifests
+        │&nbsp;&nbsp; │&nbsp;&nbsp; ├── db_component.pp
+        │&nbsp;&nbsp; │&nbsp;&nbsp; ├── init.pp
+        │&nbsp;&nbsp; │&nbsp;&nbsp; └── web_component.pp
+        │&nbsp;&nbsp; └── README.md
+        ├── README.md
+        └── shared_types_and_providers
+            └── lib
+                └── puppet
+                    ├── provider
+                    │&nbsp;&nbsp; ├── testhttp
+                    │&nbsp;&nbsp; │&nbsp;&nbsp; └── test_file.rb
+                    │&nbsp;&nbsp; └── testsql
+                    │&nbsp;&nbsp;     └── test_file.rb
+                    └── type
+                        ├── testhttp.rb
+                        └── testsql.rb
+</pre>
+<p>And the output of running <code>puppet app show -e tmpenv</code> is:</p>
+<pre class="code literal-block">
+App_one[Health Check Test]
+    App_one::Db_component[Health Check Test] =&gt; y21898u9zb3yin5.delivery.puppetlabs.net
+        + produces Testsql[Health Check Test]
+    App_one::Web_component[Health Check Test] =&gt; hzmjunpoua0mxeo.delivery.puppetlabs.net
+        consumes Testsql[Health Check Test]
+</pre>
+<p>Ok, so, as I see it there are 2 strong candidates for what the
+&quot;&lt;APPLICATION&gt;&quot; referred to in the <a class="reference external" href="https://docs.puppet.com/pe/latest/orchestrator_job_run.html">puppet orchestrator
+documentation</a> could be: <strong>app_one</strong> or <strong>App_one[Health Check
+Test]</strong>. Here's the output for each of those (using puppet job plan so
+that I'm not creating new job id's and logs all over the place):</p>
+<pre class="code literal-block">
+[root&#64;hostname environments]# puppet job plan -e tmpenv -a app_one
+Failed to submit plan: puppetlabs.orchestrator/unknown-target: The target was not found in environment tmpenv: app_one
+
+[root&#64;hostname environments]# puppet job plan -e tmpenv -a App_one[Health Check Test]
+terminate called after throwing an instance of 'HorseWhisperer::action_validation_error' what():  Validation Error: You supplied too many arguments to the run command. Only 1 is allowed.
+  Aborted
+</pre>
+<p>In desperation, I decide to try a combination of the two <strong>App_one</strong>.</p>
+<pre class="code literal-block">
+[root&#64;hostname environments]# puppet job plan -e tmpenv -a
+App_one
++-------------------+---------+
+| Environment       | tmpenv  |
+| Target            | App_one |
+| Concurrency Limit | None    |
+| Nodes             | 2       |
++-------------------+---------+
+
+Application instances: 1
+  - App_one[Health Check Test]
+
+Node run order (nodes in level 0 run before their dependent nodes in
+level 1, etc.):
+0 -----------------------------------------------------------------------
+y21898u9zb3yin5.delivery.puppetlabs.net
+    App_one[Health Check Test] - App_one::Db_component[Health Check
+    Test]
+
+1 -----------------------------------------------------------------------
+hzmjunpoua0mxeo.delivery.puppetlabs.net
+    App_one[Health Check Test] - App_one::Web_component[Health
+    Check Test]
+
+Use `puppet job run --application 'App_one' --environment
+tmpenv` to create and run a job like this.
+Node catalogs may have changed since this plan was
+generated.
+</pre>
+<p>Success!  I later discovered that <code>puppet job plan -e tmpenv -a
+&quot;App_one[Health Check Test]&quot;</code> also worked.  It's still unclear to me
+why the name needs be capitalized, but I trust that there are good and
+well thought out Reasons which just aren't documented.</p>
+<p>So, if you don't know, now you know :)</p>
+
+</div>
+      </main>
+      <aside>
+        <div class='sidebar'>
+          <div class='social-media'>
+            <a href='https://github.com/lucywyman'>
+              <img class='social' src='/theme/images/github-icon.png'>
+            </a>
+            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+              <img class='social' src='/theme/images/linkedin.png'>
+            </a>
+          </div>
+          <!--TODO: search, subscribe, archive-->
+          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <h3>Categories</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+            </li> 
+          </ul>
+          <hr>
+          <h3>Tags</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/application.html'>application</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/book-review.html'>book-review</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/books.html'>books</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/concerts.html'>concerts</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/conferences.html'>conferences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/example.html'>example</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/experiences.html'>experiences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/flag.html'>flag</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/interviews.html'>interviews</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/loves.html'>loves</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/openstack.html'>openstack</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/orchestrator.html'>orchestrator</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/puppet.html'>puppet</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/tech.html'>tech</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/travel.html'>travel</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/women.html'>women</a>
+            </li>
+
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class='footer'>
+      <!-- TODO -->
+      <a href='https://github.com/lucywyman'>
+        <img class='social' src='/theme/images/github-icon.png'>
+      </a>
+      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+        <img class='social' src='/theme/images/linkedin.png'>
+      </a>
+    </div>
+  </body>
+</html>

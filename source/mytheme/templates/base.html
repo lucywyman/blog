@@ -1,82 +1,65 @@
 <!DOCTYPE html>
 <html lang='en'>
-	{% include "head.html" %}
-	<body>
-		<nav>
-			<ul>
-				<li><h3><a href='{{ SITEURL }}'>Lucy Wyman</a></h3></li>
-				<li><a href='{{SITEURL}}/about.html'>About</a></li>
-				<li>
-					<a href='{{SITEURL}}/category/books.html'>
-						Books</a>
-				</li>
-				<li>
-					<a href='{{SITEURL}}/category/tech.html'>
-						Tech</a>
-				</li>
-				<li>
-					<a href='{{SITEURL}}/category/experiences.html'>
-						Experiences</a>
-				</li>
-				<li>
-					<a href='{{SITEURL}}/category/loves.html'>
-						Loves</a>
-				</li>
-			</ul>
-		</nav>
-		<div class='wrapper'>
-			<main>
-			{% block content %}
-			{% endblock content%}
-			</main>
-			<aside>
-				<div class='sidebar'>
-					<div class='social-media'>
-						<a href='https://github.com/lucywyman'>
-							<img class='social' src='theme/images/github-icon.png'>
-						</a>
-						<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
-							<img class='social' src='theme/images/linkedin.png'>
-						</a>
-						<a href='https://plus.google.com/107251431728646146032/posts'>
-							<img class='social' src='theme/images/google-plus.png'>
-						</a>
-					</div>
-					<!--TODO: search, subscribe, archive-->
-                 <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='theme/images/icon-rss.png'></a></p><hr>
-                <h3>Categories</h3>
-			<ul>
-                <li> 
-                    <a href='{{SITEURL}}/category/books.html'>Books</a>
-                </li> 
-                <li> 
-                    <a href='{{SITEURL}}/category/tech.html'>Tech</a>
-                </li> 
-                <li> 
-                    <a href='{{SITEURL}}/category/experiences.html'>Experiences</a> 
-                </li> 
-                <li> 
-                    <a href='{{SITEURL}}/category/loves.html'>Loves</a>
-                </li>
-			</ul>
-            <hr>
-            <h3>Tags</h3>
-                </div>
-			</aside>
-		</div>
-		<div class='footer'>
-			<!-- TODO -->
-			<a href='https://github.com/lucywyman'>
-				<img class='social' src='theme/images/github-icon.png'>
-			</a>
-			<a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
-				<img class='social' src='theme/images/linkedin.png'>
-			</a>
-			<a href='https://plus.google.com/107251431728646146032/posts'>
-				<img class='social' src='theme/images/google-plus.png'>
-			</a>
-		</div>
-	</body>
+  {% include "head.html" %}
+  <body>
+    <nav>
+      <ul>
+        <li><h3><a href='{{ SITEURL }}'>Lucy Wyman</a></h3></li>
+        <li><a href='{{SITEURL}}/about.html'>About</a></li>
+        {% for category, articles in categories|sort %}
+        <li> 
+          <a href='{{SITEURL}}/category/{{category|lower}}.html'>{{category}}</a>
+        </li> 
+        {% endfor %}
+
+      </ul>
+    </nav>
+    <div class='wrapper'>
+      <main>
+      {% block content %}
+      {% endblock content%}
+      </main>
+      <aside>
+        <div class='sidebar'>
+          <div class='social-media'>
+            <a href='https://github.com/lucywyman'>
+              <img class='social' src='/theme/images/github-icon.png'>
+            </a>
+            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+              <img class='social' src='/theme/images/linkedin.png'>
+            </a>
+          </div>
+          <!--TODO: search, subscribe, archive-->
+          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <h3>Categories</h3>
+          <ul>
+            {% for category, articles in categories|sort %}
+            <li> 
+              <a href='{{SITEURL}}/category/{{category|lower}}.html'>{{category}}</a>
+            </li> 
+            {% endfor %}
+          </ul>
+          <hr>
+          <h3>Tags</h3>
+          <ul>
+            {% for tag, articles in tags|sort %}
+            <li> 
+              <a href='{{SITEURL}}/tag/{{tag}}.html'>{{tag}}</a>
+            </li>
+
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class='footer'>
+      <!-- TODO -->
+      <a href='https://github.com/lucywyman'>
+        <img class='social' src='/theme/images/github-icon.png'>
+      </a>
+      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+        <img class='social' src='/theme/images/linkedin.png'>
+      </a>
+    </div>
+  </body>
 </html>
-
-

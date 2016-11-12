@@ -75,6 +75,7 @@ main {
   flex: 3 0 60%;
   max-width: 700px;
   min-width: 150px;
+  margin: 20px;
 
   .article {
     background: $light;
@@ -143,9 +144,15 @@ aside {
   display: inline-block;}
 }
 
-@media screen and (min-width: 680px){
+@media screen and (max-width: 680px){
+  .wrapper {
+    padding: 5px;
+  }
   main{
-    max-width: 700px;
     margin: 10px auto;
+  }
+
+  aside {
+    display: none;
   }
 }
