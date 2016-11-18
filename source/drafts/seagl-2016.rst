@@ -6,14 +6,19 @@ SeaGL 2016
 :slug: seagl-2016
 :author: Lucy Wyman
 
+
+
 Friday, November 11
 -------------------
 
-Keynote
-~~~~~~~
+Keynote: The Art of Personal Failure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**By Corey Quinn**
 
-My Talk
-~~~~~~~
+Linux Jargon
+~~~~~~~~~~~~
+**By me!**
 
-Security + Privacy in Firefox
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hardening Firefox for Privacy and Security
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**By Francois Marier**
