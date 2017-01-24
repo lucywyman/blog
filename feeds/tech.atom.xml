@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-10-26T00:00:00-07:00</updated><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-01-23T00:00:00-08:00</updated><entry><title>Setting a Language with Selenium Webdriver in Ruby</title><link href="http://blog.lucywyman.me/setting-a-language-with-selenium-webdriver-in-ruby.html" rel="alternate"></link><published>2017-01-23T00:00:00-08:00</published><updated>2017-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-01-23:setting-a-language-with-selenium-webdriver-in-ruby.html</id><summary type="html">&lt;p&gt;Hello reader! This post was inspired by a project I was working on
+recently, adding a 'lang' option to a &lt;a class="reference external" href="https://rubygems.org/gems/selenium-webdriver/versions/2.53.4"&gt;Selenium-Webdriver&lt;/a&gt; (the ruby
+gem) wrapper. I needed to instantiate
+&lt;a class="reference external" href="http://www.rubydoc.info/gems/selenium-webdriver/0.0.28/Selenium/WebDriver/Driver"&gt;Selenium::Webdriver&lt;/a&gt;.for(:firefox) and (:chrome) both locally and
+remotely (Sauce labs, specifically), setting a locale
+for each.  There's plenty of documentation on how to do this in
+&lt;a class="reference external" href="http://stackoverflow.com/questions/18645205/set-chromes-language-using-selenium-chromedriver"&gt;Java&lt;/a&gt;, &lt;a class="reference external" href="http://sqa.stackexchange.com/questions/9904/how-to-set-browser-locale-with-chromedriver-python"&gt;C&lt;/a&gt;, and even &lt;a class="reference external" href="http://sqa.stackexchange.com/questions/9904/how-to-set-browser-locale-with-chromedriver-python"&gt;Python&lt;/a&gt;, but it was hard to find the right
+way to do it using the ruby gem. So here's what worked for me, where
+&lt;code&gt;&amp;#64;&amp;#64;sweep_options[:lang]&lt;/code&gt; is just a variable that holds either
+'en-us' or 'ja' (as strings).&lt;/p&gt;
+&lt;div class="section" id="locally"&gt;
+&lt;h2&gt;Locally&lt;/h2&gt;
+&lt;div class="section" id="firefox"&gt;
+&lt;h3&gt;Firefox&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;firefox_profile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Firefox&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Profile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;
+&lt;span class="n"&gt;firefox_profile&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;intl.accept_languages&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="vc"&gt;@@sweep_options&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:lang&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:firefox&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:http_client&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:profile&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;firefox_profile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chrome"&gt;
+&lt;h3&gt;Chrome&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chrome_prefs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="ss"&gt;:lang&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="vc"&gt;@@sweep_options&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:lang&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:chrome&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:http_client&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:prefs&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;chrome_prefs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:desired_capabilities&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;caps&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="remotely"&gt;
+&lt;h2&gt;Remotely&lt;/h2&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;Firefox&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;firefox_profile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Firefox&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Profile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;
+&lt;span class="n"&gt;firefox_profile&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;intl.accept_languages&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="vc"&gt;@@sweep_options&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:lang&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Remote&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Capabilities&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:firefox_profile&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;firefox_profile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;Chrome&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;caps&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Remote&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Capabilities&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;chromeOptions&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;args&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;--disable-web-security&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+&lt;span class="n"&gt;driver&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;WebDriver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;for&lt;/span&gt; &lt;span class="ss"&gt;:remote&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;url&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://localhost:4444/wd/hub&amp;#39;&lt;/span&gt; &lt;span class="ss"&gt;desired_capabilities&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;caps&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="resources"&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sites.google.com/a/chromium.org/chromedriver/capabilities"&gt;https://sites.google.com/a/chromium.org/chromedriver/capabilities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="ruby"></category><category term="selenium"></category></entry><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
 and couldn't find the answer on the internet.  I'm writing tests for
 Puppet's &lt;a class="reference external" href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html"&gt;application orchestrator&lt;/a&gt; which involve setting up an
 application remotely then running some variations of &lt;code&gt;puppet job
