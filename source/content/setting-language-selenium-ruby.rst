@@ -33,7 +33,9 @@ Firefox
 
     firefox_profile = Selenium::WebDriver::Firefox::Profile.new
     firefox_profile['intl.accept_languages'] = @@sweep_options[:lang]
-    Selenium::WebDriver.for(:firefox, :http_client => client, :profile => firefox_profile)
+    Selenium::WebDriver.for(:firefox, 
+                            :http_client => client, 
+                            :profile => firefox_profile)
 
 Chrome
 ------
@@ -41,7 +43,10 @@ Chrome
 .. code-block:: ruby
 
     chrome_prefs = { :lang => @@sweep_options[:lang] }
-    Selenium::WebDriver.for(:chrome, :http_client => client, :prefs => chrome_prefs, :desired_capabilities => caps)
+    Selenium::WebDriver.for(:chrome, 
+                            :http_client => client, 
+                            :prefs => chrome_prefs, 
+                            :desired_capabilities => caps)
 
 
 Remotely
@@ -54,18 +59,31 @@ Firefox
 
     firefox_profile = Selenium::WebDriver::Firefox::Profile.new
     firefox_profile['intl.accept_languages'] = @@sweep_options[:lang]
-    Selenium::WebDriver::Remote::Capabilities.firefox(:firefox_profile => firefox_profile)
+    caps = Selenium::WebDriver::Remote::Capabilities.firefox(:firefox_profile => firefox_profile)
+    sweep_driver = Selenium::WebDriver.for(
+        :remote,
+        :http_client          => client,
+        :url                  => URL,
+        :desired_capabilities => caps)
 
 Chrome
 ------
 
 .. code-block:: ruby
 
-    caps = Selenium::WebDriver::Remote::Capabilities.chrome("chromeOptions" => {"args" => [ "--disable-web-security" ]})
-    driver = Selenium::WebDriver.for :remote, url: 'http://localhost:4444/wd/hub' desired_capabilities: caps
+    caps = Selenium::WebDriver::Remote::Capabilities.chrome("chromeOptions" => 
+                                                     {"args" => ["--lang=#{@@sweep_options[:lang]}"]})
+    sweep_driver = Selenium::WebDriver.for(
+        :remote,
+        :http_client          => client,
+        :url                  => URL,
+        :desired_capabilities => caps)
+
+
+
 
 Resources
 ~~~~~~~~~
 
 * https://sites.google.com/a/chromium.org/chromedriver/capabilities
-* 
+* https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities

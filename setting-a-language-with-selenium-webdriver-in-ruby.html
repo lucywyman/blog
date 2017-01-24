@@ -101,13 +101,18 @@ way to do it using the ruby gem. So here's what worked for me, where
 <h3>Firefox</h3>
 <div class="highlight"><pre><span></span><span class="n">firefox_profile</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Firefox</span><span class="o">::</span><span class="no">Profile</span><span class="o">.</span><span class="n">new</span>
 <span class="n">firefox_profile</span><span class="o">[</span><span class="s1">&#39;intl.accept_languages&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="vc">@@sweep_options</span><span class="o">[</span><span class="ss">:lang</span><span class="o">]</span>
-<span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span><span class="ss">:firefox</span><span class="p">,</span> <span class="ss">:http_client</span> <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span> <span class="ss">:profile</span> <span class="o">=&gt;</span> <span class="n">firefox_profile</span><span class="p">)</span>
+<span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span><span class="ss">:firefox</span><span class="p">,</span>
+                        <span class="ss">:http_client</span> <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span>
+                        <span class="ss">:profile</span> <span class="o">=&gt;</span> <span class="n">firefox_profile</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="section" id="chrome">
 <h3>Chrome</h3>
 <div class="highlight"><pre><span></span><span class="n">chrome_prefs</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:lang</span> <span class="o">=&gt;</span> <span class="vc">@@sweep_options</span><span class="o">[</span><span class="ss">:lang</span><span class="o">]</span> <span class="p">}</span>
-<span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span><span class="ss">:chrome</span><span class="p">,</span> <span class="ss">:http_client</span> <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span> <span class="ss">:prefs</span> <span class="o">=&gt;</span> <span class="n">chrome_prefs</span><span class="p">,</span> <span class="ss">:desired_capabilities</span> <span class="o">=&gt;</span> <span class="n">caps</span><span class="p">)</span>
+<span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span><span class="ss">:chrome</span><span class="p">,</span>
+                        <span class="ss">:http_client</span> <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span>
+                        <span class="ss">:prefs</span> <span class="o">=&gt;</span> <span class="n">chrome_prefs</span><span class="p">,</span>
+                        <span class="ss">:desired_capabilities</span> <span class="o">=&gt;</span> <span class="n">caps</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -117,13 +122,23 @@ way to do it using the ruby gem. So here's what worked for me, where
 <h3>Firefox</h3>
 <div class="highlight"><pre><span></span><span class="n">firefox_profile</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Firefox</span><span class="o">::</span><span class="no">Profile</span><span class="o">.</span><span class="n">new</span>
 <span class="n">firefox_profile</span><span class="o">[</span><span class="s1">&#39;intl.accept_languages&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="vc">@@sweep_options</span><span class="o">[</span><span class="ss">:lang</span><span class="o">]</span>
-<span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Remote</span><span class="o">::</span><span class="no">Capabilities</span><span class="o">.</span><span class="n">firefox</span><span class="p">(</span><span class="ss">:firefox_profile</span> <span class="o">=&gt;</span> <span class="n">firefox_profile</span><span class="p">)</span>
+<span class="n">caps</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Remote</span><span class="o">::</span><span class="no">Capabilities</span><span class="o">.</span><span class="n">firefox</span><span class="p">(</span><span class="ss">:firefox_profile</span> <span class="o">=&gt;</span> <span class="n">firefox_profile</span><span class="p">)</span>
+<span class="n">sweep_driver</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span>
+    <span class="ss">:remote</span><span class="p">,</span>
+    <span class="ss">:http_client</span>          <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span>
+    <span class="ss">:url</span>                  <span class="o">=&gt;</span> <span class="no">URL</span><span class="p">,</span>
+    <span class="ss">:desired_capabilities</span> <span class="o">=&gt;</span> <span class="n">caps</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="section" id="id3">
 <h3>Chrome</h3>
-<div class="highlight"><pre><span></span><span class="n">caps</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Remote</span><span class="o">::</span><span class="no">Capabilities</span><span class="o">.</span><span class="n">chrome</span><span class="p">(</span><span class="s2">&quot;chromeOptions&quot;</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s2">&quot;args&quot;</span> <span class="o">=&gt;</span> <span class="o">[</span> <span class="s2">&quot;--disable-web-security&quot;</span> <span class="o">]</span><span class="p">})</span>
-<span class="n">driver</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span> <span class="ss">:remote</span><span class="p">,</span> <span class="ss">url</span><span class="p">:</span> <span class="s1">&#39;http://localhost:4444/wd/hub&#39;</span> <span class="ss">desired_capabilities</span><span class="p">:</span> <span class="n">caps</span>
+<div class="highlight"><pre><span></span><span class="n">caps</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">::</span><span class="no">Remote</span><span class="o">::</span><span class="no">Capabilities</span><span class="o">.</span><span class="n">chrome</span><span class="p">(</span><span class="s2">&quot;chromeOptions&quot;</span> <span class="o">=&gt;</span>
+                                                 <span class="p">{</span><span class="s2">&quot;args&quot;</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;--lang=</span><span class="si">#{</span><span class="vc">@@sweep_options</span><span class="o">[</span><span class="ss">:lang</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">]</span><span class="p">})</span>
+<span class="n">sweep_driver</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span><span class="p">(</span>
+    <span class="ss">:remote</span><span class="p">,</span>
+    <span class="ss">:http_client</span>          <span class="o">=&gt;</span> <span class="n">client</span><span class="p">,</span>
+    <span class="ss">:url</span>                  <span class="o">=&gt;</span> <span class="no">URL</span><span class="p">,</span>
+    <span class="ss">:desired_capabilities</span> <span class="o">=&gt;</span> <span class="n">caps</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -131,7 +146,7 @@ way to do it using the ruby gem. So here's what worked for me, where
 <h2>Resources</h2>
 <ul class="simple">
 <li><a class="reference external" href="https://sites.google.com/a/chromium.org/chromedriver/capabilities">https://sites.google.com/a/chromium.org/chromedriver/capabilities</a></li>
-<li></li>
+<li><a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities</a></li>
 </ul>
 </div>
 
