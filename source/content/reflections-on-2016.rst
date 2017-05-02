@@ -32,10 +32,7 @@ long and melancholy winter stretched before us, with short gray days
 and long cold nights as far as the eye can see. There are no fun trips
 planned, no graduations, no 21st birthdays, no weddings, no reunions.
 The thought of the next few months only makes me feel hollow.
-But...but there should a but here. But there is no but. It just is. 
-
-
-
+But...but there should a but here. But there is no but. It just is.
 
 [1] And had never been devastated by the results of an election
 [2] For example, today I learned that some people don't think it's

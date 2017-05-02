@@ -7,7 +7,6 @@ Favorite Places in Portland
 :author: Lucy Wyman
 :img: favorite-places-ptown.jpg
 
-
 Places
 ~~~~~~
 
@@ -28,15 +27,19 @@ themselves drawn to one of Powell's 1 million books and fall in love
 all over again.  Even if you just come for the corgi-socks, it's worth
 the visit! 
 
+.. _Powell's: http://www.powells.com/
+
 Rose Test Garden
 ----------------
 
 The `International Rose Test Garden`_ is one of the most traditionally
 beautiful places in Portland.  With several football fields of roses
-and several hundred million types of roses, it's easy to lose all sense of time and space amidst the
-fragrance and brilliance of the Rose Test Garden. All kidding aside,
-the RTG is a must during the summer months when roses are in full
-bloom. 
+and several hundred million types of roses, it's easy to lose all
+sense of time and space amidst the fragrance and brilliance of the
+Rose Test Garden. All kidding aside, the RTG is a must during the
+summer months when roses are in full bloom. 
+
+.. _International Rose Test Garden: https://www.portlandoregon.gov/parks/finder/index.cfm?action=viewpark&propertyid=1113
 
 Serra
 -----
@@ -68,15 +71,24 @@ effects, and provides equally enjoyable inebriation in the right
 doses. If you're in town and haven't tried it yet, I highly (ha)
 recommend!
 
+.. _Serra: 
+
 Baghdad Theater
 ---------------
 
-McMenamin's is more than a brewery, but an eclectic variety of
+`McMenamin's`_ is more than a brewery, but an eclectic variety of
 refurbished vintage buildings providing places for communities to
-gather.  The Baghdad Theater is one such place, 
+gather. The `Baghdad Theater`_ is one such place. Located at the heart of
+Hawthorne, the Baghdad is the perfect "Portland" place for dinner, a
+movie, or both! When my SO was living in Portland over the summer we
+would go there almost every Saturday, get a large order of tater tots,
+and enjoy the movies they screened there. It's a staple of our lives,
+and a staple of Portland culture. 
 
 Ground Kontrol
 --------------
+
+Most big cities have classic arcades, and `Ground Kontrol`_ is ours
 
 Food
 ~~~~
@@ -88,11 +100,13 @@ The food may just be OK, but `E-San`_ has a special place in my heart.
 My co-workers and I often go there for lunch on Fridays, and I have so
 many fond memories of us squeezing 10-18 people into their loft,
 laughing together and enjoying a meal. I always get the same thing
-(Pad See Ew wih added Carrots) and have never tired of it! It may seem
+(Pad See Ew with Carrots) and have never tired of it! It may seem
 blase at first, but take your time at E-San. Admire the old wood and
 sturdy construction, the elaborate decorations, the scratches in the
 tables and floor that let you know this place is *lived in* and
-*loved*. You may not be wowed, but you won't regret it!
+*loved*. 
+
+.. _E-San:
 
 DC Vegetarian
 -------------
@@ -100,10 +114,13 @@ DC Vegetarian
 Portland is also known for it's `Food Carts`_, and while I can't say
 I've tried enough to tell you what that best in the city are, I will
 tell you that whenever I go to a food cart for lunch it is always to
-`DC Vegetarian`_ on 3rd and Alder TODO. The vegetarian and vegan
-sandwiches are honestly better than their meaty counterparts, and my
+`DC Vegetarian`_ on 3rd and Alder. Their vegetarian and vegan
+sandwiches are better than their meaty counterparts, and my
 go-to meal is just $5.50, the cheapest lunch you can get downtown at
 lunch hour. I highly recommend the vegan BLT, with avocado of course! 
+
+.. _Food Carts:
+.. _DC Vegetarian:
 
 Tea Chai Te
 -----------
@@ -122,7 +139,6 @@ favorite.
 Cacao
 -----
 
-
-.. _Powell's: http://www.powells.com/
-.. _International Rose Test Garden: https://www.portlandoregon.gov/parks/finder/index.cfm?action=viewpark&propertyid=1113
-
+Drinkable. Chocolate. Need I say more? `Cacao`_ is a super fancy
+chocolate place, with a few locations throughout Portland. They have
+all the high-quality chocolate your heart could desire, 

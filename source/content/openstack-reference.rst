@@ -20,6 +20,7 @@ debian_8.2.0_x86_64      debian
 ubuntu_1(4|6).04_x86_64  ubuntu
 fedora_23_x86_64         fedora
 rhel_7.2_x86_64          cloud-user (snowflake much?)
+coreos_(version)_x86_64  core
 =======================  ===================
 
 

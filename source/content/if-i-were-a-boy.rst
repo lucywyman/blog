@@ -155,6 +155,15 @@ The Little Things
   away, both totally uncomfortable and dreading the long walk to the
   car in the dark. The true skeptic may be thinking "He complimented
   you. Why is this a bad thing?"  Well, 
+* **02/24/2017**: In a meeting today the QA team was discussing
+  changes to our interview process. At one point a male coworker was
+  referring to potential candidates and said "The guy won't get XYZ.
+  He might not think to do ABC." and went on to continue referring
+  potential candidates as exclusively male for the rest of the
+  meeting. It's such a small thing, and I almost brought it up and
+  pointed it out, but I know he's not doing it intentionally. But it
+  does make clear that we unconsciously think of engineers as being
+  male.
 
 Conclusion
 ----------
@@ -176,7 +185,7 @@ experiences. You can read about others experiences with discrimination
 in tech here:
 
 * `Death by 1000 paper cuts`_ by Julie Pagano
-* 
+* `Reflecting on one very, very strange year at Uber`_ by Susan Fowler
 
 If you have an stories of your own that you think belong on this list, 
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
@@ -198,3 +207,4 @@ address as well. Have a lovely day!
 .. _etherpads: http://etherpad.osuosl.org
 .. _Linux Users Group: http://lug.oregonstate.edu
 .. _Death by 1000 paper cuts: http://juliepagano.com/blog/2013/03/24/my-experiences-in-tech-death-by-1000-paper-cuts/
+.. _Reflecting on one very, very strange year at Uber: https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber

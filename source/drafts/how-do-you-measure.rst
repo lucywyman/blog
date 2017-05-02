@@ -9,9 +9,11 @@ How Do You Measure A Year?
 Objective quantification is, generally, among the hardest problems of
 human history.  How do you quantify happiness?  Knowledge?  Even
 `mass`_ (you thought it was easy, didn't you?)?  Comparing and
-measuring "things" is difficult, and as humans we've come up with some
+measuring things is difficult, and as humans we've come up with some
 interesting ways of doing it. Below are stories of how we keep our
 perspective on everything moving around us, through measurement.
+
+.. _mass:
 
 Two Oreo Day
 ------------
@@ -23,3 +25,5 @@ writing. The hosts asked why just one oreo, and Larson replied: "
 
 .. _This story: http://howtodoeverything.org/post/152738170460/devil-in-the-white-city-author-erik-larson-helps
 .. _How To Do Everything: http://howtodoeverything.org/
+
+
