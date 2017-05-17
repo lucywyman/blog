@@ -27,7 +27,7 @@ FAQ
 Overall, this was an excellent conference! I'm not sure if the quality
 of speakers was especially high this year or if I'm just getting
 better at choosing which talks to attend, but I was *very* impressed
-with the speakers and their topics this year. There were only 1 or 2
+with the speakers and their topics. There were only 1 or 2
 talks that weren't useful to me, and even then I didn't find myself
 wishing I had attended a different talk. I learned a lot, got to catch
 up with OSS nerd friends, and got to meet some fantastic folks!
@@ -79,8 +79,7 @@ source and resonant one. Evan spoke about hardware hacking, and
 advocated for general parts to be standardized and made
 interchangeable like how batteries are now. For example, why can't we
 have motors be widely available and easy to replace in everything from
-toys to microwaves to blenders? Excellent note to start on!
-
+toys to microwaves to blenders? An excellent and inspiring note to start on!
 
 `Choose Open Infrastructure`_
 +++++++++++++++++++++++++++++
@@ -98,6 +97,7 @@ products they were working on, just some hard core pro-open source
 talk. 
 
 3 Open Source Principles:
+
 * **Transparency** - do they work openly?
 * **Interoperability** - can I get my data off the platform? Or am I locked in?
 * **Influence** - do they listen to non-paying users?
@@ -123,7 +123,7 @@ to successfully collaborate (in this case across companies), notably:
 
 While this is pretty standard advice, I *do* think that a project is
 less likely to succeed without these. Overall, interesting but not
-mind blowing but still pretty great!
+mind blowing.
 
 .. _Open source contribution and collaboration\: How (and why) Netflix drives industry engagement: https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59265
 .. _Spinnaker: http://www.spinnaker.io/
@@ -175,7 +175,7 @@ talked specifically about `anet`_, a little tool to track which NATO
 advisors have trained which Afghan officials, and spoke about the team
 which led that project and what helped them succeed. It was honestly a
 really good keynote, despite (or maybe including) the speaker's
-hilariously exaggerations and style. 
+hilarious exaggerations and style. 
 
 .. _Sharing America's code: https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59364
 .. _code.gov: https://code.gov
@@ -194,7 +194,7 @@ body is catching on that public speaking isn't scary? But about the
 talk! It's so hard to have perspective about talks you give, and so my
 initial reaction when people asked how it went was to say "Oh, there
 were so many things I could have improved or done better". For
-example, I completely neglected to any contact information or the link
+example, I completely neglected to include any contact information or the link
 to my slides in my presentation. But everyone I spoke to after the
 talk, even those who had constructive feedback, told me that they had
 really enjoyed the talk and had gotten something out of it. Overall
@@ -253,7 +253,7 @@ Another excellent talk! James talks at a mile a minute, though I was
 lucky to know juuust enough background knowledge to be able to keep
 up. `The TPM`_ is a small chip that's used to securely generate,
 store, and limit use of cryptographic keys. James talk was
-about using the TPM to store secrets, specifically VPN keys and
+about using the TPM to store cloud machine's secrets, specifically VPN keys and
 potentially RSA keys. There are a number of stumbling blocks towards
 this goal, not the least of which is a radical difference in how the
 TPM 1.2 and TPM 2.0 work (which makes backwards compatibility
@@ -276,11 +276,11 @@ tips for writing, most of which are relatively common knowledge but as
 an occasional writer I found them both inspiring and helpful! It never
 hurts to be reminded of how to structure your articles based on your
 audience, have a clear point, and that the only way to get better at
-writing is by writing! Rikki also provided a number of tech-industry
+writing is by writing. Rikki also provided a number of tech-industry
 specific tips (how technical to be in various articles, for example),
 as well as a number of quips from `Stephen King`_ (kill your darlings,
-kill your darlings). Though perhaps the most "common knowledge" type
-of talk, this might also be the talk I got the most out of in the
+kill your darlings). Although this was a "common knowledge" type
+of talk, it's also the talk I got the most out of in the
 whole conference, particularly since writing plays such an important
 role in my job and life. I was reminded to edit my pieces (woops,
 don't usually do that!), to learn to handle criticism, and to know who
@@ -288,6 +288,7 @@ I'm writing for. Overall, a super worthwhile and excellent talk from a
 true expert (and open source hero!).
 
 Key Takeaways:
+
 * Before you write know what you are writing about, why you're writing, and who your reader is
 * Research, outline, write, revise
 * 3 categories of audience in tech: lay audience, managers, experts
@@ -329,6 +330,7 @@ problem, explained how the JVM has improved and how those improvements
 have made impacts in the industry. 
 
 Key Takeaways:
+
 * Legacy java is pretty ugly, verbose, and repetitive. And there's *lots* of bad java out there
 * JVM has always been generally performant
 * JVM doesn't always respond to general fixes (for example, you have to tell it to use more memory, not just throw memory at it)
@@ -354,9 +356,12 @@ Last talk of the day is a tough slot, but Christian made HTTP headers
 both interesting and hilarious. This talk covered the major threats
 facing web applications today (namely `XSS`_, `Cookie hijacking`_,
 `CSRF`_, and `referrer data leakage`_), and what we as web developers
-can actively and easily do to prevent those attacks. 
+can actively and easily do to prevent those attacks. Favorite quote was 
+
+"To allow inline javascript, I need to add :code:`script-src unsafe-inline;`. Writing 'unsafe-inline' feels so good."
 
 Key Takeaways:
+
 * `Content Security Policy`_ is a `W3C`_ standard for security related http header content
 * https://caniuse.com to look up which security policies are supported by which browsers
 * CSP works by having the header and a 'directive', for example :code:`default-src 'self';`
@@ -444,8 +449,7 @@ By Meaghan Lewis
 
 I made a classic conference mistake with this talk: I already knew a
 lot
-about the subject. While I didn't gain any new insights Meaghan's
-talk, I was still impressed with the content and structure of the
+about the subject. While I didn't gain any new insights, I was still impressed with the content and structure of the
 talk! Meaghan covered common issues one might run in to when testing
 using Selenium across multiple browsers, and what might be causing
 those issues. She also prescribed some patterns that can help avoid
@@ -521,7 +525,7 @@ inspired and excited about my industry and community. I learned that
 the first step is to punch a tree, that TPM stands for more than just
 `tethered particle motion`_, and that learning rust is just a
 sea of bacon away. Looking forward to next year, when OSCON will be
-back in my beautiful hometown `Portland`. 
+back in my beautiful hometown `Portland`_. 
 
 
 .. _Step 1\: Punch a Tree: https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59367
