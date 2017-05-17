@@ -2,7 +2,7 @@ A Curly Girl's Guide to Dandruff
 ================================
 :date: 2017-03-29
 :tags: experiences, health
-:category: Health
+:category: Experiences
 :slug: guide-to-dandruff
 :author: Lucy Wyman
 
