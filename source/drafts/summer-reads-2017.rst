@@ -1,38 +1,33 @@
-Spring Reads 2017
+Summer Reads 2017
 =================
-:date: 2017-03-30
+:date: 2017-05-20
 :tags: books, loves
 :category: Books
-:slug: spring-reads-2017
+:slug: summer-reads-2017
 :author: Lucy Wyman
 :img: 
 
-I don't know about you, but this has felt like the longest winter.
-Between weeks of snow, endless (ongoing) rain, and a malfunctioning
-office thermostat, I'm ready to pack up my sweaters for a while and
-enjoy some strawberries. Let's put some sunscreen to use! 
-
-I know this is a little too late to be a Spring Break reading list,
-but with sunnier days ahead and some good family holiday weekends, I
-hope you take some time this spring to slow down, head outside, and
-enjoy a good book. Listen while you spring clean, or mow the lawn! Or
-just plain lounge around, paperback in hand. Here's what I've been
-loving lately:
+Summer is still a month away. But here in Oregon it's been raining for about 6 weeks straight now and dreaming of long days and sunshine is all that's getting me through. With long, lazy weekends ahead, now is the perfect time to start compiling a reading list! Here's what I've been loving lately: 
 
 Kitchens of the Great Midwest
 -----------------------------
-*By*
+*By J. Ryan Stradal*
+
+.. figure:: static/kitchens-of-the-great-midwest4.jpg
+    :height: 300px
 
 `Kitchens of the Great Midwest`_ is just about the sweetest book.
 Following the life of Eva Thorvald through the eyes of those around
 her, this book details the joys and pains of growing up in the
 midwest. Filled with food and a kindness only midwesterners can
-muster, KotGM will be the sunshine you need on those rainy spring
-days. 
+muster, KotGM is the perfect compliment to sunshine and lazy days in the park.
 
 How Everything Became War, and the Military Became Everything
 -------------------------------------------------------------
 *By Rosa Brooks*
+
+.. figure:: static/how-everything-became-war.jpg
+    :height: 300px
 
 Despite it's tongue-twisting title, `How Everything Became War, and
 the Military Became Everything`_ might be the best book I read all
@@ -51,10 +46,16 @@ The Magnolia Story
 I know I know I know I know I know. Judge all you want, I am
 head-over-heels for Chip and Joanna Gaines, and their book `The
 Magnolia Story`_ did not disappoint. They're so funny! And cute!
-Perfect for spring cleaning and flower gazing.
+Perfect for beach reading and flower gazing.
 
 Eligible
 --------
 
 Hot off of `Powell's Staff Picks`_, this modern `Pride and Prejudice`_
 retelling is 
+
+The Bell Jar
+------------
+*By Sylvia Plath*
+
+`The Bell Jar`_ flat out surprised me. I think of it as Classic Literature, and often find that Classic Literature is too masculine or too opaque for my casual reading tastes. This book was anything but! Plath's semi-autobiographical novel is the beautiful story of a young woman trying to find her 

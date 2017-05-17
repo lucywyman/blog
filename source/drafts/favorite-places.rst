@@ -85,10 +85,15 @@ would go there almost every Saturday, get a large order of tater tots,
 and enjoy the movies they screened there. It's a staple of our lives,
 and a staple of Portland culture. 
 
+.. _McMenamin's:
+.. _Baghdad Theater: 
+
 Ground Kontrol
 --------------
 
 Most big cities have classic arcades, and `Ground Kontrol`_ is ours
+
+.. _Ground Kontrol:
 
 Food
 ~~~~

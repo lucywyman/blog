@@ -6,7 +6,7 @@ Book Review: How Everything Became War, and the Military Became Everything
 :slug: how-everything-became-war
 :author: Lucy Wyman
 :grade: A
-:img: 
+:img: how-everything-became-war.jpg
 
 `How Everything Became War, and the Military Became Everything`_ might
 be the best book I read this year. The military has never been a part
@@ -33,3 +33,6 @@ understanding of our military's history, it's present state, and how
 it came to be the way that it is. I know more about what the military
 does and why it does it, and the pros and cons of having the military
 partake in all of the actions that it does.
+
+.. _How Everything Became War, and the Military Became Everything: https://www.goodreads.com/book/show/29238798-how-everything-became-war-and-the-military-became-everything
+.. _Rosa Brooks: http://www.rosabrooks.com/

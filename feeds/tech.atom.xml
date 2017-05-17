@@ -366,6 +366,9 @@ may not be the same if you use a manual image.&lt;/p&gt;
 &lt;tr&gt;&lt;td&gt;rhel_7.2_x86_64&lt;/td&gt;
 &lt;td&gt;cloud-user (snowflake much?)&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;coreos_(version)_x86_64&lt;/td&gt;
+&lt;td&gt;core&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;If you're still not sure, I tend to find which user Openstack wants me to use by trying to login to the instance as root, and get a message similar to:

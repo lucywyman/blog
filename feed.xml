@@ -1,5 +1,854 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Mon, 23 Jan 2017 00:00:00 -0800</lastBuildDate><item><title>Setting a Language with Selenium Webdriver in Ruby</title><link>http://blog.lucywyman.me/setting-a-language-with-selenium-webdriver-in-ruby.html</link><description>&lt;p&gt;Hello reader! This post was inspired by a project I was working on
+<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Mon, 15 May 2017 00:00:00 -0700</lastBuildDate><item><title>OSCON 2017</title><link>http://blog.lucywyman.me/oscon-2017.html</link><description>&lt;div class="section" id="highlights"&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;There's a &lt;em&gt;ton&lt;/em&gt; of content in this post, including a lot of links to
+even more content.  Here's the good stuff, if you want to skip the
+gory details.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59367"&gt;Step 1: Punch a Tree&lt;/a&gt; by Evan Booth&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/61296"&gt;Choose Open Infrastructure&lt;/a&gt; by Christopher Aedo&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57236"&gt;Finding your way in the dark: Security from first principles&lt;/a&gt; by Susan Sons&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/55872"&gt;Stephen King's practical advice for tech writers&lt;/a&gt; by Rikki Endsley&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56823"&gt;The frontend dev's illustrated Rust adventure survival guide&lt;/a&gt; by Liz Baillie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="faq"&gt;
+&lt;h2&gt;FAQ&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;How was OSCON?&lt;/strong&gt;
+Overall, this was an excellent conference! I'm not sure if the quality
+of speakers was especially high this year or if I'm just getting
+better at choosing which talks to attend, but I was &lt;em&gt;very&lt;/em&gt; impressed
+with the speakers and their topics this year. There were only 1 or 2
+talks that weren't useful to me, and even then I didn't find myself
+wishing I had attended a different talk. I learned a lot, got to catch
+up with OSS nerd friends, and got to meet some fantastic folks!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How did your talk go?&lt;/strong&gt;
+Very well! As the speaker it always feels like there are a million
+little things you should have done differently (I should have
+introduced this topic sooner, I should have defined this phrase, I
+should have put my contact info &lt;em&gt;somewhere&lt;/em&gt; in the slides, etc.). But
+attendees were engaged and attentive throughout the presentation, lots
+of people asked good questions, and those that I spoke to said they
+had clear takeaways from the presentation. Could it have been better?
+Definitely. Was it helpful to those who attended? Definitely. Looking
+back I consider it a success.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How did you like Austin?&lt;/strong&gt;
+Visiting Austin was also fun. As one of those people who is always
+cold I love visiting warmer climates, even if it's overcast and muggy.
+There was an abundance of good food (I'll take 3 fried avocado tacos
+please thank you), cute parks and urban hiking, and fantastic street
+art. There was also live music &lt;em&gt;at the airport&lt;/em&gt;. I was also visiting
+with a friend who had already been in Austin for 2 weeks (for
+&lt;a class="reference external" href="https://austin.dreamhack.com/"&gt;DreamHack&lt;/a&gt;), and later with a friend who lives in Austin, both of
+whom were tremendously helpful in navigating the city and it's many
+attractions. Would I visit again for a vacation? Probably not at the
+top of my list. But if OSCON &lt;em&gt;had&lt;/em&gt; to be somewhere other than
+Portland, I definitely didn't mind it being in Austin.&lt;/p&gt;
+&lt;p&gt;OK, on to the session I attended throughout the conference!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="wednesday"&gt;
+&lt;h2&gt;Wednesday&lt;/h2&gt;
+&lt;div class="section" id="keynotes"&gt;
+&lt;h3&gt;Keynotes&lt;/h3&gt;
+&lt;div class="section" id="step-1-punch-a-tree"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59367"&gt;Step 1: Punch a Tree&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;This was one of the most polished, entertaining, and well done talks
+I've seen in a while. It packed a punch, and was put together without
+being over the top. The &amp;quot;slides&amp;quot; were amazing (I had never seen slides
+like that before, or even thought to do something similar), the videos
+and sound effects were appropriate, well timed, and placed well
+(again, without being over the top), and the message was a truly open
+source and resonant one. Evan spoke about hardware hacking, and
+advocated for general parts to be standardized and made
+interchangeable like how batteries are now. For example, why can't we
+have motors be widely available and easy to replace in everything from
+toys to microwaves to blenders? Excellent note to start on!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="choose-open-infrastructure"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/61296"&gt;Choose Open Infrastructure&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Christopher Aedo&lt;/p&gt;
+&lt;p&gt;Another excellent keynote! Chris works for IBM, which at a conference
+like OSCON tends to make the audience skeptical. Chris' talk was
+anything but a product pitch though -- he spoke about how we can make
+infrastructure (read: compute storage and networking) more open across
+the industry. He spoke about the business benefits of using open
+source, how to build or choose infra tools using 3 open source
+principles, and listed common tools that met all 3 of those
+principles. There was no mention of IBM, or even any projects or
+products they were working on, just some hard core pro-open source
+talk.&lt;/p&gt;
+&lt;p&gt;3 Open Source Principles:
+* &lt;strong&gt;Transparency&lt;/strong&gt; - do they work openly?
+* &lt;strong&gt;Interoperability&lt;/strong&gt; - can I get my data off the platform? Or am I locked in?
+* &lt;strong&gt;Influence&lt;/strong&gt; - do they listen to non-paying users?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="open-source-contribution-and-collaboration-how-and-why-netflix-drives-industry-engagement"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59265"&gt;Open source contribution and collaboration: How (and why) Netflix drives industry engagement&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Dianne Marsh&lt;/p&gt;
+&lt;p&gt;In this talk, Dianne used Netflix project &lt;a class="reference external" href="http://www.spinnaker.io/"&gt;Spinnaker&lt;/a&gt; as a case study
+for how to successfully collaborate with other companies, in the
+context of open source. It was an interesting an insightful talk,
+and made me hopeful that companies like Netflix will continue to do
+open source right. Dianne also made some good points about how
+to successfully collaborate (in this case across companies), notably:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Build trust&lt;/li&gt;
+&lt;li&gt;Learn to communicate effectively (whatever that means for your
+specific team + companies)&lt;/li&gt;
+&lt;li&gt;Value input from everyone&lt;/li&gt;
+&lt;li&gt;Don't lose sight of your objective&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While this is pretty standard advice, I &lt;em&gt;do&lt;/em&gt; think that a project is
+less likely to succeed without these. Overall, interesting but not
+mind blowing but still pretty great!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-power-of-the-open-source-ecosystem"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/61737"&gt;The power of the open source ecosystem&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Ying Xiong&lt;/p&gt;
+&lt;p&gt;It was awesome to see a non-US speaker on stage, and I definitely hope
+to see more non-US based technologies, companies, and individuals
+speaking at OSCON in the future! That said, I think this talk in
+particular missed the mark. It was Huawei paying lip service to open
+source with misspelled slides and no clear point besides an
+unconvincing &amp;quot;Huawei supports open source&amp;quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rebuilding-trust-through-blockchains-and-open-source"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/60576"&gt;Rebuilding trust through blockchains and open source&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Brian Behlendorf&lt;/p&gt;
+&lt;p&gt;I think &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Blockchain"&gt;block chains&lt;/a&gt; are super cool, but this was a weird
+keynote. Maybe that's only because I'm not used to business-y
+keynotes, but this was 5 minute talk that included the phrase &amp;quot;This is
+as exciting as when the internet was starting&amp;quot; and a plea to come to a
+talk later that day. Mad respect to Brian, but I think this felt out
+of place and insincere.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sharing-america-s-code"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59364"&gt;Sharing America's code&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Alvand Salehi&lt;/p&gt;
+&lt;p&gt;Imagine a very corny Don Draper giving this talk. Alvand is a
+physically beautiful human who is, like, 5 years away from being a
+really great speaker. But right now he is completely Over the Top. My
+favorite quote from this talk was:&lt;/p&gt;
+&lt;p&gt;'And then, they did something &lt;em&gt;even bolder&lt;/em&gt;: they open sourced their
+project. It gives me chills just thinking about it'&lt;/p&gt;
+&lt;p&gt;The content of the talk was super interesting though. Alvand works for
+the US government, and talked about &lt;a class="reference external" href="https://code.gov"&gt;code.gov&lt;/a&gt;, the &lt;a class="reference external" href="https://sourcecode.cio.gov/"&gt;Source Code
+Policy&lt;/a&gt;, and other efforts within the government to promote open
+source and deduplicate software usage throughout the government. He
+talked specifically about &lt;a class="reference external" href="https://github.com/deptofdefense/anet"&gt;anet&lt;/a&gt;, a little tool to track which NATO
+advisors have trained which Afghan officials, and spoke about the team
+which led that project and what helped them succeed. It was honestly a
+really good keynote, despite (or maybe including) the speaker's
+hilariously exaggerations and style.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-talk"&gt;
+&lt;h3&gt;&lt;a class="reference internal" href="#my-talk"&gt;My Talk!&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;First session Wednesday morning was my talk! First, I have to say that
+I was bizarrely calm before giving my talk. The kind of nerves I get
+are usually a very physical kind, where for the full hour before my talk
+starts I'll have butterflies in my stomach, and sweaty palms, and
+short breath. But this time none of that happened. &lt;em&gt;shrug&lt;/em&gt;. Maybe my
+body is catching on that public speaking isn't scary? But about the
+talk! It's so hard to have perspective about talks you give, and so my
+initial reaction when people asked how it went was to say &amp;quot;Oh, there
+were so many things I could have improved or done better&amp;quot;. For
+example, I completely neglected to any contact information or the link
+to my slides in my presentation. But everyone I spoke to after the
+talk, even those who had constructive feedback, told me that they had
+really enjoyed the talk and had gotten something out of it. Overall
+I'm reasonably pleased with how it went, have a list of notes to
+myself for future versions of this talk, and sincerely hope that I was
+able to make contributing to open source software a little less
+intimidating for someone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="finding-your-way-in-the-dark-security-from-first-principles"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57236"&gt;Finding your way in the dark: Security from first principles&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Susan Sons&lt;/p&gt;
+&lt;p&gt;How do you secure the equipment used to measure water movement below
+ice floes? Or equipment taking measurements in a volcano? At the
+&lt;a class="reference external" href="https://www.nsf.gov/"&gt;National Science Foundation&lt;/a&gt;, these are the kind of questions Susan
+Sons is asked. This talk was really great for a few reasons:
+1. It presented general lessons that anyone in the room could use
+2. It also provided specific examples to illustrate how to apply those lessons.
+3. It supported it's claims
+4. Susan told interesting stories, and was clearly an incredibly competent and knowledgeable human.&lt;/p&gt;
+&lt;p&gt;None of this is to say that talks without the above are bad, but I
+think these things were at least part of what made Susan's talk an
+incredibly successful one. I walked away with a new set of tools that
+I could apply to my job (and likely future jobs), a full understanding
+of how to use those tools, and more knowledge about &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Battle_of_Thermopylae"&gt;Thermopylae&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Susan talked about 7 principles that help guide and support decisions
+about how to secure a wide variety of systems:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;Comprehensivity&lt;/strong&gt; - Am I covering all my bases?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Opportunity&lt;/strong&gt; - Am I taking advantage of my resources?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rigor&lt;/strong&gt; - What is correct behavior, how am I ensuring it?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minimization&lt;/strong&gt; - Can this be smaller?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compartmentalization&lt;/strong&gt; - Is this made of distinct parts with
+limited interactions?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fault Tolerance&lt;/strong&gt; - What happens if this fails?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proportionality&lt;/strong&gt; - Is it worth it?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After introducing the principles, the rest of the talk used examples
+to color in details on how to apply the principles and justify their
+place in the list. If you have the time and are interested in
+security, I highly highly recommend watching!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="enhancing-cloud-security-with-the-tpm"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57075"&gt;Enhancing cloud security with the TPM&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By James Bottomley&lt;/p&gt;
+&lt;p&gt;Another excellent talk! James talks at a mile a minute, though I was
+lucky to know juuust enough background knowledge to be able to keep
+up. &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Trusted_Platform_Module"&gt;The TPM&lt;/a&gt; is a small chip that's used to securely generate,
+store, and limit use of cryptographic keys. James talk was
+about using the TPM to store secrets, specifically VPN keys and
+potentially RSA keys. There are a number of stumbling blocks towards
+this goal, not the least of which is a radical difference in how the
+TPM 1.2 and TPM 2.0 work (which makes backwards compatibility
+difficult at best and impossible at worst). I had never heard of the
+TPM before this talk, and while I can't say I fully grok how it might
+be used in the future it certainly seems worth knowing more about and
+keeping an eye on, in the context of security in the cloud! Definitely
+worth a watch if you are mathematically or security inclined.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="stephen-king-s-practical-advice-for-tech-writers"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/55872"&gt;Stephen King's practical advice for tech writers&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Rikki Endsley&lt;/p&gt;
+&lt;p&gt;I'll start by saying I adore Rikki. I've only met her a few times, but
+she's always lovely, welcoming, and easy to talk to. She spoke about
+tips for writing, most of which are relatively common knowledge but as
+an occasional writer I found them both inspiring and helpful! It never
+hurts to be reminded of how to structure your articles based on your
+audience, have a clear point, and that the only way to get better at
+writing is by writing! Rikki also provided a number of tech-industry
+specific tips (how technical to be in various articles, for example),
+as well as a number of quips from &lt;a class="reference external" href="https://www.goodreads.com/work/quotes/150292-on-writing-a-memoir-of-the-craft"&gt;Stephen King&lt;/a&gt; (kill your darlings,
+kill your darlings). Though perhaps the most &amp;quot;common knowledge&amp;quot; type
+of talk, this might also be the talk I got the most out of in the
+whole conference, particularly since writing plays such an important
+role in my job and life. I was reminded to edit my pieces (woops,
+don't usually do that!), to learn to handle criticism, and to know who
+I'm writing for. Overall, a super worthwhile and excellent talk from a
+true expert (and open source hero!).&lt;/p&gt;
+&lt;p&gt;Key Takeaways:
+* Before you write know what you are writing about, why you're writing, and who your reader is
+* Research, outline, write, revise
+* 3 categories of audience in tech: lay audience, managers, experts
+* Good writing requires lots of reading and writing
+* Have clear expectations for what your piece needs to deliver
+* Invite the reader in
+* Tell a story
+* Leave out the boring parts
+* Include lists
+* To write is human, to edit is divine
+* Kill your darlings
+* Find a brutally honest editor
+* Start writing!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-i-learned-to-stop-being-afraid-and-love-the-jvm"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56563"&gt;How I learned to stop being afraid and love the JVM&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By James Turnbull&lt;/p&gt;
+&lt;p&gt;Ok, if you're reading this post straight through, I know at this point
+it might seem like I loved &lt;em&gt;all&lt;/em&gt; of the talks I went to at OSCON,
+which makes loving a talk feel cheap. Let me assure you that 1. This
+is an anomaly, and 2. There will be less great reviews later on! I
+think this a combination of OSCON attracting particularly stellar
+speakers this year, as well as my own increased skill in finding which
+talks I want to go to and can get the most out of. Or maybe I'm just
+really happy as I'm writing this because I'm heading home and get to
+see my boyfriend in an hour. Who knows. But I digress.&lt;/p&gt;
+&lt;p&gt;James' talk about how the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Java_virtual_machine"&gt;JVM&lt;/a&gt; has improved since the mid-2000s was
+also excellent. As someone who never writes java and only occasionally
+interacts with the JVM via &lt;a class="reference external" href="http://www.braveclojure.com/"&gt;clojure&lt;/a&gt;, I wasn't sure if I would have
+enough context to get much out of this talk. But James explained in
+great detail the pain points and horror stories of the old JVM that
+many grizzled sysadmins will tell you about. His talk set up the
+problem, explained how the JVM has improved and how those improvements
+have made impacts in the industry.&lt;/p&gt;
+&lt;p&gt;Key Takeaways:
+* Legacy java is pretty ugly, verbose, and repetitive. And there's &lt;em&gt;lots&lt;/em&gt; of bad java out there
+* JVM has always been generally performant
+* JVM doesn't always respond to general fixes (for example, you have to tell it to use more memory, not just throw memory at it)
+* JVM needs tuning, not always intuitive
+* JVM stacktraces are impossible to read
+* Hard to automate the JVM (mentioned Puppet!)
+* JVM wasn't transparent
+* Android has really helped modern java improve
+* JVM is &lt;em&gt;super&lt;/em&gt; fast
+* Logging has improved dramatically
+* More transparent now
+* Security has become a much higher priority&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="web-application-security-browsers-fight-back"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56864"&gt;Web application security: Browsers fight back&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Christian Wenz&lt;/p&gt;
+&lt;p&gt;Last talk of the day is a tough slot, but Christian made HTTP headers
+both interesting and hilarious. This talk covered the major threats
+facing web applications today (namely &lt;a class="reference external" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)"&gt;XSS&lt;/a&gt;, &lt;a class="reference external" href="https://www.owasp.org/index.php/Session_hijacking_attack"&gt;Cookie hijacking&lt;/a&gt;,
+&lt;a class="reference external" href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)"&gt;CSRF&lt;/a&gt;, and &lt;a class="reference external" href="https://blog.mozilla.org/security/2015/01/21/meta-referrer/"&gt;referrer data leakage&lt;/a&gt;), and what we as web developers
+can actively and easily do to prevent those attacks.&lt;/p&gt;
+&lt;p&gt;Key Takeaways:
+* &lt;a class="reference external" href="https://content-security-policy.com/"&gt;Content Security Policy&lt;/a&gt; is a &lt;a class="reference external" href="https://www.w3.org/"&gt;W3C&lt;/a&gt; standard for security related http header content
+* &lt;a class="reference external" href="https://caniuse.com"&gt;https://caniuse.com&lt;/a&gt; to look up which security policies are supported by which browsers
+* CSP works by having the header and a 'directive', for example &lt;code&gt;default-src 'self';&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="thursday"&gt;
+&lt;h2&gt;Thursday&lt;/h2&gt;
+&lt;div class="section" id="id12"&gt;
+&lt;h3&gt;Keynotes&lt;/h3&gt;
+&lt;div class="section" id="ask-more-questions"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59184"&gt;Ask more questions&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Saron Yitbarek&lt;/p&gt;
+&lt;p&gt;Asking questions is scary. It means you have to admit you don't know
+the answer, and puts you in a vulnerable position. But asking
+questions is key to creating a successful project, and often the
+hardest questions are the most important. Saron was well-spoken, and
+while this talk wasn't anything revolutionary it was something we
+could all be reminded of regularly, and included some excellent
+personal stories.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="half-my-life-spent-in-open-source"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59619"&gt;Half my life spent in open source&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Brad Fitzpatrick&lt;/p&gt;
+&lt;p&gt;This was just a cute telling of Brad's time in open source software,
+from learning Perl as a teenager to spending 7 years working on Go.
+Included were some wise words:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Easy != quick&lt;/li&gt;
+&lt;li&gt;Everything has maintenance cost&lt;/li&gt;
+&lt;li&gt;All code you put online will end up in production&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nothing especially insightful, but a really nice story that I hope a
+lot of people in the room could connect to. I love hearing how open
+source changes people's lives, and this was an excellent open source
+love story well told.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="open-source-and-open-standards-in-vr"&gt;
+&lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59942"&gt;Open source and open standards in VR&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Stephanie Hurlburt&lt;/p&gt;
+&lt;p&gt;VR is cool! This talk wasn't especially insightful, beyond &amp;quot;Lots of VR
+development is open source, here are some resources&amp;quot;, but if you're
+really stoked about VR it's likely worth watching.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-frontend-dev-s-illustrated-rust-adventure-survival-guide"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56823"&gt;The frontend dev's illustrated Rust adventure survival guide&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Liz Baillie&lt;/p&gt;
+&lt;p&gt;If this conference wasn't already chock full of outstanding talks, I
+would say this was the best talk of the conference. In addition to
+being a programmer Liz is a comic artist, storyteller, and game
+developer, all of which came together in an illustrated (and narrated,
+&lt;em&gt;with voices&lt;/em&gt;) guide to Rust. I loved that Liz was totally silly
+throughout the talk, and although the metaphor sometimes made her
+points opaque some aspects of Rust are common knowledge enough that it
+would make sense to most people. After describing her adventures in
+&amp;quot;Rustlandia&amp;quot;, Liz spoke about her programming experience with Rust,
+and compared / contrasted writing a text-based game in Ruby and Rust.
+This was a unique, fun, and informative talk delivered with
+confidence, poise, and silliness all in good measure. The kind of
+speaker I strive to be!!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="making-cross-browser-testing-beautiful"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/55653"&gt;Making cross-browser testing beautiful&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Meaghan Lewis&lt;/p&gt;
+&lt;p&gt;I made a classic conference mistake with this talk: I already knew a
+lot
+about the subject. While I didn't gain any new insights Meaghan's
+talk, I was still impressed with the content and structure of the
+talk! Meaghan covered common issues one might run in to when testing
+using Selenium across multiple browsers, and what might be causing
+those issues. She also prescribed some patterns that can help avoid
+this issues (like using &lt;code&gt;data-test&lt;/code&gt; selectors in your html), and
+talked about some general testing best practices.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="selling-open-source-keeping-your-soul"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57231"&gt;Selling open source, keeping your soul&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Jessica Rose&lt;/p&gt;
+&lt;p&gt;This was like the talk version of a self-help book: mostly generic
+advice that's really difficult to implement. Jessica seemed aware of
+this, repeating a few times &amp;quot;This is easier said than done&amp;quot;, but that
+didn't make her content any more useful or meaningful. Such advice
+included:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Everyone in your organization should know what open source means to your org, and why it's important for your org&lt;/li&gt;
+&lt;li&gt;Your open source org should balance transparency with too much information&lt;/li&gt;
+&lt;li&gt;Collaborative conflict and compromise are what drive the product&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And don't get me wrong, all of this is &lt;em&gt;great&lt;/em&gt; advice. We should all
+be transparent, and make compromises that drive our product, and be
+open to feedback. We should also probably stop having so much pizza
+and wine. By the end of the talk I didn't know any more about how to
+have a successful open source company, or even what I could do to
+advocate for open source within my company. A good topic, and good if
+irrelevant advice, but overall and underwhelming talk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multilayered-testing"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56591"&gt;Multilayered testing&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;By Alex Martelli&lt;/p&gt;
+&lt;p&gt;Honestly, by this point my brain was definitely not running on all
+cylinders, so I can't say I got as much out of this talk as I might
+have liked. But Alex presented an interesting idea: to have the same
+set of tests run for both unit and integration tests, with the main
+difference being mocked vs real dependencies (like databases, modules,
+etc.). This gave you a unified set of tests, and helps avoid making
+some 'white box' assumptions in unit tests. The rest of the talk went
+through 'layers' of modules (from low-level modules that many things
+depend on, to high-level ones that nothing depends on) and talked
+about how to use unit and integration tests at each layer. Being in
+QA, I think if I had a few more years of experience under my belt this
+talk could have been &lt;em&gt;incredibly&lt;/em&gt; valuable, and provided ideas for how
+to apply these concepts in my job. At this point, though, it just
+seems like a neat idea for Later Down the Road.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-notes"&gt;
+&lt;h2&gt;Other Notes&lt;/h2&gt;
+&lt;p&gt;As a speaker, I like to take note of interesting slides or speaking
+techniques, and there were a number of great ones at this conference!
+Here were a few notable speaking styles I admired:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;In &lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59367"&gt;Step 1: Punch a Tree&lt;/a&gt;, I don't know that I can describe the slides but just watch the video and be in awe. This talk also included music and video, both of which I thought were used &lt;em&gt;very&lt;/em&gt; well, which is &lt;em&gt;very&lt;/em&gt; difficult. Standing ovation.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nicole Engard of Red Hat wrote a &lt;a class="reference external" href="https://opensource.com/article/17/5/making-your-first-open-source-contribution"&gt;nice article&lt;/a&gt; about my talk!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was one of the better OSCONs I've been to, and I came away
+inspired and excited about my industry and community. I learned that
+the first step is to punch a tree, that TPM stands for more than just
+&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Tethered_particle_motion"&gt;tethered particle motion&lt;/a&gt;, and that learning rust is just a
+sea of bacon away. Looking forward to next year, when OSCON will be
+back in my beautiful hometown &lt;cite&gt;Portland&lt;/cite&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 15 May 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-05-15:oscon-2017.html</guid><category>experiences</category><category>conferences</category><category>tech</category></item><item><title>Book Review: The Bell Jar</title><link>http://blog.lucywyman.me/the-bell-jar.html</link><description>&lt;p&gt;Sylvia Plath's only novel, &lt;a class="reference external" href="https://www.goodreads.com/book/show/6514.The_Bell_Jar"&gt;The Bell Jar&lt;/a&gt; is a fantastic dive into
+the mind, and her experiences with mental illness.
+Semi-autobiographical, the language Plath uses to describe her/Esther's
+outlook, experiences, and later treatments is &lt;em&gt;beautiful&lt;/em&gt;. Her writing
+puts the reader right into Esther's head, and gives them an
+understanding of what living with a mental illness is like. Even
+better, her language changes throughout the novel as Esther's health
+changes, reflecting her darker moods, as well as her better days.
+Esther is a fantastically sympathetic and vibrant character, despite
+her cynicism and depression. I found myself really invested in her
+story and experiences, and again Plath's writing paints a luscious
+picture of that story. I don't want to oversell this novel -- I think
+part of why I loved it is because I came into it expecting it to be
+Yet Another Classic Book which I often find to be overly masculine.
+But this wasn't. Throughout the book, even at the peak of Esther's
+descent into mental illness, I found myself identifying really
+strongly with her and investing in what happened to her. It feels rare
+to read a book in a woman's voice that's highly regarded, and I was
+very pleasantly surprised by the femininity that colors the book.&lt;/p&gt;
+&lt;p&gt;Overall, this was another great read. Again, expectations definitely
+may have played into my reading, but on the whole I was blown away by
+the style, substance, characters, and story of The Bell Jar. Highly,
+highly recommended summer reading!&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 03 May 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-05-03:the-bell-jar.html</guid><category>book-review</category></item><item><title>Running My First Half Marathon</title><link>http://blog.lucywyman.me/first-half-marathon.html</link><description>&lt;p&gt;This last Monday, I had a Really Good Workout. I have no idea what I
+did differently, or which stars were aligned, but I was able to do
+more work than I typically do, in less time, and felt energetic and
+good while doing it. I was telling Eli about it later, and said:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;2017-04-17 11:54:21 lucyw   I&amp;#39;m tentatively thinking about working up
+to a half marathon. I think so much of training to run long distance
+is really just building up the lung capacity + strength, and it&amp;#39;d be
+cool to just see if I can do it. I wasn&amp;#39;t sure if you were interested
+in trying to run it (or part of it) with me
+2017-04-17 12:14:58 pop I&amp;#39;d be up for a half marathon.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And that's how I decided to run a half marathon.  It hasn't been a
+lifelong goal of mine or anything, or something I thought I would ever
+do. It always seemed nearly-but-not-quite-impossible, something I
+could probably do if I ever wanted to but which I would never want to
+do enough to make it manifest. This would be a fun experiment though.
+Could I do it? If not, no big deal -- my expectations would be met, I
+would get a good workout in, high-five myself for trying, and move on.
+The date was set for Saturday, where we would just give it a try and
+see how it went.&lt;/p&gt;
+&lt;div class="section" id="the-day-before"&gt;
+&lt;h2&gt;The Day Before&lt;/h2&gt;
+&lt;p&gt;So, it's currently Friday April 21, 2017, and the fella and I are
+(tentatively) planning on running 13.1 miles tomorrow. We're doing it
+on our own, and have both made it clear that we can stop or walk or
+give up and go get donuts instead at any time. But I'm curious to see
+if I can (we both know he can, skinny jerk). I'm also SUPER NERVOUS.
+What if I hurt myself? What if it's hard (it's &lt;em&gt;definitely&lt;/em&gt; going to
+be hard)? What if I have the wrong shoes and fuck my foot up, or don't
+bring enough water, or try to bring too much water and it's too heavy?
+I know nerves are normal, and keep reminding myself that this is a
+pretty low stakes event that I can bail on at any time. But that
+doesn't stop my brain from being like &amp;quot;STRESS STRESS SELF-DOUBT STRESS
+NERVES STRESS&amp;quot;. We'll see if I even do it. Though this blog post won't
+see the light of day if I &lt;em&gt;don't&lt;/em&gt; do it, so...I guess if you're
+reading this, I probably did it. Congratulations, future me!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-few-hours-after"&gt;
+&lt;h2&gt;A Few Hours After&lt;/h2&gt;
+&lt;p&gt;Spoiler Alert: We did it! We ran 13.1 miles in about 2 hours and 17
+minutes (give or take, we weren't super precise). I have a lot of
+feelings, some of them conflicting, but let's get to those later and
+talk about the experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: Bodies are different. Experiences are different. I'm
+writing this to share an interesting experience I had with friends and
+family, and not to provide a point of comparison, or suggest that
+running a half marathon will in any way be the same for you as it was for
+me. I know that disclaimers like this aren't going to cure us of
+constantly measuring ourselves against each other, but it's a gentle
+reminder and I hope it helps ♥&lt;/p&gt;
+&lt;p&gt;Running a half marathon was surprisingly easy. I don't know how to
+explain it, but Eli and I got up this morning it just happened. The
+first 5-6 miles were a breeze -- it was a beautiful day, and my body
+is pretty used to running this distance. Eli and I also had a lot to
+talk about, since we had both had eventful weeks, so these first miles
+flew by. Around mile 6.5-7 I felt myself slowing down and tiring out,
+so I ate an energy gummy and instantly felt better. Not just a little
+bit better, but like Super Woman better. Like, I was &lt;em&gt;fucking running&lt;/em&gt;
+better. By mile 8 my legs felt tight and swollen, but definitely not
+unbearably so. And in fact, this was the only real &amp;quot;pain&amp;quot; I felt. None
+of my joints ached, none of my muscles hurt in that &amp;quot;This is an injury
+waiting to happen&amp;quot; way. I wasn't out of breath, I didn't have a
+side-ache or shoulder-ache which I typically get on long runs. Even my
+lower back didn't hurt. It was strange and wonderful. We started to
+count down the miles around mile 9, running down cozy neighborhood
+streets to avoid cars and thinking about all the food we were going to
+eat when the run was done. I kept expecting my body to hit a wall at
+some point in these last 4 miles, but it just never did. By that
+point, how could we &lt;em&gt;not&lt;/em&gt; finish? 3 miles? 2 miles?  When you're
+counting down, it seems like &amp;quot;I can run that far, no problem.&amp;quot; We
+ended up having to run around the downtown area a bit for our last
+mile, but then ended up smack in front of one of our favorite
+Corvallis restaurants. And that was it.&lt;/p&gt;
+&lt;p&gt;In the end it was much less of a Big Deal than I thought it would be.
+That isn't to say I think I could have gone on for &lt;em&gt;another&lt;/em&gt; 13.1
+miles, but I hadn't really considered the possibility that it would be
+something we just did and then went on with our days. I thought it
+would be this big event, like there would be Pre-Half-Marathon life
+and Post-Half-Marathon life, but that totally didn't happen. &lt;em&gt;I wasn't
+even sore the next day&lt;/em&gt;. It was a weirdly and wonderfully
+anti-climatic event. This is where the conflicting feelings come in: I
+feel like I should be proud of myself and this thing I accomplished. I
+feel like I should be able to relax for the rest of the weekend,
+knowing that I have already done so much more than I thought I would
+do. But I don't feel like I earned that pride, or relaxation. Not even
+as if pride or relaxation need to be earned, but my body didn't want
+to rest. I still wanted to go for walks, and write this blog post, and
+&lt;em&gt;do stuff&lt;/em&gt;, and not brag to people about how I had run 13.1 miles. It
+was a confusing and terrible feeling. My mind was saying &amp;quot;We ran a
+half marathon! Break out the ice cream and TV, let's do nothing and
+luxuriate in our glory for a few hours&amp;quot;. But my body was like &amp;quot;Nah,
+let's make a smoothie and walk to the play ground&amp;quot;. Part of me is so
+disappointed by this. If not after a half-marathon, when will I ever
+get to rest? When will I be free of the shoulds and have-tos I live in
+every day? But another part of me thinks it's cool that my body can
+undergo this huge stress, and then considers &amp;quot;taking it easy&amp;quot; to be
+continuing to take good care of itself. I don't know where that leaves
+me. I &lt;em&gt;am&lt;/em&gt; proud of what I did, and I &lt;em&gt;do&lt;/em&gt; relax when I need to.
+So...maybe it's not so bad?&lt;/p&gt;
+&lt;div class="section" id="context"&gt;
+&lt;h3&gt;Context&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;This part is honestly super boring, especially if you know me. It's
+more to hopefully answer any questions people who stumble on this post
+might have, rather than add to the story of the post. You can totally
+skip it if you want.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For those not intimately familiar with my entire life's story, here's
+some relevant context that affected (effected? Email me if you know
+which one is correct) my half marathon.  I used to run long distances
+in high school, but could never get past 6-7 miles. And this was at a
+time I look back on as being the most fit I've ever been, when I
+considered myself &amp;quot;a runner&amp;quot;.  This is all to say that I wasn't
+expecting to be able to run a half marathon, having only decided to do
+so 5 days before.&lt;/p&gt;
+&lt;p&gt;Bear in mind, this wasn't couch-to-half-marathon in 5 days. In fact,
+just 6 months ago, I walked the &lt;a class="reference external" href="http://portlandmarathon.org"&gt;Portland Half-Marathon&lt;/a&gt;, so I knew
+that I could at least get my body through 13.1 miles. I workout
+religiously 5-6 days each week, doing 30-60 minutes on the
+elliptical[1] at least 4 of those days and lifting weights the other
+1-2. I love to exercise, and find a lot of joy in moving my body. I
+wasn't unfit or unprepared to run a half, and most importantly I know
+how to listen to my body and hear when it tells me to stop.&lt;/p&gt;
+&lt;p&gt;I also am not &amp;quot;a runner&amp;quot; though. Eli and I will occasionally run in
+Corvallis, since I don't have access to a gym, but as previously
+mentioned this wasn't something I had been training for for weeks, or
+even something I had particular investment in completing. It was just
+an interesting challenge I wanted to see if I was up to.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-logistics"&gt;
+&lt;h3&gt;The Logistics&lt;/h3&gt;
+&lt;p&gt;The &lt;a class="reference external" href="http://www.corvallishalfmarathon.com/"&gt;Corvallis Half Marathon&lt;/a&gt; had been put on just a few weeks prior,
+and they had posted the &lt;a class="reference external" href="http://www.corvallishalfmarathon.com/uploads/1/0/8/3/10830951/2017_map_for_web.jpg"&gt;course map&lt;/a&gt;. We mostly just followed that,
+only starting from Eli's house and ending downtown at the &lt;a class="reference external" href="http://www.broken-yolk.com/"&gt;Broken
+Yolk&lt;/a&gt; (highly recommend, if you're visiting the area).  We carried a
+speaker so we could both listen to podcasts | music, each of us had
+our phones (which ended up being helpful), and some energy gummies
+that a lovely co-worker had given me (I believe they were the Clif
+ones, and they were &lt;em&gt;lifesavers&lt;/em&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="things-to-do-differently-next-time"&gt;
+&lt;h3&gt;Things to Do Differently Next Time&lt;/h3&gt;
+&lt;p&gt;I'm not currently planning on running more long distances any time
+soon. Then again, I got my first tattoo and thought I wouldn't get
+another one for a long time if ever, only to get another much larger
+one less than a year later. Here are some thing I would do different
+next time though:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;I wish I had researched and bought better running shoes. I ran in
+an old pair that I got more for lifting weights than running, and
+while they were sufficient for this one run I would definitely not
+be able to run regularly in them. &lt;a class="reference external" href="http://portlandrunningcompany.com/"&gt;Portland Running Co.&lt;/a&gt; is a
+great place to get fitted for running shoes, if you're not loving
+your current pair.&lt;/li&gt;
+&lt;li&gt;I wish we had mapped the course more accurately. We ended up need
+to run our last mile around downtown Corvallis, because the route
+we ran ended up being about 12.3 miles instead of 13.1. We still
+did it, but it would have been nice to have that final mile not
+involve so many cars, pedestrians, and intersections.&lt;/li&gt;
+&lt;li&gt;I wish I had a fanny pack. I treated my jacket as a fanny pack, but
+it quickly got too hot and I ended up tying it around my waist.
+Again, this was fine for the one run, but if I was going to run
+more regularly a fanny pack would be super useful.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Running a half marathon was just another thing we did. It wasn't quite
+hard, and it definitely wasn't easy, but it's something we may or may
+not do again in the future. I don't know how to end blog posts
+apparently, so...have an excellent rest of your day! Stay sexy, and
+&lt;a class="reference external" href="https://myfavoritemurder.com"&gt;don't get murdered&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[1] Judge me if you want, but treadmills are terrifying and they're
+better for your joints.&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sat, 22 Apr 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-04-22:first-half-marathon.html</guid><category>experiences</category><category>health</category></item><item><title>A Curly Girl's Guide to Dandruff</title><link>http://blog.lucywyman.me/guide-to-dandruff.html</link><description>&lt;p&gt;It's embarrassing, it's itchy, it's &lt;em&gt;everywhere&lt;/em&gt;. I've had dandruff
+since I was a teenager, and as my personal care routine has evolved to
+suit my body's needs my dandruff has stubbornly persisted.  When I was
+shampooing every day? Dandruff. When I went months without shampooing?
+Dandruff.  Tea tree oil? Dandruff. Special shampoos? Dandruff. I want
+to get to the root (ha) of this problem, and &lt;strong&gt;solve my itchy, flaky
+scalp without destroying my precious curls&lt;/strong&gt;. Many women, myself
+included, will tell you they've spent years perfecting their hair care
+routine. It's a science, a long series of experiments and tweaks to
+help our hair be healthy and strong.  I don't want to lose all the
+progress I've made in that routine, so the challenge here is really to
+&lt;strong&gt;fix the dandruff without sacrificing the health of my hair&lt;/strong&gt;.
+Challenge: Accepted.&lt;/p&gt;
+&lt;p&gt;I started researching the causes of dandruff and, it turns out, there
+are not 1, not 2, but 4 potential causes of dandruff (&lt;a class="reference external" href="http://www.mayoclinic.org/diseases-conditions/dandruff/symptoms-causes/dxc-20215281"&gt;Mayo clinic&lt;/a&gt;).
+This means that you'll have to experiment with different treatments to
+find what works for you!  Ok, so let's take a look at those causes:&lt;/p&gt;
+&lt;div class="section" id="fungus"&gt;
+&lt;h2&gt;Fungus&lt;/h2&gt;
+&lt;p&gt;EW! According to the Mayo Clinic, one cause of dandruff is &amp;quot;A
+yeast-like fungus, Malassezia, which lives on the scalps of most
+adults. But, for some, it irritates the scalp and can cause more skin
+cells to grow. The extra skin cells die and fall off, making them
+appear white and flaky in your hair or on your clothes. Why malassezia
+irritates some scalps isn't known.&amp;quot; Ok, so we all have some fungus on
+our heads, and allegedly this is the primary cause of dandruff for
+most adults (especially if you're following a solid haircare routine
+to begin with). What can we do if it's a problem?&lt;/p&gt;
+&lt;div class="section" id="treatments"&gt;
+&lt;h3&gt;Treatments&lt;/h3&gt;
+&lt;p&gt;There are a lot of natural treatments for this type of dandruff,
+including:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Tea tree oil&lt;/strong&gt;. My SO uses &lt;a class="reference external" href="https://www.amazon.com/Now-Foods-Tea-Tree-Oil/dp/B000ELP5KA"&gt;this highly concentrated kind&lt;/a&gt;, rubbing
+it into his scalp after a shower about once a month.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apple Cider Vinegar&lt;/strong&gt;. It makes your skin glow! It helps
+digestion! It cures cancer! I know, I know, ACV is practically
+the coconut oil of 2017. But
+allegedly the acidity helps kill the fungus, and prevent it from
+growing so quickly. &lt;strong&gt;Lemon juice&lt;/strong&gt; also works for this.  Mix with
+equal parts water and spray onto scalp ~15-20 minutes before
+showering.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Medicated Shampoos&lt;/strong&gt;.  You've seen them at the drug store. You're
+looking for one that contains ketoconazole, selenium sulfide, or
+pyrithione zinc. It's recommended you use it as often as your hair
+can handle, which for me is honestly only once a week (even then,
+the next day is rough).  If it
+helps, awesome! If not, read on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bacteria"&gt;
+&lt;h2&gt;Bacteria&lt;/h2&gt;
+&lt;p&gt;According to 2016 study published in Nature, bacteria (mainly
+Propionibacterium and Staphylococcus) can contribute more to dandruff
+than Malassezia (&lt;a class="reference external" href="http://www.nature.com/articles/srep24877"&gt;Study&lt;/a&gt;).&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Treatments&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dry-scalp"&gt;
+&lt;h2&gt;Dry Scalp&lt;/h2&gt;
+&lt;p&gt;Symptoms here are small, less-oily white flakes with no redness or
+inflammation. It's especially likely that this if your culprit if you're prone to dry skin on
+other parts of you as well.&lt;/p&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;Treatments&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="irritated-oily-skin"&gt;
+&lt;h2&gt;Irritated, Oily Skin&lt;/h2&gt;
+&lt;p&gt;AKA seborrheic dermatitis.  According to Mayo Clinic, this is the most
+common cause of dandruff, though I'm skeptical of this. The symptoms
+include red, irritated, greasy skin covered by flaky white or yellow
+scales, and is often found on other hairy parts of the body, not just
+your scalp (think: eyebrows).  In other words, you would &lt;em&gt;know&lt;/em&gt; if you
+had this, and would definitely want to do something about it. Hence,
+skepticism. But if you take a close look at your scalp in the mirror
+and do notice redness or greasiness, this could be what's causing your
+dandruff!&lt;/p&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;Treatments&lt;/h3&gt;
+&lt;p&gt;This is worth seeing your doctor for, and following what they
+prescribe.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="buildup"&gt;
+&lt;h2&gt;Buildup&lt;/h2&gt;
+&lt;p&gt;This is just when you don't shampoo enough, so dead skin cells and
+oils build up then flake off. Honestly, when I
+was only shampooing once a month, I didn't notice my dandruff get
+better or worse. I'm guessing, if you're reading this, that this isn't
+your issue. But it is a common cause of dandruff for the
+less-than-tidy among us, and knowledge worth having in your back
+pocket for all those times friends ask you for advice on getting rid
+of dandruff.&lt;/p&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;Treatments&lt;/h3&gt;
+&lt;p&gt;Literally just shampoo more. Any shampoo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bad-reaction-to-products"&gt;
+&lt;h2&gt;Bad Reaction to Products&lt;/h2&gt;
+&lt;p&gt;I suspect this is kind of rare, and once again that you would know if
+you had this, but many hair products contain harsh chemicals that your
+skin may be reacting to. If you think this might be the case, or
+haven't used a new shampoo in a while, I especially like &lt;a class="reference external" href="https://www.drbronner.com/"&gt;Dr.Bronner&lt;/a&gt;
+products for natural soaps and shampoos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="general-treatments"&gt;
+&lt;h2&gt;General Treatments&lt;/h2&gt;
+&lt;p&gt;There are a few things you can do to keep your body healthy, and
+prevent some dandruff in the process. These are all things you already
+know you should be doing, but if dandruff is really the kick in the
+pants you need to change some habits then do it!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Get enough sleep&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drink enough water&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eat a balanced diet&lt;/strong&gt;, including lots of &lt;strong&gt;fruits and vegetables&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exercise&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-worked-for-me"&gt;
+&lt;h2&gt;What Worked for Me&lt;/h2&gt;
+&lt;p&gt;Whew! Ok, so a &lt;em&gt;lot&lt;/em&gt; of things could be causing dandruff. I was pretty
+sure that my dandruff wasn't being caused by buildup or a reaction to
+any products I was using, and was relatively sure that it wasn't dry
+scalp (since my scalp was still oily). The Fungus seemed like the most
+likely culprit based on my symptoms and the fact that it's so common,
+and since I like using natural products I gave tea tree oil a shot
+first.&lt;/p&gt;
+&lt;p&gt;I used 100% tea tree oil, and would just dab it on my scalp 1-2 times
+each week, and rub it in. This helped a little bit, but not as much as
+I had hoped. It was also relatively expensive, especially for how much
+oil I had to use for each use. This was definitely a &amp;quot;There must be a
+better way!&amp;quot; situation.&lt;/p&gt;
+&lt;p&gt;Next I tried using baking soda as a scalp scrubber. I would use about
+2 tbsp of it in the shower, scrubbing my scalp for a minute or two
+then rinsing it out. This wasn't a &lt;em&gt;bad&lt;/em&gt; solution, but it was
+definitely kind of messy and left my hair feeling a little dry. On the
+plus side, though, I discovered that it does make a great (occasional)
+face scrub, which I used about once every 2 weeks or when my face is
+feeling especially bumpy or oily. So not bad, but not great either.&lt;/p&gt;
+&lt;p&gt;The next step was to try a &lt;a class="reference external" href="https://www.amazon.com/Natural-Cosmetics-Dandruff-Shampoo-Rosemary/dp/B000FGDIAS"&gt;natural anti-dandruff shampoo&lt;/a&gt;. I've
+always been wary of using shampoo, since curly hair tends to do better
+with minimal shampooing and doesn't hold up well to harsh chemicals
+and lathering agents common in shampoos (sodium laureth sulfate is
+basically my hair's worst nightmare). But I found a shampoo that
+didn't have any of the harsh chemicals I had been conditioned to
+avoid, was reasonably priced, and had tea tree oil as it's main
+anti-dandruff combatant.  Coincidentally at the same time, I decided
+to get a &lt;a class="reference external" href="https://www.amazon.com/Shampoo-Scalp-Massage-Brush-Century/dp/B0028R4SRO"&gt;scalp scrubber&lt;/a&gt; similar to one my boyfriend uses, which
+turned out to be &lt;em&gt;super&lt;/em&gt; useful. I use the shampoo 2x/week, and use
+the scalp scrubber to lather it and make sure that I get it over all
+of my scalp. &lt;strong&gt;This was the solution I had been waiting for!&lt;/strong&gt;  My
+hair didn't dry out (and, in fact, I got a new conditioner that makes
+it super soft and lovely), and my dandruff was &lt;em&gt;gone&lt;/em&gt;.  &lt;strong&gt;Gone gone&lt;/strong&gt;.
+No more itching, no more flakes everywhere, no more oily finger and
+gross keyboard. I cannot overstate what a miracle these 2 products
+have been for me!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In the end, it was just a matter of trying different things that fit
+my lifestyle and needs until I found a solution that works. Regardless
+of what's causing your dandruff or if you even have dandruff, I highly
+recommend getting a &lt;a class="reference external" href="https://www.amazon.com/Shampoo-Scalp-Massage-Brush-Century/dp/B0028R4SRO"&gt;scalp scrubber&lt;/a&gt; (the one linked works for me,
+but shop around for one that works for you!). It helps circulate blood
+to your scalp, and I've noticed significant improvement in the volume
+and health of my hair as well as my scalp since using it (your mileage
+may vary). But for $8 you may as well, right? Then, looking into a
+natural anti-dandruff shampoo, most likely with tea tree oil, is
+another good step if you're looking for things to try. I like &lt;a class="reference external" href="https://www.amazon.com/Natural-Cosmetics-Dandruff-Shampoo-Rosemary/dp/B000FGDIAS"&gt;this
+one&lt;/a&gt;, but again find something that works for you!&lt;/p&gt;
+&lt;p&gt;So that's it folks! I hope this helps you in your own hair and
+dandruff journey&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 29 Mar 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-03-29:guide-to-dandruff.html</guid><category>experiences</category><category>health</category></item><item><title>Book Review: Kitchens of the Great Midwest</title><link>http://blog.lucywyman.me/kitchens-of-the-great-midwest.html</link><description>&lt;p&gt;What a sweet book. This book is a glass of warm milk before bed.  It's
+the one fuzzy blanket you have that is so soft and fits perfectly
+around you. It's comforting, and homey -- the perfect antidote for
+this indefinite winter.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.goodreads.com/book/show/23398625-kitchens-of-the-great-midwest"&gt;Kitchens of the Great Midwest&lt;/a&gt; follows the astonishing life of Eva
+Thorvald through the lens' of those around her, and their own personal
+failures and triumphs. This is honestly one book where I don't want to give too much
+away, and may have even already over-hyped the book and ruined your
+opinion of it forever (in which case, I am so, so sorry). But what I
+can say is that you will definitely want to get your hands on this
+book and then wait until your shoes are soggy and your heart is
+aching. Then it will be your perfect bowl of chicken soup.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 15 Mar 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-03-15:kitchens-of-the-great-midwest.html</guid><category>book-review</category></item><item><title>Book Review: How Everything Became War, and the Military Became Everything</title><link>http://blog.lucywyman.me/how-everything-became-war.html</link><description>&lt;p&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/29238798-how-everything-became-war-and-the-military-became-everything"&gt;How Everything Became War, and the Military Became Everything&lt;/a&gt; might
+be the best book I read this year. The military has never been a part
+of the cultures I grew up in, so my knowledge and awareness of
+what the military is, how it's run, and what it does is basically
+nothing. I couldn't even tell you all of the branches, or the
+distinctions between them. With this context in mind, this book held
+incredible insight for me. &lt;a class="reference external" href="http://www.rosabrooks.com/"&gt;Rosa Brooks&lt;/a&gt;, a former reporter for the
+Pentagon, explains not only what the military does but why it does it,
+how it does it, what impacts those actions have. She's able to support
+her claims with ample evidence as well as personal stories, and
+defends her statements and positions from every possible angle. She
+also looks at various parts of the military under a microscope,
+explaining the history of this unit or that organization and where
+they are today, and also looks very broadly at the military as a whole
+complex system and how that system is working. She asks questions like
+&amp;quot;What does it mean to be a solider, both historically and today? How
+has that role changed in the last 2000 years and in the last decade?&amp;quot;
+and &amp;quot;Why is our military a proxy for diplomacy, nation building, and
+relief effort?&amp;quot;. She explores the relationship between soldiers and
+civilians, and how that too has changed dramatically over time.
+I came away from the book with a greater
+understanding of our military's history, it's present state, and how
+it came to be the way that it is. I know more about what the military
+does and why it does it, and the pros and cons of having the military
+partake in all of the actions that it does.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 22 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-02-22:how-everything-became-war.html</guid><category>book-review</category></item><item><title>Book Review: Eligible</title><link>http://blog.lucywyman.me/eligible.html</link><description>&lt;p&gt;Like most books, I picked this one up with no prior knowledge of it's
+contents (probably off of &lt;a class="reference external" href="http://www.powells.com/"&gt;Powell's&lt;/a&gt; &lt;a class="reference external" href="http://www.powells.com/staff-picks"&gt;New + Recommended&lt;/a&gt; list). I
+was pleasantly surprised to find a modern retelling of &lt;a class="reference external" href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice"&gt;Pride and
+Prejudice&lt;/a&gt;! &lt;a class="reference external" href="https://www.goodreads.com/book/show/25852870-eligible"&gt;Eligible&lt;/a&gt; is the delightful and familiar tale of Lizzy
+Bennet, her family, and Mrs.Bennet's quest to get &lt;em&gt;any&lt;/em&gt; of her 5
+daughters married to a man of means. What I loved about Eligible was
+that the author stayed very true to the characters while modernizing
+them seamlessly. Jane is sensible and pragmatic, Mrs.Bennet is
+exasperated and a little manipulative, Lydia and Kitty are thick as
+thieves and a little wild, and Mary is awkward and unaware. Avid P&amp;amp;P
+fans (ahem, Mackenzie Broderick) may hold a more critical eye to the
+novel, but a pleb like me who has only read P&amp;amp;P twice will no doubt
+enjoy the classic tale of women, ambitions, and marriage, told in a
+modern setting.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 01 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-02-01:eligible.html</guid><category>book-review</category></item><item><title>Setting a Language with Selenium Webdriver in Ruby</title><link>http://blog.lucywyman.me/setting-a-language-with-selenium-webdriver-in-ruby.html</link><description>&lt;p&gt;Hello reader! This post was inspired by a project I was working on
 recently, adding a 'lang' option to a &lt;a class="reference external" href="https://rubygems.org/gems/selenium-webdriver/versions/2.53.4"&gt;Selenium-Webdriver&lt;/a&gt; (the ruby
 gem) wrapper. I needed to instantiate
 &lt;a class="reference external" href="http://www.rubydoc.info/gems/selenium-webdriver/0.0.28/Selenium/WebDriver/Driver"&gt;Selenium::Webdriver&lt;/a&gt;.for(:firefox) and (:chrome) both locally and
@@ -63,7 +912,18 @@ way to do it using the ruby gem. So here's what worked for me, where
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities"&gt;https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 23 Jan 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-01-23:setting-a-language-with-selenium-webdriver-in-ruby.html</guid><category>tech</category><category>ruby</category><category>selenium</category></item><item><title>Book Review: You'll Grow Out of It</title><link>http://blog.lucywyman.me/youll-grow-out-of-it.html</link><description>&lt;p&gt;Happy New Year! January is such a melancholy month, isn't it? The
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 23 Jan 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-01-23:setting-a-language-with-selenium-webdriver-in-ruby.html</guid><category>tech</category><category>ruby</category><category>selenium</category></item><item><title>Book Review: The Magnolia Story</title><link>http://blog.lucywyman.me/the-magnolia-story.html</link><description>&lt;p&gt;The guiltiest of pleasures! I &lt;em&gt;love&lt;/em&gt; &lt;a class="reference external" href="http://www.hgtv.com/shows/fixer-upper"&gt;Fixer Upper&lt;/a&gt; for all the
+reasons you might expect. It's funny, cute, inspiring, and simple.
+There's no conflict, or bad guys, or explosions, or skin-tight suits.
+Just a Texan couple, making houses beautiful. &lt;a class="reference external" href="https://www.goodreads.com/book/show/28668633-the-magnolia-story"&gt;The Magnolia Story&lt;/a&gt;
+details the life of Chip and Joanna before the show; how they met, how
+they came to flip houses, and how they got to be on TV. Their story is
+sweet and heartfelt, and it's clear that they had to &lt;em&gt;work&lt;/em&gt; to get to
+where they are. The book was a sweet treat, a sunny and happy break from the rainy
+Portland winter and January melancholy that I really needed. If you
+love the show like I do, you'll definitely love the book! Plain and
+simple.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 09 Jan 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-01-09:the-magnolia-story.html</guid><category>book-review</category></item><item><title>Book Review: You'll Grow Out of It</title><link>http://blog.lucywyman.me/youll-grow-out-of-it.html</link><description>&lt;p&gt;Happy New Year! January is such a melancholy month, isn't it? The
 festivities and gatherings have ended, everyone is back to work and
 school, and there are weeks of dark, cold days¹ ahead of us. So, to get
 my mind off my SO's departure I listened to Jessi Klein's &lt;a class="reference external" href="https://www.goodreads.com/book/show/27170141-you-ll-grow-out-of-it"&gt;You'll Grow
@@ -91,7 +951,37 @@ you, no matter where you are or where you see your life going. It will
 get you through those dark January days.&lt;/p&gt;
 &lt;p&gt;1 The bright side (ha) is that, because I get into the office before
 sunrise and leave after sunset, I don't need to wear sunscreen. Score.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 09 Jan 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-01-09:youll-grow-out-of-it.html</guid><category>book-review</category></item><item><title>San Francisco 2016: An Adventure</title><link>http://blog.lucywyman.me/san-francisco-2016.html</link><description>&lt;p&gt;Hello, beautiful reader! I hope you are enjoying the holiday season,
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 09 Jan 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2017-01-09:youll-grow-out-of-it.html</guid><category>book-review</category></item><item><title>Reflections on 2016</title><link>http://blog.lucywyman.me/reflections-on-2016.html</link><description>&lt;p&gt;January 1st of 2016 feels like it was a lifetime ago, doesn't it? 365
+days ago I was buying my last physics textbook, working on my senior
+project, and applying to jobs in my spare time. I had never voted in a
+Presidential election[1]. I had never ordered a drink at a bar. I had
+never left the US. I had never celebrated a 1 year anniversary with an
+SO. Though most of us lovingly refer to 2016 as the Year of the
+Dumpster Fire, my life got &lt;em&gt;so much better&lt;/em&gt;
+over the course of 2016. I &lt;em&gt;graduated&lt;/em&gt;. I can go to 21+ concerts now,
+and spend all my money on wine (woops). I got to visit 3 beautiful
+countries and experience their culture. And I started working at a
+company I love with people who are smarter and kinder than I am, doing
+work that not only interests me but lets me to grow and learn
+everyday[2]. I don't have any great point to make, or words of wisdom
+as we hurtle inevitably into the future. But thinking about the last
+year, I can't help but be filled with gratitude. I'm grateful to be
+surrounded by family and community who love me, grateful for the
+opportunities I've been given, grateful that I am ok and that the
+people I love are ok, grateful that I am constantly given chances to
+be a better human.&lt;/p&gt;
+&lt;p&gt;To be perfectly honest, I'm not excited about 2017. My SO has to go
+back to university soon, and leave me sleeping alone again. We have a
+long and melancholy winter stretched before us, with short gray days
+and long cold nights as far as the eye can see. There are no fun trips
+planned, no graduations, no 21st birthdays, no weddings, no reunions.
+The thought of the next few months only makes me feel hollow.
+But...but there should a but here. But there is no but. It just is.&lt;/p&gt;
+&lt;p&gt;[1] And had never been devastated by the results of an election
+[2] For example, today I learned that some people don't think it's
+necessary to pin dependency versions. And that I do not like those
+people&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Fri, 30 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-30:reflections-on-2016.html</guid><category>experiences</category></item><item><title>San Francisco 2016: An Adventure</title><link>http://blog.lucywyman.me/san-francisco-2016.html</link><description>&lt;p&gt;Hello, beautiful reader! I hope you are enjoying the holiday season,
 and are looking forward to some quality time with the people you love
 in the coming weeks. Before the madness really started Eli and I got
 to spend a week in San Francisco while he visited &lt;a class="reference external" href="https://coreos.com/"&gt;CoreOS&lt;/a&gt;, the tech
@@ -204,7 +1094,28 @@ turns out it might actually be San Francisco.  Who's to say?  I'm
 never certain of how to end these posts, but thanks for reading, and
 have a lovely day!&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Tue, 20 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-20:san-francisco-2016.html</guid><category>experiences</category><category>travel</category><category>tech</category></item><item><title>Book Review: Today Will Be Different</title><link>http://blog.lucywyman.me/today-will-be-different.html</link><description>&lt;p&gt;Off the Powell's New + Recommended shelf, I picked up &lt;a class="reference external" href="https://www.goodreads.com/book/show/28449270-today-will-be-different"&gt;Today Will
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Tue, 20 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-20:san-francisco-2016.html</guid><category>experiences</category><category>travel</category><category>tech</category></item><item><title>Book Review: Choose Your Own Autobiography</title><link>http://blog.lucywyman.me/choose-your-own-autobiography.html</link><description>&lt;p&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/20170296-neil-patrick-harris"&gt;Choose Your Own Autobiography&lt;/a&gt; is the work of Neil Patrick Harris,
+detailing different parts of his life until now. Although the book is
+done in the style of the Choose Your Own Adventure books, I listened
+to the book on tape where flipping to page 129 wasn't exactly feasible
+:p . The author himself narrates it though, and did his best to take
+us through the book from start to finish without getting lost along
+the way. NPH's past, from aspiring adolescent actor to young stardom
+to proud husband and parent, is an interesting story told with classic
+NPH humor. I can't say it was my favorite autobiography, as it
+definitely erred on the side of trying too hard to be funny rather
+than genuine or meaningful. But, walking the streets of San Francisco,
+this book definitely held my interested and brightened my days. It was
+entertaining, but didn't leave me feeling like I had insight into who
+NPH was as a person at all. I will say, though, that listening to him
+talk (or read aloud) about his kids was &lt;em&gt;heart melting&lt;/em&gt;.  I had no
+idea what the experiences of being a &amp;quot;closeted&amp;quot; gay celebrity or a gay couple trying to
+have kids were, and hearing about those first-hand was super
+interesting. Definitely a tiny drop of knowledge from a world I know
+little or nothing about, which is always excellent!  Overall, I
+definitely recommend this book if you're looking for something light,
+that doesn't require too much attention, or love all things NPH.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sat, 17 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-17:choose-your-own-autobiography.html</guid><category>book-review</category></item><item><title>Book Review: Today Will Be Different</title><link>http://blog.lucywyman.me/today-will-be-different.html</link><description>&lt;p&gt;Off the Powell's New + Recommended shelf, I picked up &lt;a class="reference external" href="https://www.goodreads.com/book/show/28449270-today-will-be-different"&gt;Today Will
 Be Different&lt;/a&gt; by Maria Semple. And unfortunately, it won't be finding
 it's way to my 'New + Recommended' list any time soon. The book
 follows Eleanor through a particularly whirl-wind day, from her son
@@ -222,7 +1133,38 @@ cousins. But at the end of the day there's nothing memorable, lasting,
 or insightful about the book. If you're looking for something to pick
 up this isn't the first thing I'd recommend, but it's not the worst
 choice either.  It's the 'meh' choice.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sun, 04 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-04:today-will-be-different.html</guid><category>book-review</category></item><item><title>Thanksgiving Week: Health</title><link>http://blog.lucywyman.me/thanksgiving-week-health.html</link><description>&lt;p&gt;This is the fourth post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sun, 04 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-04:today-will-be-different.html</guid><category>book-review</category></item><item><title>Book Review: It Ends With Us</title><link>http://blog.lucywyman.me/it-ends-with-us.html</link><description>&lt;p&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/27362503-it-ends-with-us"&gt;It Ends With Us&lt;/a&gt; is a harrowing story of love and abuse, and how
+abusive relationships aren't usually as black-and-white as we like to
+think. 'It Ends With Us' follows Lily Bloom as she opens her own
+flower shop and falls in love with a surgeon, Ryle Kincaid. With a
+history of abuse in the family and vivid memories of her mother
+covered in bruises and cuts, Lily knows too well the cycle of violence
+and apology that so many abusive men exhibit. But when her
+relationship with Ryle takes increasingly dark turns, she denies that
+anything is wrong. At first they seem like such small incidents --
+things that could happen to anybody. We all lose our tempers, or lash
+out when we don't mean to. But as Ryle becomes her husband, and then
+the father of her child, his violence escalates. With her own daughter
+on the way, she's faced with a choice: be just like her mother, or
+leave.&lt;/p&gt;
+&lt;p&gt;'It Ends With Us' was deeply personal for Colleen Hoover, and that shines
+through in the novel. The characters are rich and sympathetic, and
+they show the nuance and shades of grey in an abusive relationship.
+It's easy to look in from the outside and judge victims of abuse for
+staying. How can they not see what's happening to them? How can they
+live each day with people who hit them, or scream at them? 'It Ends
+With Us' helped me understand how those relationships are like frogs
+in hot water, how abusive husbands can have a lot of good qualities
+and think they are good people (though make no mistake, they are
+&lt;em&gt;monsters&lt;/em&gt;), and how it can be easy to explain away incidents of
+abuse. I won't spoil anything, but I will say that there's also a very
+happy ending, which was well worth sticking around for!&lt;/p&gt;
+&lt;p&gt;I was deeply touched by 'It Ends With Us', and came away not only with
+another good love story in my ears but with a deeper understanding of
+what victims of abuse go through. The mark of a great book is one that
+not only entertains and rivets, but that changes the way you move
+through everyday life and see the world.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sat, 03 Dec 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2016-12-03:it-ends-with-us.html</guid><category>book-review</category></item><item><title>Thanksgiving Week: Health</title><link>http://blog.lucywyman.me/thanksgiving-week-health.html</link><description>&lt;p&gt;This is the fourth post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
 haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
 &lt;p&gt;I've spent far, far too much of my life thinking about my body.  Is it
 thin enough, pretty enough, good enough? As if that's any reflection
@@ -1257,6 +2199,15 @@ kidding, you ladies both look beautiful tonight&amp;quot;.  We speed walked
 away, both totally uncomfortable and dreading the long walk to the
 car in the dark. The true skeptic may be thinking &amp;quot;He complimented
 you. Why is this a bad thing?&amp;quot;  Well,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;02/24/2017&lt;/strong&gt;: In a meeting today the QA team was discussing
+changes to our interview process. At one point a male coworker was
+referring to potential candidates and said &amp;quot;The guy won't get XYZ.
+He might not think to do ABC.&amp;quot; and went on to continue referring
+potential candidates as exclusively male for the rest of the
+meeting. It's such a small thing, and I almost brought it up and
+pointed it out, but I know he's not doing it intentionally. But it
+does make clear that we unconsciously think of engineers as being
+male.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conclusion"&gt;
@@ -1277,7 +2228,7 @@ experiences. You can read about others experiences with discrimination
 in tech here:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://juliepagano.com/blog/2013/03/24/my-experiences-in-tech-death-by-1000-paper-cuts/"&gt;Death by 1000 paper cuts&lt;/a&gt; by Julie Pagano&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber"&gt;Reflecting on one very, very strange year at Uber&lt;/a&gt; by Susan Fowler&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you have an stories of your own that you think belong on this list,
 please email them to me at wyman[dot]lucy[at]gmail[dot]com. You can include
@@ -1327,6 +2278,9 @@ may not be the same if you use a manual image.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;rhel_7.2_x86_64&lt;/td&gt;
 &lt;td&gt;cloud-user (snowflake much?)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;coreos_(version)_x86_64&lt;/td&gt;
+&lt;td&gt;core&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
