@@ -7,7 +7,10 @@ Summer Reads 2017
 :author: Lucy Wyman
 :img: 
 
-Summer is still a month away. But here in Oregon it's been raining for about 6 weeks straight now and dreaming of long days and sunshine is all that's getting me through. With long, lazy weekends ahead, now is the perfect time to start compiling a reading list! Here's what I've been loving lately: 
+Summer is still a month away. But here in Oregon it's been raining for about
+6 weeks straight now and dreaming of long days and sunshine is all that's
+getting me through. With long, lazy weekends ahead, now is the perfect time
+to start compiling a reading list! Here's what I've been loving lately: 
 
 Kitchens of the Great Midwest
 -----------------------------
@@ -48,14 +51,12 @@ head-over-heels for Chip and Joanna Gaines, and their book `The
 Magnolia Story`_ did not disappoint. They're so funny! And cute!
 Perfect for beach reading and flower gazing.
 
-Eligible
---------
-
-Hot off of `Powell's Staff Picks`_, this modern `Pride and Prejudice`_
-retelling is 
-
 The Bell Jar
 ------------
 *By Sylvia Plath*
 
-`The Bell Jar`_ flat out surprised me. I think of it as Classic Literature, and often find that Classic Literature is too masculine or too opaque for my casual reading tastes. This book was anything but! Plath's semi-autobiographical novel is the beautiful story of a young woman trying to find her 
+`The Bell Jar`_ flat out surprised me. I think of it as Classic Literature,
+and often find that Classic Literature is too masculine or too opaque for my
+casual reading tastes. This book was anything but! Plath's
+semi-autobiographical novel is the beautiful story of a young woman trying to
+find her

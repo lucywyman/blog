@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-05-15T00:00:00-07:00</updated><entry><title>OSCON 2017</title><link href="http://blog.lucywyman.me/oscon-2017.html" rel="alternate"></link><published>2017-05-15T00:00:00-07:00</published><updated>2017-05-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-15:oscon-2017.html</id><summary type="html">&lt;div class="section" id="highlights"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-05-29T00:00:00-07:00</updated><entry><title>Summer Bucket List 2017</title><link href="http://blog.lucywyman.me/summer-bucket-list-2017.html" rel="alternate"></link><published>2017-05-29T00:00:00-07:00</published><updated>2017-05-29T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-29:summer-bucket-list-2017.html</id><summary type="html">&lt;p&gt;Inspired by &lt;a class="reference external" href="http://joythebaker.com/2017/05/summer-bucket-list-2017/"&gt;Joy the Baker&lt;/a&gt;, I'm making a Summer Bucket List. I don't like the
+idea of have-to's or should's, but I do like the idea of heading into the
+summer with answers to the question &amp;quot;What should we do on this beautiful day?&amp;quot;.
+Many of these are time-honored traditions in my family, so this is more of a
+reminder to partake than an aspirational list. Nonetheless, it bears writing
+and checking in. Here's what we're planning on doing:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Take a &lt;a class="reference external" href="http://www.vmacpdx.com/salsa.html"&gt;Salsa class&lt;/a&gt; (I'm already signed up!)&lt;/li&gt;
+&lt;li&gt;Go to &lt;a class="reference external" href="http://oakspark.com/"&gt;Oaks Park&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Attend the &lt;a class="reference external" href="https://oregonstatefair.org/"&gt;Oregon State Fair&lt;/a&gt; (and maybe submit a baked good...)&lt;/li&gt;
+&lt;li&gt;Go berry picking&lt;/li&gt;
+&lt;li&gt;Go to Shakespeare in the Park in Seattle&lt;/li&gt;
+&lt;li&gt;Have a barbecue&lt;/li&gt;
+&lt;li&gt;Go to trivia night&lt;/li&gt;
+&lt;li&gt;Go to &lt;a class="reference external" href="http://www.lastthursdayonalberta.com/"&gt;Last Thursday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bake some bread. Yeast scares me, and I want to get over it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That's all! Short. Sweet. Doable. Makin' the most of those summer nights.&lt;/p&gt;
+</summary><category term="experiences"></category></entry><entry><title>OSCON 2017</title><link href="http://blog.lucywyman.me/oscon-2017.html" rel="alternate"></link><published>2017-05-15T00:00:00-07:00</published><updated>2017-05-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-15:oscon-2017.html</id><summary type="html">&lt;div class="section" id="highlights"&gt;
 &lt;h2&gt;Highlights&lt;/h2&gt;
 &lt;p&gt;There's a &lt;em&gt;ton&lt;/em&gt; of content in this post, including a lot of links to
 even more content.  Here's the good stuff, if you want to skip the
@@ -18,7 +36,7 @@ gory details.&lt;/p&gt;
 Overall, this was an excellent conference! I'm not sure if the quality
 of speakers was especially high this year or if I'm just getting
 better at choosing which talks to attend, but I was &lt;em&gt;very&lt;/em&gt; impressed
-with the speakers and their topics this year. There were only 1 or 2
+with the speakers and their topics. There were only 1 or 2
 talks that weren't useful to me, and even then I didn't find myself
 wishing I had attended a different talk. I learned a lot, got to catch
 up with OSS nerd friends, and got to meet some fantastic folks!&lt;/p&gt;
@@ -62,7 +80,7 @@ source and resonant one. Evan spoke about hardware hacking, and
 advocated for general parts to be standardized and made
 interchangeable like how batteries are now. For example, why can't we
 have motors be widely available and easy to replace in everything from
-toys to microwaves to blenders? Excellent note to start on!&lt;/p&gt;
+toys to microwaves to blenders? An excellent and inspiring note to start on!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="choose-open-infrastructure"&gt;
 &lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/61296"&gt;Choose Open Infrastructure&lt;/a&gt;&lt;/h4&gt;
@@ -77,10 +95,12 @@ principles, and listed common tools that met all 3 of those
 principles. There was no mention of IBM, or even any projects or
 products they were working on, just some hard core pro-open source
 talk.&lt;/p&gt;
-&lt;p&gt;3 Open Source Principles:
-* &lt;strong&gt;Transparency&lt;/strong&gt; - do they work openly?
-* &lt;strong&gt;Interoperability&lt;/strong&gt; - can I get my data off the platform? Or am I locked in?
-* &lt;strong&gt;Influence&lt;/strong&gt; - do they listen to non-paying users?&lt;/p&gt;
+&lt;p&gt;3 Open Source Principles:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Transparency&lt;/strong&gt; - do they work openly?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interoperability&lt;/strong&gt; - can I get my data off the platform? Or am I locked in?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Influence&lt;/strong&gt; - do they listen to non-paying users?&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="open-source-contribution-and-collaboration-how-and-why-netflix-drives-industry-engagement"&gt;
 &lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/59265"&gt;Open source contribution and collaboration: How (and why) Netflix drives industry engagement&lt;/a&gt;&lt;/h4&gt;
@@ -100,7 +120,7 @@ specific team + companies)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;While this is pretty standard advice, I &lt;em&gt;do&lt;/em&gt; think that a project is
 less likely to succeed without these. Overall, interesting but not
-mind blowing but still pretty great!&lt;/p&gt;
+mind blowing.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-power-of-the-open-source-ecosystem"&gt;
 &lt;h4&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/61737"&gt;The power of the open source ecosystem&lt;/a&gt;&lt;/h4&gt;
@@ -139,7 +159,7 @@ talked specifically about &lt;a class="reference external" href="https://github.
 advisors have trained which Afghan officials, and spoke about the team
 which led that project and what helped them succeed. It was honestly a
 really good keynote, despite (or maybe including) the speaker's
-hilariously exaggerations and style.&lt;/p&gt;
+hilarious exaggerations and style.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="my-talk"&gt;
@@ -153,7 +173,7 @@ body is catching on that public speaking isn't scary? But about the
 talk! It's so hard to have perspective about talks you give, and so my
 initial reaction when people asked how it went was to say &amp;quot;Oh, there
 were so many things I could have improved or done better&amp;quot;. For
-example, I completely neglected to any contact information or the link
+example, I completely neglected to include any contact information or the link
 to my slides in my presentation. But everyone I spoke to after the
 talk, even those who had constructive feedback, told me that they had
 really enjoyed the talk and had gotten something out of it. Overall
@@ -202,7 +222,7 @@ security, I highly highly recommend watching!&lt;/p&gt;
 lucky to know juuust enough background knowledge to be able to keep
 up. &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Trusted_Platform_Module"&gt;The TPM&lt;/a&gt; is a small chip that's used to securely generate,
 store, and limit use of cryptographic keys. James talk was
-about using the TPM to store secrets, specifically VPN keys and
+about using the TPM to store cloud machine's secrets, specifically VPN keys and
 potentially RSA keys. There are a number of stumbling blocks towards
 this goal, not the least of which is a radical difference in how the
 TPM 1.2 and TPM 2.0 work (which makes backwards compatibility
@@ -221,30 +241,32 @@ tips for writing, most of which are relatively common knowledge but as
 an occasional writer I found them both inspiring and helpful! It never
 hurts to be reminded of how to structure your articles based on your
 audience, have a clear point, and that the only way to get better at
-writing is by writing! Rikki also provided a number of tech-industry
+writing is by writing. Rikki also provided a number of tech-industry
 specific tips (how technical to be in various articles, for example),
 as well as a number of quips from &lt;a class="reference external" href="https://www.goodreads.com/work/quotes/150292-on-writing-a-memoir-of-the-craft"&gt;Stephen King&lt;/a&gt; (kill your darlings,
-kill your darlings). Though perhaps the most &amp;quot;common knowledge&amp;quot; type
-of talk, this might also be the talk I got the most out of in the
+kill your darlings). Although this was a &amp;quot;common knowledge&amp;quot; type
+of talk, it's also the talk I got the most out of in the
 whole conference, particularly since writing plays such an important
 role in my job and life. I was reminded to edit my pieces (woops,
 don't usually do that!), to learn to handle criticism, and to know who
 I'm writing for. Overall, a super worthwhile and excellent talk from a
 true expert (and open source hero!).&lt;/p&gt;
-&lt;p&gt;Key Takeaways:
-* Before you write know what you are writing about, why you're writing, and who your reader is
-* Research, outline, write, revise
-* 3 categories of audience in tech: lay audience, managers, experts
-* Good writing requires lots of reading and writing
-* Have clear expectations for what your piece needs to deliver
-* Invite the reader in
-* Tell a story
-* Leave out the boring parts
-* Include lists
-* To write is human, to edit is divine
-* Kill your darlings
-* Find a brutally honest editor
-* Start writing!&lt;/p&gt;
+&lt;p&gt;Key Takeaways:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Before you write know what you are writing about, why you're writing, and who your reader is&lt;/li&gt;
+&lt;li&gt;Research, outline, write, revise&lt;/li&gt;
+&lt;li&gt;3 categories of audience in tech: lay audience, managers, experts&lt;/li&gt;
+&lt;li&gt;Good writing requires lots of reading and writing&lt;/li&gt;
+&lt;li&gt;Have clear expectations for what your piece needs to deliver&lt;/li&gt;
+&lt;li&gt;Invite the reader in&lt;/li&gt;
+&lt;li&gt;Tell a story&lt;/li&gt;
+&lt;li&gt;Leave out the boring parts&lt;/li&gt;
+&lt;li&gt;Include lists&lt;/li&gt;
+&lt;li&gt;To write is human, to edit is divine&lt;/li&gt;
+&lt;li&gt;Kill your darlings&lt;/li&gt;
+&lt;li&gt;Find a brutally honest editor&lt;/li&gt;
+&lt;li&gt;Start writing!&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="how-i-learned-to-stop-being-afraid-and-love-the-jvm"&gt;
 &lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56563"&gt;How I learned to stop being afraid and love the JVM&lt;/a&gt;&lt;/h3&gt;
@@ -266,19 +288,21 @@ great detail the pain points and horror stories of the old JVM that
 many grizzled sysadmins will tell you about. His talk set up the
 problem, explained how the JVM has improved and how those improvements
 have made impacts in the industry.&lt;/p&gt;
-&lt;p&gt;Key Takeaways:
-* Legacy java is pretty ugly, verbose, and repetitive. And there's &lt;em&gt;lots&lt;/em&gt; of bad java out there
-* JVM has always been generally performant
-* JVM doesn't always respond to general fixes (for example, you have to tell it to use more memory, not just throw memory at it)
-* JVM needs tuning, not always intuitive
-* JVM stacktraces are impossible to read
-* Hard to automate the JVM (mentioned Puppet!)
-* JVM wasn't transparent
-* Android has really helped modern java improve
-* JVM is &lt;em&gt;super&lt;/em&gt; fast
-* Logging has improved dramatically
-* More transparent now
-* Security has become a much higher priority&lt;/p&gt;
+&lt;p&gt;Key Takeaways:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Legacy java is pretty ugly, verbose, and repetitive. And there's &lt;em&gt;lots&lt;/em&gt; of bad java out there&lt;/li&gt;
+&lt;li&gt;JVM has always been generally performant&lt;/li&gt;
+&lt;li&gt;JVM doesn't always respond to general fixes (for example, you have to tell it to use more memory, not just throw memory at it)&lt;/li&gt;
+&lt;li&gt;JVM needs tuning, not always intuitive&lt;/li&gt;
+&lt;li&gt;JVM stacktraces are impossible to read&lt;/li&gt;
+&lt;li&gt;Hard to automate the JVM (mentioned Puppet!)&lt;/li&gt;
+&lt;li&gt;JVM wasn't transparent&lt;/li&gt;
+&lt;li&gt;Android has really helped modern java improve&lt;/li&gt;
+&lt;li&gt;JVM is &lt;em&gt;super&lt;/em&gt; fast&lt;/li&gt;
+&lt;li&gt;Logging has improved dramatically&lt;/li&gt;
+&lt;li&gt;More transparent now&lt;/li&gt;
+&lt;li&gt;Security has become a much higher priority&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="web-application-security-browsers-fight-back"&gt;
 &lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56864"&gt;Web application security: Browsers fight back&lt;/a&gt;&lt;/h3&gt;
@@ -287,11 +311,14 @@ have made impacts in the industry.&lt;/p&gt;
 both interesting and hilarious. This talk covered the major threats
 facing web applications today (namely &lt;a class="reference external" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)"&gt;XSS&lt;/a&gt;, &lt;a class="reference external" href="https://www.owasp.org/index.php/Session_hijacking_attack"&gt;Cookie hijacking&lt;/a&gt;,
 &lt;a class="reference external" href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)"&gt;CSRF&lt;/a&gt;, and &lt;a class="reference external" href="https://blog.mozilla.org/security/2015/01/21/meta-referrer/"&gt;referrer data leakage&lt;/a&gt;), and what we as web developers
-can actively and easily do to prevent those attacks.&lt;/p&gt;
-&lt;p&gt;Key Takeaways:
-* &lt;a class="reference external" href="https://content-security-policy.com/"&gt;Content Security Policy&lt;/a&gt; is a &lt;a class="reference external" href="https://www.w3.org/"&gt;W3C&lt;/a&gt; standard for security related http header content
-* &lt;a class="reference external" href="https://caniuse.com"&gt;https://caniuse.com&lt;/a&gt; to look up which security policies are supported by which browsers
-* CSP works by having the header and a 'directive', for example &lt;code&gt;default-src 'self';&lt;/code&gt;&lt;/p&gt;
+can actively and easily do to prevent those attacks. Favorite quote was&lt;/p&gt;
+&lt;p&gt;&amp;quot;To allow inline javascript, I need to add &lt;code&gt;script-src unsafe-inline;&lt;/code&gt;. Writing 'unsafe-inline' feels so good.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Key Takeaways:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://content-security-policy.com/"&gt;Content Security Policy&lt;/a&gt; is a &lt;a class="reference external" href="https://www.w3.org/"&gt;W3C&lt;/a&gt; standard for security related http header content&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://caniuse.com"&gt;https://caniuse.com&lt;/a&gt; to look up which security policies are supported by which browsers&lt;/li&gt;
+&lt;li&gt;CSP works by having the header and a 'directive', for example &lt;code&gt;default-src 'self';&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="thursday"&gt;
@@ -355,8 +382,7 @@ speaker I strive to be!!&lt;/p&gt;
 &lt;p&gt;By Meaghan Lewis&lt;/p&gt;
 &lt;p&gt;I made a classic conference mistake with this talk: I already knew a
 lot
-about the subject. While I didn't gain any new insights Meaghan's
-talk, I was still impressed with the content and structure of the
+about the subject. While I didn't gain any new insights, I was still impressed with the content and structure of the
 talk! Meaghan covered common issues one might run in to when testing
 using Selenium across multiple browsers, and what might be causing
 those issues. She also prescribed some patterns that can help avoid
@@ -421,7 +447,7 @@ inspired and excited about my industry and community. I learned that
 the first step is to punch a tree, that TPM stands for more than just
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Tethered_particle_motion"&gt;tethered particle motion&lt;/a&gt;, and that learning rust is just a
 sea of bacon away. Looking forward to next year, when OSCON will be
-back in my beautiful hometown &lt;cite&gt;Portland&lt;/cite&gt;.&lt;/p&gt;
+back in my beautiful hometown &lt;a class="reference external" href="http://blog.lucywyman.me/portland.html"&gt;Portland&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="experiences"></category><category term="conferences"></category><category term="tech"></category></entry><entry><title>Book Review: The Bell Jar</title><link href="http://blog.lucywyman.me/the-bell-jar.html" rel="alternate"></link><published>2017-05-03T00:00:00-07:00</published><updated>2017-05-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-03:the-bell-jar.html</id><summary type="html">&lt;p&gt;Sylvia Plath's only novel, &lt;a class="reference external" href="https://www.goodreads.com/book/show/6514.The_Bell_Jar"&gt;The Bell Jar&lt;/a&gt; is a fantastic dive into
 the mind, and her experiences with mental illness.
