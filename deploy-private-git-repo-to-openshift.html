@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>blog</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A humble blog by me, Lucy Wyman">
+<meta name="keywords" content="blog, code, lucy, wyman">
+<meta name="keywords" content="conferences">
+<meta name="keywords" content="interviews">
+<meta name="keywords" content="books">
+<meta name="keywords" content="puppet">
+<meta name="keywords" content="openstack">
+<meta name="keywords" content="politics">
+<meta name="keywords" content="Portland">
+<meta name="keywords" content="travel">
+<meta name="keywords" content="selenium">
+<meta name="keywords" content="book-review">
+<meta name="keywords" content="application">
+<meta name="keywords" content="health">
+<meta name="keywords" content="openshift">
+<meta name="keywords" content="orchestrator">
+<meta name="keywords" content="flag">
+<meta name="keywords" content="experiences">
+<meta name="keywords" content="ruby">
+<meta name="keywords" content="women">
+<meta name="keywords" content="thanksgiving">
+<meta name="keywords" content="concerts">
+<meta name="keywords" content="tech">
+<meta name="keywords" content="loves">
+<meta name="keywords" content="example">
+<meta name="keywords" content="clothes">
+<meta name="keywords" content="Books">
+<meta name="keywords" content="Conferences">
+<meta name="keywords" content="Experiences">
+<meta name="keywords" content="Loves">
+<meta name="keywords" content="Other">
+<meta name="keywords" content="Tech">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="http://blog.lucywyman.me" />
+<meta property="og:site_name" content="Blog" />
+
+<script src="/theme/js/jquery-1.11.2.js"></script>
+<link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48093989-5', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>  <body>
+    <nav>
+      <ul>
+        <li><h3><a href='http://blog.lucywyman.me'>Lucy Wyman</a></h3></li>
+        <li><a href='http://blog.lucywyman.me/about.html'>About</a></li>
+        <li> 
+          <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/other.html'>Other</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+        </li> 
+
+      </ul>
+    </nav>
+    <div class='wrapper'>
+      <main>
+<div class='article'>
+<h2>How to Deploy a Private Git Repo to Openshift</h2>
+<p>06.15.2017</p>
+<p><a class="reference external" href="https://openshift.com">Openshift</a> is <a class="reference external" href="http://www.redhat.com/en">Redhat's</a> platform as a service, aka a place for you
+to deploy your application to (think Heroku, Google App Engine, or AWS
+Beanstalk). They have a tool called <a class="reference external" href="https://docs.openshift.com/enterprise/3.1/architecture/core_concepts/builds_and_image_streams.html#source-build">Source 2 Image (S2I)</a> that
+allows you to pass in a <a class="reference external" href="https://docs.openshift.org/latest/dev_guide/builds/index.html">source</a> (in the form of a docker image, git
+repo, or binary) and then builds an Openshift docker image from that.
+Because I'm using this as a project for work, and my application
+already lives on <a class="reference external" href="https://github.com">Github</a>, I decided to use a private Git repo as my
+source for deploying my application to Openshift. Deploying public Git
+repos is <a class="reference external" href="https://docs.openshift.org/latest/dev_guide/application_lifecycle/new_app.html#specifying-source-code">well-documented</a>, and while private repos don't require too
+much additional setup there were a few hiccups along the road, and no
+great step-by-step resource. So...I decided to write my own!</p>
+<div class="section" id="notes">
+<h2><a class="toc-backref" href="#id2">Notes</a></h2>
+<ul class="simple">
+<li>This assumes that you already know <a class="reference external" href="https://developers.openshift.com/">what Openshift is</a>, and have some basic Git and web application knowledge. I essentially wrote what I wish I had read 2 days ago -- if there's any context you're missing I've tried to provide as many resources I think would be useful at the end of this article.</li>
+<li>This also assumes you're on Linux, and I am far too lazy to find how to do all of this on other systems. If these don't work on OSX or Windows, maybe you should consider a different operating system?</li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id3">Overview</a></h2>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#notes" id="id2">Notes</a></li>
+<li><a class="reference internal" href="#overview" id="id3">Overview</a><ul>
+<li><a class="reference internal" href="#install-the-openshift-cli" id="id4">Install the Openshift CLI</a></li>
+<li><a class="reference internal" href="#create-an-openshift-project" id="id5">Create an Openshift project</a></li>
+<li><a class="reference internal" href="#pause" id="id6">Pause</a></li>
+<li><a class="reference internal" href="#create-an-ssh-key" id="id7">Create an SSH Key</a></li>
+<li><a class="reference internal" href="#add-public-key-as-a-deploy-key-to-repo" id="id8">Add Public Key as a Deploy Key to Repo</a></li>
+<li><a class="reference internal" href="#add-key-as-a-secret-to-openshift" id="id9">Add Key as a Secret to Openshift</a></li>
+<li><a class="reference internal" href="#create-openshift-application" id="id10">Create Openshift Application</a></li>
+<li><a class="reference internal" href="#make-sure-it-worked" id="id11">Make Sure It Worked</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#issues-i-ran-in-to" id="id12">Issues I Ran In To</a><ul>
+<li><a class="reference internal" href="#the-wrong-git-uri" id="id13">The Wrong Git URI</a></li>
+<li><a class="reference internal" href="#application-already-exists" id="id14">Application Already Exists</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#resources" id="id15">Resources</a></li>
+</ul>
+</div>
+<div class="section" id="install-the-openshift-cli">
+<h3><a class="reference external" href="https://docs.openshift.org/latest/cli_reference/get_started_cli.html#cli-linux">Install the Openshift CLI</a></h3>
+<p>Step 0 is to install the Openshift CLI. I generally find CLIs easier
+to use + understand, but Openshift also has a nice GUI you can use
+if you'd prefer.</p>
+<p><strong>Note</strong>: this assumes that you already have access to and Openshift
+instance.</p>
+<blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/openshift/origin/releases#Downloads">Download</a></li>
+<li>Untar <code>tar -xvzf openshift-origin-client-tools-v1.5.1-7b451fc-linux-64bit.tar.gz</code></li>
+<li>Move binary into path <code>mv openshift-origin-client-tools-v1.5.1-7b451fc-linux-64bit/oc /usr/local/bin</code></li>
+</ul>
+</blockquote>
+<p><strong>Note</strong>: If you're not sure what's in your path, run <code>echo $PATH</code></p>
+</div>
+<div class="section" id="create-an-openshift-project">
+<h3>Create an <a class="reference external" href="https://docs.openshift.org/latest/dev_guide/projects.html">Openshift project</a></h3>
+<p>This is where our applications, builds, etc. will live. I highly
+recommend running <code>oc new-project -h</code> first to see if there are
+any flags or arguments you want to pass in! I just ran <code>oc
+new-project &lt;project-name&gt;</code></p>
+</div>
+<div class="section" id="pause">
+<h3><a class="toc-backref" href="#id6">Pause</a></h3>
+<p>Stop right here! Usually, the tutorials will tell you to make your
+<a class="reference external" href="https://developers.openshift.com/managing-your-applications/creating-applications.html">Openshift application</a> next and pass in your Git URL. DON'T FALL FOR
+IT. The problem is that for private repos, you need to have a deploy
+key so Openshift can authenticate with the repo. However, the only way
+to tell Openshift it needs the SSH key is in the <a class="reference external" href="https://docs.openshift.org/latest/dev_guide/builds/index.html#defining-a-buildconfig">buildconfig</a>. And
+the buildconfig isn't generated until you either:</p>
+<ol class="arabic simple">
+<li>Try to create an application (the first build will fail then you can
+modify the buildconfig) OR</li>
+<li>Have a template (basically write your own reusable buildconfig).</li>
+</ol>
+<p>I ended up using a template, because it drove me nuts to have the
+first build of the application fail. But you can see a <a class="reference external" href="https://blog.openshift.com/using-ssh-key-for-s2i-builds/">step-by-step
+guide for option 1 here</a>
+if you'd prefer to modify an existing buildconfig.</p>
+</div>
+<div class="section" id="create-an-ssh-key">
+<h3><a class="toc-backref" href="#id7">Create an SSH Key</a></h3>
+<p>Ok, so, adding a deploy key to both our Github and Openshift. First things
+first, lets make a special key (Don't use your own personal SSH key!
+Make a new one!)</p>
+<p><code>ssh-keygen -t rsa -b 4096 -C &quot;openshift-key&quot;</code>.</p>
+<p><strong>Note</strong>: Make sure you give it a unique path, so that it doesn't
+overwrite any existing SSH key(s)!</p>
+</div>
+<div class="section" id="add-public-key-as-a-deploy-key-to-repo">
+<h3><a class="toc-backref" href="#id8">Add Public Key as a Deploy Key to Repo</a></h3>
+<p>Now we'll add the public key to our private Git repo as a deploy key,
+so that it can verify communications with Openshift. See Git's
+slightly more helpful documentation on how to do this <a class="reference external" href="https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys">here</a></p>
+<ul class="simple">
+<li>Go to the repos main page in Github</li>
+<li>Click the 'Settings' tab</li>
+<li>Go to 'Deploy keys'</li>
+<li>Give it a name (can be anything)</li>
+<li>Paste the <strong>public</strong> key (<code>~/.ssh/id_rsa-openshift.pub</code>) into the textbox</li>
+<li>Click add key</li>
+</ul>
+</div>
+<div class="section" id="add-key-as-a-secret-to-openshift">
+<h3><a class="toc-backref" href="#id9">Add Key as a Secret to Openshift</a></h3>
+<p>Now we have to give Openshift the private key, and make it an
+<a class="reference external" href="https://docs.openshift.com/enterprise/3.0/dev_guide/secrets.html">Openshift secret</a>. Openshift secrets &quot;decouple sensitive content
+from the pods that use it and can be mounted into containers using a
+volume plug-in or used by the system to perform actions on behalf of a
+pod&quot;, which is very useful!  Creating them requires a few steps (read
+more about why in <a class="reference external" href="https://blog.openshift.com/deploying-from-private-git-repositories/">this poorly named blog post</a>).</p>
+<div class="highlight"><pre><span></span>oc secrets new-sshauth openshiftkey --ssh-privatekey=$HOME/.ssh/id_rsa-openshift
+oc secrets add serviceaccount/builder secrets/openshiftkey
+</pre></div>
+<p>If you accidentally add the public key like I did, you can remove
+secrets using <code>oc delete secret openshiftkey</code></p>
+</div>
+<div class="section" id="create-openshift-application">
+<h3><a class="toc-backref" href="#id10">Create Openshift Application</a></h3>
+<p>Ok, <em>now</em> that our keys are all squared away, we can create an
+application using a private git repo as our source! Unfortunately,
+there's currently no way to use the <code>oc new-app</code> command
+directly to build an image from a private repo. What we'll do instead
+is create an <a class="reference external" href="https://docs.openshift.org/latest/dev_guide/templates.html">application template</a> that includes the necessary
+secret and use that template to create our app.</p>
+<ul>
+<li><p class="first">Create a template for our git repo using the new-app command</p>
+<div class="highlight"><pre><span></span>oc new-app ssh://git@github.com:mygituser/mygitrepo --name app-name -o json &gt;&gt; my-template.json
+</pre></div>
+</li>
+<li><p class="first">Open the JSON file and change &quot;List&quot; to &quot;Template&quot;, and &quot;items&quot; to &quot;objects&quot;.</p>
+</li>
+<li><p class="first">Add a <code>&quot;name&quot;: &quot;my-app-name&quot;</code> to the <code>metadata</code> object</p>
+<div class="highlight"><pre><span></span>&quot;metadata&quot;: {&quot;name&quot;: &quot;my-app-name&quot;},
+</pre></div>
+</li>
+<li><p class="first">This part is tricky and I'm not sure how best to describe it, but in <code>&quot;spec&quot;: {&quot;source&quot;:{}}</code> object add</p>
+<div class="highlight"><pre><span></span>&quot;sourceSecret&quot;: {
+    &quot;name&quot;: &quot;openshiftkey&quot;
+}
+</pre></div>
+</li>
+</ul>
+<p>So you should end up with a block that looks like:</p>
+<blockquote>
+<div class="highlight"><pre><span></span>foo bar baz
+</pre></div>
+</blockquote>
+<p><a class="reference external" href="https://gist.github.com/lucywyman/145aebfe1897d91d4cd5337e5baa7379">This is what my JSON template ended up looking like</a> (with sensitive
+information removed)</p>
+<ul>
+<li><p class="first">Create a template based on this json file</p>
+<div class="highlight"><pre><span></span>oc create -f my-template.json
+</pre></div>
+</li>
+<li><p class="first">Finally, create an application using the template!</p>
+<div class="highlight"><pre><span></span>oc new-app --template app-name
+</pre></div>
+</li>
+</ul>
+<p>Again, I highly recommend you run <code>oc new-app -h</code> first to see if there are any special configurations you want to use.</p>
+</div>
+<div class="section" id="make-sure-it-worked">
+<h3><a class="toc-backref" href="#id11">Make Sure It Worked</a></h3>
+<p>Run <code>oc get builds</code>, and you should see output similar to this:</p>
+<div class="highlight"><pre><span></span>NAME      TYPE      FROM          STATUS     STARTED        DURATION
+my-app1   Source    Git@abcdefg   Complete   18 hours ago   29s
+</pre></div>
+</div>
+</div>
+<div class="section" id="issues-i-ran-in-to">
+<h2><a class="toc-backref" href="#id12">Issues I Ran In To</a></h2>
+<div class="section" id="the-wrong-git-uri">
+<h3><a class="toc-backref" href="#id13">The Wrong Git URI</a></h3>
+<p>At first I was using the http Git URI, which obviously didn't use
+the SSH deploy key. I then tried using
+<code>ssh://git&#64;github.com:my-user/my-repo.git</code>, which also failed.
+<code>git&#64;github.com:my-user/my-repo.git</code> is the right URI!</p>
+</div>
+<div class="section" id="application-already-exists">
+<h3><a class="toc-backref" href="#id14">Application Already Exists</a></h3>
+<p>Because I had to try building my application several times, I also had
+to delete my failed attempts several times so there wouldn't be name
+errors. I usually ran the following:</p>
+<div class="highlight"><pre><span></span>oc delete services --all
+oc delete deploymentconfig --all
+oc delete buildconfig --all
+oc delete imagestreams --all
+oc delete templates --all
+</pre></div>
+<p>This obviously won't work if you have services you're trying to
+preserve, but you can just specify which services etc. to delete.</p>
+</div>
+</div>
+<div class="section" id="resources">
+<h2><a class="toc-backref" href="#id15">Resources</a></h2>
+<ul class="simple">
+<li>The <a class="reference external" href="https://docs.openshift.org/latest/welcome/index.html">Openshift Origin</a> documentation was invaluable in
+troubleshooting various issues I had</li>
+<li>I asked a question in #openshift on irc, and someone answered within
+5 minutes and was very nice and helpful.</li>
+<li>There's a <a class="reference external" href="https://openshift.com/promotions/for-developers.html">Free E-Book</a> (pdf format too) call &quot;Openshift for
+Developer's&quot; that explains more about what Openshift is and how it
+works. This was super helpful for understanding what all of the
+components were, and generally getting started.</li>
+</ul>
+</div>
+
+</div>
+      </main>
+      <aside>
+        <div class='sidebar'>
+          <div class='social-media'>
+            <a href='https://github.com/lucywyman'>
+              <img class='social' src='/theme/images/github-icon.png'>
+            </a>
+            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+              <img class='social' src='/theme/images/linkedin.png'>
+            </a>
+          </div>
+          <!--TODO: search, subscribe, archive-->
+          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <h3>Categories</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/other.html'>Other</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+            </li> 
+          </ul>
+          <hr>
+          <h3>Tags</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/application.html'>application</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/book-review.html'>book-review</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/books.html'>books</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/clothes.html'>clothes</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/concerts.html'>concerts</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/conferences.html'>conferences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/example.html'>example</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/experiences.html'>experiences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/flag.html'>flag</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/health.html'>health</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/interviews.html'>interviews</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/loves.html'>loves</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/openshift.html'>openshift</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/openstack.html'>openstack</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/orchestrator.html'>orchestrator</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/politics.html'>politics</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Portland.html'>Portland</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/puppet.html'>puppet</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/ruby.html'>ruby</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/selenium.html'>selenium</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/tech.html'>tech</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/thanksgiving.html'>thanksgiving</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/travel.html'>travel</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/women.html'>women</a>
+            </li>
+
+          </ul>
+          <hr>
+          <h3>Popular Posts</h3>
+          <ul>
+              <li><a href='http://blog.lucywyman.me/tattoo.html'>Getting a Tattoo</a></li>
+              <li><a href='http://blog.lucywyman.me/respect.html'>Rivers of Milk and Honey</a></li>
+              <li><a href='http://blog.lucywyman.me/boy.html'>If I Were a Boy</a></li>
+              <li><a href='http://blog.lucywyman.me/interviews.html'>The Interview</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class='footer'>
+      <!-- TODO -->
+      <a href='https://github.com/lucywyman'>
+        <img class='social' src='/theme/images/github-icon.png'>
+      </a>
+      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+        <img class='social' src='/theme/images/linkedin.png'>
+      </a>
+    </div>
+  </body>
+</html>

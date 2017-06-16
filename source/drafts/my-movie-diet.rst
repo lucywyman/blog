@@ -20,6 +20,30 @@ movies I watch come from, of what they do to me (and our culture), and
 how they're made.  And just like with food, I want to **vote with my
 dollars** to support Good Movies. 
 
+Choosing your movie diet is about finding what's important to you and focusing
+on spending more time there. The movie diet you choose shouldn't be hard, or
+about restriction. It should be about consciously choosing how you spend your
+money, and what you support in the process. It should be about seeing movies
+you can feel good about, and not going just be somewhere that's
+air-conditioned. So much of what we eat and watch is just because it's there,
+or it's easy, or it's convenient. My movie diet is about finding what's good
+over what's convenient, and not passively consuming what's available. 
+
+Personally, my movie diet is about being comfortable saying "No" to movies
+I don't want to see. Like food, movies have taken on a cultural
+significance and become something to do rather than just being what
+they are. I often find myself agreeing to see movies I have no interest in
+because my brother / mother / boyfriend's parents want to see it
+together this Friday, and I don't want to miss out on that experience
+with people I love. For me, my movie diet is about finding other ways
+to connect with and spend time with the people I love that don't
+include Bad Movies (but that can include Good Movies!). Like with food
+diets, my movie diet doesn't need to be something I adhere to strictly
+100% of the time. I can still rewatch `Valentine's Day`_ and feel ok
+about myself. But my movie diet empowers me to say "No" to doing
+things I just plain don't want to do. And I hope it can do the same
+for you! 
+
 Like with food diets, there are a million and one different ways you
 can focus on any of those 3 motivations. Below are some diet-analogous
 options so you can choose the movie diet that's right for you!
@@ -43,6 +67,10 @@ movie.
 plan which movies you'll see, and make a night of it like you would
 going out to a fancy meal.
 
+.. _make most of their money:
+.. _Baywatch:
+.. _Bossbaby:
+
 Movie Vegetarian
 ----------------
 
@@ -62,30 +90,5 @@ Movie Vegan
 Movie Whole30
 -------------
 
-
-Like with everything, choosing your movie diet is really about finding
-what's important to you and focusing on spending more time there. The
-movie diet you choose shouldn't be hard, or about restriction. It
-should be about consciously choosing how you spend your money, and
-what you support in the process. It should be about seeing movies you
-can feel good about, and not going just be somewhere that's
-air-conditioned. So much of what we eat and watch is just because it's
-there, or it's easy, or it's convenient. My movie diet is about
-finding what's good over what's convenient, and not passively
-consuming what's available. 
-
-Personally, my movie diet is about being comfortable saying "No" to movies
-I don't want to see. Like food, movies have taken on a cultural
-significance and become something to do rather than just being what
-they are. I often find myself agreeing to see movies I have no interest in
-because my brother / mother / boyfriend's parents want to see it
-together this Friday, and I don't want to miss out on that experience
-with people I love. For me, my movie diet is about finding other ways
-to connect with and spend time with the people I love that don't
-include Bad Movies (but that can include Good Movies!). Like with food
-diets, my movie diet doesn't need to be something I adhere to strictly
-100% of the time. I can still rewatch `Valentine's Day`_ and feel ok
-about myself. But my movie diet empowers me to say "No" to doing
-things I just plain don't want to do. And I hope it can do the same
-for you! 
+In my estimation, Whole30 is about avoiding processed and packaged foods (among other things that aren't good for your system!). 
 
