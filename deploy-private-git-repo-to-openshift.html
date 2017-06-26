@@ -237,7 +237,16 @@ secret and use that template to create our app.</p>
 </ul>
 <p>So you should end up with a block that looks like:</p>
 <blockquote>
-<div class="highlight"><pre><span></span>foo bar baz
+<div class="highlight"><pre><span></span>&quot;spec&quot;: {
+...
+    &quot;source&quot;: {
+        &quot;type&quot;: &quot;Git&quot;,
+        &quot;git&quot;: {
+            &quot;uri&quot;:&quot;ssh://git@github.com/puppetlabs/pe-console-ui-code-coverage&quot;
+        },
+        &quot;sourceSecret&quot;: { &quot;name&quot;: &quot;openshiftkey&quot; }
+    }
+}
 </pre></div>
 </blockquote>
 <p><a class="reference external" href="https://gist.github.com/lucywyman/145aebfe1897d91d4cd5337e5baa7379">This is what my JSON template ended up looking like</a> (with sensitive

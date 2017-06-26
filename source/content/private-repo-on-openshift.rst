@@ -166,7 +166,16 @@ So you should end up with a block that looks like:
 
   .. code-block:: none
 
-    foo bar baz
+    "spec": {
+    ...
+        "source": { 
+            "type": "Git", 
+            "git": { 
+                "uri":"ssh://git@github.com/puppetlabs/pe-console-ui-code-coverage"
+            }, 
+            "sourceSecret": { "name": "openshiftkey" } 
+        }
+    }
 
 `This is what my JSON template ended up looking like`_ (with sensitive
 information removed)
