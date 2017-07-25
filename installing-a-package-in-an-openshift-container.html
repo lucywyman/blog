@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>blog</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A humble blog by me, Lucy Wyman">
+<meta name="keywords" content="blog, code, lucy, wyman">
+<meta name="keywords" content="conferences">
+<meta name="keywords" content="interviews">
+<meta name="keywords" content="books">
+<meta name="keywords" content="puppet">
+<meta name="keywords" content="openstack">
+<meta name="keywords" content="politics">
+<meta name="keywords" content="Portland">
+<meta name="keywords" content="travel">
+<meta name="keywords" content="selenium">
+<meta name="keywords" content="book-review">
+<meta name="keywords" content="application">
+<meta name="keywords" content="health">
+<meta name="keywords" content="Openshift">
+<meta name="keywords" content="orchestrator">
+<meta name="keywords" content="flag">
+<meta name="keywords" content="experiences">
+<meta name="keywords" content="ruby">
+<meta name="keywords" content="women">
+<meta name="keywords" content="thanksgiving">
+<meta name="keywords" content="concerts">
+<meta name="keywords" content="tech">
+<meta name="keywords" content="loves">
+<meta name="keywords" content="example">
+<meta name="keywords" content="clothes">
+<meta name="keywords" content="Books">
+<meta name="keywords" content="Conferences">
+<meta name="keywords" content="Experiences">
+<meta name="keywords" content="Loves">
+<meta name="keywords" content="Other">
+<meta name="keywords" content="Tech">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="http://blog.lucywyman.me" />
+<meta property="og:site_name" content="Blog" />
+
+<script src="/theme/js/jquery-1.11.2.js"></script>
+<link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48093989-5', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>  <body>
+    <nav>
+      <ul>
+        <li><h3><a href='http://blog.lucywyman.me'>Lucy Wyman</a></h3></li>
+        <li><a href='http://blog.lucywyman.me/about.html'>About</a></li>
+        <li> 
+          <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/other.html'>Other</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+        </li> 
+
+      </ul>
+    </nav>
+    <div class='wrapper'>
+      <main>
+<div class='article'>
+<h2>Installing a Package in an Openshift Container (Kind Of)</h2>
+<p>07.25.2017</p>
+<p><strong>TODO Better title. Ping me with ideas!</strong></p>
+<p>Fair warning: This article assumes that you have a decent
+understanding of Openshift from the outset, because explaining all the
+concepts used here would take too much space. I'll try to link to
+resources where applicable though, so that words don't go undefined.</p>
+<p>The typical happy path for using <a class="reference external" href="http://docs.openshift.org/">Openshift</a> is to use it's <a class="reference external" href="https://docs.openshift.org/latest/architecture/core_concepts/builds_and_image_streams.html#source-build">Source
+to Image (s2i)</a> builder to take a <a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#source-code">git repo</a> or <a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#dockerfile-source">dockerfile</a> and
+turn it into a container running on Openshift. In general, this works
+just fine. The s2i builder <a class="reference external" href="https://docs.Openshift.com/enterprise/3.1/dev_guide/new_app.html#language-detection">detects which language your app is using</a>
+and deploys that application appropriately, including starting the
+webserver. However, if your project needs more dependencies than
+Openshift expects, it's very difficult to add those dependencies to
+the container. For good reason, your user in the container is pretty
+neutered, which means installing a package is impossible.  And you
+don't have access to the processes that are installing dependencies
+for your application, since those come from the default (probably
+CentOS or RHEL) base image that Openshift uses. So, what do you need
+if you need to install a package in your container? We'll explain!</p>
+<p>In short, you'll need to:</p>
+<ol class="arabic simple">
+<li>Copy the s2i builder that your application is using (based on it's language)</li>
+<li>Modify it as necessary for your application</li>
+<li>Create a new application in Openshift that uses your Dockerfile to create an image</li>
+<li>Create your &quot;real&quot; application in Openshift, using the image you just created as a base and the Source strategy</li>
+</ol>
+<p>We'll go through it step by step!</p>
+<div class="section" id="copy-the-default-s2i-builder">
+<h2>Copy the Default S2I Builder</h2>
+<p>The best way to find the s2i builder your application will need is to
+reference the <a class="reference external" href="https://docs.Openshift.org/latest/using_images/s2i_images/ruby.html">Openshift S2I documentation</a>, find the language your
+application is in, and then in the first paragraph there should be a
+link to the git repo where the default s2i builder for that language
+lives.</p>
+<div class="figure">
+<img alt="" src="static/Openshift-s2i-docs.png" />
+</div>
+<p>Searching for 'Openshift $LANG S2I builder'
+also usually resulted in the first hit being the &quot;official&quot; s2i
+builder, but the git repos don't make that clear so going through the
+documentation should give you a little more certainty you found the
+right one.</p>
+<p>I personally cloned the whole repo, then copied the relevant files into a
+subdirectory of my application so that everything I needed was
+packaged together. Later on, this will make things a little easier. If you'd rather separate your concerns though, you
+can also fork + download + modify the s2i builder and keep it separate
+from your application.</p>
+<p>Here's what my application directory ended up looking like, where everything
+under <code>openshift-build</code> is copied from the <a class="reference external" href="https://github.com/sclorg/s2i-ruby-container/">Openshift ruby s2i</a> repo.</p>
+<pre class="code literal-block">
+.
+├── app.rb
+├── config.ru
+├── Gemfile
+├── helpers
+│&nbsp;&nbsp; └── helpers.rb
+├── openshift-build
+│&nbsp;&nbsp; ├── cccp.yml
+│&nbsp;&nbsp; ├── Dockerfile
+│&nbsp;&nbsp; ├── root
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── opt
+│&nbsp;&nbsp; │&nbsp;&nbsp;     └── app-root
+│&nbsp;&nbsp; │&nbsp;&nbsp;         └── etc
+│&nbsp;&nbsp; │&nbsp;&nbsp;             ├── generate_container_user
+│&nbsp;&nbsp; │&nbsp;&nbsp;             ├── puma.cfg
+│&nbsp;&nbsp; │&nbsp;&nbsp;             └── scl_enable
+│&nbsp;&nbsp; ├── s2i
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── bin
+│&nbsp;&nbsp; │&nbsp;&nbsp;     ├── assemble
+│&nbsp;&nbsp; │&nbsp;&nbsp;     ├── run
+│&nbsp;&nbsp; │&nbsp;&nbsp;     └── usage
+│&nbsp;&nbsp; └── test
+│&nbsp;&nbsp;     ├── puma-test-app
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── app.rb
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── config.ru
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── Gemfile
+│&nbsp;&nbsp;     │&nbsp;&nbsp; └── Gemfile.lock
+│&nbsp;&nbsp;     ├── rack-test-app
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── app.rb
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── config.ru
+│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── Gemfile
+│&nbsp;&nbsp;     │&nbsp;&nbsp; └── Gemfile.lock
+│&nbsp;&nbsp;     └── run
+├── public
+│&nbsp;&nbsp; └── images
+│&nbsp;&nbsp;     └── approval.gif
+├── README.md
+├── spec
+│&nbsp;&nbsp; └── kukla
+│&nbsp;&nbsp;     ├── helper_spec.rb
+│&nbsp;&nbsp;     └── kukla_spec.rb
+└── views
+    └── index.erb
+</pre>
+<p><strong>Key to Success</strong>: Make sure you include everything in the <code>s2i</code> and
+<code>root</code> directories from the default s2i builder! These files are
+necessary for building your first image later on.</p>
+</div>
+<div class="section" id="modify-as-necessary">
+<h2>Modify As Necessary</h2>
+<p>I was trying to trick Git into thinking I had a user on Openshift, so
+that I could clone some dependencies for my application. I also needed
+<a class="reference external" href="https://www.npmjs.com/">npm</a> for Reasons. I looked at the <a class="reference external" href="https://github.com/sclorg/s2i-nodejs-container">nodejs s2i builder</a>, which uses
+<a class="reference external" href="https://cwrap.org/nss_wrapper.html">nss_wrapper</a> to achieve the Git-trick, and just copy-pasted the
+important bits (apologies that the application isn't open source so I
+can just reference it):</p>
+<div class="highlight"><pre><span></span>&lt;     INSTALL_PKGS=&quot;rh-ruby24 rh-ruby24-ruby-devel rh-ruby24-rubygem-rake rh-ruby24-rubygem-bundler rh-nodejs6 rh-nodejs6-npm nss_wrapper&quot; &amp;&amp; \
+---
+&gt;     INSTALL_PKGS=&quot;rh-ruby24 rh-ruby24-ruby-devel rh-ruby24-rubygem-rake rh-ruby24-rubygem-bundler rh-nodejs6&quot; &amp;&amp; \
+</pre></div>
+<p>I also added <a class="reference external" href="https://github.com/sclorg/s2i-nodejs-container/blob/master/4/root/opt/app-root/etc/generate_container_user">this file</a> from the nodejs builder to <code>$APP_ROOT/openshift-build/root/opt/app-root/etc</code> so that my application could use nss_wrapper.</p>
+</div>
+<div class="section" id="create-application-from-dockerfile">
+<h2>Create Application from Dockerfile</h2>
+<p>The next step is to create an image in the <a class="reference external" href="https://docs.openshift.com/container-platform/3.3/dev_guide/managing_images.html#accessing-the-internal-registry">Openshift internal
+repository</a> from our special S2I build. This will be the base
+image for our application, instead of the default Openshift builder
+image. I personally found this a little bit easier to do in the UI
+than on the CLI, but will explain both.</p>
+<p>The key when you create this application is to use the <a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#docker-strategy-options">Docker source
+strategy</a> using the Dockerfile (and all the other files!) you copied
+from the default s2i builder. This is where it comes in handy to have
+those files inside your application: if you point Openshift to where
+those files are (<code>spec.strategy.dockerStrategy.dockerfilePath</code>
+in the buildConfig), Openshift will use that for it's Docker build
+strategy. As I describe in <a class="reference external" href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html">this blog post</a>, it's difficult to create
+a new application using your own buildConfig. I didn't feel like
+messing with templates at this point, so I just:</p>
+<ul class="simple">
+<li>Created an application using the default image for ruby</li>
+<li>Edited the buildConfig</li>
+<li>Rebuilt the application.</li>
+</ul>
+<p>Here's how it went down:</p>
+<p><strong>Note</strong>: I recommend naming this first application 'myapp-builder',
+or something along those lines.</p>
+<div class="section" id="in-the-cli">
+<h3>In the CLI</h3>
+<ol class="arabic simple">
+<li>Run <code>oc new-app &lt;appropriate configurations&gt;</code>. As previously mentioned, Openshift will detect the language your application is in and use that default image. I highly recommend running <code>oc new-app --help</code> to see if there are any other options you'd like to use!</li>
+<li>Run <code>oc edit bc/myapp-builder</code> and modify the strategy section of the buildConfig to have the following:</li>
+</ol>
+<pre class="code literal-block">
+strategy:
+  type: Docker
+  dockerStrategy:
+    dockerfilePath: openshift-build/Dockerfile
+    env:
+      - name: MYVAR
+        value: my_value
+</pre>
+<ol class="arabic simple" start="3">
+<li>Close and save the buildconfig.</li>
+<li>Run <code>oc start-build myapp-builder</code></li>
+</ol>
+</div>
+<div class="section" id="in-the-ui">
+<h3>In the UI</h3>
+<p><strong>Note: I believe the UI workflow only works if your file source is Github, not a Docker image</strong></p>
+<ol class="arabic simple">
+<li>Click 'Add to Project' in the header navigation</li>
+</ol>
+<div class="figure">
+<img alt="" src="static/add-project.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li>Select the language (and version, etc.) your app is in</li>
+<li>Fill out the application details appropriately. There's nothing special you need to do on this page.</li>
+<li>Now that you've created your application, go to 'Builds -&gt; Builds' in the left navigation</li>
+<li>Select the application you just created</li>
+<li>In the top right, select 'Actions -&gt; Edit Yaml'</li>
+<li>Modify your buildConfig to use the Docker source strategy. The key changes here are under the <code>strategy</code> section. You should end up with something that looks like this:</li>
+</ol>
+<pre class="code literal-block">
+strategy:
+  type: Docker
+  dockerStrategy:
+    dockerfilePath: openshift-build/Dockerfile
+    env:
+      - name: MYVAR
+        value: my_value
+</pre>
+<p>Then save the config
+8. In the top-right corner, click 'Start Build'</p>
+<p>And you're done! The resulting image will be published to the internal container registry with the label 'app-name:latest'.</p>
+</div>
+</div>
+<div class="section" id="create-application-from-source-using-image">
+<h2>Create Application from Source, Using Image</h2>
+<p>The final step, creating our application image from the image we just
+created! The key when creating this application is to use the <a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#source-to-image-strategy-options">source
+strategy</a> with <strong>your image</strong> as the
+<code>source.strategy.sourceStrategy.name</code> value. This should be the
+name of the application you just created. The steps for creating this
+application are more or less the same as they were in the previous
+step:</p>
+<ul class="simple">
+<li>Create an application using the default image in your language</li>
+<li>Edit the buildConfig</li>
+<li>Rebuild the application</li>
+</ul>
+<p>You can follow the same steps enumerated above for the preferred
+interface, and here's roughly what your buildConfig should look like
+when you're finished:</p>
+<pre class="code literal-block">
+strategy:
+  sourceStrategy:
+    env:
+    - name: MYVAR
+      value: my_value
+    from:
+      kind: ImageStreamTag
+      name: myapp-builder:latest
+</pre>
+<p>That last line being the critical point! Make sure you're referencing your builder image.</p>
+<p>And there you have it! Once you've rebuilt your application, you're
+all set.</p>
+</div>
+<div class="section" id="making-changes">
+<h2>Making Changes</h2>
+<p>If you make changes to <em>your application</em>, you only need to rebuild
+the application, not the application builder. However, if you make
+changes to your Dockerfile or any other part of the underlying image
+(say you need another package installed), then you will need to
+rebuild the app-builder image <em>and</em> your application.</p>
+</div>
+<div class="section" id="resources">
+<h2>Resources</h2>
+<p>Openshift is in an interesting place developmentally, where they have
+pretty good documentation, relatively mature technology, and awesome
+tech support on IRC, but almost no community documentation (think blog
+posts, stack overflow questions, etc.). I would often find myself
+reading a post from the Openshift blog that was published in 2013, and
+hope it was still relevant, or be looking through github issues and
+irc logs for answers. But, there were still a number of resources I
+found very helpful through this journey:</p>
+<ul class="simple">
+<li>First, I <em>highly</em> recommend asking any questions in #openshift
+(irc.freenode.net). Folks were kind, quick to respond, super
+helpful.</li>
+<li>The <a class="reference external" href="https://www.openshift.com/promotions/for-developers.html">Openshift book</a> is a great resource if you have the time. I would suggest only reading the first 1/3 of it or so to understand core concepts, then starting your own project.</li>
+<li><a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html">This doc</a> is the best &quot;Everything you need to know about Openshift builds&quot; documentation</li>
+<li><a class="reference external" href="https://blog.openshift.com/create-s2i-builder-image/">This</a> is a
+pretty good resource on the anatomy of an s2i builder, though
+definitely isn't required reading for this post.</li>
+</ul>
+</div>
+
+</div>
+      </main>
+      <aside>
+        <div class='sidebar'>
+          <div class='social-media'>
+            <a href='https://github.com/lucywyman'>
+              <img class='social' src='/theme/images/github-icon.png'>
+            </a>
+            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+              <img class='social' src='/theme/images/linkedin.png'>
+            </a>
+          </div>
+          <!--TODO: search, subscribe, archive-->
+          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <h3>Categories</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/other.html'>Other</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+            </li> 
+          </ul>
+          <hr>
+          <h3>Tags</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/application.html'>application</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/book-review.html'>book-review</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/books.html'>books</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/clothes.html'>clothes</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/concerts.html'>concerts</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/conferences.html'>conferences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/example.html'>example</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/experiences.html'>experiences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/flag.html'>flag</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/health.html'>health</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/interviews.html'>interviews</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/loves.html'>loves</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Openshift.html'>Openshift</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/openstack.html'>openstack</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/orchestrator.html'>orchestrator</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/politics.html'>politics</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Portland.html'>Portland</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/puppet.html'>puppet</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/ruby.html'>ruby</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/selenium.html'>selenium</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/tech.html'>tech</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/thanksgiving.html'>thanksgiving</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/travel.html'>travel</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/women.html'>women</a>
+            </li>
+
+          </ul>
+          <hr>
+          <h3>Popular Posts</h3>
+          <ul>
+              <li><a href='http://blog.lucywyman.me/tattoo.html'>Getting a Tattoo</a></li>
+              <li><a href='http://blog.lucywyman.me/respect.html'>Rivers of Milk and Honey</a></li>
+              <li><a href='http://blog.lucywyman.me/boy.html'>If I Were a Boy</a></li>
+              <li><a href='http://blog.lucywyman.me/interviews.html'>The Interview</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class='footer'>
+      <!-- TODO -->
+      <a href='https://github.com/lucywyman'>
+        <img class='social' src='/theme/images/github-icon.png'>
+      </a>
+      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+        <img class='social' src='/theme/images/linkedin.png'>
+      </a>
+    </div>
+  </body>
+</html>

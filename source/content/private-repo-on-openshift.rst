@@ -229,14 +229,9 @@ errors. I usually ran the following:
 
 .. code-block:: none
 
-    oc delete services --all
-    oc delete deploymentconfig --all
-    oc delete buildconfig --all
-    oc delete imagestreams --all
-    oc delete templates --all
+    oc delete all --selector app=app-name
 
-This obviously won't work if you have services you're trying to
-preserve, but you can just specify which services etc. to delete.
+This should delete all resources for the app
 
 Resources
 ---------
