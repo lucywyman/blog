@@ -19,7 +19,7 @@
 <meta name="keywords" content="book-review">
 <meta name="keywords" content="application">
 <meta name="keywords" content="health">
-<meta name="keywords" content="openshift">
+<meta name="keywords" content="Openshift">
 <meta name="keywords" content="orchestrator">
 <meta name="keywords" content="flag">
 <meta name="keywords" content="experiences">
@@ -285,14 +285,9 @@ the SSH deploy key. I then tried using
 <p>Because I had to try building my application several times, I also had
 to delete my failed attempts several times so there wouldn't be name
 errors. I usually ran the following:</p>
-<div class="highlight"><pre><span></span>oc delete services --all
-oc delete deploymentconfig --all
-oc delete buildconfig --all
-oc delete imagestreams --all
-oc delete templates --all
+<div class="highlight"><pre><span></span>oc delete all --selector app=app-name
 </pre></div>
-<p>This obviously won't work if you have services you're trying to
-preserve, but you can just specify which services etc. to delete.</p>
+<p>This should delete all resources for the app</p>
 </div>
 </div>
 <div class="section" id="resources">
@@ -396,7 +391,7 @@ components were, and generally getting started.</li>
             </li>
 
             <li> 
-              <a href='http://blog.lucywyman.me/tag/openshift.html'>openshift</a>
+              <a href='http://blog.lucywyman.me/tag/Openshift.html'>Openshift</a>
             </li>
 
             <li> 
