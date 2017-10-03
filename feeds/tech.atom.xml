@@ -1,5 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-06-15T00:00:00-07:00</updated><entry><title>How to Deploy a Private Git Repo to Openshift</title><link href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><updated>2017-06-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-06-15:deploy-private-git-repo-to-openshift.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://openshift.com"&gt;Openshift&lt;/a&gt; is &lt;a class="reference external" href="http://www.redhat.com/en"&gt;Redhat's&lt;/a&gt; platform as a service, aka a place for you
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/tech.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-07-25T00:00:00-07:00</updated><entry><title>Installing a Package in an Openshift Container (Kind Of)</title><link href="http://blog.lucywyman.me/installing-a-package-in-an-openshift-container.html" rel="alternate"></link><published>2017-07-25T00:00:00-07:00</published><updated>2017-07-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-07-25:installing-a-package-in-an-openshift-container.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TODO Better title. Ping me with ideas!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Fair warning: This article assumes that you have a decent
+understanding of Openshift from the outset, because explaining all the
+concepts used here would take too much space. I'll try to link to
+resources where applicable though, so that words don't go undefined.&lt;/p&gt;
+&lt;p&gt;The typical happy path for using &lt;a class="reference external" href="http://docs.openshift.org/"&gt;Openshift&lt;/a&gt; is to use it's &lt;a class="reference external" href="https://docs.openshift.org/latest/architecture/core_concepts/builds_and_image_streams.html#source-build"&gt;Source
+to Image (s2i)&lt;/a&gt; builder to take a &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#source-code"&gt;git repo&lt;/a&gt; or &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#dockerfile-source"&gt;dockerfile&lt;/a&gt; and
+turn it into a container running on Openshift. In general, this works
+just fine. The s2i builder &lt;a class="reference external" href="https://docs.Openshift.com/enterprise/3.1/dev_guide/new_app.html#language-detection"&gt;detects which language your app is using&lt;/a&gt;
+and deploys that application appropriately, including starting the
+webserver. However, if your project needs more dependencies than
+Openshift expects, it's very difficult to add those dependencies to
+the container. For good reason, your user in the container is pretty
+neutered, which means installing a package is impossible.  And you
+don't have access to the processes that are installing dependencies
+for your application, since those come from the default (probably
+CentOS or RHEL) base image that Openshift uses. So, what do you need
+if you need to install a package in your container? We'll explain!&lt;/p&gt;
+&lt;p&gt;In short, you'll need to:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Copy the s2i builder that your application is using (based on it's language)&lt;/li&gt;
+&lt;li&gt;Modify it as necessary for your application&lt;/li&gt;
+&lt;li&gt;Create a new application in Openshift that uses your Dockerfile to create an image&lt;/li&gt;
+&lt;li&gt;Create your &amp;quot;real&amp;quot; application in Openshift, using the image you just created as a base and the Source strategy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We'll go through it step by step!&lt;/p&gt;
+&lt;div class="section" id="copy-the-default-s2i-builder"&gt;
+&lt;h2&gt;Copy the Default S2I Builder&lt;/h2&gt;
+&lt;p&gt;The best way to find the s2i builder your application will need is to
+reference the &lt;a class="reference external" href="https://docs.Openshift.org/latest/using_images/s2i_images/ruby.html"&gt;Openshift S2I documentation&lt;/a&gt;, find the language your
+application is in, and then in the first paragraph there should be a
+link to the git repo where the default s2i builder for that language
+lives.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/Openshift-s2i-docs.png" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Searching for 'Openshift $LANG S2I builder'
+also usually resulted in the first hit being the &amp;quot;official&amp;quot; s2i
+builder, but the git repos don't make that clear so going through the
+documentation should give you a little more certainty you found the
+right one.&lt;/p&gt;
+&lt;p&gt;I personally cloned the whole repo, then copied the relevant files into a
+subdirectory of my application so that everything I needed was
+packaged together. Later on, this will make things a little easier. If you'd rather separate your concerns though, you
+can also fork + download + modify the s2i builder and keep it separate
+from your application.&lt;/p&gt;
+&lt;p&gt;Here's what my application directory ended up looking like, where everything
+under &lt;code&gt;openshift-build&lt;/code&gt; is copied from the &lt;a class="reference external" href="https://github.com/sclorg/s2i-ruby-container/"&gt;Openshift ruby s2i&lt;/a&gt; repo.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+.
+├── app.rb
+├── config.ru
+├── Gemfile
+├── helpers
+│&amp;nbsp;&amp;nbsp; └── helpers.rb
+├── openshift-build
+│&amp;nbsp;&amp;nbsp; ├── cccp.yml
+│&amp;nbsp;&amp;nbsp; ├── Dockerfile
+│&amp;nbsp;&amp;nbsp; ├── root
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── opt
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── app-root
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;         └── etc
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;             ├── generate_container_user
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;             ├── puma.cfg
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;             └── scl_enable
+│&amp;nbsp;&amp;nbsp; ├── s2i
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── bin
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── assemble
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── run
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── usage
+│&amp;nbsp;&amp;nbsp; └── test
+│&amp;nbsp;&amp;nbsp;     ├── puma-test-app
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── app.rb
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── config.ru
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── Gemfile
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; └── Gemfile.lock
+│&amp;nbsp;&amp;nbsp;     ├── rack-test-app
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── app.rb
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── config.ru
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── Gemfile
+│&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; └── Gemfile.lock
+│&amp;nbsp;&amp;nbsp;     └── run
+├── public
+│&amp;nbsp;&amp;nbsp; └── images
+│&amp;nbsp;&amp;nbsp;     └── approval.gif
+├── README.md
+├── spec
+│&amp;nbsp;&amp;nbsp; └── kukla
+│&amp;nbsp;&amp;nbsp;     ├── helper_spec.rb
+│&amp;nbsp;&amp;nbsp;     └── kukla_spec.rb
+└── views
+    └── index.erb
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Key to Success&lt;/strong&gt;: Make sure you include everything in the &lt;code&gt;s2i&lt;/code&gt; and
+&lt;code&gt;root&lt;/code&gt; directories from the default s2i builder! These files are
+necessary for building your first image later on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="modify-as-necessary"&gt;
+&lt;h2&gt;Modify As Necessary&lt;/h2&gt;
+&lt;p&gt;I was trying to trick Git into thinking I had a user on Openshift, so
+that I could clone some dependencies for my application. I also needed
+&lt;a class="reference external" href="https://www.npmjs.com/"&gt;npm&lt;/a&gt; for Reasons. I looked at the &lt;a class="reference external" href="https://github.com/sclorg/s2i-nodejs-container"&gt;nodejs s2i builder&lt;/a&gt;, which uses
+&lt;a class="reference external" href="https://cwrap.org/nss_wrapper.html"&gt;nss_wrapper&lt;/a&gt; to achieve the Git-trick, and just copy-pasted the
+important bits (apologies that the application isn't open source so I
+can just reference it):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;     INSTALL_PKGS=&amp;quot;rh-ruby24 rh-ruby24-ruby-devel rh-ruby24-rubygem-rake rh-ruby24-rubygem-bundler rh-nodejs6 rh-nodejs6-npm nss_wrapper&amp;quot; &amp;amp;&amp;amp; \
+---
+&amp;gt;     INSTALL_PKGS=&amp;quot;rh-ruby24 rh-ruby24-ruby-devel rh-ruby24-rubygem-rake rh-ruby24-rubygem-bundler rh-nodejs6&amp;quot; &amp;amp;&amp;amp; \
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I also added &lt;a class="reference external" href="https://github.com/sclorg/s2i-nodejs-container/blob/master/4/root/opt/app-root/etc/generate_container_user"&gt;this file&lt;/a&gt; from the nodejs builder to &lt;code&gt;$APP_ROOT/openshift-build/root/opt/app-root/etc&lt;/code&gt; so that my application could use nss_wrapper.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="create-application-from-dockerfile"&gt;
+&lt;h2&gt;Create Application from Dockerfile&lt;/h2&gt;
+&lt;p&gt;The next step is to create an image in the &lt;a class="reference external" href="https://docs.openshift.com/container-platform/3.3/dev_guide/managing_images.html#accessing-the-internal-registry"&gt;Openshift internal
+repository&lt;/a&gt; from our special S2I build. This will be the base
+image for our application, instead of the default Openshift builder
+image. I personally found this a little bit easier to do in the UI
+than on the CLI, but will explain both.&lt;/p&gt;
+&lt;p&gt;The key when you create this application is to use the &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#docker-strategy-options"&gt;Docker source
+strategy&lt;/a&gt; using the Dockerfile (and all the other files!) you copied
+from the default s2i builder. This is where it comes in handy to have
+those files inside your application: if you point Openshift to where
+those files are (&lt;code&gt;spec.strategy.dockerStrategy.dockerfilePath&lt;/code&gt;
+in the buildConfig), Openshift will use that for it's Docker build
+strategy. As I describe in &lt;a class="reference external" href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html"&gt;this blog post&lt;/a&gt;, it's difficult to create
+a new application using your own buildConfig. I didn't feel like
+messing with templates at this point, so I just:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Created an application using the default image for ruby&lt;/li&gt;
+&lt;li&gt;Edited the buildConfig&lt;/li&gt;
+&lt;li&gt;Rebuilt the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's how it went down:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: I recommend naming this first application 'myapp-builder',
+or something along those lines.&lt;/p&gt;
+&lt;div class="section" id="in-the-cli"&gt;
+&lt;h3&gt;In the CLI&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Run &lt;code&gt;oc new-app &amp;lt;appropriate configurations&amp;gt;&lt;/code&gt;. As previously mentioned, Openshift will detect the language your application is in and use that default image. I highly recommend running &lt;code&gt;oc new-app --help&lt;/code&gt; to see if there are any other options you'd like to use!&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;oc edit bc/myapp-builder&lt;/code&gt; and modify the strategy section of the buildConfig to have the following:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code literal-block"&gt;
+strategy:
+  type: Docker
+  dockerStrategy:
+    dockerfilePath: openshift-build/Dockerfile
+    env:
+      - name: MYVAR
+        value: my_value
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;Close and save the buildconfig.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;oc start-build myapp-builder&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="in-the-ui"&gt;
+&lt;h3&gt;In the UI&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Note: I believe the UI workflow only works if your file source is Github, not a Docker image&lt;/strong&gt;&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Click 'Add to Project' in the header navigation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/add-project.png" /&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;Select the language (and version, etc.) your app is in&lt;/li&gt;
+&lt;li&gt;Fill out the application details appropriately. There's nothing special you need to do on this page.&lt;/li&gt;
+&lt;li&gt;Now that you've created your application, go to 'Builds -&amp;gt; Builds' in the left navigation&lt;/li&gt;
+&lt;li&gt;Select the application you just created&lt;/li&gt;
+&lt;li&gt;In the top right, select 'Actions -&amp;gt; Edit Yaml'&lt;/li&gt;
+&lt;li&gt;Modify your buildConfig to use the Docker source strategy. The key changes here are under the &lt;code&gt;strategy&lt;/code&gt; section. You should end up with something that looks like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code literal-block"&gt;
+strategy:
+  type: Docker
+  dockerStrategy:
+    dockerfilePath: openshift-build/Dockerfile
+    env:
+      - name: MYVAR
+        value: my_value
+&lt;/pre&gt;
+&lt;p&gt;Then save the config
+8. In the top-right corner, click 'Start Build'&lt;/p&gt;
+&lt;p&gt;And you're done! The resulting image will be published to the internal container registry with the label 'app-name:latest'.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="create-application-from-source-using-image"&gt;
+&lt;h2&gt;Create Application from Source, Using Image&lt;/h2&gt;
+&lt;p&gt;The final step, creating our application image from the image we just
+created! The key when creating this application is to use the &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#source-to-image-strategy-options"&gt;source
+strategy&lt;/a&gt; with &lt;strong&gt;your image&lt;/strong&gt; as the
+&lt;code&gt;source.strategy.sourceStrategy.name&lt;/code&gt; value. This should be the
+name of the application you just created. The steps for creating this
+application are more or less the same as they were in the previous
+step:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Create an application using the default image in your language&lt;/li&gt;
+&lt;li&gt;Edit the buildConfig&lt;/li&gt;
+&lt;li&gt;Rebuild the application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can follow the same steps enumerated above for the preferred
+interface, and here's roughly what your buildConfig should look like
+when you're finished:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+strategy:
+  sourceStrategy:
+    env:
+    - name: MYVAR
+      value: my_value
+    from:
+      kind: ImageStreamTag
+      name: myapp-builder:latest
+&lt;/pre&gt;
+&lt;p&gt;That last line being the critical point! Make sure you're referencing your builder image.&lt;/p&gt;
+&lt;p&gt;And there you have it! Once you've rebuilt your application, you're
+all set.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="making-changes"&gt;
+&lt;h2&gt;Making Changes&lt;/h2&gt;
+&lt;p&gt;If you make changes to &lt;em&gt;your application&lt;/em&gt;, you only need to rebuild
+the application, not the application builder. However, if you make
+changes to your Dockerfile or any other part of the underlying image
+(say you need another package installed), then you will need to
+rebuild the app-builder image &lt;em&gt;and&lt;/em&gt; your application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="resources"&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;Openshift is in an interesting place developmentally, where they have
+pretty good documentation, relatively mature technology, and awesome
+tech support on IRC, but almost no community documentation (think blog
+posts, stack overflow questions, etc.). I would often find myself
+reading a post from the Openshift blog that was published in 2013, and
+hope it was still relevant, or be looking through github issues and
+irc logs for answers. But, there were still a number of resources I
+found very helpful through this journey:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;First, I &lt;em&gt;highly&lt;/em&gt; recommend asking any questions in #openshift
+(irc.freenode.net). Folks were kind, quick to respond, super
+helpful.&lt;/li&gt;
+&lt;li&gt;The &lt;a class="reference external" href="https://www.openshift.com/promotions/for-developers.html"&gt;Openshift book&lt;/a&gt; is a great resource if you have the time. I would suggest only reading the first 1/3 of it or so to understand core concepts, then starting your own project.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html"&gt;This doc&lt;/a&gt; is the best &amp;quot;Everything you need to know about Openshift builds&amp;quot; documentation&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://blog.openshift.com/create-s2i-builder-image/"&gt;This&lt;/a&gt; is a
+pretty good resource on the anatomy of an s2i builder, though
+definitely isn't required reading for this post.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="Openshift"></category></entry><entry><title>How to Deploy a Private Git Repo to Openshift</title><link href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><updated>2017-06-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-06-15:deploy-private-git-repo-to-openshift.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://openshift.com"&gt;Openshift&lt;/a&gt; is &lt;a class="reference external" href="http://www.redhat.com/en"&gt;Redhat's&lt;/a&gt; platform as a service, aka a place for you
 to deploy your application to (think Heroku, Google App Engine, or AWS
 Beanstalk). They have a tool called &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.1/architecture/core_concepts/builds_and_image_streams.html#source-build"&gt;Source 2 Image (S2I)&lt;/a&gt; that
 allows you to pass in a &lt;a class="reference external" href="https://docs.openshift.org/latest/dev_guide/builds/index.html"&gt;source&lt;/a&gt; (in the form of a docker image, git
@@ -148,7 +394,16 @@ secret and use that template to create our app.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;So you should end up with a block that looks like:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;foo bar baz
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;quot;spec&amp;quot;: {
+...
+    &amp;quot;source&amp;quot;: {
+        &amp;quot;type&amp;quot;: &amp;quot;Git&amp;quot;,
+        &amp;quot;git&amp;quot;: {
+            &amp;quot;uri&amp;quot;:&amp;quot;ssh://git@github.com/puppetlabs/pe-console-ui-code-coverage&amp;quot;
+        },
+        &amp;quot;sourceSecret&amp;quot;: { &amp;quot;name&amp;quot;: &amp;quot;openshiftkey&amp;quot; }
+    }
+}
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://gist.github.com/lucywyman/145aebfe1897d91d4cd5337e5baa7379"&gt;This is what my JSON template ended up looking like&lt;/a&gt; (with sensitive
@@ -187,14 +442,9 @@ the SSH deploy key. I then tried using
 &lt;p&gt;Because I had to try building my application several times, I also had
 to delete my failed attempts several times so there wouldn't be name
 errors. I usually ran the following:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;oc delete services --all
-oc delete deploymentconfig --all
-oc delete buildconfig --all
-oc delete imagestreams --all
-oc delete templates --all
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;oc delete all --selector app=app-name
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This obviously won't work if you have services you're trying to
-preserve, but you can just specify which services etc. to delete.&lt;/p&gt;
+&lt;p&gt;This should delete all resources for the app&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="resources"&gt;
@@ -609,11 +859,6 @@ like adjustable playback speed, automatic deletion once you've listened
 to an episode, and turning off if you fall asleep.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=another.music.player&amp;amp;hl=en"&gt;Shuttle&lt;/a&gt;: This is just a music player I'm happy with. If you're happy
 with your music player, I wouldn't worry about it.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.acorns.android&amp;amp;hl=en"&gt;Acorns&lt;/a&gt;: The idea here is that it rounds up any debit/credit card purchases
-you make to the next dollar, invests the money, and then you have access
-to it whenver you need it, and it can continue to grow if you don't.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.bandsintown&amp;amp;hl=en"&gt;Bandsintown&lt;/a&gt;: You've probably heard of this one, but if not, it's a great
-way to find shows in your city.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.wb.headsup&amp;amp;hl=en"&gt;Heads up&lt;/a&gt;: This a fun &amp;quot;We're waiting for something and need to pass
 the time&amp;quot; app. It's especially great with kids.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.mint&amp;amp;hl=en"&gt;Mint&lt;/a&gt;: I use this mostly to set and maintain budgets. You need to give it
@@ -622,6 +867,5 @@ for you, but if you are I've found it very useful. You can even see your
 credit score on it, which is always good to know!&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.duolingo.com/"&gt;Duolingo&lt;/a&gt;: You've more than likely already heard of this, but if not
 it's an addictive, gamified way of learning new languages.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.onetoday&amp;amp;hl=en"&gt;One Today&lt;/a&gt;: A super easy way to make donations to charities.&lt;/li&gt;
 &lt;/ol&gt;
 </summary><category term="loves"></category><category term="tech"></category></entry></feed>

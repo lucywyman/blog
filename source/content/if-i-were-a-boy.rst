@@ -183,6 +183,14 @@ The Little Things
   failed to gracefully respond in the moment, and before I knew it we
   were back to other things. But it's good to know now that this
   person doesn't respect me as a peer.
+* **08/02/2017**: Yesterday, my male coworker (we'll call him Doe, 
+  that's not his real name) and I gave a presentation together at DevOps Days
+  PDX. My email was the one we submitted the proposal to, and the next morning
+  I had not 1 but 2 emails in my inbox that started "Hello Doe,", and none
+  which were addressed to me (or even to both of us). Granted, I think this
+  could have happened in the reverse as well -- had it been Doe's email, he may
+  have gotten a number of emails addressed to me after the talk. But at the
+  same time...that didn't happen. 
 
 Conclusion
 ----------

@@ -34,7 +34,7 @@ Personally, my movie diet is about being comfortable saying "No" to
 movies I don't want to see. Like food, movies have taken on a cultural
 significance and become something to do rather than just being what
 they are. I often find myself agreeing to see movies I have no
-interest in because my brother / mother / boyfriend's parents want to
+interest in because my brother / mother / boyfriend want to
 see it together this Friday, and I don't want to miss out on that
 experience with people I love. For me, my movie diet is about finding
 other ways to connect with and spend time with the people I love that
@@ -62,8 +62,7 @@ honest: you're less likely to be tempted by a bad movie when you have
 all the movies on Netflix to choose from than when you go to the
 theater and have to choose between `Baywatch`_ and `Bossbaby`_. Like
 with eating out, this diet doesn't recommend that you *never* go out
-to see a
-movie. 
+to see a movie, only that you try to avoid going to the theater to see a movie just for the heck of it.
 
 **The Diet**: Only see 1-2 movies in theaters per month. Take time to
 plan which movies you'll see, and make a night of it like you would
@@ -83,7 +82,7 @@ vegetarianism can be a way to slowly introduce positive dietary
 changes that impact large swaths of the animal-product industry
 without needing to give up cheese. Similarly for the Movie Vegetarian,
 you can slowly introduce meaningful changes to your film-diet without
-needing to turn down 
+needing to turn down `Wonder Woman`_. 
 
 Movie Vegan
 -----------
