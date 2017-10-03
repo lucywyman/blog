@@ -1,5 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-09-15T00:00:00-07:00</updated><entry><title>Fall Bucket List 2017</title><link href="http://blog.lucywyman.me/fall-bucket-list-2017.html" rel="alternate"></link><published>2017-09-15T00:00:00-07:00</published><updated>2017-09-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-09-15:fall-bucket-list-2017.html</id><summary type="html">&lt;p&gt;What a summer! As we say hello to crisp mornings, plaid scarves, and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-10-03T00:00:00-07:00</updated><entry><title>Managing CoreOS With Puppet</title><link href="http://blog.lucywyman.me/managing-coreos-with-puppet.html" rel="alternate"></link><published>2017-10-03T00:00:00-07:00</published><updated>2017-10-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-10-03:managing-coreos-with-puppet.html</id><summary type="html">&lt;div class="section" id="why"&gt;
+&lt;h2&gt;Why&lt;/h2&gt;
+&lt;p&gt;To be perfectly honest, the only reason I wanted to do this is because I
+submitted a talk to &lt;a class="reference external" href="https://puppet.com/puppetconf"&gt;PuppetConf&lt;/a&gt; on the subject and it got accepted. Woops.
+Way to go past Lucy.&lt;/p&gt;
+&lt;p&gt;There are a few cases where managing CoreOS with Puppet makes sense though.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how"&gt;
+&lt;h2&gt;How&lt;/h2&gt;
+&lt;p&gt;Here's the basic steps we'll be taking to set up a puppet agent running on
+CoreOS, all running in Vagrant (because I'm too cheap to buy cloud space for
+this).&lt;/p&gt;
+&lt;div class="section" id="stand-up-puppet-master-and-agent"&gt;
+&lt;h3&gt;Stand Up Puppet Master and Agent&lt;/h3&gt;
+&lt;p&gt;The first thing I wanted to do was get some basic Puppet infrastructure up that
+I could integrate my CoreOS nodes into. I used the following Vagrantfile and
+provisioning scripts to get my VMs running.&lt;/p&gt;
+&lt;p&gt;I also installed the &lt;a class="reference external" href="https://github.com/oscar-stack/vagrant-hosts"&gt;vagrant-hosts&lt;/a&gt; plugin to make sure the VMs could talk to
+each other, and minimize the amount of networking voodoo I had to do:
+&lt;code&gt;vagrant plugin install vagrant-hosts&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ tree
+.
+├── puppet-agent-install.sh
+├── puppet-master-install.sh
+└── Vagrantfile
+&lt;/pre&gt;
+&lt;div class="section" id="vagrantfile"&gt;
+&lt;h4&gt;Vagrantfile&lt;/h4&gt;
+&lt;p&gt;Configuration file for the virtual machines we'll install puppet master and agents on&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+&lt;span class="no"&gt;Vagrant&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;define&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppetmaster&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ubuntu/xenial64&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hostname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppet-master&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="ss"&gt;:&amp;quot;private_network&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;10.20.1.80&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="ss"&gt;:hosts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sync_hosts&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;shell&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;path&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppet-master-install.sh&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;virtualbox&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;vb&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+      &lt;span class="n"&gt;vb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;customize&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;modifyvm&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;--memory&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;4096&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;define&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppetagent&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;centos/7&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hostname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppet-agent&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="ss"&gt;:&amp;quot;private_network&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;10.20.1.81&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="ss"&gt;:hosts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sync_hosts&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;shell&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;path&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puppet-agent-install.sh&amp;quot;&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puppet-master-install-sh"&gt;
+&lt;h4&gt;puppet-master-install.sh&lt;/h4&gt;
+&lt;p&gt;Provisioning script for the vagrant VM with puppet master on it&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="ch"&gt;#!/bin/bash
+&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; ps aux &lt;span class="p"&gt;|&lt;/span&gt; grep &lt;span class="s2"&gt;&amp;quot;puppet&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; grep -v grep 2&amp;gt; /dev/null
+&lt;span class="k"&gt;then&lt;/span&gt;
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Puppet Master is already installed. Exiting...&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+  &lt;span class="c1"&gt;# Install puppet master
+&lt;/span&gt;  wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+  sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+  sudo apt-get -yq update
+  sudo apt-get -yq install puppetserver
+  &lt;span class="c1"&gt;#sudo apt-get -yq install puppet
+&lt;/span&gt;  sudo service puppetserver start
+
+  &lt;span class="c1"&gt;# Configure /etc/hosts file
+&lt;/span&gt;  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# Host config for Puppet Master and Agent Nodes
+  192.168.33.10   puppet-master puppet-master
+  192.168.33.11   puppet-agent puppet-agent&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/hosts
+
+  &lt;span class="c1"&gt;# Add optional alternate DNS names to /etc/puppet/puppet.conf
+&lt;/span&gt;  sudo &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;
+  [main]
+  dns_alt_names = puppet,puppet-master&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/puppetlabs/puppet/puppet.conf
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puppet-agent-install-sh"&gt;
+&lt;h4&gt;puppet-agent-install.sh&lt;/h4&gt;
+&lt;p&gt;Provisioning script for the vagrant VM with puppet agent on it&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="ch"&gt;#!/bin/bash
+&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; ps aux &lt;span class="p"&gt;|&lt;/span&gt; grep &lt;span class="s2"&gt;&amp;quot;puppet&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; grep -v grep 2&amp;gt; /dev/null
+&lt;span class="k"&gt;then&lt;/span&gt;
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Puppet Agent is already installed. Moving on...&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+  &lt;span class="c1"&gt;# Install puppet agent
+&lt;/span&gt;  sudo rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+  sudo yum install -y puppet-agent
+  sudo /opt/puppetlabs/bin/puppet resource service puppet &lt;span class="nv"&gt;ensure&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;running &lt;span class="nv"&gt;enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Configure /etc/hosts file
+&lt;/span&gt;  sudo &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;# Host config for Puppet Master and Agent Nodes
+  192.168.33.10   puppet-master puppet-master
+  192.168.33.11   puppet-agent puppet-agent&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/hosts
+
+  &lt;span class="c1"&gt;# Add optional alternate DNS names to /etc/puppet/puppet.conf
+&lt;/span&gt;  sudo &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[agent]
+  server=puppet-master&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/puppetlabs/puppet/puppet.conf
+
+  sudo /opt/puppetlabs/bin/puppet agent --enable
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Once everything is in place, we'll start up the VMs:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vagrant up
+&lt;/pre&gt;
+&lt;p&gt;And run puppet on the agent and master&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vagrant ssh puppetagent
+sudo su -
+puppet agent -t
+exit &amp;amp;&amp;amp; exit
+vagrant ssh puppetmaster
+sudo su -
+puppet agent -t
+puppet cert list --all
+puppet cert sign --all
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="create-coreos-agent-node"&gt;
+&lt;h3&gt;Create CoreOS Agent Node&lt;/h3&gt;
+&lt;p&gt;The next step is to integrate a &lt;a class="reference external" href="https://coreos.com/"&gt;CoreOS&lt;/a&gt; node running &lt;a class="reference external" href="https://docs.puppet.com/puppet/latest/about_agent.html"&gt;puppet agent&lt;/a&gt; in a
+container into our puppet infrastructure. This involves a lot of changes, so
+let's break it down:&lt;/p&gt;
+&lt;p&gt;Add the following block to your Vagrantfile in the 'config' block&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;define&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;coreosagent&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="p"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="p"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;insert_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;false&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;forward_agent&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;coreos-beta&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;box_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://storage.googleapis.com/beta.release.core-os.net/amd64-usr/current/coreos_production_vagrant.json&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hostname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;coreos-agent&amp;quot;&lt;/span&gt;
+
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="ss"&gt;:virtualbox&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="p"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="c1"&gt;# On VirtualBox, we don't have guest additions or functional vboxsf&lt;/span&gt;
+    &lt;span class="c1"&gt;# in CoreOS, so tell Vagrant that so it can be smarter.&lt;/span&gt;
+    &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;check_guest_additions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;false&lt;/span&gt;
+    &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;functional_vboxsf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;false&lt;/span&gt;
+    &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;memory&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2048&lt;/span&gt;
+    &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpus&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;customize&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;modifyvm&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;--cpuexecutioncap&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="ss"&gt;:private_network&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;10.20.1.82&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="ss"&gt;:hosts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sync_hosts&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exist?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;CLOUD_CONFIG_PATH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="ss"&gt;:file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:source&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;CLOUD_CONFIG_PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:destination&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/tmp/vagrantfile-user-data&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;provision&lt;/span&gt; &lt;span class="ss"&gt;:shell&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:inline&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mv /tmp/vagrantfile-user-data /var/lib/coreos-vagrant/&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:privileged&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;You'll also need the following in a file called &lt;code&gt;config.rb&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="code ruby literal-block"&gt;
+&lt;span class="c1"&gt;#Size of the CoreOS cluster created by Vagrant&lt;/span&gt;
+&lt;span class="vg"&gt;$num_instances&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="c1"&gt;# Used to fetch a new discovery token for a cluster of size $num_instances&lt;/span&gt;
+&lt;span class="vg"&gt;$new_discovery_url&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://discovery.etcd.io/new?size=&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vg"&gt;$num_instances&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Official CoreOS channel from which updates should be downloaded&lt;/span&gt;
+&lt;span class="vg"&gt;$update_channel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'beta'&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Automatically replace the discovery token on 'vagrant up'&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exists?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'user-data'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;eql?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'up'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'open-uri'&lt;/span&gt;
+  &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'yaml'&lt;/span&gt;
+
+  &lt;span class="n"&gt;token&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vg"&gt;$new_discovery_url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;
+
+  &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;YAML&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;IO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readlines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'user-data'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;..-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'coreos'&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'etcd'&lt;/span&gt;
+    &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'etcd'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'discovery'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;token&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'coreos'&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'etcd2'&lt;/span&gt;
+    &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'etcd2'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'discovery'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;token&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Fix for YAML.load() converting reboot-strategy from 'off' to `false`&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'coreos'&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'update'&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'update'&lt;/span&gt;&lt;span class="o"&gt;].&lt;/span&gt;&lt;span class="n"&gt;key?&lt;/span&gt; &lt;span class="s1"&gt;'reboot-strategy'&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'update'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'reboot-strategy'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="kp"&gt;false&lt;/span&gt;
+      &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'coreos'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'update'&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'reboot-strategy'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'off'&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="n"&gt;yaml&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;YAML&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'user-data'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'w'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#cloud-config&lt;/span&gt;&lt;span class="se"&gt;\n\n&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;yaml&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;And lastly add a &lt;code&gt;user-data&lt;/code&gt; file (your cloud-config file)&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+#cloud-config
+
+hostname: coreos-agent
+
+coreos:
+  units:
+  - name: puppet.service
+    command: start
+    content: |
+      [Unit]
+      Description=Puppet
+      After=docker.service
+      Requires=docker.service
+
+      [Service]
+      TimeoutStartSec=0
+      ExecStartPre=-/usr/bin/docker kill puppet1
+      ExecStartPre=-/usr/bin/docker rm puppet1
+      ExecStartPre=/usr/bin/docker pull puppet/puppet-agent
+
+      [Install]
+      WantedBy=multi-user.target
+
+  - name: 00-ens192.network
+    runtime: true
+    content: |
+      [Match]
+      Name=ens192
+
+      [Network]
+      DNS=10.20.1.82
+      Domains=coreos-agent
+      Address=10.20.1.82
+      Gateway=10.0.2.2
+&lt;/pre&gt;
+&lt;p&gt;Now we'll get that machine up and running:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vagrant up
+vagrant ssh coreosagent
+&lt;/pre&gt;
+&lt;p&gt;And wham, you're in a coreos machine!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="connecting-agent-to-master"&gt;
+&lt;h3&gt;Connecting Agent to Master&lt;/h3&gt;
+&lt;p&gt;The only thing left to do is start our puppet agent container on the CoreOS VM and get it connected to the master.&lt;/p&gt;
+&lt;div class="section" id="add-puppet-conf-to-agent"&gt;
+&lt;h4&gt;Add puppet.conf to agent&lt;/h4&gt;
+&lt;p&gt;Since our CoreOS machine doesn't know it's a puppet agent yet (or about puppet at all), we need to manually add &lt;code&gt;/etc/puppetlabs/puppet/puppet.conf&lt;/code&gt; to configure the agent that will run in a docker container.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="test-it-out"&gt;
+&lt;h2&gt;Test It Out&lt;/h2&gt;
+&lt;p&gt;Ok, let's make sure our setup is actually working!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="resources"&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.admintome.com/blog/configure-puppet-on-coreos/"&gt;http://www.admintome.com/blog/configure-puppet-on-coreos/&lt;/a&gt;
+&lt;a class="reference external" href="https://coreos.com/os/docs/latest/booting-on-vagrant.html#cloud-config"&gt;https://coreos.com/os/docs/latest/booting-on-vagrant.html#cloud-config&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="containers"></category></entry><entry><title>Fall Bucket List 2017</title><link href="http://blog.lucywyman.me/fall-bucket-list-2017.html" rel="alternate"></link><published>2017-09-15T00:00:00-07:00</published><updated>2017-09-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-09-15:fall-bucket-list-2017.html</id><summary type="html">&lt;p&gt;What a summer! As we say hello to crisp mornings, plaid scarves, and
 cinnamon-spiced treats, I wanted to take a moment to review my &lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017"&gt;Summer
 Bucket List&lt;/a&gt; and create a new bucket list for Fall. Like my summer
 list, this isn't a to-do list. There are no have-to's or should's

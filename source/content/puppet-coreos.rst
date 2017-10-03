@@ -1,6 +1,6 @@
 Managing CoreOS With Puppet
 ===========================
-:date: 2017-09-26
+:date: 2017-10-03
 :tags: tech, containers
 :category: Tech
 :slug: managing-coreos-with-puppet
@@ -16,6 +16,7 @@ Way to go past Lucy.
 
 There are a few cases where managing CoreOS with Puppet makes sense though. 
 
+.. _PuppetConf: https://puppet.com/puppetconf
 
 How
 ---
@@ -37,7 +38,7 @@ each other, and minimize the amount of networking voodoo I had to do:
 
 .. _vagrant-hosts: https://github.com/oscar-stack/vagrant-hosts
 
-.. code:: none
+.. code::
 
     $ tree
     .
@@ -137,13 +138,13 @@ Provisioning script for the vagrant VM with puppet agent on it
 
 Once everything is in place, we'll start up the VMs:
 
-.. code:: none
+.. code:: 
     
     vagrant up
 
 And run puppet on the agent and master
 
-.. code:: none
+.. code:: 
 
     vagrant ssh puppetagent
     sudo su -
@@ -165,34 +166,35 @@ let's break it down:
 .. _CoreOS: https://coreos.com/
 .. _puppet agent: https://docs.puppet.com/puppet/latest/about_agent.html
 
-Add the following block to your Vagrantfile in the 'config' block:
+Add the following block to your Vagrantfile in the 'config' block
+
 .. code:: ruby
 
-  config.vm.define "coreosagent" do |agent|
-    agent.ssh.insert_key = false
-    agent.ssh.forward_agent = true
-    agent.vm.box = "coreos-beta"
-    agent.vm.box_url = "https://storage.googleapis.com/beta.release.core-os.net/amd64-usr/current/coreos_production_vagrant.json"
-    agent.vm.hostname = "coreos-agent"
+    config.vm.define "coreosagent" do \|agent\|
+      agent.ssh.insert_key = false
+      agent.ssh.forward_agent = true
+      agent.vm.box = "coreos-beta"
+      agent.vm.box_url = "https://storage.googleapis.com/beta.release.core-os.net/amd64-usr/current/coreos_production_vagrant.json"
+      agent.vm.hostname = "coreos-agent"
 
-    agent.vm.provider :virtualbox do |v| 
-      # On VirtualBox, we don't have guest additions or functional vboxsf
-      # in CoreOS, so tell Vagrant that so it can be smarter.
-      v.check_guest_additions = false
-      v.functional_vboxsf     = false
-      v.memory = 2048
-      v.cpus = 1 
-      v.customize ["modifyvm", :id, "--cpuexecutioncap", "100"]
-    end 
+      agent.vm.provider :virtualbox do \|v\| 
+        # On VirtualBox, we don't have guest additions or functional vboxsf
+        # in CoreOS, so tell Vagrant that so it can be smarter.
+        v.check_guest_additions = false
+        v.functional_vboxsf = false
+        v.memory = 2048
+        v.cpus = 1 
+        v.customize ["modifyvm", :id, "--cpuexecutioncap", "100"]
+      end 
 
-    agent.vm.network :private_network, ip: "10.20.1.82"
-    agent.vm.provision :hosts, :sync_hosts => true
+      agent.vm.network :private_network, ip: "10.20.1.82"
+      agent.vm.provision :hosts, :sync_hosts => true
 
-    if File.exist?(CLOUD_CONFIG_PATH)
-      agent.vm.provision :file, :source => "#{CLOUD_CONFIG_PATH}", :destination => "/tmp/vagrantfile-user-data"
-      agent.vm.provision :shell, :inline => "mv /tmp/vagrantfile-user-data /var/lib/coreos-vagrant/", :privileged => true
+      if File.exist?(CLOUD_CONFIG_PATH)
+        agent.vm.provision :file, :source => "#{CLOUD_CONFIG_PATH}", :destination => "/tmp/vagrantfile-user-data"
+        agent.vm.provision :shell, :inline => "mv /tmp/vagrantfile-user-data /var/lib/coreos-vagrant/", :privileged => true
+      end
     end
-  end
 
 You'll also need the following in a file called :code:`config.rb`
 
@@ -236,7 +238,7 @@ You'll also need the following in a file called :code:`config.rb`
 
 And lastly add a :code:`user-data` file (your cloud-config file)
 
-.. code:: none
+.. code:: 
 
   #cloud-config
 
@@ -275,7 +277,7 @@ And lastly add a :code:`user-data` file (your cloud-config file)
 
 Now we'll get that machine up and running:
 
-.. code:: none
+.. code:: 
 
     vagrant up
     vagrant ssh coreosagent
