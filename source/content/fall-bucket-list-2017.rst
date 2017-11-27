@@ -19,7 +19,7 @@ here. But it's something to get me excited for the coming season!
 
 ☐  Visit a pumpkin patch
 
-☐  Make a `sweet potato pie`_
+☑  Make a `sweet potato pie`_
 
 ☑  Go apple picking
 
@@ -27,11 +27,11 @@ here. But it's something to get me excited for the coming season!
 
 ☐  Send notes to friends and family for Thanksgiving
 
-☐  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)
+☑  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)
 
 ☑  Cook tofu instead of meat at least once a week
 
-☐  Run the `Portland Half Marathon`_
+☑  Run the `Portland Half Marathon`_
 
 .. _sweet potato pie: http://joythebaker.com/2013/11/dads-sweet-potato-pie/
 .. _pumpkin stout: https://www.ratebeer.com/beer/elysian-dark-o-the-moon-pumpkin-stout/65757/

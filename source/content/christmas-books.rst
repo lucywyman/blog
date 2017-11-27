@@ -116,6 +116,12 @@ By far the hardest category to narrow down, it's hard to go wrong with
 any of these titles for the feminist reader (woops, sorry, I
 misspelled 'everyone') in your life:
 
+* `Too Fat, Too Slutty, Too Loud`_ by Anne Helen Petersen. I expected 
+  this to be a ranty read about how women are oppressed, and instead
+  got some of the best essays I've ever read. This book describes how
+  women are scrutinized and judged by examining 9 famous women who are
+  too-something: too strong, too pregnant, too old, too shrill. A
+  great read!
 * `Shrill`_ by Lindy West. So many 'aha' moments in this book.
   Lindy West names and confronts some uncomfortable truths in this
   book.  You'll laugh, you'll cry, you'll become a better human.
@@ -132,6 +138,7 @@ misspelled 'everyone') in your life:
 * `Yes, Please`_ by Amy Pohler. The life and times of an amazing
   woman, featuring some great advice we could all use.
 
+.. _Too Fat, Too Slutty, Too Loud: https://www.goodreads.com/book/show/33257571-too-fat-too-slutty-too-loud
 .. _Shrill: https://www.goodreads.com/book/show/29340182-shrill
 .. _The Girl with the Lower Back Tattoo: https://www.goodreads.com/book/show/29405093-the-girl-with-the-lower-back-tattoo
 .. _Wild: https://www.goodreads.com/book/show/12262741-wild
@@ -171,6 +178,10 @@ I've unexpectedly started reading mysteries recently. I
 didn't even know what I was getting myself into, but here are a few
 juicy ones I've enjoyed.
 
+* `Big Little Lies` by Liane Moriarty. I'm sure that every
+  self-respecting mystery reader has already read through Liane
+  Moriarty's entire catalog. BUT IF YOU KNOW SOMEONE WHO HASN'T, do
+  them a favor and get them this book.
 * `I'm Thinking of Ending Things`_ by Iain Reid. A short but
   satisfying thriller. 
 * `All is Not Forgotten`_ by Wendy Walker. As a mystery noob, I'm *so*
@@ -190,6 +201,8 @@ For the Friend with a BB8 Pillow
 
 AKA Sci-Fi.
 
+* `Ender's Game`_ by Orson Scott Card is a classic sci-fi read that
+  lives up to it's legendary status. 
 * `Ready Player One`_ by Ernest Cline is a totally accessible and fun
   story. It's a classic hero's tale, with 80's geek and gamer culture
   mixed in. Highly recommend for readers of any age.
@@ -199,6 +212,7 @@ AKA Sci-Fi.
 * `The Lathe of Heaven`_ by Ursula K. LeGuin is a solid, satisfying
   sci-fi adventure.
 
+.. _Ender's Game: https://www.goodreads.com/book/show/375802.Ender_s_Game
 .. _Ready Player One: https://www.goodreads.com/book/show/9969571-ready-player-one
 .. _Use of Weapons: https://www.goodreads.com/book/show/12007.Use_of_Weapons
 .. _The Lathe of Heaven: https://www.goodreads.com/book/show/59924.The_Lathe_of_Heaven
@@ -217,7 +231,7 @@ Becomes Air`_.
 * `The Audacity of Hope`_ by Barack Obama, for when you need to
   revitalize your faith in our country's politicians.
 
-.. _When Breath Becomes Air:
+.. _When Breath Becomes Air: 
 .. _The Audacity of Hope:
 
 And that's all she wrote, folks! I hope you have a wonderful holiday

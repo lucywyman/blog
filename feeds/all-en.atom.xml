@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-10-03T00:00:00-07:00</updated><entry><title>Managing CoreOS With Puppet</title><link href="http://blog.lucywyman.me/managing-coreos-with-puppet.html" rel="alternate"></link><published>2017-10-03T00:00:00-07:00</published><updated>2017-10-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-10-03:managing-coreos-with-puppet.html</id><summary type="html">&lt;div class="section" id="why"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2017-11-14T00:00:00-08:00</updated><entry><title>Winter Reads 2017</title><link href="http://blog.lucywyman.me/winter-reads-2017.html" rel="alternate"></link><published>2017-11-14T00:00:00-08:00</published><updated>2017-11-14T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-11-14:winter-reads-2017.html</id><summary type="html">&lt;p&gt;Hello friends! It's been a while since we saw each other. I hope this post
+finds you well! It's that time of year again: the leaves have, fallen, the
+chill has set in, and the holidays are just over the horizon. I always find
+myself reading more in the winter, when it's too cold to leave my apartment and
+nothing sounds better than a mug of tea and a book. Whether you're travelling
+to visit family, or have some cozy mornings in your future, here's what I can
+recommend adding to your reading list.&lt;/p&gt;
+&lt;p&gt;PS I'm not a professional enough blogger to make commissions or
+anything, but I do have a &lt;a class="reference external" href="http://blog.lucywyman.me/2016-book-gifting-guide.html"&gt;book-themed gift guide&lt;/a&gt; for all the readers
+in your life. And we're all readers! Check it out if you're not sure
+what to get someone. Ok, on with our regularly scheduled program.&lt;/p&gt;
+&lt;div class="section" id="too-fat-too-slutty-too-loud"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/33257571-too-fat-too-slutty-too-loud"&gt;Too Fat, Too Slutty, Too Loud&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By Anne Helen Petersen&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/too-fat-too-slutty-too-loud.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I expected this book to be yet another ranty read about how oppressed women
+are. While I think those books are important and read a lot of them, it's
+draining to read about the systemic problems and rarely be presented with
+solutions. &amp;quot;Too Fat, Too Slutty, Too Loud&amp;quot; absolutely blew me away though.
+Petersen's writing is precise, intelligent, and clear, and I found myself
+having 'Aha!' moments at least once per chapter. A great read for any feminist
+(aka everyone).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-music-got-free"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/23398715-how-music-got-free"&gt;How Music Got Free&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By Stephen Witt&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/how-music-got-free.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Another book I expected to be dull, but which turned out to be great! Rather
+than laying out the facts in chronological order, &amp;quot;How Music Got Free&amp;quot; wove
+together the stories from 3 people who contributed to the rise and fall of
+the pirated music industry. It's an epic story, told more like a novel than a
+non-fiction account. Thoroughly entertaining and interesting, whether you
+like (and pirate) music or not.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tiny-beautiful-things"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/13152194-tiny-beautiful-things"&gt;Tiny Beautiful Things&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By Cheryl Strayed&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/tiny-beautiful-things.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I love everything Cheryl Strayed writes. If she wrote a phone book, I'd
+probably read it. Her work is consistently thought provoking, concise,
+beautiful, and profound, and &amp;quot;Tiny Beautiful Things&amp;quot; is quintessential Cheryl.
+A compilation of advice columns, &amp;quot;Tiny Beautiful Things&amp;quot; is all about
+understanding the human experience. Part poetry, part therapy, entirely worth
+reading.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="commonwealth"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/28214365-commonwealth"&gt;Commonwealth&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By Ann Patchett&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/commonwealth.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;This book may not be for everyone, but as a reader who loves a good cast of
+characters &amp;quot;Commonwealth&amp;quot; was right up my alley. The characters were rich and
+realistic, and the plot follows the story of a blended family we know all to
+well with an unexpected twist. An excellent low-stress read.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="big-little-lies"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/19486412-big-little-lies"&gt;Big Little Lies&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By Liane Moriarty&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/big-little-lies.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I know you already know this one, so let me just throw my recommendation in with all the rest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="turtles-all-the-way-down"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/35504431-turtles-all-the-way-down"&gt;Turtles All the Way Down&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By John Green&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="static/turtles-all-the-way-down.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Even if you're not a young adult, John Green's latest novel is a wonderful
+and quick read. It's narrated by the protagonist, Aza Holmes, a young woman
+trying to live with and manage obsessive-compulsive disorder while trying to
+be a good daughter, good friend, and a good detective. What I loved about it
+was that it helped me understand at least one person's experience of mental
+illness, and helped humanize and sympathize disordered thinking for me.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="books"></category></entry><entry><title>Managing CoreOS With Puppet</title><link href="http://blog.lucywyman.me/managing-coreos-with-puppet.html" rel="alternate"></link><published>2017-10-03T00:00:00-07:00</published><updated>2017-10-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-10-03:managing-coreos-with-puppet.html</id><summary type="html">&lt;div class="section" id="why"&gt;
 &lt;h2&gt;Why&lt;/h2&gt;
 &lt;p&gt;To be perfectly honest, the only reason I wanted to do this is because I
 submitted a talk to &lt;a class="reference external" href="https://puppet.com/puppetconf"&gt;PuppetConf&lt;/a&gt; on the subject and it got accepted. Woops.
@@ -267,13 +350,13 @@ list, this isn't a to-do list. There are no have-to's or should's
 here. But it's something to get me excited for the coming season!&lt;/p&gt;
 &lt;p&gt;☑  Attend a sports ball game&lt;/p&gt;
 &lt;p&gt;☐  Visit a pumpkin patch&lt;/p&gt;
-&lt;p&gt;☐  Make a &lt;a class="reference external" href="http://joythebaker.com/2013/11/dads-sweet-potato-pie/"&gt;sweet potato pie&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;☑  Make a &lt;a class="reference external" href="http://joythebaker.com/2013/11/dads-sweet-potato-pie/"&gt;sweet potato pie&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;☑  Go apple picking&lt;/p&gt;
 &lt;p&gt;☑  Enjoy a &lt;a class="reference external" href="https://www.ratebeer.com/beer/elysian-dark-o-the-moon-pumpkin-stout/65757/"&gt;pumpkin stout&lt;/a&gt; (I also loved &lt;a class="reference external" href="https://2townsciderhouse.com/2017/09/07/2-towns-ciderhouse-conjures-hollow-jack-heirloom-pumpkin-cider/"&gt;this cider&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;☐  Send notes to friends and family for Thanksgiving&lt;/p&gt;
-&lt;p&gt;☐  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)&lt;/p&gt;
+&lt;p&gt;☑  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)&lt;/p&gt;
 &lt;p&gt;☑  Cook tofu instead of meat at least once a week&lt;/p&gt;
-&lt;p&gt;☐  Run the &lt;a class="reference external" href="http://portlandmarathon.org/related-events/half-marathon/"&gt;Portland Half Marathon&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;☑  Run the &lt;a class="reference external" href="http://portlandmarathon.org/related-events/half-marathon/"&gt;Portland Half Marathon&lt;/a&gt;&lt;/p&gt;
 </summary><category term="experiences"></category></entry><entry><title>Installing a Package in an Openshift Container (Kind Of)</title><link href="http://blog.lucywyman.me/installing-a-package-in-an-openshift-container.html" rel="alternate"></link><published>2017-07-25T00:00:00-07:00</published><updated>2017-07-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-07-25:installing-a-package-in-an-openshift-container.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TODO Better title. Ping me with ideas!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Fair warning: This article assumes that you have a decent
 understanding of Openshift from the outset, because explaining all the
@@ -2258,6 +2341,12 @@ relatively objective and accurate.&lt;/li&gt;
 any of these titles for the feminist reader (woops, sorry, I
 misspelled 'everyone') in your life:&lt;/p&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/33257571-too-fat-too-slutty-too-loud"&gt;Too Fat, Too Slutty, Too Loud&lt;/a&gt; by Anne Helen Petersen. I expected
+this to be a ranty read about how women are oppressed, and instead
+got some of the best essays I've ever read. This book describes how
+women are scrutinized and judged by examining 9 famous women who are
+too-something: too strong, too pregnant, too old, too shrill. A
+great read!&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/29340182-shrill"&gt;Shrill&lt;/a&gt; by Lindy West. So many 'aha' moments in this book.
 Lindy West names and confronts some uncomfortable truths in this
 book.  You'll laugh, you'll cry, you'll become a better human.
@@ -2304,6 +2393,10 @@ an all knowing deity with total creative control&amp;quot;&lt;/em&gt;&lt;/li&gt;
 didn't even know what I was getting myself into, but here are a few
 juicy ones I've enjoyed.&lt;/p&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;&lt;cite&gt;Big Little Lies&lt;/cite&gt; by Liane Moriarty. I'm sure that every
+self-respecting mystery reader has already read through Liane
+Moriarty's entire catalog. BUT IF YOU KNOW SOMEONE WHO HASN'T, do
+them a favor and get them this book.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/27274343-i-m-thinking-of-ending-things"&gt;I'm Thinking of Ending Things&lt;/a&gt; by Iain Reid. A short but
 satisfying thriller.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/26114146-all-is-not-forgotten"&gt;All is Not Forgotten&lt;/a&gt; by Wendy Walker. As a mystery noob, I'm &lt;em&gt;so&lt;/em&gt;
@@ -2319,6 +2412,8 @@ the hype + the movie, I may have to give it another read.&lt;/li&gt;
 &lt;h2&gt;For the Friend with a BB8 Pillow&lt;/h2&gt;
 &lt;p&gt;AKA Sci-Fi.&lt;/p&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/375802.Ender_s_Game"&gt;Ender's Game&lt;/a&gt; by Orson Scott Card is a classic sci-fi read that
+lives up to it's legendary status.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/9969571-ready-player-one"&gt;Ready Player One&lt;/a&gt; by Ernest Cline is a totally accessible and fun
 story. It's a classic hero's tale, with 80's geek and gamer culture
 mixed in. Highly recommend for readers of any age.&lt;/li&gt;
