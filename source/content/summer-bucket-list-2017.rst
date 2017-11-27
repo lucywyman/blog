@@ -1,7 +1,7 @@
 Summer Bucket List 2017
 =======================
 :date: 2017-05-29
-:tags: experiences
+:tags: experiences, bucket-lists
 :category: Experiences
 :slug: summer-bucket-list-2017
 :author: Lucy Wyman

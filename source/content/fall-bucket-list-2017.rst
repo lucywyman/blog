@@ -1,7 +1,7 @@
 Fall Bucket List 2017
 =====================
 :date: 2017-09-15
-:tags: experiences
+:tags: experiences, bucket-lists
 :category: Experiences
 :slug: fall-bucket-list-2017
 :author: Lucy Wyman
@@ -25,7 +25,7 @@ here. But it's something to get me excited for the coming season!
 
 ☑  Enjoy a `pumpkin stout`_ (I also loved `this cider`_)
 
-☐  Send notes to friends and family for Thanksgiving
+☑  Send notes to friends and family for Thanksgiving
 
 ☑  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)
 
