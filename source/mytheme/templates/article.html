@@ -7,6 +7,9 @@
 {% if article.img %}
 <img alt="" src="/theme/images/{{ article.img }}" style="height: 400px;">
 {% endif %}
+{% if article.img and article.photosource %}
+<p class='source'>Source: (<a href="{{ article.photolink }}">{{ article.photosource }}</a>)</p>
+{% endif %}
 {{ article.content }}
 </div>
 {% endblock %}
