@@ -21,29 +21,29 @@ like a good time to, cliche as it is, *slow down*.
 
 Enough ado, here's what I'm looking forward to doing this season:
 
-☐  Walk down `Peacock Lane`_
+☑  Walk down `Peacock Lane`_
 
 ☑  Watch the tree light up at Pioneer Square
 
 ☐  Decorate a tree
 
-☐  Volunteer
+☑  Volunteer
 
-☐  Bake some `cookies`_
+☑  Bake some `cookies`_
 
-☐  Visit Santa
+☑  Visit Santa
 
 ☐  Write Christmas cards for friends and family
 
 ☐  Watch Elf
 
-☐  Enjoy some hot chocolate (maybe some `drinking chocolate`_?)
+☑  Enjoy some hot chocolate (maybe some `drinking chocolate`_?)
 
-☐  Enjoy a coffee from a local shop
+☑  Enjoy a coffee from a local shop
 
 ☐  Go to a Christmas Bazaar
 
-☐  Wear a bold lip color at least once
+☑  Wear a bold lip color at least once
 
 .. _summer: http://blog.lucywyman.me/summer-bucket-list-2017.html
 .. _fall: http://blog.lucywyman.me/fall-bucket-list-2017.html
