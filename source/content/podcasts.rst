@@ -10,12 +10,14 @@ Podcasts I Love
 
 The goal of this post is not to enumerate the top 10 podcasts that you
 already listen to, but to tell you about some lesser-known podcasts that I
-*love*.  
+*love*. In no particular order:
 
-* `Pod Save America`_. 
 * `Oh No Ross and Carrie`_ -- the show where they don't just report on fringe science, spirituality, and claims of the paranormal, but take part themselves! Honestly, whether you enjoy hearing about UFO conferences and acupuncture or not, Ross and Carrie are 2 of the loveliest people you'll listen to. They're who I listen to when I've had a particularly stressful day, and need a few deep breaths of fresh air.
 * `More Perfect`_, the podcast about the Supreme Court, by Radio Lab. 
-* `Young House Love Has A Podcast`_
+* `Young House Love Has A Podcast`_. I'm honestly not very 'into' interior
+  design or home stuff, but I love this couples' banter and their
+  relationship. In it for the laughs, with some tips about lighting on
+  the side :)
 * `The Mystery Show`_. Starlee Kine, who you've definitely
   heard on This American Life (?), solves mysteries that can't be
   solved online. These aren't the "Who was that guy in that movie?"
@@ -59,6 +61,9 @@ already listen to, but to tell you about some lesser-known podcasts that I
   *inspires*.  They also cover all types of questions, calling experts
   to answer questions like whether dolphins sleep, if wasps can
   recognize each other, and how to do arm-farts.
+* `Pod Save America`_. Former speech writers for the Obama administration
+  discuss current political events and interview prominent political
+  figures. A nice breath of fresh, democratic air during troubling times.
 * `KEXP Music That Matters`_. Spotify Discovery Weekly not doing it
   for you?  Each week they put out a curated playlist centered on a
   theme, and the music ranges from punk to hard rock to folk to pop to
