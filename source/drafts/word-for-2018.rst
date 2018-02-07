@@ -1,8 +1,0 @@
-Title
-=====
-:date: 
-:tags: 
-:category: 
-:slug: 
-:author: 
-:image:

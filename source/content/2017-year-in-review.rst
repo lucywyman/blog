@@ -3,7 +3,7 @@ Reflections on 2017
 :date: 2017-12-11
 :tags: experiences
 :category: Experiences
-:slug: 
+:slug: reflections-on-2017
 :author: Lucy Wyman
 :image:
 
@@ -16,7 +16,7 @@ Only 7 months ago I visited Austin? Only 3 months ago we were hiking the Redwood
 
 Maybe it's because a lot happened this year. Eli graduated! I moved to a new
 position at work. We took a road trip to California. But mostly this year has
-felt like a lot of waiting. `2016 was a truly life-changing year`_ in so many
+felt like a lot of waiting. `2016 was a life-changing year`_ in so many
 ways (some good, some with orange hair), and 2018 will likely be just as
 momentous. We're taking a 3 week vacation to JAPAN in January (Japanuary), then
 Eli and I are moving to Seattle with 2 good friends and starting our life
@@ -24,6 +24,8 @@ together. 2017 has been the in-between year. The middle child of years. The
 long-distance-relationship, long-work-hours,
 long-time-waiting-for-Eli-to-graduate year. Perhaps that's why it's moved so
 slowly?
+
+.. _2016 was a life-changing year: http://blog.lucywyman.me/reflections-on-2016
 
 But, while 2017 may not be as remarkable as the years that surround it, it's
 worth reflecting on. Here goes.
@@ -49,8 +51,8 @@ won the lottery with this position. But, even my organization isn't exempt from
 the realities of being a business in America, and the cultural norms that go
 with it. 
 
-
 **What are my 3 happiest memories?**
+
 1. Spending the day with my mom at The Grove. Although our early-December trip
    was already planned, my grandpa died just weeks before we were scheduled to
    visit. He was 94, lived a good and long life, but it was still a blow to my
@@ -67,11 +69,13 @@ with it.
 3. 
 
 **Who did I spend the majority of my time with? Was that energizing or draining?**
+
 Eli, obviously. I love spending time with Eli. He calms me and my anxiety,
 grounds me, and I feel so at ease when I'm with him, like there's no where else
 I *need* to be or anything else I *should* be doing. 
 
 **What new skills, hobbies or activities did I try this year?**
+
 I took a salsa class! I'm so glad I took it, but I also didn't renew it after
 the first month. I think, ultimately, I just need to make time to do fun things
 like that. I think Zumba might be in my future? We'll see once we move to

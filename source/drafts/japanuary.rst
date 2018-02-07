@@ -1,0 +1,65 @@
+Itinerary:
+- Saturday got in
+  - Shibuya + $1 sushi
+- Sunday
+  - Harajuku
+  - Robot Restaurant
+- Monday 
+  - Ichiran Ramen
+  - Yoyogi park
+  - Harajuku (pancakes!)
+- Tuesday
+  - Tsukiji Market
+  - Kabuki
+  - Uniqlo in Ginza
+- Wednesday
+  - Tokyo natural museum
+- Thursday
+  - Imperial Palace
+  - Tokyo Station
+  - Ad museum
+- Friday
+  - Hi
+  - Tokyo tower
+  - PDX bar
+  - Hamarikyu Gardens
+- Saturday
+  - Massage
+  - Ichiran 2
+- Sunday
+  - Zoo
+  - 
+- Monday
+  - Tokyo skytree
+  - Akasuka
+- Tuesday
+  - Disneyland
+- Wednesday
+  - SUMO
+- Thursday
+  - Shinjuku Gyoen National Garden
+- Friday
+  - Ghibli museum
+  - Clubbing in Roppongi
+- Saturday
+  - Laundry
+  - Nap
+- Sunday
+  - 
+- Monday
+  - Metro museum
+  - MoMAT
+- Tuesday
+  - Kawaguchi
+- Wednesday
+- Thursday
+  - Kyoto
+  - Deer
+- Friday
+  - Monkeys!
+  - 11 course meal
+  - Market
+- Saturday
+  - Back from Kyoto
+- Sunday
+  - Open air architecture museum
