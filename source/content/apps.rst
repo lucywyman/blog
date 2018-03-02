@@ -16,9 +16,9 @@ of those like me, here are some of the applications I have found
 particularly useful or entertaining. I should also mention that these are 
 all free and available on Android.
 
-#. `Overdrive`_: You can connect overdrive to local libraries and checkout 
+#. `Overdrive`_: You can connect overdrive to local libraries and checkout
    books to read or listen to on mobile. I use it to download and listen to
-   audiobooks, and honestly went from reading 0 books/year to about 1/week. 
+   audiobooks, and honestly went from reading 0 books/year to about 1/week.
    It's completely changed my life, and made the mundane moments like doing
    laundry or walking to class more entertaining.
 #. `AntennaPod`_: Similar to Overdrive, this app brings you great listening

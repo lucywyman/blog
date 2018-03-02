@@ -12,14 +12,23 @@ The goal of this post is not to enumerate the top 10 podcasts that you
 already listen to, but to tell you about some lesser-known podcasts that I
 *love*. In no particular order:
 
-* `Oh No Ross and Carrie`_ -- the show where they don't just report on fringe science, spirituality, and claims of the paranormal, but take part themselves! Honestly, whether you enjoy hearing about UFO conferences and acupuncture or not, Ross and Carrie are 2 of the loveliest people you'll listen to. They're who I listen to when I've had a particularly stressful day, and need a few deep breaths of fresh air.
+* `Oh No Ross and Carrie`_ -- the show where they don't just report on 
+  fringe science, spirituality, and claims of the paranormal, but take
+  part themselves! Honestly, whether you enjoy hearing about UFO
+  conferences and acupuncture or not, Ross and Carrie are 2 of the
+  loveliest people you'll listen to. They're who I listen to when I've
+  had a particularly stressful day, and need a few deep breaths of
+  fresh air.
 * `More Perfect`_, the podcast about the Supreme Court, by Radio Lab. 
+  Though often a bit depressing (aren't stories about people with
+  power always depressing?), More Perfect is very well researched,
+  high quality, and relevant pod. 
 * `Young House Love Has A Podcast`_. I'm honestly not very 'into' interior
   design or home stuff, but I love this couples' banter and their
   relationship. In it for the laughs, with some tips about lighting on
   the side :)
 * `The Mystery Show`_. Starlee Kine, who you've definitely
-  heard on This American Life (?), solves mysteries that can't be
+  heard on This American Life, solves mysteries that can't be
   solved online. These aren't the "Who was that guy in that movie?"
   questions, but questions like "There's one photo of Britney Spears
   holding a book that only sold 100 copies. How did she get a hold of
@@ -30,8 +39,8 @@ already listen to, but to tell you about some lesser-known podcasts that I
   the show. She's so interested in the lives of the people she talks
   to, and even without the mystery part just listening to her interact
   with other humans is inspiring.  All in all, one of the best podcast
-  finds of the last year.  It's still pretty new, so catch up while
-  you can!
+  finds of the last year.  There are only 6 episodes, and it seems to
+  have gone offline, but never lose hope!
 * `Reply All`_. Hosted by PJ Vogt (pronounced "vote") and 
   Alex Goldman, Reply All is a show about the internet.  With
   top-notch banter and interesting topics, I've learned a lot from
