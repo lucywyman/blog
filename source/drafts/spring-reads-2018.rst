@@ -26,6 +26,4 @@ Zen and the Art of Motorcycle Maintenance
 -----------------------------------------
 *Robert M. Pirsig*
 
-Sex, Drugs, and Cocoa Puffs
----------------------------
-*Chuck Klosterman*
+
