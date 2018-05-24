@@ -1,5 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Thu, 08 Mar 2018 00:00:00 -0800</lastBuildDate><item><title>Spring Bucket List 2018</title><link>http://blog.lucywyman.me/spring-bucket-list-2018.html</link><description>&lt;p&gt;Spring is nearly here! With warmer, longer days on the horizon I'm
+<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Tue, 22 May 2018 00:00:00 -0700</lastBuildDate><item><title>RFID (mis)Adventure</title><link>http://blog.lucywyman.me/RFID-adventure.html</link><description>&lt;p&gt;Our office recently relocated to a WeWork, which has an RFID card for
+getting onto the floor before business hours and for getting into our
+company's suite there. Unfortunately I already have an RFID card (my
+&lt;a class="reference external" href="https://kingcounty.gov/depts/transportation/metro/fares-orca/orca-cards.aspx"&gt;Orca card&lt;/a&gt;) attached to my phone, so keeping the WeWork card there
+was a no-go. Keeping it in my wallet is also an option, but I don't
+typically carry my wallet with me around the office, especially since
+I have a limited number of outfits that have pockets. The ideal
+solution for my RFID card woes would be something I could wear on my
+body, that didn't need to be carried and could easily be passed by the
+readers while I was juggling a water bottle and laptop. Something
+like...a bracelet! So I set out to copy my WeWork RFID onto an RFID
+bracelet. Long story short: I failed, I think because the super-cheap
+RFID reader/writer I bought was &lt;em&gt;too&lt;/em&gt; cheap. But I wanted to blog
+about it anyway in an effort to &lt;a class="reference external" href="http://time.com/3206754/publication-bias-null-results/"&gt;write about my failures as well as my
+successes&lt;/a&gt;. For science!&lt;/p&gt;
+&lt;div class="section" id="the-windows-vm"&gt;
+&lt;h2&gt;The Windows VM&lt;/h2&gt;
+&lt;p&gt;I started out by purchasing the following:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.amazon.com/125KHZ-Reader-Writer-Duplicator-Control/dp/B079HVQXQY/ref=sr_1_4?ie=UTF8&amp;amp;qid=1526008775&amp;amp;sr=8-4&amp;amp;keywords=rfid+writer#customerReviews"&gt;RFID reader/writer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.amazon.com/YARONGTECH-13-56MHZ-ISO14443A-Silicone-wristband/dp/B01FR63GVG/ref=sr_1_5?ie=UTF8&amp;amp;qid=1526008799&amp;amp;sr=8-5&amp;amp;keywords=rfid+bracelet#customerReviews"&gt;RFID Bracelets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After spending about an hour researching Linux utilities for RFID
+readers/writers, I decided I should just use the software on the CD
+that came with the copier. It was a .exe of course, so the first order
+of business was spinning up a windows VM on my machine. The first snag
+I hit was that the CD could only be installed on 32-bit Windows, not
+64-bit, so after getting my 64-bit &lt;a class="reference external" href="http://aka.ms/ie11.win81.vagrant"&gt;Windows 8.1 VM&lt;/a&gt; setup I had to
+tear it down and find a vagrant box for &lt;a class="reference external" href="https://app.vagrantup.com/mrh1997/boxes/vanilla-win7-32bit"&gt;32-bit Windows&lt;/a&gt;. 'Snag'
+might be a strong word there, it was mostly just annoying and time
+consuming. This is &lt;a class="reference external" href="https://gist.github.com/lucywyman/373c7a4352bb207bc41d57eb774e66fe"&gt;the Vagrantfile&lt;/a&gt; I ended up using. Important to
+note that in addition to the particular Windows VM, I also needed to
+mount the copier device to the VM.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-copier"&gt;
+&lt;h2&gt;The Copier&lt;/h2&gt;
+&lt;p&gt;With the software installed, and the correct device mounted so I could
+connect the copier to the Windows VM, it was time to copy RFIDs! Or so
+I thought. The copier beeped when I plugged it in, and successfully
+connected to the GUI. Yay! I put my WeWork card on it and clicked
+'Read'. It turned red and made angry beeping noises. Boo. I collected
+a few other RFIDs I had around the house -- my Orca card, the badge
+from our Portland office, my passport -- and tried those as well, all
+without success. Maybe I was doing it wrong? The copier came with some
+blank RFID tags, so I put one on the copier and wrote random data to
+it. It beeped successfully and turned green. Sigh.&lt;/p&gt;
+&lt;p&gt;That's really all there was to it. My copier seemed to be working, but
+didn't have the right frequencies for the things I actually needed to
+read. Forgetting / losing my WeWork card continues to be a problem, so
+stayed tuned for other attempts at the bracelet solution or other
+creative solutions to the problem!&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Tue, 22 May 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2018-05-22:RFID-adventure.html</guid><category>tech</category><category>experiences</category></item><item><title>My Super Boring Bucket List</title><link>http://blog.lucywyman.me/my-bucket-list.html</link><description>&lt;p&gt;I read an article today about Bucket Lists that included a comments
+section, and was surprised by two patterns in people's bucket lists:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The Northern Lights seemed to be the most frequent single item. I
+have no idea what would compel anyone to stand in freezing weather
+in the middle of the night, but it will certainly take more than
+lights to get me there.&lt;/li&gt;
+&lt;li&gt;Approximately 95% of bucket list items were places to travel to.
+While I would have guessed travel to appear on most lists, I was
+surprised that people didn't really seem to think of a bucket list
+as much more than a travel check-list. While visiting places seems
+cool, I guess I wished there were more creative ideas for things to
+do or learn or make? That sounds so pretentious and judgey, but I
+guess for this post I will accept my role as pretentious and judgey
+narrator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But! It was a great read, because it inspired me to write my own
+bucket list, which I later realized reveals how in my heart of
+hearts, my deepest, truest self is a total square. So! Here is my very
+boring bucket list:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Become a Senior Software Engineer&lt;/li&gt;
+&lt;li&gt;Get a doggo&lt;/li&gt;
+&lt;li&gt;Become financially independent (read: not need to work)&lt;/li&gt;
+&lt;li&gt;Speak a little Spanish every day&lt;/li&gt;
+&lt;li&gt;Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)&lt;/li&gt;
+&lt;li&gt;Visit Boston&lt;/li&gt;
+&lt;li&gt;Get married and have a family&lt;/li&gt;
+&lt;li&gt;Be an extra in a film or a contestant on a game show&lt;/li&gt;
+&lt;li&gt;Fly first class&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This honestly feels more like a list of long-term goals or a checklist
+than a fun list of adventures (with a few exceptions, like eating a
+lot of cinnamon rolls). Initially I was panicked by my apparent lack
+of ambition or wanderlust. Didn't I want more from my one life than
+this? Was being an extra in a movie really the most out-there, fun
+thing I could think to do? But after reflecting more on my own list as
+well as other common list items, I think this list is the best
+reflection of me and the life I want to live. Of course I want to
+travel more, and do more than is on this list, but I don't want it to
+be prescriptive, or to feel as though I'm just checking things off a
+list rather than pursuing new and exciting adventures. I want to leave
+room for my list to change, knowing that my life and self are likely
+to change. And honestly, I don't really want to see the Northern
+Lights or run a marathon or go sky diving, all common bucket list
+items that I can honestly say I have no desire to experience. So this
+is it: a relatively short and boring list of things I want to do
+before I die. #YOLO.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Wed, 04 Apr 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2018-04-04:my-bucket-list.html</guid><category>experiences</category></item><item><title>Spring 10x10 2018</title><link>http://blog.lucywyman.me/spring-10x10-2018.html</link><description>&lt;p&gt;For the first time ever, I'm participating in the &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;10 x 10&lt;/a&gt;
+challenge, hosted by &lt;a class="reference external" href="http://www.stylebee.ca"&gt;Lee of Style Bee&lt;/a&gt; and &lt;a class="reference external" href="http://un-fancy.com"&gt;Caroline of Unfancy&lt;/a&gt;.
+For those who don't know, Lee and Caroline are bloggers in the
+responsible + ethical fashion space who have been a huge influence on
+my closet and shopping tendencies. They focus on slow, mindful
+fashion, on investing in quality pieces, and most importantly on not
+buying clothes just for the sake of buying them! Each season they host
+a &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;10 x 10&lt;/a&gt; challenge where you choose 10 items of clothing and
+create 10 outfits over the course of 10 days. I've always watched from
+afar, too chicken to post to my personal instagram or commit to
+limiting my closet. But this is the season! We're trying new things,
+and not being scared.&lt;/p&gt;
+&lt;p&gt;I'll be posting my items and outfits to &lt;a class="reference external" href="https://www.instagram.com/lucygetsdressed/"&gt;&amp;#64;lucygetsdressed&lt;/a&gt; on insta
+if you want to follow along, but for now here are the items I'll be
+wearing over the next 10 days:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.everlane.com/products/womens-boyfriend-ltbluewsh-denim-jeans?collection=womens-jeans"&gt;Light wash jeans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.levi.com/US/en_US/clothing/women/jeans/721-high-rise-skinny-jeans/p/188820075"&gt;Dark wash jeans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.jcrew.com/p/womens_category/tshirtsandtanktops/longsleevetshirts/crewneck-longsleeve-bodysuit/H9720?color_name=black"&gt;Black bodysuit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pink sweater&lt;/li&gt;
+&lt;li&gt;White sweater&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.uniqlo.com/us/en/women-high-waist-dry-stretch-tucked-skirt-407884.html?dwvar_407884_color=COL32&amp;amp;cgid=women-skirts#start=11&amp;amp;cgid=women-skirts"&gt;Green skirt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.samedelman.com/en-US/Product/3009380/Sam+Edelman/_/Petty+Ankle+Bootie.aspx"&gt;Tan boots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blue henley&lt;/li&gt;
+&lt;li&gt;Black flats&lt;/li&gt;
+&lt;li&gt;White keds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find more information on the 10 x 10 challenge &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;here&lt;/a&gt;, and of
+course can do your own 10 x 10 challenge any time!&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Fri, 30 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2018-03-30:spring-10x10-2018.html</guid><category>experiences</category></item><item><title>Reading Lately: March 2018</title><link>http://blog.lucywyman.me/reading-lately-march-2018.html</link><description>&lt;p&gt;It's been a while since I did a book roundup, and honestly that's
+because I had a rather unlucky streak of uninspiring books. It wasn't
+that these were &amp;quot;bad&amp;quot; books, but they just weren't the type of books
+that felt worth sharing. &lt;cite&gt;The Commitment&lt;/cite&gt; by Dan Savage is the perfect
+example: while I enjoy Savage's writing, this was a &lt;em&gt;long&lt;/em&gt; book where
+Savage tries to convince the (presumably liberal) reader that same-sex
+marriage should be legal. Either you agree with him and gain nothing
+from the book, or you disagree with him and only make it 2 pages in.
+I didn't regret reading it, but definitely didn't think it was worth
+writing about. &lt;a class="reference external" href="https://www.goodreads.com/book/show/25810091-the-never-open-desert-diner"&gt;The Never-Open Desert Diner&lt;/a&gt; is another good example:
+it was perfectly enjoyable but kind of weird and I don't know that I
+would say I recommend it? It was pretty far outside of my typical
+literary diet, and while it was great to step out of my comfort zone
+I'd feel dishonest encouraging others to read it.&lt;/p&gt;
+&lt;p&gt;But! Things have turned around. I've read a number of great books over
+the course of February and March, and have finally compiled enough to
+warrant a post. I'm a few days past the 'Spring Reads' deadline, but
+we'll call it Spring Reads anyway ;) Here's what I've been enjoying
+lately:&lt;/p&gt;
+&lt;div class="section" id="the-muse"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/27213208-the-muse"&gt;The Muse&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Jessie Burton&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This book took me by surprise, and was such a delight! It's a clever
+story with wonderfully complex characters, and who create great
+tension and conflict with each other. It's so hard to write characters
+who are all likeable and empathetic but still create believable
+conflict, and Jessie Burton nailed it. A bit of a long one, but worth
+every hour!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-grownup"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/26025580-the-grownup"&gt;The Grownup&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Gillian Flynn&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A half-step closer to horror than &lt;a class="reference external" href="https://www.goodreads.com/book/show/19288043-gone-girl"&gt;Gone Girl&lt;/a&gt;, this short story by
+Gillian Flynn proves &amp;quot;Gone Girl&amp;quot; was no fluke. It's impossible to tell
+what's true, who's lying, and what really happened. Strong female
+lead, plot twists I never saw coming, and an open ending make this a
+story that you'll keep thinking about long after putting it down.
+Highly recommend!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lily-and-the-octopus"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/27276262-lily-and-the-octopus"&gt;Lily and the Octopus&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Stephen Rowley&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I read this because it was the &lt;a class="reference external" href="http://girlybookclub.com/"&gt;Girly Book Club's&lt;/a&gt; March read, and I
+have mixed feelings about it. It's an unusual and heart-wrenching
+read, but I didn't feel like it brought anything new to the
+sad-book-about-a-dying-dog genre of books. The book follows Ted as he
+grapples with the inevitable death of his beloved companion, a
+dachshund named Lily. It was honestly hard to empathize with Ted, and
+while there's no wrong way to grieve it was hard to be in the mind of
+someone who is so lonely and who's only friend is a dying dog. At the
+same time, it has rich descriptions, great characters, and is
+excellent at making Lily a character as much as Ted. So...a mixed bag.
+Read at your own risk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="call-me-by-your-name"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/98687.Call_Me_by_Your_Name"&gt;Call Me By Your Name&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;André Aciman&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is my favorite book ever. Period. The best movie, and the best
+book. Elio is so expressive and emotional. As I've gotten older I
+think I've lost touch with that emotional side of myself, for better
+or worse. Especially in America I think it's typical to numb yourself
+in order to 'get through' everyday life, and we quickly forget what
+it's like to feel much of anything very strongly. &amp;quot;Call Me By Your
+Name&amp;quot; reminds me to not be afraid of feeling too much, to be
+vulnerable and present and that even the lows have a certain richness
+to them when you really &lt;em&gt;feel&lt;/em&gt; them. I love the setting, I love the
+story, I love the characters. I want to live in the world and the
+character that Aciman has created everyday, and am glad that for at
+least a few hours this week I was able to escape to that place. This
+is definitely a read that I'll keep coming back to.&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Mon, 26 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2018-03-26:reading-lately-march-2018.html</guid><category>books</category></item><item><title>Running Tempo Playlist</title><link>http://blog.lucywyman.me/running-tempo-playlist.html</link><description>&lt;p&gt;I've always loved to run. It helps me clear my mind, makes my body
+feel good, and that endorphin rush just can't be beat. However, since
+I typically run early in the morning and listen to murder podcasts I
+opt to use the elliptical at the gym in the mornings in place of
+running. That said, this playlist is definitely applicable to whatever
+cardio you're doing: running, elliptical, even biking! I have these in
+a &lt;a class="reference external" href="https://open.spotify.com/user/12152465230/playlist/559vjV4H1kJqp3ViHU93bD"&gt;spotify playlist&lt;/a&gt; (which gets updated frequently as I get bored of
+songs), and generally just hit 'shuffle', but you could definitely
+construct a more structured workout if you'd like. Anywho, finding
+tempo songs that I like to workout to is a hard task, and I wanted to
+provide my own list of songs that work for me and my pace (~9 minute
+miles). Enjoy!&lt;/p&gt;
+&lt;div class="section" id="hills-120-140-bpm"&gt;
+&lt;h2&gt;Hills (120-140 BPM)&lt;/h2&gt;
+&lt;p&gt;Most of these songs also make great sprints! I sprint during the
+chorus, when the songs tend to get faster.&lt;/p&gt;
+&lt;p&gt;120 BPM     3:43    &amp;quot;Papi&amp;quot; by Jennifer Lopez
+124 BPM     3:49    &amp;quot;Time of Our Lives&amp;quot; by Pitbull
+128 BPM     4:31    &amp;quot;Clarity&amp;quot; by Zedd
+128 BPM     3:38    &amp;quot;Beautiful Now&amp;quot; by Zedd
+136 BPM     3:42    &amp;quot;Jai Ho!&amp;quot; by A.R. Rahman, The Pussycat Dolls&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mid-tempo-140-160-bpm"&gt;
+&lt;h2&gt;Mid-Tempo (140-160 BPM)&lt;/h2&gt;
+&lt;p&gt;These are great for when you want to have a slower day, or are just
+warming up / cooling down.&lt;/p&gt;
+&lt;p&gt;140 BPM     4:08    &amp;quot;50 Ways to Say Goodbye&amp;quot; by Train
+140 BPM     3:13    &amp;quot;Up All Night&amp;quot; by One Direction
+142 BPM     3:38    &amp;quot;Geronimo&amp;quot; by Sheppard
+148 BPM     3:43    &amp;quot;Mr. Brightside&amp;quot; by The Killers
+148 BPM     3:32    &amp;quot;Animal&amp;quot; by Neon Trees
+149 BPM     2:48    &amp;quot;All The Small Things&amp;quot; by blink-182
+150 BPM     4:12    &amp;quot;Dog Days are Over&amp;quot; by Florence + The Machine
+150 BPM     2:50    &amp;quot;Don't Stop&amp;quot; by 5 Seconds of Summer
+150 BPM     3:19    &amp;quot;Bang Bang&amp;quot; by Jessie J, Ariana Grande, Nicki Minaj
+150 BPM     3:32    &amp;quot;Uma Thurman&amp;quot; by Fall Out Boy
+150 BPM     3:02    &amp;quot;Moving in the Dark&amp;quot; by Neon Trees
+150 BPM     3:21    &amp;quot;Love In The 21st Century&amp;quot; by Neon Trees
+152 BPM     3:12    &amp;quot;Bring it Back&amp;quot; by Shy Carter
+152 BPM     4:45    &amp;quot;Spaceman&amp;quot; by The Killers
+153 BPM     3:43    &amp;quot;1983&amp;quot; by Neon Trees
+153 BPM     2:48    &amp;quot;See You Go&amp;quot; by 3OH!3
+153 BPM     3:05    &amp;quot;Even If I'm Loud It Doesn't Mean I'm Talking To You&amp;quot; by Tove Styrke
+155 BPM     2:57    &amp;quot;Everybody Talks&amp;quot; by Neon Trees&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fast-tempo-160-180-bpm"&gt;
+&lt;h2&gt;Fast-Tempo (160-180 BPM)&lt;/h2&gt;
+&lt;p&gt;The push-yourself, all-out songs. This is where the real work out is!&lt;/p&gt;
+&lt;p&gt;160 BPM     3:04    &amp;quot;Dear Future Husband&amp;quot; by Megan Trainor
+160 BPM     3:22    &amp;quot;She Looks So Perfect&amp;quot; by 5 Seconds of Summer
+160 BPM     2:58    &amp;quot;Back for You&amp;quot; by One Direction
+160 BPM     3:39    &amp;quot;Shake It Off&amp;quot; by Taylor Swift
+160 BPM     3:01    &amp;quot;Smash Into You&amp;quot; by Hey Violet
+160 BPM     2:45    &amp;quot;Kendall Drive&amp;quot; by The Polar Boys
+162 BPM     3:27    &amp;quot;Work It Out&amp;quot; by Knox Hamilton
+162 BPM     2:46    &amp;quot;The Middle&amp;quot; by Jimmy Eat World
+162 BPM     3:49    &amp;quot;Sugar, We're Going Down&amp;quot; by Fall Out Boy
+162 BPM     3:29    &amp;quot;Tightrope&amp;quot; by WALK THE MOON
+162 BPM     3:09    &amp;quot;Rollercoaster&amp;quot; by Bleachers
+164 BPM     3:16    &amp;quot;Magic&amp;quot; by B.O.B
+164 BPM     3:18    &amp;quot;I Can Feel It&amp;quot; by Hey Violet
+164 BPM     2:28    &amp;quot;Runaway Baby&amp;quot; by Bruno Mars
+165 BPM     2:58    &amp;quot;Silhouettes&amp;quot; by Colony House
+166 BPM     3:20    &amp;quot;I'm Into You&amp;quot; by Jennifer Lopez
+166 BPM     3:32    &amp;quot;How Far We've Come&amp;quot; by Matchbox Twenty
+167 BPM     3:40    &amp;quot;Check Yes, Juliet&amp;quot; by We The Kings
+168 BPM     3:11    &amp;quot;She's Not Afraid&amp;quot; by One Direction
+170 BPM     3:21    &amp;quot;Golden Daze&amp;quot; by Doc Robinson
+170 BPM     3:16    &amp;quot;La La Land&amp;quot; by Demi Lovato
+172 BPM     3:13    &amp;quot;Hey Mama&amp;quot; by David Guetta, Nicki Minaj
+172 BPM     2:51    &amp;quot;London Queen&amp;quot; by Charli XCX
+173 BPM     3:14    &amp;quot;Candyman&amp;quot; by Christina Aguilera
+174 BPM     3:47    &amp;quot;Footloose&amp;quot; by Kenny Loggins
+180 BPM     3:03    &amp;quot;Kiss You&amp;quot; by One Direction
+181 BPM     3:03    &amp;quot;Dear Maria, Count Me In&amp;quot; by All Time Low&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sat, 10 Mar 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2018-03-10:running-tempo-playlist.html</guid><category>exercise</category></item><item><title>Spring Bucket List 2018</title><link>http://blog.lucywyman.me/spring-bucket-list-2018.html</link><description>&lt;p&gt;Spring is nearly here! With warmer, longer days on the horizon I'm
 dreaming of all the outdoor, evening-time activities we can start
 doing again. And in a new city! I'm moving to Seattle in a week, which
 means this Spring will involve a lot of exploring new places, new
@@ -9,14 +285,15 @@ first time in nearly 2 years, and having weekends back will hopefully
 afford me more time to do fun things without having to travel from
 city to city or spend the entire weekend with my partner.&lt;/p&gt;
 &lt;p&gt;All of this adds up to hearty bucket list for this Spring!&lt;/p&gt;
-&lt;p&gt;☐  Go to a &lt;a class="reference external" href="http://girlybookclub.com"&gt;book club&lt;/a&gt; meeting&lt;/p&gt;
-&lt;p&gt;☐  Find a volunteering opportunity in Seattle (I'm thinking either the
-local library or humane society)&lt;/p&gt;
+&lt;p&gt;☑  Go to a &lt;a class="reference external" href="http://girlybookclub.com"&gt;book club&lt;/a&gt; meeting&lt;/p&gt;
+&lt;p&gt;☑  Find a volunteering opportunity in Seattle (We're now official
+&lt;a class="reference external" href="http://emeraldcitypetrescue.org/"&gt;Emerald City Pet Rescue&lt;/a&gt; volunteers!)&lt;/p&gt;
 &lt;p&gt;☐  Go to &lt;a class="reference external" href="https://www.yelp.com/biz/hot-cakes-molten-chocolate-cakery-seattle?adjust_creative=dWJMtmYxpd5N5yoyzSuhtA&amp;amp;utm_campaign=yelp_api&amp;amp;utm_medium=api_v2_business&amp;amp;utm_source=dWJMtmYxpd5N5yoyzSuhtA"&gt;molten cakes&lt;/a&gt; bakery in Capitol Hill&lt;/p&gt;
 &lt;p&gt;☐  Find a Zumba class to go to regularly&lt;/p&gt;
 &lt;p&gt;☐  Go to a trivia night at a local bar&lt;/p&gt;
-&lt;p&gt;☐  Start taking piano lessons&lt;/p&gt;
-&lt;p&gt;☐  Go to at least 1 concert&lt;/p&gt;
+&lt;p&gt;☑  Practice piano at least 3x per week&lt;/p&gt;
+&lt;p&gt;☑  Go to at least 1 concert (I'm counting going to see Trevor Noah
+here)&lt;/p&gt;
 &lt;p&gt;☐  Go to a Mariners game&lt;/p&gt;
 &lt;p&gt;☐  Go to the &lt;a class="reference external" href="https://www.thestranger.com/events/25634435/skagit-valley-tulip-festival"&gt;tulip festival&lt;/a&gt; [and | or] the &lt;a class="reference external" href="https://www.thestranger.com/events/25634454/apple-blossom-festival"&gt;apple blossom festival&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;☐  Visit &lt;a class="reference external" href="http://www.kubotagarden.org/"&gt;Kubota Garden&lt;/a&gt;&lt;/p&gt;

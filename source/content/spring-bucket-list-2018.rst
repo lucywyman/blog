@@ -19,10 +19,10 @@ city to city or spend the entire weekend with my partner.
 
 All of this adds up to hearty bucket list for this Spring!
 
-☐  Go to a `book club`_ meeting
+☑  Go to a `book club`_ meeting
 
-☐  Find a volunteering opportunity in Seattle (I'm thinking either the
-local library or humane society)
+☑  Find a volunteering opportunity in Seattle (We're now official
+`Emerald City Pet Rescue`_ volunteers!)
 
 ☐  Go to `molten cakes`_ bakery in Capitol Hill
 
@@ -30,9 +30,10 @@ local library or humane society)
 
 ☐  Go to a trivia night at a local bar
 
-☐  Start taking piano lessons
+☑  Practice piano at least 3x per week
 
-☐  Go to at least 1 concert
+☑  Go to at least 1 concert (I'm counting going to see Trevor Noah
+here)
 
 ☐  Go to a Mariners game
 
@@ -47,6 +48,7 @@ lot of people, and just see what sticks!
 
 .. _book club: http://girlybookclub.com
 .. _molten cakes: https://www.yelp.com/biz/hot-cakes-molten-chocolate-cakery-seattle?adjust_creative=dWJMtmYxpd5N5yoyzSuhtA&utm_campaign=yelp_api&utm_medium=api_v2_business&utm_source=dWJMtmYxpd5N5yoyzSuhtA
+.. _emerald city pet rescue: http://emeraldcitypetrescue.org/
 .. _tulip festival: https://www.thestranger.com/events/25634435/skagit-valley-tulip-festival
 .. _apple blossom festival: https://www.thestranger.com/events/25634454/apple-blossom-festival
 .. _Kubota Garden: http://www.kubotagarden.org/

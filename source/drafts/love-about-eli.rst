@@ -32,11 +32,19 @@ Things I Love About Eli
    'translate' when talking to other people, and he's the only person who will
    know exactly what I mean when I say that. 
 #. I love that we have the same values.
+#. He respects me implicitly. I never feel like I have to prove myself
+   to him, or act a certain way around him, or even censor myself. I
+   can (and do) tell him about pretty much every thought that passes
+   through my head, and never have to wonder if he will love me less
+   because of anything I do.
+#. We trust each other. 
 
 The Petty Stuff
 ---------------
 
-I wanted to make this a separate section because there are really 2 categories to my love for Eli: 1. Things about Eli's personality and 2. Things about Eli's person. I think of this as "on paper" stuff, the more tangible ways in which we are compatible. You'll see what I mean.
+I wanted to make this a separate section because there are really 2
+categories to my love for Eli: 1. Things about Eli's personality and
+2. Things about Eli's person. I think of this as "on paper" stuff, the more tangible ways in which we are compatible. You'll see what I mean.
 
 #. He doesn't smoke
 #. He's a dog person
