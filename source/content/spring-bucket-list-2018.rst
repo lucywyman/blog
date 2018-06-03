@@ -24,7 +24,7 @@ All of this adds up to hearty bucket list for this Spring!
 ☑  Find a volunteering opportunity in Seattle (We're now official
 `Emerald City Pet Rescue`_ volunteers!)
 
-☐  Go to `molten cakes`_ bakery in Capitol Hill
+☑  Go to `molten cakes`_ bakery in Capitol Hill
 
 ☐  Find a Zumba class to go to regularly
 
@@ -35,11 +35,11 @@ All of this adds up to hearty bucket list for this Spring!
 ☑  Go to at least 1 concert (I'm counting going to see Trevor Noah
 here)
 
-☐  Go to a Mariners game
+☑  Go to a Mariners game
 
 ☐  Go to the `tulip festival`_ [and | or] the `apple blossom festival`_
 
-☐  Visit `Kubota Garden`_
+☑  Visit `Kubota Garden`_
 
 Well, certainly seems like I'll be busy in the coming months. While
 this list is admittedly a little overwhelming I plan to approach
