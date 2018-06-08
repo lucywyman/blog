@@ -124,9 +124,23 @@ bad day.
 ---------------------------------
 
 We met freshman year in the Honors College Dorm, hanging out in the
-same common-area studying for classes. 
+same common-area studying for classes. Liz 
 
 `Sprinkles Cupcakes`_
 ---------------------
 
-The one at `The Grove`_, obviously.  
+The one at `The Grove`_, obviously. Sprinkles Cupcakes are oversized
+but perfectly proportioned combinations of thick, sweet icing and
+moist, soft cake (though the mini sized ones are *perfect*). I first
+heard of Sprinkles watching the legendary show `Cupcake Wars`_, where
+Sprinkles founder Candice Nelson (I didn't even need to google her
+name) was a judge. I was skeptical that any cupcake could really be so
+special -- typically they were too sweet even for my taste, and had
+either too much or not enough icing. When we first visited Sprinkles
+on a trip to LA I realized how wrong I was. It was a revelation. I
+remember my mom and I sitting by the dancing fountain, closing our
+eyes and savoring the delicious cakes. I felt almost like a movie
+star, watching all the fashionable people of LA walk by while eating
+food I had only ever seen on TV. It was magically, and going back
+always reminds me of the show and that first bite of an amazing
+cupcake. 
