@@ -13,7 +13,7 @@ don't tend to eat sweets very often because they aren't so good for
 you in large and frequent doses, but when I do indulge it can be a
 transcendental experience. I can trace my life through memorable
 desserts, whether it's going to New Seasons late at night with my mom
-to split a slice of `Bavarian Cream Banana Cake`_ or the cold
+to split a slice of Bavarian Cream Banana Cake or the cold
 strawberry soup I had on a cruise ship 12 years ago. Like how many
 people associate smells with memories, these desserts remind of me of
 where I was when I had them and of how I felt at the time. Each one
