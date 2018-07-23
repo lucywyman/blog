@@ -22,6 +22,10 @@ Preamble about Happier with Gretchen Rubin
 11. Eli
 12. Board game nights with friends
 13. Washing my makeup off at the end of the day
+14. Doing crosswords
+15. Days where I have nothing scheduled
+16. Sunny days
+17. Homemade hot chocolate
 
 .. _Call Me By Your Name: https://www.imdb.com/title/tt5726616/
 .. _Pusheen: 

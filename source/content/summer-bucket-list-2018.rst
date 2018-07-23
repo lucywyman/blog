@@ -20,23 +20,25 @@ excitement for now, let's peek at what we'll be up to this year:
 .. _last year's: http://blog.lucywyman.me/summer-bucket-list-2017.html
 .. _spring: http://blog.lucywyman.me/spring-bucket-list-2018.html
 
-☐  Go on a 5 mile hike
+☑  Go on a 5 mile hike
 
 ☐  Go berry picking
 
 ☐  Ride the Seattle Ferris Wheel
 
-☐  Make s'mores
+☑  Make s'mores
 
-☐  Host a barbecue
+☑  Host a barbecue
 
 ☐  Go to Shakespeare in the park OR a movie in the park
 
-☐  Go to a trivia night at a local bar
+☑  Go to a trivia night at a local bar
 
-☐  Bake *something* (hopefully `this strawberry tart`_)
+☑  Bake *something* (hopefully `this strawberry tart`_) (ended up
+being this `banana bread`_)
 
 So many food related things! Hopefully berry-picking and
 strawberry-tart-making can happen back-to-back ;)
 
 .. _this strawberry tart: http://www.acozykitchen.com/gluten-free-strawberry-tart/
+.. _banana bread: http://recipes.lucywyman.me/chocolate-banana-bread.html

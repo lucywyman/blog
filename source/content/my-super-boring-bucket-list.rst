@@ -28,15 +28,15 @@ bucket list, which I later realized reveals how in my heart of
 hearts, my deepest, truest self is a total square. So! Here is my very
 boring bucket list:
 
-1. Become a Senior Software Engineer
-2. Get a doggo
-3. Become financially independent (read: not need to work)
-4. Speak a little Spanish every day
-5. Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)
-6. Visit Boston
-7. Get married and have a family
-8. Be an extra in a film or a contestant on a game show
-9. Fly first class
+☐  Become a Senior Software Engineer
+☐  Get a doggo
+☐  Become financially independent (read: not need to work)
+☐  Speak a little Spanish every day
+☐  Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)
+☐  Visit Boston
+☐  Get married and have a family
+☐  Be an extra in a film or a contestant on a game show
+☐  Fly first class
 
 This honestly feels more like a list of long-term goals or a checklist
 than a fun list of adventures (with a few exceptions, like eating a

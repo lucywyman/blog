@@ -11,7 +11,7 @@ Things I Love About Eli
    laugh. Not only is he a funny person, but we have compatible senses of
    humor and enjoy being silly around each other.
 #. We spend money the same way. We're both pretty frugal people, and for the
-   most part value spending money on the same things (ie. experiences, doing
+   most part value spending money on the same things (i.e. experiences, doing
    things with friends, etc.). We're also both very open about our finances,
    and have similar financial goals. I love that Eli reminds me that money is
    a tool that can sometimes buy happiness, but also doesn't break the bank

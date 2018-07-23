@@ -1,5 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-06-03T00:00:00-07:00</updated><entry><title>Summer Reads 2018</title><link href="http://blog.lucywyman.me/summer-reads-2018.html" rel="alternate"></link><published>2018-06-03T00:00:00-07:00</published><updated>2018-06-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-06-03:summer-reads-2018.html</id><summary type="html">&lt;p&gt;If February and March were a drought of good books, then April and May
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-07-20T00:00:00-07:00</updated><entry><title>OSCON 2018</title><link href="http://blog.lucywyman.me/oscon-2018.html" rel="alternate"></link><published>2018-07-20T00:00:00-07:00</published><updated>2018-07-20T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-07-20:oscon-2018.html</id><summary type="html">&lt;p&gt;OSCON 2018 is officially in the books, and I have to say this one was
+a stand out. A combination of career advancement (read: getting
+smarter), gaining experience, and having a number of contacts old and
+new at the conference made it a particularly great experience. I've
+gotten to the point where I'm better at choosing talks that are
+relevant to my field, and I have context to learn from them but don't
+know enough to get nothing from them. This is all a long way of saying
+that I have a lot of meaningful takeaways from this conf and can start
+applying to my work immediately, as well as a lot of great experiences
+reconnecting with old friends and solidifying my relationship with new
+ones!&lt;/p&gt;
+&lt;p&gt;TL;DR: Videos won't be available for 3-4 weeks, but when they are I
+highly recommend:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67766"&gt;Building Your Own Cryptocurrency&lt;/a&gt; for understanding how fiat
+currency works, and what that means for cryptocurrency&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/66984"&gt;Istio&lt;/a&gt; for understanding what Istio is and how it works&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/66328"&gt;GRPC vs. REST&lt;/a&gt; for an entertaining comparison of REST and gRPC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's a play-by-play rundown of the last 2 days:&lt;/p&gt;
+&lt;div class="section" id="day-1-keynotes"&gt;
+&lt;h2&gt;Day 1 Keynotes&lt;/h2&gt;
+&lt;div class="section" id="live-coding-oscon-edition"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/70443"&gt;Live Coding: OSCON Edition&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Suz Hinton&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This talk was so inspiring! Once I started working I stopped playing
+with technology as much, and trying new things just for the fun of it.
+So what if I'm not building something useful? What if we just built
+things for fun, to learn? I used to do this often on the weekends
+during university, and feel I've lost that sense of adventure and
+curiosity since I started working. I have a dusty arduino at the house
+that I've been uninspired to build something with. This talk inspired
+me to just start &lt;em&gt;playing&lt;/em&gt; with it, and not worry about if it was
+useful in the end.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="recognizing-cultural-bias-in-ai"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/69646"&gt;Recognizing Cultural Bias in AI&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Camille Eddy&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I'm embarrassed to admit I've never considered that AI would inherit
+our human biases, or how that would impact marginalized groups. Eddy
+told the story of &lt;a class="reference external" href="https://www.media.mit.edu/people/joyab/overview/"&gt;MIT researcher Joy Buolamwini&lt;/a&gt;, who wasn't
+recognized by the facial recognition AI she was developing until she
+wore a white mask, to demonstrate how our own biases and inequalities
+translate to the tools we develop. This talk reenergized me to
+continue working toward a more diverse tech industry, and to continue
+advocating for diversity and inclusion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="open-source-and-open-standards-in-the-age-of-cloud-ai"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/70444"&gt;Open source and open standards in the age of cloud AI&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Tim O'Reilly&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;O'Reilly reaffirmed and expanded on Eddy's talk, discussing how
+algorithms and AI impact who gets what and why. It was really about
+how open standards, open data, and community are the backbone of
+successful technology, and how new technical industries like AI and
+cloud computing will need to embrace and serve their communities
+rather than shut them out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="introduction-to-blockchains"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67153"&gt;Introduction to Blockchains&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;By ME&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This was my talk! I won the scheduling lottery being assigned the
+first timeslot on the first day. The room was packed with people, and
+everyone was engaged and excited to learn about cool math! I'll be
+totally honest: most of the time when I finish a talk I pick it apart
+and dwell on what I could have done better. While this talk definitely
+wasn't &lt;em&gt;perfect&lt;/em&gt;, I'm genuinely really proud of my delivery. I can
+tell my public speaking style is improving and that practicing this
+talk early and often paid off. I felt very in control of the
+talk and the audience, and capable of answering any questions. All in
+all, a talk I'm excited to give again!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mary-had-a-little-lambda"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67384"&gt;Mary Had a Little Lambda&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Anjana Vakil&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I think I knew too much going into this talk. I know I just wrote
+about how I'm getting better at choosing talks, and that's because
+this is the only talk I felt overqualified for. A review of lambda
+functions it turns out I didn't need.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tl-dr-nist-container-security-standards"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67276"&gt;TL;DR: NIST Container Security Standards&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Elsie Philips and Paul Burt&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A brief overview of the NIST container security standards, or how to
+keep your containers secure. I'll admit I didn't get much new
+information from this talk, but it was great to see a friend from
+university and some entertaining memes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="building-your-own-cryptocurrency"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67766"&gt;Building Your Own Cryptocurrency&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;John Feminella&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This talk was &lt;em&gt;amazing&lt;/em&gt;. Feminella talked about how &amp;quot;real&amp;quot; currency
+(dollars and euros) work, and what features of those currencies
+cryptocurrencies will need to have in order to succeed. I'd consider
+myself financially literate in a practical sense, but I never learned
+about fiat currency or thought about what gives money value. It's
+always been an &amp;quot;it just is&amp;quot; kind of thing for me. It was awesome to
+step back and think about money as having features, and what those
+features might look like for cryptos. I don't invest very much in
+cryptos, but it was also a very sobering reality check amongst a lot
+of hype. Highly recommend giving this a watch if you're interested in
+how money works or how viable cryptos are!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="day-2-keynotes"&gt;
+&lt;h2&gt;Day 2 Keynotes&lt;/h2&gt;
+&lt;div class="section" id="o-reilly-radar-open-source-tool-trends"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/71443"&gt;O'Reilly Radar: Open Source Tool Trends&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Roger Magoulas&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An interesting dive into search term data on the O'Reilly website (I
+think Safari specifically). I don't think there were any great
+surprises:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Python, Java, and Javascript are the most popular languages&lt;/li&gt;
+&lt;li&gt;Kubernetes, Go, and Blockchain are gaining popularity&lt;/li&gt;
+&lt;li&gt;Rust has stagnated, at least in number of people searching for it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All interesting affirmations in data of things we already knew.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="coding-a-blockchain"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/66678"&gt;Coding a Blockchain&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Josh Butikofer&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of the tracks this year was 'Live Coding', and I was admittedly
+skeptical going in. I wasn't sure how interesting it would be to watch
+someone code, or how deep you could go writing code in 40 minutes. It
+turns out it's an &lt;em&gt;awesome&lt;/em&gt; format (also Josh is super good at it!).
+Live coding was a perfect middle ground between reading code (which
+results in little absorption of the material) and trying to write code
+yourself (which requires a much bigger time investment and can be
+confusing and frustrating). Having a relative expert walk you through
+what they were writing, why, and then &lt;em&gt;seeing it in code&lt;/em&gt; was super
+helpful for solidifying my understanding of blockchains. While this
+talk was a direct subset of topics I covered in my own talk, I found
+watching someone write it live valuable. Highly recommend this talk as
+well!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="istio-weaving-securing-and-observing-your-microservices"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/66984"&gt;Istio: Weaving, Securing, and Observing Your Microservices&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Daniel Berg&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I first heard about Istio at &lt;a class="reference external" href="https://www.devopsdays.org/events/2018-portland/welcome/"&gt;DevOps Days PDX&lt;/a&gt; last year, and didn't
+understand it at all. While I've had it explained a few times since,
+this talk was a real 'Aha' moment for me. Berg clearly explains, with
+great visuals and simple language, what Istio is, what it can be used
+for, and gives us a tour of it's features. As a member of the devops
+community (if not a devops engineer) it will be so helpful to have a
+basic understanding of Istio going forward. Not the most riveting
+talk, but definitely one I got a lot out of.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="grpc-vs-rest"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/66328"&gt;GRPC vs. REST&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Alex Borysov and Mykyta Protsenko&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Possibly the most entertaining talk of OSCON 2018, this talk discussed
+the differences between REST and gRPC for API construction. I learned
+that gRPC is an actual library as opposed to an architectural pattern,
+and that it's ideal for performant, asynchronous APIs. A great
+deep-dive that I'd like to re-watch once it's out, as in-person I was
+pretty mentally exhausted by that point :)&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="tech"></category><category term="conferences"></category></entry><entry><title>Summer Reads 2018</title><link href="http://blog.lucywyman.me/summer-reads-2018.html" rel="alternate"></link><published>2018-06-03T00:00:00-07:00</published><updated>2018-06-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-06-03:summer-reads-2018.html</id><summary type="html">&lt;p&gt;If February and March were a drought of good books, then April and May
 have seen downpours! I've been reading up a storm based on
 recommendations from &lt;a class="reference external" href="https://girlybookclub.com/"&gt;book clubs&lt;/a&gt;, &lt;a class="reference external" href="https://badonpaperpodcast.com/"&gt;podcasts&lt;/a&gt;, and &lt;a class="reference external" href="https://nycbookgirl.com/2018/06/07/summer-reading-guide/"&gt;blogs&lt;/a&gt;, and
 have found myself reading one great book after another! Great might
@@ -69,14 +227,15 @@ was in black and white for the last few months and now we're in Oz.
 I'm so excited for my first summer in Seattle, and can't wait to see
 what adventures await us in the coming months! Ok, enough sun-crazed
 excitement for now, let's peek at what we'll be up to this year:&lt;/p&gt;
-&lt;p&gt;☐  Go on a 5 mile hike&lt;/p&gt;
+&lt;p&gt;☑  Go on a 5 mile hike&lt;/p&gt;
 &lt;p&gt;☐  Go berry picking&lt;/p&gt;
 &lt;p&gt;☐  Ride the Seattle Ferris Wheel&lt;/p&gt;
-&lt;p&gt;☐  Make s'mores&lt;/p&gt;
-&lt;p&gt;☐  Host a barbecue&lt;/p&gt;
+&lt;p&gt;☑  Make s'mores&lt;/p&gt;
+&lt;p&gt;☑  Host a barbecue&lt;/p&gt;
 &lt;p&gt;☐  Go to Shakespeare in the park OR a movie in the park&lt;/p&gt;
-&lt;p&gt;☐  Go to a trivia night at a local bar&lt;/p&gt;
-&lt;p&gt;☐  Bake &lt;em&gt;something&lt;/em&gt; (hopefully &lt;a class="reference external" href="http://www.acozykitchen.com/gluten-free-strawberry-tart/"&gt;this strawberry tart&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;☑  Go to a trivia night at a local bar&lt;/p&gt;
+&lt;p&gt;☑  Bake &lt;em&gt;something&lt;/em&gt; (hopefully &lt;a class="reference external" href="http://www.acozykitchen.com/gluten-free-strawberry-tart/"&gt;this strawberry tart&lt;/a&gt;) (ended up
+being this &lt;a class="reference external" href="http://recipes.lucywyman.me/chocolate-banana-bread.html"&gt;banana bread&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;So many food related things! Hopefully berry-picking and
 strawberry-tart-making can happen back-to-back ;)&lt;/p&gt;
 </summary><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>RFID (mis)Adventure</title><link href="http://blog.lucywyman.me/RFID-adventure.html" rel="alternate"></link><published>2018-05-22T00:00:00-07:00</published><updated>2018-05-22T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-05-22:RFID-adventure.html</id><summary type="html">&lt;p&gt;Our office recently relocated to a WeWork, which has an RFID card for
@@ -273,17 +432,15 @@ narrator.&lt;/li&gt;
 bucket list, which I later realized reveals how in my heart of
 hearts, my deepest, truest self is a total square. So! Here is my very
 boring bucket list:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Become a Senior Software Engineer&lt;/li&gt;
-&lt;li&gt;Get a doggo&lt;/li&gt;
-&lt;li&gt;Become financially independent (read: not need to work)&lt;/li&gt;
-&lt;li&gt;Speak a little Spanish every day&lt;/li&gt;
-&lt;li&gt;Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)&lt;/li&gt;
-&lt;li&gt;Visit Boston&lt;/li&gt;
-&lt;li&gt;Get married and have a family&lt;/li&gt;
-&lt;li&gt;Be an extra in a film or a contestant on a game show&lt;/li&gt;
-&lt;li&gt;Fly first class&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;☐  Become a Senior Software Engineer
+☐  Get a doggo
+☐  Become financially independent (read: not need to work)
+☐  Speak a little Spanish every day
+☐  Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)
+☐  Visit Boston
+☐  Get married and have a family
+☐  Be an extra in a film or a contestant on a game show
+☐  Fly first class&lt;/p&gt;
 &lt;p&gt;This honestly feels more like a list of long-term goals or a checklist
 than a fun list of adventures (with a few exceptions, like eating a
 lot of cinnamon rolls). Initially I was panicked by my apparent lack
