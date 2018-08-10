@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/food.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-03-02T00:00:00-08:00</updated><entry><title>Coffee Alternatives</title><link href="http://blog.lucywyman.me/coffee-alternatives.html" rel="alternate"></link><published>2018-03-02T00:00:00-08:00</published><updated>2018-03-02T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-02:coffee-alternatives.html</id><summary type="html">&lt;p&gt;Little known Lucy fact: I'm allergic to coffee. I &lt;em&gt;love&lt;/em&gt; the smell of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Food</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/food.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-03-02T00:00:00-08:00</updated><entry><title>Coffee Alternatives</title><link href="http://blog.lucywyman.me/coffee-alternatives.html" rel="alternate"></link><published>2018-03-02T00:00:00-08:00</published><updated>2018-03-02T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-02:/coffee-alternatives.html</id><summary type="html">&lt;p&gt;Little known Lucy fact: I'm allergic to coffee. I &lt;em&gt;love&lt;/em&gt; the smell of
+coffee, and if I keep it to about 12 oz. once a week I'm fine. But
+much more than that, and my stomach just ties itself in knots! Don't
+get me wrong, though: I still really like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Little known Lucy fact: I'm allergic to coffee. I &lt;em&gt;love&lt;/em&gt; the smell of
 coffee, and if I keep it to about 12 oz. once a week I'm fine. But
 much more than that, and my stomach just ties itself in knots! Don't
 get me wrong, though: I still really like drinking coffee as a treat.
@@ -80,4 +83,4 @@ can't go wrong, and there are whole worlds of herbal teas to explore!
 I highly encourage you to find one that strikes your fancy and give it
 a try.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="food"></category></entry></feed>
+</content><category term="food"></category></entry></feed>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/movies.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-03-02T00:00:00-08:00</updated><entry><title>Oscar Predictions 2018</title><link href="http://blog.lucywyman.me/oscar-predictions-2018.html" rel="alternate"></link><published>2018-03-02T00:00:00-08:00</published><updated>2018-03-02T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-02:oscar-predictions-2018.html</id><summary type="html">&lt;p&gt;While I haven't seen &lt;em&gt;every&lt;/em&gt; movie nominated for an Oscar this year, 2017 was a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Movies</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/movies.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-03-02T00:00:00-08:00</updated><entry><title>Oscar Predictions 2018</title><link href="http://blog.lucywyman.me/oscar-predictions-2018.html" rel="alternate"></link><published>2018-03-02T00:00:00-08:00</published><updated>2018-03-02T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-02:/oscar-predictions-2018.html</id><summary type="html">&lt;p&gt;While I haven't seen &lt;em&gt;every&lt;/em&gt; movie nominated for an Oscar this year, 2017 was a
+&lt;em&gt;great&lt;/em&gt; year for movies and I'm particularly excited about the famous
+(infamous?) awards show this year. I'm disappointed that movies like &lt;a class="reference external" href="http://www.imdb.com/title/tt5013056/"&gt;Dunkirk&lt;/a&gt;
+and &lt;a class="reference external" href="http://www.imdb.com/title/tt4555426/"&gt;The Darkest Hour&lt;/a&gt; are still getting attention, particularly compared to
+movies like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;While I haven't seen &lt;em&gt;every&lt;/em&gt; movie nominated for an Oscar this year, 2017 was a
 &lt;em&gt;great&lt;/em&gt; year for movies and I'm particularly excited about the famous
 (infamous?) awards show this year. I'm disappointed that movies like &lt;a class="reference external" href="http://www.imdb.com/title/tt5013056/"&gt;Dunkirk&lt;/a&gt;
 and &lt;a class="reference external" href="http://www.imdb.com/title/tt4555426/"&gt;The Darkest Hour&lt;/a&gt; are still getting attention, particularly compared to
@@ -98,4 +102,4 @@ cries in the mirror? Amazing.&lt;/li&gt;
 &lt;p&gt;Ok, that about sums it up! We saw a lot of incredible movies in 2017, and with &lt;a class="reference internal" href="#black-panther"&gt;Black Panther&lt;/a&gt; 2018 is already off to a good start.&lt;/p&gt;
 &lt;span class="target" id="black-panther"&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="movies"></category></entry></feed>
+</content><category term="movies"></category></entry></feed>

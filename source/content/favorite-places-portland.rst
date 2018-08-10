@@ -1,9 +1,9 @@
-Favorite Places in Portland
-===========================
+My Favorite Places in Portland
+==============================
 :date: 2016-08-28
 :tags: loves, experiences, Portland
 :category: Loves
-:slug: portland
+:slug: favorite-places-portland
 :author: Lucy Wyman
 :img: favorite-places-ptown.jpg
 

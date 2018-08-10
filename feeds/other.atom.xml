@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/other.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-12-30T00:00:00-08:00</updated><entry><title>Reflections on 2016</title><link href="http://blog.lucywyman.me/reflections-on-2016.html" rel="alternate"></link><published>2016-12-30T00:00:00-08:00</published><updated>2016-12-30T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-12-30:reflections-on-2016.html</id><summary type="html">&lt;p&gt;January 1st of 2016 feels like it was a lifetime ago, doesn't it? 365
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Other</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/other.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2016-12-30T00:00:00-08:00</updated><entry><title>Reflections on 2016</title><link href="http://blog.lucywyman.me/reflections-on-2016.html" rel="alternate"></link><published>2016-12-30T00:00:00-08:00</published><updated>2016-12-30T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-12-30:/reflections-on-2016.html</id><summary type="html">&lt;p&gt;January 1st of 2016 feels like it was a lifetime ago, doesn't it? 365
+days ago I was buying my last physics textbook, working on my senior
+project, and applying to jobs in my spare time. I had never voted in a
+Presidential election[1]. I had never ordered a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;January 1st of 2016 feels like it was a lifetime ago, doesn't it? 365
 days ago I was buying my last physics textbook, working on my senior
 project, and applying to jobs in my spare time. I had never voted in a
 Presidential election[1]. I had never ordered a drink at a bar. I had
@@ -29,7 +32,11 @@ But...but there should a but here. But there is no but. It just is.&lt;/p&gt;
 [2] For example, today I learned that some people don't think it's
 necessary to pin dependency versions. And that I do not like those
 people&lt;/p&gt;
-</summary><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Health</title><link href="http://blog.lucywyman.me/thanksgiving-week-health.html" rel="alternate"></link><published>2016-11-20T00:00:00-08:00</published><updated>2016-11-20T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-20:thanksgiving-week-health.html</id><summary type="html">&lt;p&gt;This is the fourth post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+</content><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Health</title><link href="http://blog.lucywyman.me/thanksgiving-week-health.html" rel="alternate"></link><published>2016-11-20T00:00:00-08:00</published><updated>2016-11-20T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-20:/thanksgiving-week-health.html</id><summary type="html">&lt;p&gt;This is the fourth post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
+&lt;p&gt;I've spent far, far too much of my life thinking about my body.  Is it
+thin enough, pretty enough, good enough? As if that's any reflection
+of me as …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the fourth post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
 haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
 &lt;p&gt;I've spent far, far too much of my life thinking about my body.  Is it
 thin enough, pretty enough, good enough? As if that's any reflection
@@ -45,7 +52,11 @@ And I'm able-bodied, a privilege I take entirely for granted which
 influences how others see and treat me. My body
 is the vessel I live in, my home, my rock, and it's been a damn good
 one at that. For that, I'm grateful.&lt;/p&gt;
-</summary><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Work</title><link href="http://blog.lucywyman.me/thanksgiving-week-work.html" rel="alternate"></link><published>2016-11-19T00:00:00-08:00</published><updated>2016-11-19T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-19:thanksgiving-week-work.html</id><summary type="html">&lt;p&gt;This is the third post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving.html"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+</content><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Work</title><link href="http://blog.lucywyman.me/thanksgiving-week-work.html" rel="alternate"></link><published>2016-11-19T00:00:00-08:00</published><updated>2016-11-19T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-19:/thanksgiving-week-work.html</id><summary type="html">&lt;p&gt;This is the third post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving.html"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family.html"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
+&lt;p&gt;I know this isn't usually the first (or third) thing folks think of
+when considering things they're grateful for, but there are many
+aspects of my work that fill …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the third post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving.html"&gt;Thanksgiving Week&lt;/a&gt; series. If you
 haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family.html"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
 &lt;p&gt;I know this isn't usually the first (or third) thing folks think of
 when considering things they're grateful for, but there are many
@@ -65,7 +76,11 @@ welcome, and that works hard to make sure I'm appropriately
 compensated for my work.  And my commute is a 30 minute walk! There's
 no where else I'd rather spend most of my waking hours, that's for
 sure.&lt;/p&gt;
-</summary><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Friends</title><link href="http://blog.lucywyman.me/thanksgiving-week-friends.html" rel="alternate"></link><published>2016-11-18T00:00:00-08:00</published><updated>2016-11-18T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-18:thanksgiving-week-friends.html</id><summary type="html">&lt;p&gt;This is the second post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+</content><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Friends</title><link href="http://blog.lucywyman.me/thanksgiving-week-friends.html" rel="alternate"></link><published>2016-11-18T00:00:00-08:00</published><updated>2016-11-18T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-18:/thanksgiving-week-friends.html</id><summary type="html">&lt;p&gt;This is the second post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
+haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
+&lt;p&gt;You guys. You. Guys. I can't believe how lucky I am to have such good
+friends. These aren't friends that I take selfies with and tag
+&amp;quot;Besties!&amp;quot;, these are …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the second post of my &lt;a class="reference external" href="http://blog.lucywyman.me/tag/thanksgiving"&gt;Thanksgiving Week&lt;/a&gt; series. If you
 haven't already, I'd recommend reading the &lt;a class="reference external" href="http://blog.lucywyman.me/thanksgiving-week-family"&gt;introduction post&lt;/a&gt; first!&lt;/p&gt;
 &lt;p&gt;You guys. You. Guys. I can't believe how lucky I am to have such good
 friends. These aren't friends that I take selfies with and tag
@@ -84,7 +99,10 @@ Daniel
 Sean
 and Eli&lt;/p&gt;
 &lt;p&gt;in my life, filling it with meaning and joy.&lt;/p&gt;
-</summary><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Family</title><link href="http://blog.lucywyman.me/thanksgiving-week-family.html" rel="alternate"></link><published>2016-11-17T00:00:00-08:00</published><updated>2016-11-17T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-17:thanksgiving-week-family.html</id><summary type="html">&lt;p&gt;As Thanksgiving approaches I've been taking some time to reflect on
+</content><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>Thanksgiving Week: Family</title><link href="http://blog.lucywyman.me/thanksgiving-week-family.html" rel="alternate"></link><published>2016-11-17T00:00:00-08:00</published><updated>2016-11-17T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-17:/thanksgiving-week-family.html</id><summary type="html">&lt;p&gt;As Thanksgiving approaches I've been taking some time to reflect on
+the things I'm grateful for. Now, more than ever, I think we all need
+to take some time to appreciate what is &lt;em&gt;good&lt;/em&gt; in the world and remind
+friends and family that &lt;em&gt;they are loved&lt;/em&gt;. Remind ourselves that &lt;em&gt;we …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;As Thanksgiving approaches I've been taking some time to reflect on
 the things I'm grateful for. Now, more than ever, I think we all need
 to take some time to appreciate what is &lt;em&gt;good&lt;/em&gt; in the world and remind
 friends and family that &lt;em&gt;they are loved&lt;/em&gt;. Remind ourselves that &lt;em&gt;we
@@ -116,7 +134,10 @@ much easier to move through the world knowing that if anything
 happened I have people I can ask for help, for advice, for
 understanding, for forgiveness, and they would give it
 unconditionally. For that, I'm grateful.&lt;/p&gt;
-</summary><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>What Can We Do?</title><link href="http://blog.lucywyman.me/what-can-we-do.html" rel="alternate"></link><published>2016-11-11T00:00:00-08:00</published><updated>2016-11-11T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-11:what-can-we-do.html</id><summary type="html">&lt;p&gt;Like many of you, I'm devastated. I'm angry. I'm afraid of how the
+</content><category term="thanksgiving"></category><category term="experiences"></category></entry><entry><title>What Can We Do?</title><link href="http://blog.lucywyman.me/what-can-we-do.html" rel="alternate"></link><published>2016-11-11T00:00:00-08:00</published><updated>2016-11-11T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-11:/what-can-we-do.html</id><summary type="html">&lt;p&gt;Like many of you, I'm devastated. I'm angry. I'm afraid of how the
+next four years could impact my life and lives of those I love.  And
+after Tuesday night, I was left wondering &lt;em&gt;what can I do?&lt;/em&gt;  It's easy
+to feel powerless, and hopeless.  To join a facebook group …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Like many of you, I'm devastated. I'm angry. I'm afraid of how the
 next four years could impact my life and lives of those I love.  And
 after Tuesday night, I was left wondering &lt;em&gt;what can I do?&lt;/em&gt;  It's easy
 to feel powerless, and hopeless.  To join a facebook group or go to a
@@ -213,7 +234,11 @@ what’s right is worth it. It is, it is worth it.&amp;quot;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Thank you for reading! If you have any questions or comments, please
 email me at wyman.lucy&amp;#64;gmail.com&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="politics"></category></entry><entry><title>Men's Versions</title><link href="http://blog.lucywyman.me/lady-things.html" rel="alternate"></link><published>2016-05-10T00:00:00-07:00</published><updated>2016-05-10T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-10:lady-things.html</id><summary type="html">&lt;p&gt;As you've undoubtedly noticed, many products come in both a women's
+</content><category term="politics"></category></entry><entry><title>Men's Versions</title><link href="http://blog.lucywyman.me/lady-things.html" rel="alternate"></link><published>2016-05-10T00:00:00-07:00</published><updated>2016-05-10T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-10:/lady-things.html</id><summary type="html">&lt;p&gt;As you've undoubtedly noticed, many products come in both a women's
+and men's version (ie. deodorant, socks, haircuts, etc.). IMHO this
+isn't sexist so much as acknowledgment that men and women are
+physically different creatures, BUT, sometimes the men-version of a
+thing is much better (for one reason or another …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As you've undoubtedly noticed, many products come in both a women's
 and men's version (ie. deodorant, socks, haircuts, etc.). IMHO this
 isn't sexist so much as acknowledgment that men and women are
 physically different creatures, BUT, sometimes the men-version of a
@@ -257,4 +282,4 @@ move in, are thicker, and don't show whether I'm wearing underwear
 or not. And I can say I'm a medium :D . So we traded sweats (since
 the larges were baggy on him), and&lt;/li&gt;
 &lt;/ol&gt;
-</summary><category term="clothes"></category></entry></feed>
+</content><category term="clothes"></category></entry></feed>

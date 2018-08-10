@@ -22,7 +22,7 @@ excitement for now, let's peek at what we'll be up to this year:
 
 ☑  Go on a 5 mile hike
 
-☐  Go berry picking
+☑  Go berry picking
 
 ☐  Ride the Seattle Ferris Wheel
 
@@ -30,7 +30,7 @@ excitement for now, let's peek at what we'll be up to this year:
 
 ☑  Host a barbecue
 
-☐  Go to Shakespeare in the park OR a movie in the park
+☑  Go to Shakespeare in the park OR a movie in the park
 
 ☑  Go to a trivia night at a local bar
 

@@ -1,9 +1,9 @@
-Favorite Places in Corvallis
-============================
+My Favorite Places in Corvallis
+===============================
 :date: 2016-09-13
 :tags: travel, experiences, Corvallis
 :category: Travel
-:slug: places-corvallis
+:slug: favorite-places-corvallis
 :author: Lucy Wyman
 
 Places

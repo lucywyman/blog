@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-06-01T00:00:00-07:00</updated><entry><title>Summer Bucket List 2018</title><link href="http://blog.lucywyman.me/summer-bucket-list-2018.html" rel="alternate"></link><published>2018-06-01T00:00:00-07:00</published><updated>2018-06-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-06-01:summer-bucket-list-2018.html</id><summary type="html">&lt;p&gt;Summer is here! Summer is here! I know this summer's bucket list
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Experiences</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/experiences.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-06-01T00:00:00-07:00</updated><entry><title>Summer Bucket List 2018</title><link href="http://blog.lucywyman.me/summer-bucket-list-2018.html" rel="alternate"></link><published>2018-06-01T00:00:00-07:00</published><updated>2018-06-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-06-01:/summer-bucket-list-2018.html</id><summary type="html">&lt;p&gt;Summer is here! Summer is here! I know this summer's bucket list
+features a few repeats from &lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017.html"&gt;last year's&lt;/a&gt;, but after a busy &lt;a class="reference external" href="http://blog.lucywyman.me/spring-bucket-list-2018.html"&gt;spring&lt;/a&gt;
+I'm ready for some lazy days. Summer is my season! I love being
+outside all day, soaking in the sun, eating fresh produce, and
+enjoying the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Summer is here! Summer is here! I know this summer's bucket list
 features a few repeats from &lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017.html"&gt;last year's&lt;/a&gt;, but after a busy &lt;a class="reference external" href="http://blog.lucywyman.me/spring-bucket-list-2018.html"&gt;spring&lt;/a&gt;
 I'm ready for some lazy days. Summer is my season! I love being
 outside all day, soaking in the sun, eating fresh produce, and
@@ -9,17 +13,20 @@ I'm so excited for my first summer in Seattle, and can't wait to see
 what adventures await us in the coming months! Ok, enough sun-crazed
 excitement for now, let's peek at what we'll be up to this year:&lt;/p&gt;
 &lt;p&gt;☑  Go on a 5 mile hike&lt;/p&gt;
-&lt;p&gt;☐  Go berry picking&lt;/p&gt;
+&lt;p&gt;☑  Go berry picking&lt;/p&gt;
 &lt;p&gt;☐  Ride the Seattle Ferris Wheel&lt;/p&gt;
 &lt;p&gt;☑  Make s'mores&lt;/p&gt;
 &lt;p&gt;☑  Host a barbecue&lt;/p&gt;
-&lt;p&gt;☐  Go to Shakespeare in the park OR a movie in the park&lt;/p&gt;
+&lt;p&gt;☑  Go to Shakespeare in the park OR a movie in the park&lt;/p&gt;
 &lt;p&gt;☑  Go to a trivia night at a local bar&lt;/p&gt;
 &lt;p&gt;☑  Bake &lt;em&gt;something&lt;/em&gt; (hopefully &lt;a class="reference external" href="http://www.acozykitchen.com/gluten-free-strawberry-tart/"&gt;this strawberry tart&lt;/a&gt;) (ended up
 being this &lt;a class="reference external" href="http://recipes.lucywyman.me/chocolate-banana-bread.html"&gt;banana bread&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;So many food related things! Hopefully berry-picking and
 strawberry-tart-making can happen back-to-back ;)&lt;/p&gt;
-</summary><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Desserts I Dream About</title><link href="http://blog.lucywyman.me/desserts-i-dream-about.html" rel="alternate"></link><published>2018-05-01T00:00:00-07:00</published><updated>2018-05-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-05-01:desserts-i-dream-about.html</id><summary type="html">&lt;p&gt;I've always had a sweet tooth. Chocolate, caramel, cake, pastries,
+</content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Desserts I Dream About</title><link href="http://blog.lucywyman.me/desserts-i-dream-about.html" rel="alternate"></link><published>2018-05-01T00:00:00-07:00</published><updated>2018-05-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-05-01:/desserts-i-dream-about.html</id><summary type="html">&lt;p&gt;I've always had a sweet tooth. Chocolate, caramel, cake, pastries,
+fruit. Dessert is my favorite meal, and sugar is my love language. I
+don't tend to eat sweets very often because they aren't so good for
+you in large and frequent doses, but when I do indulge it can be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've always had a sweet tooth. Chocolate, caramel, cake, pastries,
 fruit. Dessert is my favorite meal, and sugar is my love language. I
 don't tend to eat sweets very often because they aren't so good for
 you in large and frequent doses, but when I do indulge it can be a
@@ -141,7 +148,12 @@ food I had only ever seen on TV. It was magically, and going back
 always reminds me of the show and that first bite of an amazing
 cupcake.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="food"></category></entry><entry><title>My Super Boring Bucket List</title><link href="http://blog.lucywyman.me/my-bucket-list.html" rel="alternate"></link><published>2018-04-04T00:00:00-07:00</published><updated>2018-04-04T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-04-04:my-bucket-list.html</id><summary type="html">&lt;p&gt;I read an article today about Bucket Lists that included a comments
+</content><category term="food"></category></entry><entry><title>My Super Boring Bucket List</title><link href="http://blog.lucywyman.me/my-bucket-list.html" rel="alternate"></link><published>2018-04-04T00:00:00-07:00</published><updated>2018-04-04T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-04-04:/my-bucket-list.html</id><summary type="html">&lt;p&gt;I read an article today about Bucket Lists that included a comments
+section, and was surprised by two patterns in people's bucket lists:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The Northern Lights seemed to be the most frequent single item. I
+have no idea what would compel anyone to stand in freezing weather
+in the middle …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I read an article today about Bucket Lists that included a comments
 section, and was surprised by two patterns in people's bucket lists:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The Northern Lights seemed to be the most frequent single item. I
@@ -187,7 +199,11 @@ Lights or run a marathon or go sky diving, all common bucket list
 items that I can honestly say I have no desire to experience. So this
 is it: a relatively short and boring list of things I want to do
 before I die. #YOLO.&lt;/p&gt;
-</summary><category term="experiences"></category></entry><entry><title>Spring 10x10 2018</title><link href="http://blog.lucywyman.me/spring-10x10-2018.html" rel="alternate"></link><published>2018-03-30T00:00:00-07:00</published><updated>2018-03-30T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-30:spring-10x10-2018.html</id><summary type="html">&lt;p&gt;For the first time ever, I'm participating in the &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;10 x 10&lt;/a&gt;
+</content><category term="experiences"></category></entry><entry><title>Spring 10x10 2018</title><link href="http://blog.lucywyman.me/spring-10x10-2018.html" rel="alternate"></link><published>2018-03-30T00:00:00-07:00</published><updated>2018-03-30T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-30:/spring-10x10-2018.html</id><summary type="html">&lt;p&gt;For the first time ever, I'm participating in the &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;10 x 10&lt;/a&gt;
+challenge, hosted by &lt;a class="reference external" href="http://www.stylebee.ca"&gt;Lee of Style Bee&lt;/a&gt; and &lt;a class="reference external" href="http://un-fancy.com"&gt;Caroline of Unfancy&lt;/a&gt;.
+For those who don't know, Lee and Caroline are bloggers in the
+responsible + ethical fashion space who have been a huge influence on
+my closet and shopping …&lt;/p&gt;</summary><content type="html">&lt;p&gt;For the first time ever, I'm participating in the &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;10 x 10&lt;/a&gt;
 challenge, hosted by &lt;a class="reference external" href="http://www.stylebee.ca"&gt;Lee of Style Bee&lt;/a&gt; and &lt;a class="reference external" href="http://un-fancy.com"&gt;Caroline of Unfancy&lt;/a&gt;.
 For those who don't know, Lee and Caroline are bloggers in the
 responsible + ethical fashion space who have been a huge influence on
@@ -216,7 +232,11 @@ wearing over the next 10 days:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can find more information on the 10 x 10 challenge &lt;a class="reference external" href="http://www.stylebee.ca/2018/03/30/spring-10x10-2018/"&gt;here&lt;/a&gt;, and of
 course can do your own 10 x 10 challenge any time!&lt;/p&gt;
-</summary><category term="experiences"></category></entry><entry><title>Spring Bucket List 2018</title><link href="http://blog.lucywyman.me/spring-bucket-list-2018.html" rel="alternate"></link><published>2018-03-08T00:00:00-08:00</published><updated>2018-03-08T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-08:spring-bucket-list-2018.html</id><summary type="html">&lt;p&gt;Spring is nearly here! With warmer, longer days on the horizon I'm
+</content><category term="experiences"></category></entry><entry><title>Spring Bucket List 2018</title><link href="http://blog.lucywyman.me/spring-bucket-list-2018.html" rel="alternate"></link><published>2018-03-08T00:00:00-08:00</published><updated>2018-03-08T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-03-08:/spring-bucket-list-2018.html</id><summary type="html">&lt;p&gt;Spring is nearly here! With warmer, longer days on the horizon I'm
+dreaming of all the outdoor, evening-time activities we can start
+doing again. And in a new city! I'm moving to Seattle in a week, which
+means this Spring will involve a lot of exploring new places, new
+experiences …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Spring is nearly here! With warmer, longer days on the horizon I'm
 dreaming of all the outdoor, evening-time activities we can start
 doing again. And in a new city! I'm moving to Seattle in a week, which
 means this Spring will involve a lot of exploring new places, new
@@ -242,7 +262,10 @@ here)&lt;/p&gt;
 this list is admittedly a little overwhelming I plan to approach
 moving to Seattle like starting college: try a lot of things, meet a
 lot of people, and just see what sticks!&lt;/p&gt;
-</summary><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>-23- 8 Things I Learned This Year</title><link href="http://blog.lucywyman.me/23.html" rel="alternate"></link><published>2018-02-14T00:00:00-08:00</published><updated>2018-02-14T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-02-14:23.html</id><summary type="html">&lt;p&gt;Happy Valentine's Day! Today is my 23rd birthday, and to celebrate I
+</content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>-23- 8 Things I Learned This Year</title><link href="http://blog.lucywyman.me/23.html" rel="alternate"></link><published>2018-02-14T00:00:00-08:00</published><updated>2018-02-14T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-02-14:/23.html</id><summary type="html">&lt;p&gt;Happy Valentine's Day! Today is my 23rd birthday, and to celebrate I
+wanted to reflect on what I had learned in the last year. As I wrote
+during my recent &lt;a class="reference external" href="http://blog.lucywyman.me/2017-year-in-review.html"&gt;new years post&lt;/a&gt;, this last year has not been the
+most exciting year, and I'm honestly a little glad it's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Happy Valentine's Day! Today is my 23rd birthday, and to celebrate I
 wanted to reflect on what I had learned in the last year. As I wrote
 during my recent &lt;a class="reference external" href="http://blog.lucywyman.me/2017-year-in-review.html"&gt;new years post&lt;/a&gt;, this last year has not been the
 most exciting year, and I'm honestly a little glad it's over. But!
@@ -300,7 +323,10 @@ things I know that I don't know.&lt;/li&gt;
 &lt;p&gt;To be honest, I wanted to write 22 things that I learned but it's already 2
 weeks past my birthday and I still haven't thought of any more. Better done
 than perfect!&lt;/p&gt;
-</summary><category term="experiences"></category></entry><entry><title>Reflections on 2017</title><link href="http://blog.lucywyman.me/reflections-on-2017.html" rel="alternate"></link><published>2017-12-11T00:00:00-08:00</published><updated>2017-12-11T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-12-11:reflections-on-2017.html</id><summary type="html">&lt;p&gt;What a year! I know so many people talk about how quickly time moves, but
+</content><category term="experiences"></category></entry><entry><title>Reflections on 2017</title><link href="http://blog.lucywyman.me/reflections-on-2017.html" rel="alternate"></link><published>2017-12-11T00:00:00-08:00</published><updated>2017-12-11T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-12-11:/reflections-on-2017.html</id><summary type="html">&lt;p&gt;What a year! I know so many people talk about how quickly time moves, but
+for me this year (and most years) feel more like decades. I'm not sure why time
+moves so slowly for me (and I'm certainly not sad about it!), but thinking back
+to last January it …&lt;/p&gt;</summary><content type="html">&lt;p&gt;What a year! I know so many people talk about how quickly time moves, but
 for me this year (and most years) feel more like decades. I'm not sure why time
 moves so slowly for me (and I'm certainly not sad about it!), but thinking back
 to last January it feels like a whole lifetime ago. Was it really only 11
@@ -379,7 +405,10 @@ and orderly life. In the next year I'd like to try to do more things that bring
 me joy, and not worry so much about being in bed by 9 every night. My wallet,
 my body, and my work can handle a little less discipline.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category></entry><entry><title>Holiday Bucket List 2017</title><link href="http://blog.lucywyman.me/holiday-bucket-list-2017.html" rel="alternate"></link><published>2017-12-01T00:00:00-08:00</published><updated>2017-12-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-12-01:holiday-bucket-list-2017.html</id><summary type="html">&lt;p&gt;I've had a lot of fun writing bucket lists for each season this year
+</content><category term="experiences"></category></entry><entry><title>Holiday Bucket List 2017</title><link href="http://blog.lucywyman.me/holiday-bucket-list-2017.html" rel="alternate"></link><published>2017-12-01T00:00:00-08:00</published><updated>2017-12-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-12-01:/holiday-bucket-list-2017.html</id><summary type="html">&lt;p&gt;I've had a lot of fun writing bucket lists for each season this year
+(&lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017.html"&gt;summer&lt;/a&gt;, &lt;a class="reference external" href="http://blog.lucywyman.me/fall-bucket-list-2017.html"&gt;fall&lt;/a&gt;), and for Winter I need some things to look forward to
+more than ever. There are tons of fun Portland Christmas things to do, some
+of which are traditions with my family that I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've had a lot of fun writing bucket lists for each season this year
 (&lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017.html"&gt;summer&lt;/a&gt;, &lt;a class="reference external" href="http://blog.lucywyman.me/fall-bucket-list-2017.html"&gt;fall&lt;/a&gt;), and for Winter I need some things to look forward to
 more than ever. There are tons of fun Portland Christmas things to do, some
 of which are traditions with my family that I look forward to each year.
@@ -401,7 +430,10 @@ like a good time to, cliche as it is, &lt;em&gt;slow down&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;☑  Enjoy a coffee from a local shop&lt;/p&gt;
 &lt;p&gt;☐  Go to a Christmas Bazaar&lt;/p&gt;
 &lt;p&gt;☑  Wear a bold lip color at least once&lt;/p&gt;
-</summary><category term="bucket-lists"></category><category term="experiences"></category></entry><entry><title>Fall Bucket List 2017</title><link href="http://blog.lucywyman.me/fall-bucket-list-2017.html" rel="alternate"></link><published>2017-09-15T00:00:00-07:00</published><updated>2017-09-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-09-15:fall-bucket-list-2017.html</id><summary type="html">&lt;p&gt;What a summer! As we say hello to crisp mornings, plaid scarves, and
+</content><category term="bucket-lists"></category><category term="experiences"></category></entry><entry><title>Fall Bucket List 2017</title><link href="http://blog.lucywyman.me/fall-bucket-list-2017.html" rel="alternate"></link><published>2017-09-15T00:00:00-07:00</published><updated>2017-09-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-09-15:/fall-bucket-list-2017.html</id><summary type="html">&lt;p&gt;What a summer! As we say hello to crisp mornings, plaid scarves, and
+cinnamon-spiced treats, I wanted to take a moment to review my &lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017"&gt;Summer
+Bucket List&lt;/a&gt; and create a new bucket list for Fall. Like my summer
+list, this isn't a to-do list. There are no have-to's or should's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;What a summer! As we say hello to crisp mornings, plaid scarves, and
 cinnamon-spiced treats, I wanted to take a moment to review my &lt;a class="reference external" href="http://blog.lucywyman.me/summer-bucket-list-2017"&gt;Summer
 Bucket List&lt;/a&gt; and create a new bucket list for Fall. Like my summer
 list, this isn't a to-do list. There are no have-to's or should's
@@ -415,7 +447,10 @@ here. But it's something to get me excited for the coming season!&lt;/p&gt;
 &lt;p&gt;☑  Dress up for Halloween (we're thinking of going as Baby and Debora from Baby Driver)&lt;/p&gt;
 &lt;p&gt;☑  Cook tofu instead of meat at least once a week&lt;/p&gt;
 &lt;p&gt;☑  Run the &lt;a class="reference external" href="http://portlandmarathon.org/related-events/half-marathon/"&gt;Portland Half Marathon&lt;/a&gt;&lt;/p&gt;
-</summary><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Summer Bucket List 2017</title><link href="http://blog.lucywyman.me/summer-bucket-list-2017.html" rel="alternate"></link><published>2017-05-29T00:00:00-07:00</published><updated>2017-05-29T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-29:summer-bucket-list-2017.html</id><summary type="html">&lt;p&gt;Inspired by &lt;a class="reference external" href="http://joythebaker.com/2017/05/summer-bucket-list-2017/"&gt;Joy the Baker&lt;/a&gt;, I'm making a Summer Bucket List. I don't like the
+</content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Summer Bucket List 2017</title><link href="http://blog.lucywyman.me/summer-bucket-list-2017.html" rel="alternate"></link><published>2017-05-29T00:00:00-07:00</published><updated>2017-05-29T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-05-29:/summer-bucket-list-2017.html</id><summary type="html">&lt;p&gt;Inspired by &lt;a class="reference external" href="http://joythebaker.com/2017/05/summer-bucket-list-2017/"&gt;Joy the Baker&lt;/a&gt;, I'm making a Summer Bucket List. I don't like the
+idea of have-to's or should's, but I do like the idea of heading into the
+summer with answers to the question &amp;quot;What should we do on this beautiful day?&amp;quot;.
+Many of these are time-honored traditions …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Inspired by &lt;a class="reference external" href="http://joythebaker.com/2017/05/summer-bucket-list-2017/"&gt;Joy the Baker&lt;/a&gt;, I'm making a Summer Bucket List. I don't like the
 idea of have-to's or should's, but I do like the idea of heading into the
 summer with answers to the question &amp;quot;What should we do on this beautiful day?&amp;quot;.
 Many of these are time-honored traditions in my family, so this is more of a
@@ -431,7 +466,10 @@ and checking in. Here's what we're planning on doing:&lt;/p&gt;
 &lt;p&gt;☐  Go to &lt;a class="reference external" href="http://www.lastthursdayonalberta.com/"&gt;Last Thursday&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;☑  Bake some bread. Yeast scares me, and I want to get over it.&lt;/p&gt;
 &lt;p&gt;That's all! Short. Sweet. Doable. Makin' the most of those summer nights.&lt;/p&gt;
-</summary><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Running My First Half Marathon</title><link href="http://blog.lucywyman.me/first-half-marathon.html" rel="alternate"></link><published>2017-04-22T00:00:00-07:00</published><updated>2017-04-22T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-04-22:first-half-marathon.html</id><summary type="html">&lt;p&gt;This last Monday, I had a Really Good Workout. I have no idea what I
+</content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Running My First Half Marathon</title><link href="http://blog.lucywyman.me/first-half-marathon.html" rel="alternate"></link><published>2017-04-22T00:00:00-07:00</published><updated>2017-04-22T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-04-22:/first-half-marathon.html</id><summary type="html">&lt;p&gt;This last Monday, I had a Really Good Workout. I have no idea what I
+did differently, or which stars were aligned, but I was able to do
+more work than I typically do, in less time, and felt energetic and
+good while doing it. I was telling Eli about …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This last Monday, I had a Really Good Workout. I have no idea what I
 did differently, or which stars were aligned, but I was able to do
 more work than I typically do, in less time, and felt energetic and
 good while doing it. I was telling Eli about it later, and said:&lt;/p&gt;
@@ -605,7 +643,11 @@ apparently, so...have an excellent rest of your day! Stay sexy, and
 &lt;p&gt;[1] Judge me if you want, but treadmills are terrifying and they're
 better for your joints.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="health"></category></entry><entry><title>A Curly Girl's Guide to Dandruff</title><link href="http://blog.lucywyman.me/guide-to-dandruff.html" rel="alternate"></link><published>2017-03-29T00:00:00-07:00</published><updated>2017-03-29T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-03-29:guide-to-dandruff.html</id><summary type="html">&lt;p&gt;It's embarrassing, it's itchy, it's &lt;em&gt;everywhere&lt;/em&gt;. I've had dandruff
+</content><category term="experiences"></category><category term="health"></category></entry><entry><title>A Curly Girl's Guide to Dandruff</title><link href="http://blog.lucywyman.me/guide-to-dandruff.html" rel="alternate"></link><published>2017-03-29T00:00:00-07:00</published><updated>2017-03-29T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-03-29:/guide-to-dandruff.html</id><summary type="html">&lt;p&gt;It's embarrassing, it's itchy, it's &lt;em&gt;everywhere&lt;/em&gt;. I've had dandruff
+since I was a teenager, and as my personal care routine has evolved to
+suit my body's needs my dandruff has stubbornly persisted.  When I was
+shampooing every day? Dandruff. When I went months without shampooing?
+Dandruff.  Tea tree oil? Dandruff …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's embarrassing, it's itchy, it's &lt;em&gt;everywhere&lt;/em&gt;. I've had dandruff
 since I was a teenager, and as my personal care routine has evolved to
 suit my body's needs my dandruff has stubbornly persisted.  When I was
 shampooing every day? Dandruff. When I went months without shampooing?
@@ -782,7 +824,10 @@ one&lt;/a&gt;, but again find something that works for you!&lt;/p&gt;
 &lt;p&gt;So that's it folks! I hope this helps you in your own hair and
 dandruff journey&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="health"></category></entry><entry><title>San Francisco 2016: An Adventure</title><link href="http://blog.lucywyman.me/san-francisco-2016.html" rel="alternate"></link><published>2016-12-20T00:00:00-08:00</published><updated>2016-12-20T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-12-20:san-francisco-2016.html</id><summary type="html">&lt;p&gt;Hello, beautiful reader! I hope you are enjoying the holiday season,
+</content><category term="experiences"></category><category term="health"></category></entry><entry><title>San Francisco 2016: An Adventure</title><link href="http://blog.lucywyman.me/san-francisco-2016.html" rel="alternate"></link><published>2016-12-20T00:00:00-08:00</published><updated>2016-12-20T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-12-20:/san-francisco-2016.html</id><summary type="html">&lt;p&gt;Hello, beautiful reader! I hope you are enjoying the holiday season,
+and are looking forward to some quality time with the people you love
+in the coming weeks. Before the madness really started Eli and I got
+to spend a week in San Francisco while he visited &lt;a class="reference external" href="https://coreos.com/"&gt;CoreOS&lt;/a&gt;, the tech …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello, beautiful reader! I hope you are enjoying the holiday season,
 and are looking forward to some quality time with the people you love
 in the coming weeks. Before the madness really started Eli and I got
 to spend a week in San Francisco while he visited &lt;a class="reference external" href="https://coreos.com/"&gt;CoreOS&lt;/a&gt;, the tech
@@ -895,7 +940,12 @@ turns out it might actually be San Francisco.  Who's to say?  I'm
 never certain of how to end these posts, but thanks for reading, and
 have a lovely day!&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="travel"></category><category term="tech"></category></entry><entry><title>Rivers of Milk and Honey</title><link href="http://blog.lucywyman.me/respect.html" rel="alternate"></link><published>2016-11-02T00:00:00-07:00</published><updated>2016-11-02T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-02:respect.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;: My experiences are entirely my own and don't
+</content><category term="experiences"></category><category term="travel"></category><category term="tech"></category></entry><entry><title>Rivers of Milk and Honey</title><link href="http://blog.lucywyman.me/respect.html" rel="alternate"></link><published>2016-11-02T00:00:00-07:00</published><updated>2016-11-02T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-11-02:/respect.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;: My experiences are entirely my own and don't
+necessarily reflect the experiences of others, including other women
+at my company.&lt;/p&gt;
+&lt;p&gt;It's no secret that there's an &lt;a class="reference external" href="http://stackoverflow.com/research/developer-survey-2016#developer-profile-gender"&gt;incredible shortage&lt;/a&gt; of women in the
+tech industry, and even less of a secret that &lt;a class="reference external" href="http://blog.lucywyman.me/boy.html"&gt;women are treated
+differently than men&lt;/a&gt;, particularly in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;: My experiences are entirely my own and don't
 necessarily reflect the experiences of others, including other women
 at my company.&lt;/p&gt;
 &lt;p&gt;It's no secret that there's an &lt;a class="reference external" href="http://stackoverflow.com/research/developer-survey-2016#developer-profile-gender"&gt;incredible shortage&lt;/a&gt; of women in the
@@ -956,7 +1006,11 @@ being an ally to minorities, I highly recommend the article&lt;/em&gt; &lt;a cla
 Effective Ally&lt;/a&gt;.  &lt;em&gt;It has been a guiding light to me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;[1] Being aware of that bias has helped me stop doing those things,
 but it takes time and concious effort to do so.&lt;/p&gt;
-</summary><category term="experiences"></category><category term="tech"></category><category term="women"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:boy.html</id><summary type="html">&lt;p&gt;Before attending university I was completely unaware of the diversity
+</content><category term="experiences"></category><category term="tech"></category><category term="women"></category></entry><entry><title>If I Were A Boy</title><link href="http://blog.lucywyman.me/boy.html" rel="alternate"></link><published>2016-09-25T00:00:00-07:00</published><updated>2016-09-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-25:/boy.html</id><summary type="html">&lt;p&gt;Before attending university I was completely unaware of the diversity
+problem in STEM. In high school all of my classes were relatively
+50-50 in terms of gender, including science and math classes, and I
+had never experienced or noticed anyone treating me differently than
+my male peers.  My fist computer …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Before attending university I was completely unaware of the diversity
 problem in STEM. In high school all of my classes were relatively
 50-50 in terms of gender, including science and math classes, and I
 had never experienced or noticed anyone treating me differently than
@@ -1170,7 +1224,13 @@ I apologize for this, but the point remains the same: the class was
 &lt;em&gt;dominated&lt;/em&gt; by male humans&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="tech"></category></entry><entry><title>Portland Trip: May 2016</title><link href="http://blog.lucywyman.me/ptown-may-2016.html" rel="alternate"></link><published>2016-05-03T00:00:00-07:00</published><updated>2016-05-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-03:ptown-may-2016.html</id><summary type="html">&lt;p&gt;This last weekend Eli and I went to Portland to celebrate his 21st
+</content><category term="experiences"></category><category term="tech"></category></entry><entry><title>Portland Trip: May 2016</title><link href="http://blog.lucywyman.me/ptown-may-2016.html" rel="alternate"></link><published>2016-05-03T00:00:00-07:00</published><updated>2016-05-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-05-03:/ptown-may-2016.html</id><summary type="html">&lt;p&gt;This last weekend Eli and I went to Portland to celebrate his 21st
+birthday and see &lt;a class="reference external" href="http://hippocampusband.com/"&gt;Hippocampus&lt;/a&gt; at &lt;a class="reference external" href="http://www.mississippistudios.com/"&gt;Mississippi Studios&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="friday"&gt;
+&lt;h2&gt;Friday&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.werteric.com/"&gt;Eric&lt;/a&gt;, Eli's stepdad drove us from Corvallis to Portland Friday afternoon at
+great expense of his time. After ~3 hours in the car we went straight to the
+&lt;a class="reference external" href="http://www.mcmenamins.com/219-bagdad-theater-pub-home"&gt;Baghdad …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This last weekend Eli and I went to Portland to celebrate his 21st
 birthday and see &lt;a class="reference external" href="http://hippocampusband.com/"&gt;Hippocampus&lt;/a&gt; at &lt;a class="reference external" href="http://www.mississippistudios.com/"&gt;Mississippi Studios&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="friday"&gt;
 &lt;h2&gt;Friday&lt;/h2&gt;
@@ -1267,7 +1327,10 @@ And then, all too soon we were home.&lt;/p&gt;
 The Cultural Bubble that is University, remember that life isn't all deadlines
 and exams, and experience a little art and outdoors.  10/10 would recommend.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category><category term="concerts"></category><category term="travel"></category></entry><entry><title>The Interview</title><link href="http://blog.lucywyman.me/interviews.html" rel="alternate"></link><published>2016-03-20T00:00:00-07:00</published><updated>2016-03-20T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-20:interviews.html</id><summary type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
+</content><category term="experiences"></category><category term="concerts"></category><category term="travel"></category></entry><entry><title>The Interview</title><link href="http://blog.lucywyman.me/interviews.html" rel="alternate"></link><published>2016-03-20T00:00:00-07:00</published><updated>2016-03-20T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-20:/interviews.html</id><summary type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
+kind of nervous at first. &amp;quot;Will they like me?&amp;quot;, &amp;quot;Am I smiling too much?&amp;quot;,
+&amp;quot;Was I supposed to tell the story about the frog?&amp;quot;, &amp;quot;Oh god, I feel something
+between my teeth, oh my god, OH MY …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Interviewing is a lot like dating.  You put on your nice clothes. You're
 kind of nervous at first. &amp;quot;Will they like me?&amp;quot;, &amp;quot;Am I smiling too much?&amp;quot;,
 &amp;quot;Was I supposed to tell the story about the frog?&amp;quot;, &amp;quot;Oh god, I feel something
 between my teeth, oh my god, OH MY GOD, CODE BLUE CODE BLUE FOOD IN TEETH
@@ -1659,7 +1722,12 @@ that's stoked to bring you on board!&lt;/li&gt;
 &lt;p&gt;That's all she wrote, folks.  Contact me at
 wyman[dot]lucy[at]gmail[dot]com if you have questions or comments.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="tech"></category><category term="interviews"></category><category term="experiences"></category></entry><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><published>2016-03-14T00:00:00-07:00</published><updated>2016-03-14T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of
+</content><category term="tech"></category><category term="interviews"></category><category term="experiences"></category></entry><entry><title>Getting a Tattoo</title><link href="http://blog.lucywyman.me/tattoo.html" rel="alternate"></link><published>2016-03-14T00:00:00-07:00</published><updated>2016-03-14T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-14:/tattoo.html</id><summary type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of
+them better than others.  I decided to get one because:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;I didn't want to be scared of permanently changing my body.&lt;/strong&gt;  We
+make decisions that permanently alter the course of our life pretty
+often, in much …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;I recently decided to get a tattoo for a variety of reasons, some of
 them better than others.  I decided to get one because:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;strong&gt;I didn't want to be scared of permanently changing my body.&lt;/strong&gt;  We
@@ -1810,4 +1878,4 @@ about their tattoos, and how they decided to get them.  I'm not sure
 what the best way to end this post is, but I hope it's been helpful |
 insightful | interesting! Have an excellent day :)&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="experiences"></category></entry></feed>
+</content><category term="experiences"></category></entry></feed>

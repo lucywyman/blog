@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/japanuary.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-01-29T00:00:00-08:00</updated><entry><title>Japanuary 2018: Initial Observations</title><link href="http://blog.lucywyman.me/japanuary-2018-initial-observations.html" rel="alternate"></link><published>2018-01-29T00:00:00-08:00</published><updated>2018-01-29T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-01-29:japanuary-2018-initial-observations.html</id><summary type="html">&lt;p&gt;We're currently in the air somewhere between Tokyo and LA, on our way back from
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Japanuary</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/japanuary.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-01-29T00:00:00-08:00</updated><entry><title>Japanuary 2018: Initial Observations</title><link href="http://blog.lucywyman.me/japanuary-2018-initial-observations.html" rel="alternate"></link><published>2018-01-29T00:00:00-08:00</published><updated>2018-01-29T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-01-29:/japanuary-2018-initial-observations.html</id><summary type="html">&lt;p&gt;We're currently in the air somewhere between Tokyo and LA, on our way back from
+a 3½ week stay in Japan. In a word the trip was &lt;em&gt;amazing&lt;/em&gt;, but like most
+international travel there were a lot more nuanced ups and downs, interesting
+experiences, and fresh perspectives provided by being …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We're currently in the air somewhere between Tokyo and LA, on our way back from
 a 3½ week stay in Japan. In a word the trip was &lt;em&gt;amazing&lt;/em&gt;, but like most
 international travel there were a lot more nuanced ups and downs, interesting
 experiences, and fresh perspectives provided by being in a different country. I
@@ -82,4 +85,4 @@ America, so perhaps my standards are just especially low (shrug).&lt;/p&gt;
 &lt;p&gt;While this isn't an exhaustive list of our observations and experiences it
 seems like enough for one post for now! Stay tuned for more Japanuary
 debriefing later this month.&lt;/p&gt;
-</summary><category term="japanuary"></category><category term="experiences"></category></entry></feed>
+</content><category term="japanuary"></category><category term="experiences"></category></entry></feed>

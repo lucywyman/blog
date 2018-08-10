@@ -247,13 +247,13 @@ also have a local file and use ruby to read from it, which is a
 little more best-practice-y. Also note that you'll need to give the
 file proper permissions once you've made it!</p>
 <pre class="code ruby literal-block">
-  <span class="n">manifest</span> <span class="o">=&lt;&lt;-</span><span class="sh"></span><span class="no">EOS</span><span class="sh"></span>
+  <span class="n">manifest</span> <span class="o">=&lt;&lt;-</span><span class="sh"></span><span class="dl">EOS</span><span class="sh"></span>
 <span class="sh">class #{&#64;class_name} {
   file { '/tmp/make_sure_this_exists':
     ensure =&gt; present
   }
 }
-</span><span class="no">  EOS
+</span><span class="dl">  EOS
 </span>  <span class="n">create_remote_file</span><span class="p">(</span><span class="n">master</span><span class="p">,</span><span class="s2">&quot;</span><span class="si">#{</span><span class="vi">&#64;modules_path</span><span class="si">}</span><span class="s2">/init.pp&quot;</span><span class="p">,</span> <span class="n">manifest</span><span class="p">)</span>
   <span class="n">on</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="s2">&quot;chmod 644 </span><span class="si">#{</span><span class="vi">&#64;modules_path</span><span class="si">}</span><span class="s2">/init.pp&quot;</span><span class="p">)</span>
 </pre>
