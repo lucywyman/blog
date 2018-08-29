@@ -24,7 +24,10 @@ excitement for now, let's peek at what we'll be up to this year:
 
 ☑  Go berry picking
 
-☐  Ride the Seattle Ferris Wheel
+☑  Ride the Seattle Ferris Wheel (We didn't technically do this
+because we got there and realized it was $14 per person to ride, which
+we just couldn't stomach. But I'm giving us credit for going out
+there).
 
 ☑  Make s'mores
 

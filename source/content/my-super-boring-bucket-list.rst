@@ -29,7 +29,7 @@ hearts, my deepest, truest self is a total square. So! Here is my very
 boring bucket list:
 
 ☐  Become a Senior Software Engineer
-☐  Get a doggo
+☑  Get a doggo
 ☐  Become financially independent (read: not need to work)
 ☐  Speak a little Spanish every day
 ☐  Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)

@@ -84,6 +84,21 @@ and a staple of Portland culture.
 .. _McMenamin's: https://www.mcmenamins.com/
 .. _Bagdad Theater: https://www.mcmenamins.com/bagdad-theater-pub
 
+`Books With Pictures`_
+----------------------
+
+Whether you love comics or not, you *must* make a stop at Books With
+Pictures. A "comics" store doesn't do it justice, it's more of a
+graphic art store focused on diversity, inclusion, and representation.
+The staff is super friendly - I visited knowing almost nothing about
+comic books, thinking of 'comics' as the likes of 'Get Fuzzy' in the
+Sunday papers, and the staff were approachable and recommended some
+reading for me. There's no "Oh you haven't read...?" or shame for not
+liking Superman. A mainstay in Portland's book-culture if there ever
+was one!
+
+.. _Books With Pictures: https://bookswithpictures.com/
+
 `Ground Kontrol`_
 -----------------
 
@@ -97,6 +112,19 @@ hours.
 
 Food
 ~~~~
+
+`Los Gorditos`_
+---------------
+
+If anyone ever asks where I want to get lunch or dinner, I always say
+Gorditos. Catering to most dietary needs (with extensive vegetarian
+and vegan menus), Gorditos has something for everyone and is
+consistently incredible. Their food isn't too pretentious or too
+greasy, their portions are generous, and I've literally dreamed about
+their breakfast tacos. If you only have time to visit one place in
+Portland, make it Gorditos!
+
+.. _Los Gorditos: https://www.losgorditospdx.com/
 
 `E-San Thai`_
 -------------
