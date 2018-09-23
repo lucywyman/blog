@@ -1,5 +1,5 @@
-What I've Been Reading Lately
-=============================
+Reading Lately: August 2018
+===========================
 :date: 08-10-2018
 :tags: books
 :category: Books
@@ -20,7 +20,7 @@ And books! Here's what I've been enjoying lately:
 --------------------------------------
 *Phaedra Patrick*
 
-.. figure:: static/charms-of-arthur-pepper.jpg
+.. figure:: theme/images/charms-of-arthur-pepper.jpg
     :align: center
     :height: 300px
 
@@ -37,7 +37,7 @@ owns several tigers. Definitely the feel-good story of the summer!
 ---------------------------------
 *Lauren Weisberger*
 
-.. figure:: static/life-gives-you-lululemons.jpg
+.. figure:: theme/images/life-gives-you-lululemons.jpg
     :align: center
     :height: 300px
 
@@ -54,7 +54,7 @@ heartbreaking, and in the end victorious.
 ----------------
 *Mary Kay Andrews*
 
-.. figure:: static/save-the-date.jpg
+.. figure:: theme/images/save-the-date.jpg
     :align: center
     :height: 300px
 
@@ -68,7 +68,7 @@ has dried up.
 ----------------------
 *Margaret Atwood*
 
-.. figure:: static/handmaids-tale.jpg
+.. figure:: theme/images/handmaids-tale.jpg
     :align: center
     :height: 300px
 

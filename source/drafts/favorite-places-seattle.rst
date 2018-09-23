@@ -13,6 +13,17 @@ Places
 `Kubota Garden`_
 ----------------
 
+Kubota is an incredible and unexpected oasis in the heart of south
+Seattle. It's about a 20 minute walk from our house, and we spent a
+long time getting lost looking for it the first time we went. We
+entered hoping it'd be worth the trouble, and it was as if we'd left
+this world. The noise of traffic falls away, and the garden is lush
+with green lawns, exotic trees, and blooms of every color, and it
+seemed too bright and vibrant to be real. It was like walking into a movie set
+where they had turned the hues and brightness just a little bit too
+high. I can't recommend finding your way to Kubota garden enough,
+especially in spring and summer.
+
 `Ark Lodge Theater`_
 --------------------
 
@@ -29,7 +40,12 @@ see a movie in Seattle, see it here!
 `Uwajimaya`_
 ------------
 
-I know there are Uwajimaya's in other cities, but I had only ever been 
+I know Uwajimaya isn't exclusive to Seattle, but it's much more
+centrally located than the Uwajis in Beaverton, and at least from the
+inside seems bigger. Uwajimaya is a huge Japanese grocer, with all
+manner of exotic goods. It's the kind of place you could easily spend
+hours in finding new candies, comics, snacks, drinks, sushi, and
+miscellany from Japan and East Asia.
 
 `MoPop`_
 --------
@@ -44,10 +60,8 @@ dozens of indie games. They have horror-movie and sci-fi exhibits
 where you can learn about the origins of your favorite characters and
 tropes. And they're special exhibits are always fun as well; recently
 they had a Marvel Comics exhibit that included original art, the
-evolution of comics, and 
-
-`Ada's Technical Books`_
-------------------------
+evolution of comics, and life-sized figures to take pictures with.
+It's a bit expensive, but worth the price of admission.
 
 `Mox`_
 ------
@@ -61,15 +75,39 @@ evolution of comics, and
 
 Food
 ~~~~
+`Geraldine's`_
+--------------
+
+We went to Geraldine's one of the first weekends Eli was in Seattle
+(before I had even moved up), and immediately felt better about our
+impending move north. Geraldine's is the classic diner every town,
+city, and neighborhood in America needs. They have delicious,
+non-greasy, classic American breakfast and lunch food. Geraldine's is
+the perfect place for groups and family gatherings since they're bound
+to have something everyone will like, and have a great atmosphere (if
+you're not sure what to get, definitely go for the bacon, egg, and
+arugula sandwich and get it with avocado. It's my favorite sandwich
+*in the world*).  Just be sure to get there early Saturdays and
+Sundays! Or else you might have to browse the adorable shops lining
+the street Geraldine's resides on while you wait for a table ;)
 
 `Columbia City Bakery`_
 -----------------------
 
-`Geraldine's`_
---------------
+Right across the street from Geraldine's is Columbia City Bakery, the
+hands-down best bakery I've been to. They have classic and modern
+baked goods, from sourdoughs and baguettes to Gougeres (imagine if a
+croissant and a cheezit had a baby - you *must* get one) and Columbia
+Super Chip cookies (at least 80% chocolate chips by volume). I love
+the variety of their goods, the friendly community they've created
+around the bakery, and most of all the unbeatable quality! My go-to
+place for a pick-me-up, and the first place I'd recommend you go if
+you're in town.
 
 `Portage Bay Cafe`_
 -------------------
+
+Portage Bay Cafe is our 'fancy breakfast place'. 
 
 .. _Columbia City Bakery:
 .. _Geraldine's:

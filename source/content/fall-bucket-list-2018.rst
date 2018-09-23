@@ -19,7 +19,7 @@ halloween costume. Here's what I'm excited to do this season!
 
 ☐ Get a pumpkin from a pumpkin patch
 
-☐ Take a class - in the spirit of back-to-school
+☑ Take a class - in the spirit of back-to-school
 
 ☐ Send cards to family and friends for Thanksgiving
 
@@ -35,6 +35,7 @@ halloween costume. Here's what I'm excited to do this season!
 
 ☐ Dress up for Halloween - I'm thinking of going as Hermione Granger this year
 
+.. _this summer: http://blog.lucywyman.me/summer-bucket-list-2018.html
 .. _Elysian's: https://www.elysianbrewing.com/locations
 .. _pumpkin stout: https://www.elysianbrewing.com/beer?beer=174
 .. _Great Pumpkin Beer Festival: https://www.elysianbrewing.com/elysian-brewing-events/14th-annual-great-pumpkin-beer-festival/
