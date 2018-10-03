@@ -1,11 +1,11 @@
 My Favorite Places in Seattle
 =============================
-:date: 08-08-2018
+:date: 10-03-2018
 :tags: loves, experiences, Seattle
 :category: Loves
-:slug: 
+:slug: favorite-places-seattle
 :author: Lucy Wyman
-:image:
+:image: pike-place-seattle.jpg
 
 Places
 ~~~~~~
@@ -53,7 +53,7 @@ miscellany from Japan and East Asia.
 The Museum of Pop (formerly Experience Music Project) is the most
 underrated tourist attraction in Seattle. I'd never heard about or
 seen it before coming to the city, yet the building itself is *the
-most* `instaworthy`_ and the museum itself is interesting and fun for
+most* insta-worthy and the museum itself is interesting and fun for
 everyone, no matter how old or "not into museums" you are. They have
 an interactive indie video game exhibit where you can play one of
 dozens of indie games. They have horror-movie and sci-fi exhibits
@@ -63,15 +63,23 @@ they had a Marvel Comics exhibit that included original art, the
 evolution of comics, and life-sized figures to take pictures with.
 It's a bit expensive, but worth the price of admission.
 
-`Mox`_
-------
+`Ada's Technical Books`_
+------------------------
+
+It's a good thing I don't live closer to Ada's, or I'd be broke.
+Imagine a small, lovely bookstore dedicated mostly to technical
+manuals, non-fiction tomes, and books to satisfy your every curiosity.
+What I love about Ada's is how welcoming it is - like walking into
+your grandma's house and smelling freshly baked cookies, if your
+grandma was an insatiably curious engineer. It's a wonderfully unique
+space!
 
 .. _Kubota Garden: http://www.kubotagarden.org/
 .. _Ark Lodge Theater: http://arklodgecinemas.com/
 .. _Uwajimaya: https://www.uwajimaya.com/
-.. _MoPop:
-.. _Ada's Technical Books:
-.. _Mox:
+.. _MoPop: https://www.mopop.org/
+.. _Ada's Technical Books: https://www.seattletechnicalbooks.com/
+.. _Mox: https://www.moxboardinghouse.com/
 
 Food
 ~~~~
@@ -107,8 +115,26 @@ you're in town.
 `Portage Bay Cafe`_
 -------------------
 
-Portage Bay Cafe is our 'fancy breakfast place'. 
+Portage Bay Cafe is our 'fancy breakfast place'. Instead of going on
+about how much I like their food, I'll tell two interesting stories I
+have that are set at Portage Bay. The first is that Eli and I went
+there for Easter this year, and got to try a *rabbit omelet*. To some
+this may seem tame, but to us city-dwellers it was very exciting. Not
+to be cliche, but it honest to god tasted like chicken.
 
-.. _Columbia City Bakery:
-.. _Geraldine's:
-.. _Portage Bay Cafe:
+The other interesting story: every year we go to `Bumbershoot`_, a
+music festival in Seattle. Last year Eli and I ordered our tickets
+separately, and Bumbershoot accidentally sent me *two* tickets instead
+of one! At first I thought I had ordered 2 instead of 1, and was
+bummed to have wasted the money. But it turned out we just got a free
+ticket! I sold it, and we took friends out to Portage Bay and gorged
+our selves on $130 of brunch food, and *exorbitant* amount for our
+frugal, college-age selves.
+
+So...it may not be free, and they may not have rabbit when you go, but
+trust me it's a great place for brunch!
+
+.. _Columbia City Bakery: http://www.columbiacitybakery.com/
+.. _Geraldine's: http://geraldinescounter.com/
+.. _Portage Bay Cafe: https://www.portagebaycafe.com
+.. _Bumbershoot: https://www.bumbershoot.com/

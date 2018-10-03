@@ -7,7 +7,7 @@ Seattle Bucket List
 :author: Lucy Wyman
 :image:
 
-It's no secret that `I`_ `love`_ `making`_ `bucket`_ `lists`_. I
+It's no secret that I love making `bucket lists`_. I
 wouldn't call myself a 'spontaneous' person, so like to have a list of
 answers when someone says "What should we do today?". It also
 encourages me to get out and do stuff, rather than answer the question
@@ -20,15 +20,12 @@ living out our lives here. So why not have a list of things to do
 while we're in town, however temporarily? Here's what I hope to do in
 the weeks / months / years we live in Seattle:
 
-.. _I:
-.. _love:
-.. _making:
-.. _bucket:
-.. _lists:
+.. _bucket lists: http://blog.lucywyman.me/tag/bucket-lists.html
 .. _my favorite places in Seattle:
 
 Museums
 -------
+
 ☐ `Living Computer Museum`_
 
 ☐ `Seattle Pinball Museum`_
@@ -41,6 +38,7 @@ Museums
 
 Gardens
 -------
+
 ☐ `Seattle Japanese Garden`_
 
 ☐ `Alki Beach`_
@@ -51,9 +49,11 @@ Gardens
 
 Food
 ----
+
 ☐ `Facing East`_
 
 ☐ `Traveler's Thali House`_
 
 ☐ `Le Panier`_
 
+☐ `London Plane`_
