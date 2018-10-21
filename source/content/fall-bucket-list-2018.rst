@@ -17,21 +17,21 @@ myself wishing for the coziness of flannels and hot drinks, excited to
 bake all things apple and pumpkin flavored, and am already planning my
 halloween costume. Here's what I'm excited to do this season!
 
-☐ Get a pumpkin from a pumpkin patch
+☑ Get a pumpkin from a pumpkin patch
 
 ☑ Take a class - in the spirit of back-to-school
 
 ☐ Send cards to family and friends for Thanksgiving
 
-☐ Visit the Washington Arboretum - the colors!
+☑ Visit the Washington Arboretum - the colors!
 
 ☐ Watch Halloweentown - I've never seen it!
 
-☐ Visit one of `Elysian's`_ breweries for some `pumpkin stout`_ - maybe even attend the `Great Pumpkin Beer Festival`_?
+☑ Visit one of `Elysian's`_ breweries for some `pumpkin stout`_ - maybe even attend the `Great Pumpkin Beer Festival`_?
 
-☐ Visit Pike's Place Market
+☑ Visit Pike's Place Market
 
-☐ Bake cinnamon rolls
+☑ Bake cinnamon rolls
 
 ☐ Dress up for Halloween - I'm thinking of going as Hermione Granger this year
 

@@ -13,21 +13,37 @@ there's bright lights and beautiful displays, everyone is trying to
 sell you something, and *there are so many lines*. While Eli loves
 video games, I'm more of a board gamer, so avoided the biggest crowds
 and spent most of my 4 days there playing games new and old. This made
-me reflect on what games I already play and love. While I'm by no
-means a p
+me reflect on what games I already play and love, and what kind of
+gamer I am. We tend to play fun, light-to-mid weight games that focus
+on interactions between players (either cooperative or competitive),
+and are suckers for a good party game. The games we play are
+accessible to anyone interested in board gaming, and while these games
+are easy to learn and play they're difficult to master and are highly
+replayable.
 
-Codenames
+`Codenames`_
+------------
 
-Sushi GO
+`Sushi GO`_
+-----------
 
-Coup
+`Coup`_
+-------
 
-Broom Service
+`Carcassone`_
+-------------
 
-Carcassone
+`Rail Baron`_
+-------------
 
-Rail Baron
+If I'm being honest I mostly like Rail Baron for the nostalgia of
+playing it growing up.
 
-Boggle
+`Zendo`_
+--------
 
-Scrabble
+`Boggle`_
+---------
+
+`Scrabble`_
+-----------

@@ -21,7 +21,7 @@ while we're in town, however temporarily? Here's what I hope to do in
 the weeks / months / years we live in Seattle:
 
 .. _bucket lists: http://blog.lucywyman.me/tag/bucket-lists.html
-.. _my favorite places in Seattle:
+.. _my favorite places in Seattle: http://blog.lucywyman.me/favorite-places-seattle.html
 
 Museums
 -------
@@ -34,18 +34,23 @@ Museums
 
 ☐ `Frye Art Museum`_
 
-.. _Living Computer Museum:
+.. _Living Computer Museum: https://livingcomputers.org/
+.. _Seattle Pinball Museum: https://www.seattlepinballmuseum.com/
+.. _Museum of Flight: https://www.museumofflight.org/
+.. _Frye Art Museum: http://fryemuseum.org/
 
 Gardens
 -------
 
-☐ `Seattle Japanese Garden`_
+☐ Seattle Japanese Garden
 
-☐ `Alki Beach`_
+☐ Alki Beach
 
-☐ `Washington Park Arboretum`_
+☐ Washington Park Arboretum
 
 ☐ `Bellevue Botanical Garden`_
+
+.. _Bellevue Botanical Garden: https://bellevuebotanical.org/
 
 Food
 ----
@@ -57,3 +62,8 @@ Food
 ☐ `Le Panier`_
 
 ☐ `London Plane`_
+
+.. _Facing East: http://facingeastrestaurant.com/
+.. _Traveler's Thali House: http://www.travelersthalihouse.com/
+.. _Le Panier: https://www.lepanier.com/
+.. _London Plane: http://www.thelondonplaneseattle.com/
