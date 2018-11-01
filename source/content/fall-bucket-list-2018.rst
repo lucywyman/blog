@@ -33,7 +33,13 @@ halloween costume. Here's what I'm excited to do this season!
 
 ☑ Bake cinnamon rolls
 
-☐ Dress up for Halloween - I'm thinking of going as Hermione Granger this year
+☑ Dress up for Halloween - I'm thinking of going as Hermione Granger
+this year (Ended up going as a Day of the Dead skull one night, and a
+crayon at work!)
+
+.. figure:: static/images/halloween-2018.jpg
+    :align: center
+    :height: 400px
 
 .. _this summer: http://blog.lucywyman.me/summer-bucket-list-2018.html
 .. _Elysian's: https://www.elysianbrewing.com/locations

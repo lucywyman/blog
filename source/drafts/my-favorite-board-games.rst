@@ -19,7 +19,10 @@ on interactions between players (either cooperative or competitive),
 and are suckers for a good party game. The games we play are
 accessible to anyone interested in board gaming, and while these games
 are easy to learn and play they're difficult to master and are highly
-replayable.
+replayable. Here are the games we keep playing again and again:
+
+Party Games
+~~~~~~~~~~~
 
 `Codenames`_
 ------------
@@ -33,14 +36,11 @@ replayable.
 `Carcassone`_
 -------------
 
-`Rail Baron`_
--------------
-
-If I'm being honest I mostly like Rail Baron for the nostalgia of
-playing it growing up.
-
 `Zendo`_
 --------
+
+Word Games
+~~~~~~~~~~
 
 `Boggle`_
 ---------
