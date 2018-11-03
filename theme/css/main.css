@@ -64,7 +64,10 @@ main {
     border-left: 3px solid #444; }
     main .article-blurb img {
       max-width: 300px;
-      max-height: 400px; }
+      max-height: 400px;
+      display: block;
+      width: auto;
+      height: auto; }
     main .article-blurb .blurb-content {
       margin: 20px; }
 
