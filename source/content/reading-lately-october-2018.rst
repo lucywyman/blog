@@ -7,6 +7,20 @@ Reading Lately: October 2018
 :author: Lucy Wyman
 :image: reading-lately-october-2018.jpg
 
+My lucky-book-streak continues this month, with some truly fantastic
+fiction and a small dash of self-help. I also just got about 9 books
+in from the library all at the same time, so am looking forward to
+spending the weekend curled up with some tea and a lot of books!
+
+Quick aside: did anyone else follow the `Great American Read`_ series
+by PBS? I loved the diversity of their list of 100 books, and while I
+was disappointed that Harry Potter didn't 'win' it was a fun series to
+follow along with.
+
+.. _Great American Read: https://www.pbs.org/the-great-american-read/home/
+
+Here's what I couldn't put down:
+
 `Sadie`_
 --------
 *Courtney Summers*
@@ -29,6 +43,33 @@ end, I literally got to work 20 minutes late this morning because I
 *had* to finish it. Highly highly recommend! 
 
 .. _Sadie: https://www.goodreads.com/book/show/34810320-sadie
+
+`An Absolutely Remarkable Thing`_
+---------------------------------
+*Hank Green*
+
+.. figure:: theme/images/an-absolutely-remarkable-thing.jpg
+    :align: center
+    :height: 300px
+
+I adore the `Green brothers`_, and while I wouldn't consider myself
+part of the fandom I consume a lot of their content, including reading
+John Green's books growing up. As such there was a lot of hype around
+Hank publishing a book, and I was excited not just to read the book as
+a book but to read something that someone I kind of care about in a
+celebrity type way wrote. It felt more personal somehow than just
+reading any-old book. I don't know why I didn't expect the book to be
+great, but I didn't, and *hot dog* was I impressed. Hank's debut novel
+is amazing. I love his protagonist and narrator, April May, who is
+layered and human and flawed but very likeable. I loved the commentary
+on fame, and how fame changes you and what the experience of fame is
+like. I loved the whimsy of the sci-fi / mystery robot plot. I loved
+the voice of the novel, the funny throw-away lines and how unique each
+characters way of thinking was. I can't recommend this book highly
+enough, whether you're 13 or 30.
+
+.. _An Absolutely Remarkable Thing: https://www.goodreads.com/book/show/24233708-an-absolutely-remarkable-thing
+.. _Green brothers: https://www.youtube.com/user/vlogbrothers
 
 `Where'd You Go, Bernadette?`_
 ------------------------------
@@ -102,4 +143,14 @@ pleasant read.
     :align: center
     :height: 300px
 
+I listened to this audiobook *in it's entirety* on a round-trip drive
+to Portland, and it was *perfect* for that trip. It's one of those
+candy reads that provides lots of room for imagination, and is sweet
+and satisfying. I liked that the characters felt real and believable
+(definitely not a given in the romance novel genre), and I loved the
+food theme. The heroine was strong and independent, the hero flawed
+but loveable. It was more chaste than I was expecting, and more of a
+rom-com book than a proper romance novel. A quick and easy read, if
+you find yourself between better books.
 
+.. _The Coincidence of Coconut Cake: https://www.goodreads.com/book/show/25650078-the-coincidence-of-coconut-cake
