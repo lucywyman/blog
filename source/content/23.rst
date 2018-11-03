@@ -5,7 +5,7 @@
 :category: Experiences
 :slug: 23
 :author: Lucy Wyman
-:image:
+:img:
 
 Happy Valentine's Day! Today is my 23rd birthday, and to celebrate I
 wanted to reflect on what I had learned in the last year. As I wrote

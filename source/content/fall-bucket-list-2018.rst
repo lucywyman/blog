@@ -5,7 +5,7 @@ Fall Bucket List 2018
 :category: Experiences
 :slug: fall-bucket-list-2018
 :author: Lucy Wyman
-:image: vampire-halloween-card.jpg
+:img: vampire-halloween-card.jpg
 
 It feels early to be thinking about fall, but with Labor Day just 2
 weekends away crisp apples and crisp mornings have been on my mind

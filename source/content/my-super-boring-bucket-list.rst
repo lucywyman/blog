@@ -5,7 +5,7 @@ My Super Boring Bucket List
 :category: Experiences
 :slug: my-bucket-list
 :author: Lucy Wyman
-:image:
+:img:
 
 I read an article today about Bucket Lists that included a comments
 section, and was surprised by two patterns in people's bucket lists:

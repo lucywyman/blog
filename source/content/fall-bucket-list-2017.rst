@@ -5,7 +5,7 @@ Fall Bucket List 2017
 :category: Experiences
 :slug: fall-bucket-list-2017
 :author: Lucy Wyman
-:image:
+:img:
 
 What a summer! As we say hello to crisp mornings, plaid scarves, and
 cinnamon-spiced treats, I wanted to take a moment to review my `Summer

@@ -5,7 +5,7 @@ Winter Reads 2017
 :category: Books
 :slug: winter-reads-2017
 :author: Lucy Wyman
-:image:
+:img:
 
 Hello friends! It's been a while since we saw each other. I hope this post
 finds you well! It's that time of year again: the leaves have, fallen, the

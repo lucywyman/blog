@@ -5,7 +5,7 @@ On Being Taken Care Of
 :category: Thoughts
 :slug: on-being-taken-care-of
 :author: Lucy Wyman
-:image:
+:img:
 
 I'm currently sitting on the rooftop deck at New Seasons in Portland,
 OR. I've been travelling to Portland for work pretty frequently since

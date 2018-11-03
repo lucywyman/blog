@@ -5,7 +5,7 @@ Japanuary 2018: Initial Observations
 :category: Japanuary
 :slug: japanuary-2018-initial-observations
 :author: Lucy Wyman
-:image: red-pagoda.jpg
+:img: red-pagoda.jpg
 
 We're currently in the air somewhere between Tokyo and LA, on our way back from
 a 3½ week stay in Japan. In a word the trip was *amazing*, but like most

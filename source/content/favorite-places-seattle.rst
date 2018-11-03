@@ -5,7 +5,7 @@ My Favorite Places in Seattle
 :category: Loves
 :slug: favorite-places-seattle
 :author: Lucy Wyman
-:image: pike-place-seattle.jpg
+:img: pike-place-seattle.jpg
 
 Places
 ~~~~~~

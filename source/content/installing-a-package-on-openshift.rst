@@ -5,7 +5,7 @@ Installing a Package in an Openshift Container (Kind Of)
 :category: Tech
 :slug: installing-a-package-in-an-openshift-container
 :author: Lucy Wyman
-:image:
+:img:
 
 **TODO Better title. Ping me with ideas!**
 

@@ -5,7 +5,7 @@ My Reading Process
 :category: Books
 :slug: my-reading-process
 :author: Lucy Wyman
-:image:
+:img:
 
 Hello, fearless reader! This post is all about how I:
 

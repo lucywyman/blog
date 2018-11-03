@@ -5,7 +5,7 @@ Spring 10x10 2018
 :category: Experiences
 :slug: spring-10x10-2018
 :author: Lucy Wyman
-:image: 
+:img: 
 
 For the first time ever, I'm participating in the `10 x 10`_
 challenge, hosted by `Lee of Style Bee`_ and `Caroline of Unfancy`_.

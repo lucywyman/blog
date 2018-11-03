@@ -5,7 +5,7 @@ Managing CoreOS With Puppet
 :category: Tech
 :slug: managing-coreos-with-puppet
 :author: Lucy Wyman
-:image:
+:img:
 
 Why
 ---

@@ -5,7 +5,7 @@ Reading Lately: March 2018
 :category: Books
 :slug: reading-lately-march-2018
 :author: Lucy Wyman
-:image:
+:img:
 
 It's been a while since I did a book roundup, and honestly that's
 because I had a rather unlucky streak of uninspiring books. It wasn't

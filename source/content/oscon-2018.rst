@@ -5,7 +5,7 @@ OSCON 2018
 :category: Tech
 :slug: oscon-2018
 :author: Lucy Wyman
-:image:
+:img:
 
 OSCON 2018 is officially in the books, and I have to say this one was
 a stand out. A combination of career advancement (read: getting

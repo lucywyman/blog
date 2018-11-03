@@ -5,7 +5,7 @@ Blogs I Love
 :category: Loves
 :slug: blogs
 :author: Lucy Wyman
-:image: 
+:img: 
 
 Food
 ~~~~

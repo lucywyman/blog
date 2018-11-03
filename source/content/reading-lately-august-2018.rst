@@ -5,7 +5,7 @@ Reading Lately: August 2018
 :category: Books
 :slug: reading-lately-august-2018
 :author: Lucy Wyman
-:image:
+:img:
 
 It's been a while since I posted what I've been reading lately. We're
 still in the dog days of summer, soaking in the sunshine and trying to

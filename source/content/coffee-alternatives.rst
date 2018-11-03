@@ -5,7 +5,7 @@ Coffee Alternatives
 :category: Food
 :slug: coffee-alternatives
 :author: Lucy Wyman
-:image:
+:img:
 
 Little known Lucy fact: I'm allergic to coffee. I *love* the smell of
 coffee, and if I keep it to about 12 oz. once a week I'm fine. But

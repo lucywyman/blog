@@ -5,7 +5,7 @@ RFID (mis)Adventure
 :category: Tech
 :slug: RFID-adventure
 :author: Lucy Wyman
-:image:
+:img:
 
 Our office recently relocated to a WeWork, which has an RFID card for
 getting onto the floor before business hours and for getting into our

@@ -5,7 +5,7 @@ Seattle Bucket List
 :category: Experiences
 :slug: seattle-bucket-list
 :author: Lucy Wyman
-:image:
+:img:
 
 It's no secret that I love making `bucket lists`_. I
 wouldn't call myself a 'spontaneous' person, so like to have a list of

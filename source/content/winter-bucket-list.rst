@@ -5,7 +5,7 @@ Holiday Bucket List 2017
 :category: Experiences
 :slug: holiday-bucket-list-2017
 :author: Lucy Wyman
-:image: winter-bucket-list-2017.jpg
+:img: winter-bucket-list-2017.jpg
 :photosource: @dametraveler
 :photolink: https://www.instagram.com/p/BcIlMvjAN6o/?taken-by=dametraveler
 

@@ -5,7 +5,7 @@ Reflections on 2017
 :category: Experiences
 :slug: reflections-on-2017
 :author: Lucy Wyman
-:image:
+:img:
 
 What a year! I know so many people talk about how quickly time moves, but
 for me this year (and most years) feel more like decades. I'm not sure why time

@@ -5,7 +5,7 @@ Reading Lately: October 2018
 :category: Books
 :slug: reading-lately-october-2018
 :author: Lucy Wyman
-:image: reading-lately-october-2018.jpg
+:img: reading-lately-october-2018.jpg
 
 My lucky-book-streak continues this month, with some truly fantastic
 fiction and a small dash of self-help. I also just got about 9 books

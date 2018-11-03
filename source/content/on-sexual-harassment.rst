@@ -5,7 +5,7 @@ On Sexual Harassment
 :category: Thoughts
 :slug: on-sexual-harassment
 :author: Lucy Wyman
-:image:
+:img:
 
 Americans are uniquely drawn to celebrity, perceiving relationships and
 developing strong feelings for the people we watch, read, and listen to. "I've

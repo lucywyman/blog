@@ -5,7 +5,7 @@ Amsterdam 2018
 :category: Experiences
 :slug: amsterdam-2018
 :author: Lucy Wyman
-:image: amsterdam-church.jpg
+:img: amsterdam-church.jpg
 
 Hello, fearless reader! I had the opportunity to go to Amsterdam `for
 work`_ this last week, and fell in love with the Dutch city. It's a

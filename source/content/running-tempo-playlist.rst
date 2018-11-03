@@ -5,7 +5,7 @@ Running Tempo Playlist
 :category: Loves
 :slug: running-tempo-playlist
 :author: Lucy Wyman
-:image:
+:img:
 
 I've always loved to run. It helps me clear my mind, makes my body
 feel good, and that endorphin rush just can't be beat. However, since

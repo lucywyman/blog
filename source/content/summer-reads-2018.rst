@@ -5,7 +5,7 @@ Summer Reads 2018
 :category: Books
 :slug: summer-reads-2018
 :author: Lucy Wyman
-:image:
+:img:
 
 If February and March were a drought of good books, then April and May
 have seen downpours! I've been reading up a storm based on

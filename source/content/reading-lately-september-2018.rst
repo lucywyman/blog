@@ -5,7 +5,7 @@ Reading Lately: September 2018
 :category: Books
 :slug: reading-lately-september-2018
 :author: Lucy Wyman
-:image: 
+:img: 
 
 Hello! How are you? How are things? I've been travelling for work a
 lot for the past month - a blessing and a curse - which has meant I

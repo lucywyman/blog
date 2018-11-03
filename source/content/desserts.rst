@@ -5,7 +5,7 @@ Desserts I Dream About
 :category: Experiences
 :slug: desserts-i-dream-about
 :author: Lucy Wyman
-:image:
+:img:
 
 I've always had a sweet tooth. Chocolate, caramel, cake, pastries,
 fruit. Dessert is my favorite meal, and sugar is my love language. I
