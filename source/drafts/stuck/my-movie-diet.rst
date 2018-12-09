@@ -75,7 +75,7 @@ going out to a fancy meal.
 Movie Vegetarian
 ----------------
 
-This is gross oversimplification, but I tend to think of vegetarianism
+This is extreme simplification, but I tend to think of vegetarianism
 as a moderate form of veganism. Both are often motivated by similar
 factors (environmental, dietary, animal rights, etc.), but
 vegetarianism can be a way to slowly introduce positive dietary
