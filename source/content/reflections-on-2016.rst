@@ -2,7 +2,7 @@ Reflections on 2016
 ===================
 :date: 2016-12-30
 :tags: experiences
-:category: Other
+:category: Experiences
 :slug: reflections-on-2016
 :author: Lucy Wyman
 

@@ -26,7 +26,7 @@ family traditions and some exciting new things.
 ☑  Bake cookies (I'm thinking `orange and clove`_, but ended up making `matcha cookies`_)
 ☐  Visit Santa
 ☑  Get a Christmas tree and decorate it
-☐  Attend or host at least one Christmas party in a fancy dress
+☑  Attend or host at least one Christmas party in a fancy dress
 ☑  Go to one live theater performance or concert (we got tickets to `Christmastown`_
 ☐  Watch a classic Christmas movie (I love 'Elf')
 ☐  Walk down `Peacock Lane`_

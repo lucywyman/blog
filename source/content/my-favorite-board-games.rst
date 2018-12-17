@@ -5,7 +5,7 @@ My Favorite Board Games
 :category: Favorites
 :slug: favorite-board-games
 :author: Lucy Wyman
-:img:
+:img: 
 
 Eli and I spent this last weekend at `PAX West`_, and it was an
 *incredible* experience. It's like Disneyland in many ways:
@@ -21,6 +21,8 @@ accessible to anyone interested in board gaming, and while these games
 are easy to learn and play they're difficult to master and are highly
 replayable. Here are the games we keep playing again and again:
 
+.. _PAX West: http://west.paxsite.com/
+
 Party Games
 ~~~~~~~~~~~
 
@@ -34,7 +36,7 @@ challenging. It's a very social game, and while Codenames veterans may
 have picked up a few tricks newcomers have just as much of a chance at
 winning. This is the game we bring to every party.
 
-.. _Codenames:
+.. _Codenames: https://boardgamegeek.com/boardgame/178900/codenames
 
 `Sushi GO`_
 -----------
@@ -45,14 +47,18 @@ design are adorable, there are enough different iterations on the
 'menu' (the set of cards you use) that it's replayable, and it's fun
 for game-veterans and new comers alike.
 
-.. _Sushi GO:
+.. _Sushi GO: https://boardgamegeek.com/boardgame/192291/sushi-go-party
 
 `Coup`_
 -------
 
-I 
+I have such fond memories of playing Coup with a huge group of friends
+while we were in Japan. We would buy dozens Strong Zeros, an alcoholic
+soda, and play and eat and have fun. We still laugh about games played
+during that month, and the game is quick to learn, social, and
+obviously very replayable (over and over and over again for hours). 
 
-.. _Coup: 
+.. _Coup: https://boardgamegeek.com/boardgame/131357/coup
 
 Word Games
 ~~~~~~~~~~
@@ -74,7 +80,7 @@ interactive, so you end up sitting in silence for most of it, and I
 would describe it as more academic than fun. There's no real strategy
 or social element, it's all about the words you know.
 
-.. _Boggle:
+.. _Boggle: https://boardgamegeek.com/boardgame/1293/boggle
 
 `Scrabble`_
 -----------
@@ -82,6 +88,9 @@ or social element, it's all about the words you know.
 Actually, in thinking about Scrabble and Boggle, their pros and cons
 are pretty similar. It's a classic, easy to learn game that's a fun
 way to learn new words. While it's more interactive than Boggle, it's
-not going to crack you up or 
+not going to crack you up or be a 'party game', but is a great low-key
+activity for holidays and family get-togethers. I find it's just the
+right amount of thinking, and lets your talk to everyone while you
+play.
 
-.. _Scrabble:
+.. _Scrabble: https://boardgamegeek.com/boardgame/320/scrabble

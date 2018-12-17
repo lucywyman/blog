@@ -2,7 +2,7 @@ Japanuary 2018: Initial Observations
 ====================================
 :date: 29-01-2018
 :tags: japanuary, experiences
-:category: Japanuary
+:category: Travel
 :slug: japanuary-2018-initial-observations
 :author: Lucy Wyman
 :img: red-pagoda.jpg

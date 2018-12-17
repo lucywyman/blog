@@ -2,7 +2,7 @@ Thanksgiving Week: Work
 =======================
 :date: 2016-11-19
 :tags: thanksgiving, experiences
-:category: Other
+:category: Experiences
 :slug: thanksgiving-week-work
 :author: Lucy Wyman
 

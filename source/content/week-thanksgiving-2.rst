@@ -2,7 +2,7 @@ Thanksgiving Week: Friends
 ==========================
 :date: 2016-11-18
 :tags: thanksgiving, experiences
-:category: Other
+:category: Experiences
 :slug: thanksgiving-week-friends
 :author: Lucy Wyman
 

@@ -2,7 +2,7 @@ Thanksgiving Week: Health
 =========================
 :date: 2016-11-20
 :tags: thanksgiving, experiences
-:category: Other
+:category: Experiences
 :slug: thanksgiving-week-health
 :author: Lucy Wyman
 

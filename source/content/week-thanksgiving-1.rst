@@ -2,7 +2,7 @@ Thanksgiving Week: Family
 =========================
 :date: 2016-11-17
 :tags: thanksgiving, experiences
-:category: Other
+:category: Experiences
 :slug: thanksgiving-week-family
 :author: Lucy Wyman
 

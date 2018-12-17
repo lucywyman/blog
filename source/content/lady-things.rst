@@ -1,13 +1,13 @@
-Men's Versions
-==============
+Borrowed From the Boys
+======================
 :date: 2016-05-10
 :tags: clothes
-:category: Other
-:slug: lady-things
+:category: Thoughts
+:slug: borrowed-from-the-boys
 :author: Lucy Wyman
 
 As you've undoubtedly noticed, many products come in both a women's
-and men's version (ie. deodorant, socks, haircuts, etc.). IMHO this
+and men's version (i.e. deodorant, socks, haircuts, etc.). IMHO this
 isn't sexist so much as acknowledgment that men and women are
 physically different creatures, BUT, sometimes the men-version of a
 thing is much better (for one reason or another) than the

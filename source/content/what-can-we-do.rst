@@ -2,7 +2,7 @@ What Can We Do?
 ===============
 :date: 2016-11-11
 :tags: politics
-:category: Other
+:category: Thoughts
 :slug: what-can-we-do
 :author: Lucy Wyman
 
