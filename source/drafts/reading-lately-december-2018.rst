@@ -5,7 +5,13 @@ Reading Lately: December 2018
 :category: Books
 :slug: reading-lately-december-2018
 :author: Lucy Wyman
-:img:
+:img: 
+
+Despite the cold, I *love* December. Or rather, I love Christmas
+season. The lights! The trees! The time with family! It feels like a
+time to pause, reflect on the year, absorb the beauty around us, and
+
+
 
 `Eleanor Oliphant is Completely Fine`_
 --------------------------------------
@@ -37,3 +43,13 @@ Reading Lately: December 2018
     :height: 300px
 
 .. _Late Bloomers' Club: https://www.goodreads.com/book/show/36952311-the-late-bloomers-club
+
+`A Princess in Theory`_
+-----------------------
+*Alyssa Cole*
+
+.. figure:: theme/images/a-princess-in-theory.jpg
+    :align: center
+    :height: 300px
+
+.. _A Princess in Theory: https://www.goodreads.com/book/show/35271238-a-princess-in-theory

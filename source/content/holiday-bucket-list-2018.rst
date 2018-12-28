@@ -28,8 +28,8 @@ family traditions and some exciting new things.
 ☑  Get a Christmas tree and decorate it
 ☑  Attend or host at least one Christmas party in a fancy dress
 ☑  Go to one live theater performance or concert (we got tickets to `Christmastown`_
-☐  Watch a classic Christmas movie (I love 'Elf')
-☐  Walk down `Peacock Lane`_
+☑  Watch a classic Christmas movie (I love 'Elf')
+☑  Walk down `Peacock Lane`_
 
 Truth time: I know this is a super long list of activities, but I
 BELIEVE in the magic of Christmas.

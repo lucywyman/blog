@@ -5,7 +5,7 @@ Puppetize Live 2018
 :category: Tech
 :slug: puppetize-live-2018
 :author: Lucy Wyman
-:img:
+:img: amsterdam-group.jpg
 
 I'm writing this on the plane home from Amsterdam after an exciting,
 challenging, educational, and ultimately successful week. For those
