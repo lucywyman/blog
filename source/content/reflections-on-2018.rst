@@ -32,6 +32,10 @@ watch tv, and just be.
     :align: center
     :width: 400px
 
+.. figure:: theme/images/tokyo-disneyland.jpg
+    :align: center
+    :width: 400px
+
 We also went to `Japan`_ for 3 weeks! The trip was incredible - we stayed
 in a house with a rotating cast of 12 friends, and had so much fun
 exploring Tokyo. We loved how navigable the city was, how culturally
