@@ -42,10 +42,13 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 
 1. Run 20 miles (without stopping)
 
-2. Find a workout class to attend at least once per week (I'm starting
-   `this class`_ next week - we'll see how it goes!)
+~~2. Find a workout class to attend at least once per week (I'm starting
+   `this class`_ next week - we'll see how it goes!)~~ Update: Eli and
+   I signed up for `Orange Theory`_ for 2 months, and plan to see how
+   it goes.
 
 .. _this class: http://www.southsidebootycamp.com/
+.. _Orange Theory: https://www.orangetheoryfitness.com/
 
 3. See every movie nominated for the Oscar's best picture
 

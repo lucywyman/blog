@@ -13,6 +13,12 @@ a {
   a:hover {
     color: rgba(196, 18, 48, 0.8); }
 
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  overflow: auto;
+  padding: 16px; }
+
 nav {
   width: 100%;
   background-color: #fff; }

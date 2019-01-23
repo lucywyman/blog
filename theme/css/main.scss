@@ -24,6 +24,13 @@ a {
   }
 }
 
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  overflow: auto;
+  padding: 16px;
+}
+
 nav{
   width: 100%;
   background-color: $light;

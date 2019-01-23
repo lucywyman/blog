@@ -1,5 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Lucy Wyman</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-01-01T00:00:00-08:00</updated><entry><title>19 for 2019</title><link href="http://blog.lucywyman.me/19-for-2019.html" rel="alternate"></link><published>2019-01-01T00:00:00-08:00</published><updated>2019-01-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-01:/19-for-2019.html</id><summary type="html">&lt;p&gt;Happy New Year! I usually &lt;em&gt;hate&lt;/em&gt; new years: the 'happy' part of winter
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Lucy Wyman</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-wyman.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-01-23T00:00:00-08:00</updated><entry><title>Cloud Provisioning with Terraform and Bolt</title><link href="http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html" rel="alternate"></link><published>2019-01-23T00:00:00-08:00</published><updated>2019-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-23:/cloud-provisioning-with-terraform-and-bolt.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.terraform.io/intro/index.html"&gt;Terraform&lt;/a&gt; is a cloud provisioning tool that's great at managing
+low-level infrastructure components such as compute instances,
+storage, and networking. While Terraform is great at creating the
+infrastructure you need, it's not great at managing the state of your
+resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
+described it …&lt;/p&gt;</summary><content type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.terraform.io/intro/index.html"&gt;Terraform&lt;/a&gt; is a cloud provisioning tool that's great at managing
+low-level infrastructure components such as compute instances,
+storage, and networking. While Terraform is great at creating the
+infrastructure you need, it's not great at managing the state of your
+resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
+described it in a talk at OSCON 2018 as a way to get boxes that you
+can then go fill with the users, files, applications, and tools you
+need.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/terraform-all-the-things.jpg" style="height: 400px;" /&gt;
+&lt;p class="caption"&gt;Image from &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;'Terraform All The Things'&lt;/a&gt; by Nathan Handler&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://puppet.com/docs/bolt"&gt;Bolt&lt;/a&gt; is an open source remote task runner that can run commands,
+scripts, and puppet code across your infrastructure with a few
+keystrokes. It combines the declarative Puppet language model with
+familiar and convenient imperative code, making it easy to learn and
+effective for both one-off tasks and long-term configuration
+management.&lt;/p&gt;
+&lt;p&gt;I want to demonstrate how powerful using these tools together is, and
+how they each enable you quickly get the cloud resources you need and
+provision them with minimal setup and code. We'll first create an AWS
+EC2 instance with Terraform, the use Bolt to get the IP of the
+instance and manage it using Puppet code (with zero Puppet knowledge
+required[1]). Let's get started!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you want to follow along or see a more complete example
+all my code is available &lt;a class="reference external" href="https://github.com/lucywyman/terraform-provision"&gt;on github&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="create-cloud-resources-with-terraform"&gt;
+&lt;h2&gt;Create Cloud Resources with Terraform&lt;/h2&gt;
+&lt;p&gt;This step was simple: I followed the &lt;a class="reference external" href="https://learn.hashicorp.com/terraform/getting-started/install.html"&gt;Terraform Getting Started Guide&lt;/a&gt; to set up a
+t1.micro &lt;a class="reference external" href="https://aws.amazon.com/ec2/"&gt;EC2&lt;/a&gt; instance, then added a few bits and bobs mostly around
+ensuring we can SSH into the machine. Here's some key notes and the
+code:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;SSH Key&lt;/strong&gt;: We need to make sure there's a way to SSH into the
+boxes we create. I chose to do this with SSH key pairs, but you
+could also just have username + password set.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Outputs&lt;/strong&gt;: To make it easier to get the IP addresses for the
+instances we create I added an output to produce an array of the IPs
+of the instances. Parsing the default terraform json output in Bolt
+is equivalent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Xenial AMI&lt;/strong&gt;: I'm totally new to AWS and wasn't sure how to
+create a user on my new instance, or more importantly whether Puppet
+would work on it. So I just used an ubuntu image instead of the
+usual Amazon Linux one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security Group&lt;/strong&gt;: This adds a security group to allow traffic into
+and out of the node so that we can, y'know, make use of it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform-playground/example.tf&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;access_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="no"&gt;ACCESS_KEY&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="n"&gt;secret_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="no"&gt;SECRET_KEY&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="n"&gt;region&lt;/span&gt;     &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;us-west-2&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Add a local SSH key&lt;/span&gt;
+&lt;span class="n"&gt;resource&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws_key_pair&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;example&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;key_name&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws_key&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;public_key&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="no"&gt;PUBLIC_KEY&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Add a permissive security group&lt;/span&gt;
+&lt;span class="n"&gt;resource&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws_security_group&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;allow_all&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nb"&gt;name&lt;/span&gt;        &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;allow_all&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;description&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Allow all inbound traffic&amp;quot;&lt;/span&gt;
+
+  &lt;span class="n"&gt;ingress&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;from_port&lt;/span&gt;   &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;to_port&lt;/span&gt;     &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;protocol&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;cidr_blocks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;0.0.0.0/0&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="n"&gt;egress&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;from_port&lt;/span&gt;       &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;to_port&lt;/span&gt;         &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;protocol&lt;/span&gt;        &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;cidr_blocks&lt;/span&gt;     &lt;span class="o"&gt;=&lt;/span&gt;
+    &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;0.0.0.0/0&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Create EC2 instance&lt;/span&gt;
+&lt;span class="n"&gt;resource&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws_instance&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;xenial&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;ami&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ami-076e276d85f524150&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;instance_type&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;t1.micro&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;key_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aws_key&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;security_groups&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;allow_all&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Create output for public IPs&lt;/span&gt;
+&lt;span class="c1"&gt;# This is an array in case we create multiple instances, but for&lt;/span&gt;
+&lt;span class="c1"&gt;# now there&amp;#39;s just one&lt;/span&gt;
+&lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;public_ips&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;${aws_instance.xenial.*.public_ip}&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="configure-instances-with-bolt-plans"&gt;
+&lt;h2&gt;Configure Instances with Bolt Plans&lt;/h2&gt;
+&lt;p&gt;Now that we've created a box with Terraform, we'll:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Collect the public IP in a &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_running_plans.html"&gt;Bolt Plan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add it to the &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/inventory_file.html"&gt;Bolt inventory&lt;/a&gt; file so it picks up configuration&lt;/li&gt;
+&lt;li&gt;And do anything we want with it - for example, deploy a small webpage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;First let's create a Bolt inventory file with configuration that Bolt will
+need to connect to the EC2 instance. This inventory includes 1 group
+called 'terraform', which defaults to using the &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html#ssh-transport-configuration-options"&gt;SSH transport&lt;/a&gt;. It then
+&lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html"&gt;configures&lt;/a&gt; the ssh private key, user, and host key check for this
+group.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform_provision/inventory.yaml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;groups&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+  &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;name&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;terraform&lt;/span&gt;
+    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;nodes&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;[]&lt;/span&gt; &lt;span class="c1"&gt;# This will be populated by the Bolt plan&lt;/span&gt;
+    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;config&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+      &lt;span class="l l-Scalar l-Scalar-Plain"&gt;transport&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ssh&lt;/span&gt;
+      &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ssh&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;private-key&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;~/.ssh/id_rsa-phraseless&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;user&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;host-key-check&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;false&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next we'll write the Bolt plan to run &lt;code&gt;terraform apply&lt;/code&gt;, collect
+the IPs of the instances it creates, and provision those instances.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform_provision/plans/init.pp&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="na"&gt;plan&lt;/span&gt; &lt;span class="na"&gt;terraform_provision&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="na"&gt;String&lt;/span&gt; &lt;span class="nv"&gt;$tf_path)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nv"&gt;$localhost&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="na"&gt;get_targets&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;  # Create infrastructure with terraform apply&lt;/span&gt;
+  &lt;span class="na"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;cd ${$tf_path} &amp;amp;&amp;amp; terraform apply&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$localhost)&lt;/span&gt;
+  &lt;span class="nv"&gt;$ip_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="na"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;cd ${$tf_path} &amp;amp;&amp;amp; terraform output public_ips&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                            &lt;span class="nv"&gt;$localhost).map&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="nv"&gt;$r|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nv"&gt;$r&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;stdout&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="nv"&gt;$ips&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="na"&gt;Array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$ip_string).map&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="nv"&gt;$ip|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nv"&gt;$ip.strip&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;  # Turn IPs into Bolt targets, and add to inventory&lt;/span&gt;
+  &lt;span class="nv"&gt;$targets&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;$ips.map&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="nv"&gt;$ip|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="na"&gt;Target&lt;/span&gt;&lt;span class="err"&gt;.&lt;/span&gt;&lt;span class="na"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;${$ip}&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add_to_group&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;terraform&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;  # Deploy website&lt;/span&gt;
+  &lt;span class="na"&gt;apply_prep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$targets)&lt;/span&gt;
+
+  &lt;span class="na"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$targets,&lt;/span&gt; &lt;span class="na"&gt;_run_as&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;root&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;include&lt;/span&gt; &lt;span class="na"&gt;apache&lt;/span&gt;
+
+    &lt;span class="k"&gt;file&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/var/www/html/index.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="na"&gt;ensure&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;file&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="na"&gt;source&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;puppet:///modules/terraform_provision/site.html&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="na"&gt;return&lt;/span&gt; &lt;span class="nv"&gt;$ips&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In less than 30 lines of code we've got an apache server up and
+running!&lt;/p&gt;
+&lt;p&gt;A few other files we'll need to support running Bolt:&lt;/p&gt;
+&lt;p&gt;A bolt configuration file, to tell it where to &lt;a class="reference external" href="https://puppet.com/docs/bolt/1.x/bolt_configuration_options.html#global-configuration-options"&gt;find modules&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform_provision/bolt.yaml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;modulepath&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;./modules:~/githubs/modules&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A &lt;a class="reference external" href="https://puppet.com/docs/pe/latest/puppetfile.html"&gt;Puppetfile&lt;/a&gt; with dependencies:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform_provision/Puppetfile&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;mod &amp;#39;puppetlabs-apache&amp;#39;, &amp;#39;4.0.0&amp;#39;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;mod &amp;#39;puppetlabs-stdlib&amp;#39;, &amp;#39;5.2.0&amp;#39;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;mod &amp;#39;puppetlabs-concat&amp;#39;, &amp;#39;5.2.0&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And lastly, an HTML page to serve:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;~/terraform_provision/files/site.html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Hello from Terraform + Bolt!&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Again, all these files are available in &lt;a class="reference external" href="https://github.com/lucywyman/terraform-provision"&gt;this git repo&lt;/a&gt;, with a bit
+more verbosity and structure!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="running-bolt"&gt;
+&lt;h2&gt;Running Bolt&lt;/h2&gt;
+&lt;p&gt;Phew! Now that all our files are in place, here's how easy it is to
+deploy our server:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ bolt puppetfile install
+$ bolt plan run terraform_provision &lt;span class="se"&gt;\&lt;/span&gt;
+    -i ~/terraform_provision/inventory.yaml &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="nv"&gt;tf_path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;~/terraform-playground
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And that's it! The plan should output something like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;34.220.231.46&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Visit the IP in your browser and check out your new site!&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/index-html.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Terraform and Bolt are both great tools with different strengths.
+Together they make automating your infrastructure so much easier, and
+enable you to easily get resources, then configure and manage them
+over time, without too much overhead or learning. This example, while
+simple, is just the beginning - so what are you going to build?&lt;/p&gt;
+&lt;p&gt;[1] If you don't believe me, 6 months ago I took the Puppet
+Certification test and got 48%, and I can do this. Really, I mean no
+Puppet knowledge!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="tech"></category></entry><entry><title>19 for 2019</title><link href="http://blog.lucywyman.me/19-for-2019.html" rel="alternate"></link><published>2019-01-01T00:00:00-08:00</published><updated>2019-01-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-01:/19-for-2019.html</id><summary type="html">&lt;p&gt;Happy New Year! I usually &lt;em&gt;hate&lt;/em&gt; new years: the 'happy' part of winter
 is over, and ahead of us is 3 months of cold wet dark miserable. But
 this year I'm excited to get back to work, and excited about the year
 that just ended and the year to come …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Happy New Year! I usually &lt;em&gt;hate&lt;/em&gt; new years: the 'happy' part of winter
@@ -30,9 +247,13 @@ from them and grow.&lt;/p&gt;
 &lt;p&gt;Ok, enough typing. With that here are 19 things I hope to do in 2019:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Run 20 miles (without stopping)&lt;/li&gt;
-&lt;li&gt;Find a workout class to attend at least once per week (I'm starting
-&lt;a class="reference external" href="http://www.southsidebootycamp.com/"&gt;this class&lt;/a&gt; next week - we'll see how it goes!)&lt;/li&gt;
 &lt;/ol&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;~~2. Find a workout class to attend at least once per week (I'm starting&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="reference external" href="http://www.southsidebootycamp.com/"&gt;this class&lt;/a&gt; next week - we'll see how it goes!)~~ Update: Eli and
+I signed up for &lt;a class="reference external" href="https://www.orangetheoryfitness.com/"&gt;Orange Theory&lt;/a&gt; for 2 months, and plan to see how
+it goes.&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;See every movie nominated for the Oscar's best picture&lt;/li&gt;
 &lt;li&gt;Visit a new US state&lt;/li&gt;

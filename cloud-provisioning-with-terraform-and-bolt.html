@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>blog</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A humble blog by me, Lucy Wyman">
+<meta name="keywords" content="blog, code, lucy, wyman">
+<meta name="keywords" content="conferences">
+<meta name="keywords" content="interviews">
+<meta name="keywords" content="books">
+<meta name="keywords" content="puppet">
+<meta name="keywords" content="openstack">
+<meta name="keywords" content="politics">
+<meta name="keywords" content="Portland">
+<meta name="keywords" content="Seattle">
+<meta name="keywords" content="travel">
+<meta name="keywords" content="selenium">
+<meta name="keywords" content="book-review">
+<meta name="keywords" content="application">
+<meta name="keywords" content="health">
+<meta name="keywords" content="Corvallis">
+<meta name="keywords" content="Openshift">
+<meta name="keywords" content="containers">
+<meta name="keywords" content="orchestrator">
+<meta name="keywords" content="food">
+<meta name="keywords" content="bucket-lists">
+<meta name="keywords" content="flag">
+<meta name="keywords" content="experiences">
+<meta name="keywords" content="favorites">
+<meta name="keywords" content="ruby">
+<meta name="keywords" content="thoughts">
+<meta name="keywords" content="women">
+<meta name="keywords" content="japanuary">
+<meta name="keywords" content="thanksgiving">
+<meta name="keywords" content="concerts">
+<meta name="keywords" content="movies">
+<meta name="keywords" content="tech">
+<meta name="keywords" content="exercise">
+<meta name="keywords" content="loves">
+<meta name="keywords" content="example">
+<meta name="keywords" content="clothes">
+<meta name="keywords" content="Books">
+<meta name="keywords" content="Conferences">
+<meta name="keywords" content="Experiences">
+<meta name="keywords" content="Favorites">
+<meta name="keywords" content="Food">
+<meta name="keywords" content="Loves">
+<meta name="keywords" content="Movies">
+<meta name="keywords" content="Tech">
+<meta name="keywords" content="Technology">
+<meta name="keywords" content="Thoughts">
+<meta name="keywords" content="Travel">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="http://blog.lucywyman.me" />
+<meta property="og:site_name" content="Blog" />
+
+<script src="/theme/js/jquery-1.11.2.js"></script>
+<link rel='stylesheet' href='/theme/css/main.css' type='text/css'>
+<link href="/theme/images/favicon.ico" type="image/icon" rel="icon">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48093989-5', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>  <body>
+    <nav>
+      <ul>
+        <li><h3><a href='http://blog.lucywyman.me'>Lucy Wyman</a></h3></li>
+        <li><a href='http://blog.lucywyman.me/about.html'>About</a></li>
+        <li> 
+          <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/favorites.html'>Favorites</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/food.html'>Food</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/movies.html'>Movies</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/technology.html'>Technology</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/thoughts.html'>Thoughts</a>
+        </li> 
+        <li> 
+          <a href='http://blog.lucywyman.me/category/travel.html'>Travel</a>
+        </li> 
+
+      </ul>
+    </nav>
+    <div class='wrapper'>
+      <main>
+<div class='article'>
+<h2>Cloud Provisioning with Terraform and Bolt</h2>
+<p>01.23.2019</p>
+<div class="figure align-center">
+<img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" />
+</div>
+<p><a class="reference external" href="https://www.terraform.io/intro/index.html">Terraform</a> is a cloud provisioning tool that's great at managing
+low-level infrastructure components such as compute instances,
+storage, and networking. While Terraform is great at creating the
+infrastructure you need, it's not great at managing the state of your
+resources over time or enforcing certain states. <a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769">Nathan Handler</a>
+described it in a talk at OSCON 2018 as a way to get boxes that you
+can then go fill with the users, files, applications, and tools you
+need.</p>
+<div class="figure align-center">
+<img alt="" src="theme/images/terraform-all-the-things.jpg" style="height: 400px;" />
+<p class="caption">Image from <a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769">'Terraform All The Things'</a> by Nathan Handler</p>
+</div>
+<p><a class="reference external" href="https://puppet.com/docs/bolt">Bolt</a> is an open source remote task runner that can run commands,
+scripts, and puppet code across your infrastructure with a few
+keystrokes. It combines the declarative Puppet language model with
+familiar and convenient imperative code, making it easy to learn and
+effective for both one-off tasks and long-term configuration
+management.</p>
+<p>I want to demonstrate how powerful using these tools together is, and
+how they each enable you quickly get the cloud resources you need and
+provision them with minimal setup and code. We'll first create an AWS
+EC2 instance with Terraform, the use Bolt to get the IP of the
+instance and manage it using Puppet code (with zero Puppet knowledge
+required[1]). Let's get started!</p>
+<p><strong>Note:</strong> If you want to follow along or see a more complete example
+all my code is available <a class="reference external" href="https://github.com/lucywyman/terraform-provision">on github</a>.</p>
+<div class="section" id="create-cloud-resources-with-terraform">
+<h2>Create Cloud Resources with Terraform</h2>
+<p>This step was simple: I followed the <a class="reference external" href="https://learn.hashicorp.com/terraform/getting-started/install.html">Terraform Getting Started Guide</a> to set up a
+t1.micro <a class="reference external" href="https://aws.amazon.com/ec2/">EC2</a> instance, then added a few bits and bobs mostly around
+ensuring we can SSH into the machine. Here's some key notes and the
+code:</p>
+<ul class="simple">
+<li><strong>SSH Key</strong>: We need to make sure there's a way to SSH into the
+boxes we create. I chose to do this with SSH key pairs, but you
+could also just have username + password set.</li>
+<li><strong>Outputs</strong>: To make it easier to get the IP addresses for the
+instances we create I added an output to produce an array of the IPs
+of the instances. Parsing the default terraform json output in Bolt
+is equivalent.</li>
+<li><strong>Ubuntu Xenial AMI</strong>: I'm totally new to AWS and wasn't sure how to
+create a user on my new instance, or more importantly whether Puppet
+would work on it. So I just used an ubuntu image instead of the
+usual Amazon Linux one.</li>
+<li><strong>Security Group</strong>: This adds a security group to allow traffic into
+and out of the node so that we can, y'know, make use of it.</li>
+</ul>
+<p><strong>~/terraform-playground/example.tf</strong></p>
+<div class="highlight"><pre><span></span><span class="n">provider</span> <span class="s2">&quot;aws&quot;</span> <span class="p">{</span>
+  <span class="n">access_key</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">ACCESS_KEY</span><span class="o">&gt;</span>
+  <span class="n">secret_key</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">SECRET_KEY</span><span class="o">&gt;</span>
+  <span class="n">region</span>     <span class="o">=</span> <span class="s2">&quot;us-west-2&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Add a local SSH key</span>
+<span class="n">resource</span> <span class="s2">&quot;aws_key_pair&quot;</span> <span class="s2">&quot;example&quot;</span> <span class="p">{</span>
+  <span class="n">key_name</span>    <span class="o">=</span> <span class="s2">&quot;aws_key&quot;</span>
+  <span class="n">public_key</span>  <span class="o">=</span> <span class="o">&lt;</span><span class="no">PUBLIC_KEY</span><span class="o">&gt;</span>
+<span class="p">}</span>
+
+<span class="c1"># Add a permissive security group</span>
+<span class="n">resource</span> <span class="s2">&quot;aws_security_group&quot;</span> <span class="s2">&quot;allow_all&quot;</span> <span class="p">{</span>
+  <span class="nb">name</span>        <span class="o">=</span> <span class="s2">&quot;allow_all&quot;</span>
+  <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Allow all inbound traffic&quot;</span>
+
+  <span class="n">ingress</span> <span class="p">{</span>
+    <span class="n">from_port</span>   <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">to_port</span>     <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">protocol</span>    <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>
+    <span class="n">cidr_blocks</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;0.0.0.0/0&quot;</span><span class="o">]</span>
+  <span class="p">}</span>
+
+  <span class="n">egress</span> <span class="p">{</span>
+    <span class="n">from_port</span>       <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">to_port</span>         <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">protocol</span>        <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>
+    <span class="n">cidr_blocks</span>     <span class="o">=</span>
+    <span class="o">[</span><span class="s2">&quot;0.0.0.0/0&quot;</span><span class="o">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># Create EC2 instance</span>
+<span class="n">resource</span> <span class="s2">&quot;aws_instance&quot;</span> <span class="s2">&quot;xenial&quot;</span> <span class="p">{</span>
+  <span class="n">ami</span> <span class="o">=</span> <span class="s2">&quot;ami-076e276d85f524150&quot;</span>
+  <span class="n">instance_type</span> <span class="o">=</span> <span class="s2">&quot;t1.micro&quot;</span>
+  <span class="n">key_name</span> <span class="o">=</span> <span class="s2">&quot;aws_key&quot;</span>
+  <span class="n">security_groups</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;allow_all&quot;</span><span class="o">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Create output for public IPs</span>
+<span class="c1"># This is an array in case we create multiple instances, but for</span>
+<span class="c1"># now there&#39;s just one</span>
+<span class="n">output</span> <span class="s2">&quot;public_ips&quot;</span> <span class="p">{</span>
+  <span class="n">value</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;${aws_instance.xenial.*.public_ip}&quot;</span><span class="o">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="configure-instances-with-bolt-plans">
+<h2>Configure Instances with Bolt Plans</h2>
+<p>Now that we've created a box with Terraform, we'll:</p>
+<ul class="simple">
+<li>Collect the public IP in a <a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_running_plans.html">Bolt Plan</a></li>
+<li>Add it to the <a class="reference external" href="https://puppet.com/docs/bolt/latest/inventory_file.html">Bolt inventory</a> file so it picks up configuration</li>
+<li>And do anything we want with it - for example, deploy a small webpage</li>
+</ul>
+<p>First let's create a Bolt inventory file with configuration that Bolt will
+need to connect to the EC2 instance. This inventory includes 1 group
+called 'terraform', which defaults to using the <a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html#ssh-transport-configuration-options">SSH transport</a>. It then
+<a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html">configures</a> the ssh private key, user, and host key check for this
+group.</p>
+<p><strong>~/terraform_provision/inventory.yaml</strong></p>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">groups</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">terraform</span>
+    <span class="l l-Scalar l-Scalar-Plain">nodes</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span> <span class="c1"># This will be populated by the Bolt plan</span>
+    <span class="l l-Scalar l-Scalar-Plain">config</span><span class="p p-Indicator">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">transport</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">ssh</span>
+      <span class="l l-Scalar l-Scalar-Plain">ssh</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">private-key</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">~/.ssh/id_rsa-phraseless</span>
+        <span class="l l-Scalar l-Scalar-Plain">user</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu</span>
+        <span class="l l-Scalar l-Scalar-Plain">host-key-check</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div>
+<p>Next we'll write the Bolt plan to run <code>terraform apply</code>, collect
+the IPs of the instances it creates, and provision those instances.</p>
+<p><strong>~/terraform_provision/plans/init.pp</strong></p>
+<div class="highlight"><pre><span></span><span class="na">plan</span> <span class="na">terraform_provision</span><span class="p">(</span><span class="na">String</span> <span class="nv">$tf_path)</span> <span class="p">{</span>
+  <span class="nv">$localhost</span> <span class="o">=</span> <span class="na">get_targets</span><span class="p">(</span><span class="s">&#39;localhost&#39;</span><span class="p">)</span><span class="c"></span>
+
+<span class="c">  # Create infrastructure with terraform apply</span>
+  <span class="na">run_command</span><span class="p">(</span><span class="s">&quot;cd ${$tf_path} &amp;&amp; terraform apply&quot;</span><span class="p">,</span> <span class="nv">$localhost)</span>
+  <span class="nv">$ip_string</span> <span class="o">=</span> <span class="na">run_command</span><span class="p">(</span><span class="s">&quot;cd ${$tf_path} &amp;&amp; terraform output public_ips&quot;</span><span class="p">,</span>
+                            <span class="nv">$localhost).map</span> <span class="err">\</span><span class="o">|</span><span class="nv">$r|</span> <span class="p">{</span> <span class="nv">$r</span><span class="p">[</span><span class="s">&#39;stdout&#39;</span><span class="p">]</span> <span class="p">}</span>
+  <span class="nv">$ips</span> <span class="o">=</span> <span class="na">Array</span><span class="p">(</span><span class="nv">$ip_string).map</span> <span class="err">\</span><span class="o">|</span><span class="nv">$ip|</span> <span class="p">{</span> <span class="nv">$ip.strip</span> <span class="p">}</span><span class="c"></span>
+
+<span class="c">  # Turn IPs into Bolt targets, and add to inventory</span>
+  <span class="nv">$targets</span> <span class="o">=</span> <span class="nv">$ips.map</span> <span class="err">\</span><span class="o">|</span><span class="nv">$ip|</span> <span class="p">{</span>
+    <span class="na">Target</span><span class="err">.</span><span class="na">new</span><span class="p">(</span><span class="s">&quot;${$ip}&quot;</span><span class="p">)</span><span class="err">.</span><span class="na">add_to_group</span><span class="p">(</span><span class="s">&#39;terraform&#39;</span><span class="p">)</span>
+  <span class="p">}</span><span class="c"></span>
+
+<span class="c">  # Deploy website</span>
+  <span class="na">apply_prep</span><span class="p">(</span><span class="nv">$targets)</span>
+
+  <span class="na">apply</span><span class="p">(</span><span class="nv">$targets,</span> <span class="na">_run_as</span> <span class="o">=&gt;</span> <span class="s">&#39;root&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">include</span> <span class="na">apache</span>
+
+    <span class="k">file</span> <span class="p">{</span> <span class="s">&#39;/var/www/html/index.html&#39;</span><span class="p">:</span>
+      <span class="na">ensure</span> <span class="o">=&gt;</span> <span class="s">&#39;file&#39;</span><span class="p">,</span>
+      <span class="na">source</span> <span class="o">=&gt;</span> <span class="s">&quot;puppet:///modules/terraform_provision/site.html&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="na">return</span> <span class="nv">$ips</span>
+<span class="p">}</span>
+</pre></div>
+<p>In less than 30 lines of code we've got an apache server up and
+running!</p>
+<p>A few other files we'll need to support running Bolt:</p>
+<p>A bolt configuration file, to tell it where to <a class="reference external" href="https://puppet.com/docs/bolt/1.x/bolt_configuration_options.html#global-configuration-options">find modules</a></p>
+<p><strong>~/terraform_provision/bolt.yaml</strong></p>
+<div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">modulepath</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">./modules:~/githubs/modules</span>
+</pre></div>
+<p>A <a class="reference external" href="https://puppet.com/docs/pe/latest/puppetfile.html">Puppetfile</a> with dependencies:</p>
+<p><strong>~/terraform_provision/Puppetfile</strong></p>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">mod &#39;puppetlabs-apache&#39;, &#39;4.0.0&#39;</span>
+<span class="l l-Scalar l-Scalar-Plain">mod &#39;puppetlabs-stdlib&#39;, &#39;5.2.0&#39;</span>
+<span class="l l-Scalar l-Scalar-Plain">mod &#39;puppetlabs-concat&#39;, &#39;5.2.0&#39;</span>
+</pre></div>
+<p>And lastly, an HTML page to serve:</p>
+<p><strong>~/terraform_provision/files/site.html</strong></p>
+<div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello from Terraform + Bolt!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+<p>Again, all these files are available in <a class="reference external" href="https://github.com/lucywyman/terraform-provision">this git repo</a>, with a bit
+more verbosity and structure!</p>
+</div>
+<div class="section" id="running-bolt">
+<h2>Running Bolt</h2>
+<p>Phew! Now that all our files are in place, here's how easy it is to
+deploy our server:</p>
+<div class="highlight"><pre><span></span>$ bolt puppetfile install
+$ bolt plan run terraform_provision <span class="se">\</span>
+    -i ~/terraform_provision/inventory.yaml <span class="se">\</span>
+    <span class="nv">tf_path</span><span class="o">=</span>~/terraform-playground
+</pre></div>
+<p>And that's it! The plan should output something like:</p>
+<div class="highlight"><pre><span></span><span class="o">[</span><span class="s2">&quot;34.220.231.46&quot;</span><span class="o">]</span>
+</pre></div>
+<p>Visit the IP in your browser and check out your new site!</p>
+<div class="figure align-center">
+<img alt="" src="theme/images/index-html.jpg" style="height: 300px;" />
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Terraform and Bolt are both great tools with different strengths.
+Together they make automating your infrastructure so much easier, and
+enable you to easily get resources, then configure and manage them
+over time, without too much overhead or learning. This example, while
+simple, is just the beginning - so what are you going to build?</p>
+<p>[1] If you don't believe me, 6 months ago I took the Puppet
+Certification test and got 48%, and I can do this. Really, I mean no
+Puppet knowledge!</p>
+</div>
+
+</div>
+      </main>
+      <aside>
+        <div class='sidebar'>
+          <div class='social-media'>
+            <a href='https://github.com/lucywyman'>
+              <img class='social' src='/theme/images/github-icon.png'>
+            </a>
+            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+              <img class='social' src='/theme/images/linkedin.png'>
+            </a>
+          </div>
+          <!--TODO: search, subscribe, archive-->
+          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <h3>Categories</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/category/books.html'>Books</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/conferences.html'>Conferences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/experiences.html'>Experiences</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/favorites.html'>Favorites</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/food.html'>Food</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/loves.html'>Loves</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/movies.html'>Movies</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/tech.html'>Tech</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/technology.html'>Technology</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/thoughts.html'>Thoughts</a>
+            </li> 
+            <li> 
+              <a href='http://blog.lucywyman.me/category/travel.html'>Travel</a>
+            </li> 
+          </ul>
+          <hr>
+          <h3>Tags</h3>
+          <ul>
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/application.html'>application</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/book-review.html'>book-review</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/books.html'>books</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/bucket-lists.html'>bucket-lists</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/clothes.html'>clothes</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/concerts.html'>concerts</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/conferences.html'>conferences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/containers.html'>containers</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Corvallis.html'>Corvallis</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/example.html'>example</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/exercise.html'>exercise</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/experiences.html'>experiences</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/favorites.html'>favorites</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/flag.html'>flag</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/food.html'>food</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/health.html'>health</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/interviews.html'>interviews</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/japanuary.html'>japanuary</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/loves.html'>loves</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/movies.html'>movies</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Openshift.html'>Openshift</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/openstack.html'>openstack</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/orchestrator.html'>orchestrator</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/politics.html'>politics</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Portland.html'>Portland</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/puppet.html'>puppet</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/ruby.html'>ruby</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/Seattle.html'>Seattle</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/selenium.html'>selenium</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/tech.html'>tech</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/thanksgiving.html'>thanksgiving</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/thoughts.html'>thoughts</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/travel.html'>travel</a>
+            </li>
+
+            <li> 
+              <a href='http://blog.lucywyman.me/tag/women.html'>women</a>
+            </li>
+
+          </ul>
+          <hr>
+          <h3>Popular Posts</h3>
+          <ul>
+              <li><a href='http://blog.lucywyman.me/tattoo.html'>Getting a Tattoo</a></li>
+              <li><a href='http://blog.lucywyman.me/respect.html'>Rivers of Milk and Honey</a></li>
+              <li><a href='http://blog.lucywyman.me/boy.html'>If I Were a Boy</a></li>
+              <li><a href='http://blog.lucywyman.me/interviews.html'>The Interview</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class='footer'>
+      <!-- TODO -->
+      <a href='https://github.com/lucywyman'>
+        <img class='social' src='/theme/images/github-icon.png'>
+      </a>
+      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
+        <img class='social' src='/theme/images/linkedin.png'>
+      </a>
+    </div>
+  </body>
+</html>
