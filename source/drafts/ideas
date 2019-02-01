@@ -5,14 +5,44 @@ How I lost 30 pounds
 On being vegetarian
 Verify rss feed 
 On moving to Seattle
-Software tools I use
-    - Firefox plugins
-    - Vim plugins
 How I manage my finances
 Favorite word dialog
 Getting a dog
 Favorite New Recipes
 Things I love about being a software engineer
-Specify a cert to sinatra application
 Dream Jobs
 How to give a talk
+
+
+Increment Magazine
+
+Upcoming themes - Right now, we’re extra interested in pitches on the following:
+    Open source
+    Testing
+    Software architecture
+    Engineering management
+
+Types of content we’re interested in
+    Long-form pieces directly relevant to software teams, engineers, and technology companies
+    Human interest stories about tech and lessons learned, from database migrations gone wrong to cloud migrations gone right
+    Compelling expert insights on industry best practices
+
+Have to do with ethics and access
+
+When a company should open source a project
+- 
+
+How to maintain OSS projects
+- "Care and Feeding of Open Source Projects"
+- "Human Idea Transfer Protocol: How to communicate effectively with your community"
+    - Asking questions in slack / IRC
+    - Answering questions
+    - Creating issues on GH
+    - Opening a pull request
+
+Among others
+- What Not To Automate
+    - What is Automation?
+    - Why do we automate things?
+    - A framework for deciding whether to automate something
+    - Examples of automation gone wrong

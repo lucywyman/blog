@@ -57,7 +57,7 @@ Food
 
 ☐ `Facing East`_
 
-☐ `Traveler's Thali House`_
+☑: `Traveler's Thali House`_
 
 ☐ `Le Panier`_
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0800</lastBuildDate><item><title>Cloud Provisioning with Terraform and Bolt</title><link>http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html</link><description>&lt;div class="figure align-center"&gt;
+<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Fri, 01 Feb 2019 00:00:00 -0800</lastBuildDate><item><title>Reading Lately: January 2019</title><link>http://blog.lucywyman.me/reading-lately-january-2019.html</link><description>&lt;p&gt;I'm not sure &lt;em&gt;how&lt;/em&gt; I read so many books this month - I guess this is
+what winter does to a person? As a card-carrying Summer Person I
+usually hate winter, but for some reason this year I haven't minded it
+as much. Maybe Seattle winters are more mild than Portland …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Fri, 01 Feb 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2019-02-01:/reading-lately-january-2019.html</guid><category>books</category></item><item><title>Cloud Provisioning with Terraform and Bolt</title><link>http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html</link><description>&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.terraform.io/intro/index.html"&gt;Terraform&lt;/a&gt; is a cloud provisioning tool that's great at managing

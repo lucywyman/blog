@@ -22,7 +22,7 @@ during this time of year, and the chance to spend more time together.
 There are many things I want to do with loved ones this year, some old
 family traditions and some exciting new things. 
 
-☐  Volunteer
+☑  Volunteer (I ended up volunteering at `PodCon 2`_)
 ☑  Bake cookies (I'm thinking `orange and clove`_, but ended up making `matcha cookies`_)
 ☐  Visit Santa
 ☑  Get a Christmas tree and decorate it
@@ -38,3 +38,4 @@ BELIEVE in the magic of Christmas.
 .. _matcha cookies: http://recipes.lucywyman.me/matcha-cookies.html
 .. _Christmastown: https://www.seattlepublictheater.org/christmastown
 .. _Peacock Lane: https://www.peacocklane.org/
+.. _PodCon 2: https://www.podcon.com/

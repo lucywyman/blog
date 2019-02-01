@@ -7,3 +7,6 @@
 :author: Lucy Wyman
 :img:
 
+
+1. Close relationships with family and friends.
+1. 
