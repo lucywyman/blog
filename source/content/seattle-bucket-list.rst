@@ -32,7 +32,7 @@ Museums
 
 ☐ `Museum of Flight`_
 
-☐ `Frye Art Museum`_
+☑ `Frye Art Museum`_
 
 .. _Living Computer Museum: https://livingcomputers.org/
 .. _Seattle Pinball Museum: https://www.seattlepinballmuseum.com/
@@ -61,7 +61,7 @@ Food
 
 ☐ `Le Panier`_
 
-☐ `London Plane`_
+☑ `London Plane`_
 
 .. _Facing East: http://facingeastrestaurant.com/
 .. _Traveler's Thali House: http://www.travelersthalihouse.com/
