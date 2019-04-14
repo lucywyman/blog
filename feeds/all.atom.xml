@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-03-01T00:00:00-08:00</updated><entry><title>Reading Lately: February 2019</title><link href="http://blog.lucywyman.me/reading-lately-february-2019.html" rel="alternate"></link><published>2019-03-01T00:00:00-08:00</published><updated>2019-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-03-01:/reading-lately-february-2019.html</id><summary type="html">&lt;p&gt;Oof. February was a literary &lt;em&gt;slump&lt;/em&gt;. It felt like each book I picked
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-04-13T00:00:00-07:00</updated><entry><title>Promting for Sudo Password in Travis</title><link href="http://blog.lucywyman.me/prompting-for-sudo-in-travis.html" rel="alternate"></link><published>2019-04-13T00:00:00-07:00</published><updated>2019-04-13T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-04-13:/prompting-for-sudo-in-travis.html</id><summary type="html">&lt;p&gt;&amp;quot;Lucy, why would you want to do this? ARE YOU OK?&amp;quot;
+It's true: making Travis print the sudo prompt and enter it's password
+is not a common use case. We were testing a new feature in &lt;a class="reference external" href="https://puppet.com/docs/bolt/"&gt;Bolt&lt;/a&gt;
+which opens a subprocess on the local machine and runs a command as …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&amp;quot;Lucy, why would you want to do this? ARE YOU OK?&amp;quot;
+It's true: making Travis print the sudo prompt and enter it's password
+is not a common use case. We were testing a new feature in &lt;a class="reference external" href="https://puppet.com/docs/bolt/"&gt;Bolt&lt;/a&gt;
+which opens a subprocess on the local machine and runs a command as a
+different user (&lt;a class="reference external" href="https://github.com/puppetlabs/bolt/blob/master/lib/bolt/transport/local/shell.rb#L29-L45"&gt;code&lt;/a&gt;, &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html#local-transport-configuration-options"&gt;docs&lt;/a&gt;). We like to have as many tests in
+Travis so that our users and contributors see if their own code breaks
+tests (as opposed to our acceptance tests which run nightly in
+Jenkins). So, to test this properly in Travis, I needed to make the
+&lt;code&gt;travis&lt;/code&gt; user be prompted for sudo.&lt;/p&gt;
+&lt;p&gt;I initially tried creating a different user and running the test as
+that user, so that I didn't have to mess with the sudo configuration
+of &lt;code&gt;travis&lt;/code&gt;. This turned out to be more difficult than
+expected, since switching the user opens a new login which stops the
+tests from running.&lt;/p&gt;
+&lt;p&gt;So, we were stuck with &lt;code&gt;travis&lt;/code&gt;. Here's the magic lines I added
+to the 'before_script' section of &lt;code&gt;.travis.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;echo &amp;#39;travis:travis&amp;#39; | sudo chpasswd&lt;/span&gt;
+&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;sudo sh -c &amp;quot;echo &amp;#39;Defaults authenticate&amp;#39; &amp;gt;&amp;gt; /etc/sudoers&amp;quot;&lt;/span&gt;
+&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;sudo sh -c &amp;quot;echo &amp;#39;travis  ALL=(ALL) PASSWD:ALL&amp;#39; &amp;gt;&amp;gt; /etc/sudoers&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By default Travis sets &lt;code&gt;Defaults !authenticate&lt;/code&gt; and
+&lt;code&gt;travis ALL=(ALL) NOPASSWD:ALL&lt;/code&gt; in
+&lt;code&gt;/etc/sudoers.d/travis&lt;/code&gt;. The first thing we needed to do was
+give &lt;code&gt;travis&lt;/code&gt; a password so that we could still authenticate,
+then undo this sudo config. Also worth noting: you must set the
+&lt;code&gt;NOPASSWD&lt;/code&gt; line last, otherwise you won't be able to use sudo to
+modify the sudo config!&lt;/p&gt;
+&lt;p&gt;Et voila! We can test prompting for a sudo password in Travis.&lt;/p&gt;
+</content><category term="tech"></category></entry><entry><title>Spring Bucket List 2019</title><link href="http://blog.lucywyman.me/spring-bucket-list-2019.html" rel="alternate"></link><published>2019-03-08T00:00:00-08:00</published><updated>2019-03-08T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-03-08:/spring-bucket-list-2019.html</id><summary type="html">&lt;p&gt;Once again springtime finds me relocating to a new city, only this
+time it's also an old city. This bucket list is more of a 'things to
+do before we leave Seattle' list, but lucky for us Seattle has many
+wonderful offerings in the spring! A small part of me …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Once again springtime finds me relocating to a new city, only this
+time it's also an old city. This bucket list is more of a 'things to
+do before we leave Seattle' list, but lucky for us Seattle has many
+wonderful offerings in the spring! A small part of me is going to miss
+the Emerald city, but I'm overwhelmingly excited to be moving back to
+where my family and friends and coworkers and beloved &lt;a class="reference external" href="https://losgorditospdx.com"&gt;Los Gorditos&lt;/a&gt;
+are. Until then, we'll be making the most of our last spring in SEA!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Go to the &lt;a class="reference external" href="https://www.thestranger.com/events/25634435/skagit-valley-tulip-festival"&gt;tulip festival&lt;/a&gt; [and | or] the &lt;a class="reference external" href="https://www.thestranger.com/events/25634454/apple-blossom-festival"&gt;apple blossom festival&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Visit Bainbridge Island&lt;/li&gt;
+&lt;li&gt;Visit the &lt;a class="reference external" href="https://livingcomputers.org/"&gt;Living Computer Museum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go to a garage sale&lt;/li&gt;
+&lt;li&gt;See the Seattle Japanese Garden&lt;/li&gt;
+&lt;li&gt;Cook a meal entirely from Farmer's Market finds&lt;/li&gt;
+&lt;li&gt;Move to Portland!!!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keeping it short and sweet this season - we've got a busy few months
+ahead of us, and I don't want to get overwhelmed. Just whelmed.
+Whelmed is good.&lt;/p&gt;
+</content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Reading Lately: February 2019</title><link href="http://blog.lucywyman.me/reading-lately-february-2019.html" rel="alternate"></link><published>2019-03-01T00:00:00-08:00</published><updated>2019-03-01T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-03-01:/reading-lately-february-2019.html</id><summary type="html">&lt;p&gt;Oof. February was a literary &lt;em&gt;slump&lt;/em&gt;. It felt like each book I picked
 up was worse than the last. I tried reading &lt;a class="reference external" href="https://www.goodreads.com/book/show/36739942-lake-success"&gt;Lake Success&lt;/a&gt;, &lt;a class="reference external" href="https://www.goodreads.com/book/show/27969092-may-the-best-man-win"&gt;May the
 Best Man Win&lt;/a&gt;, &lt;a class="reference external" href="https://www.goodreads.com/book/show/10047589-girls-in-white-dresses"&gt;Girls in White Dresses&lt;/a&gt;, and &lt;a class="reference external" href="https://www.goodreads.com/book/show/30038862-walking-to-listen"&gt;Walking to Listen&lt;/a&gt;
 before finally making it all the way through &lt;a class="reference external" href="https://www.goodreads.com/book/show/35297416-laura-emma"&gt;Laura and Emma&lt;/a&gt; (which
@@ -2045,7 +2098,7 @@ the weeks / months / years we live in Seattle:&lt;/p&gt;
 &lt;h2&gt;Food&lt;/h2&gt;
 &lt;p&gt;☐ &lt;a class="reference external" href="http://facingeastrestaurant.com/"&gt;Facing East&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;☑: &lt;a class="reference external" href="http://www.travelersthalihouse.com/"&gt;Traveler's Thali House&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;☐ &lt;a class="reference external" href="https://www.lepanier.com/"&gt;Le Panier&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;☑ &lt;a class="reference external" href="https://www.lepanier.com/"&gt;Le Panier&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;☑ &lt;a class="reference external" href="http://www.thelondonplaneseattle.com/"&gt;London Plane&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="experiences"></category><category term="bucket-lists"></category></entry><entry><title>Reading Lately: August 2018</title><link href="http://blog.lucywyman.me/reading-lately-august-2018.html" rel="alternate"></link><published>2018-08-10T00:00:00-07:00</published><updated>2018-08-10T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-08-10:/reading-lately-august-2018.html</id><summary type="html">&lt;p&gt;It's been a while since I posted what I've been reading lately. We're
@@ -8884,4 +8937,4 @@ not really sure how to end this post. I might think of something
 better later. For now, ciao gentle reader. You excellent human you.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="conferences"></category><category term="tech"></category><category term="experiences"></category></entry></feed>
+</content><category term="conference"></category><category term="tech"></category><category term="experiences"></category></entry></feed>

@@ -59,7 +59,7 @@ Food
 
 ☑: `Traveler's Thali House`_
 
-☐ `Le Panier`_
+☑ `Le Panier`_
 
 ☑ `London Plane`_
 
