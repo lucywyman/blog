@@ -36,3 +36,16 @@ Reading Lately: April 2019
     :height: 300px
 
 .. _Conversations with Friends: https://www.goodreads.com/book/show/32187419-conversations-with-friends
+
+`Queenie`_
+----------
+*Candice Carty-Williams*
+
+.. figure:: theme/images/queenie.jpg
+    :align: center
+    :height: 300px
+
+.. _Queenie: https://www.goodreads.com/book/show/36586697-queenie
+
+`Happy City`_
+-------------

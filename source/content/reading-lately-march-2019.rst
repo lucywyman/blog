@@ -5,11 +5,17 @@ Reading Lately: March 2019
 :category: Books
 :slug: reading-lately-march-2019
 :author: Lucy Wyman
-:img:
+:img: italian-teacher.jpg
 
 The `Tournament of Books`_ happened this month, and while I knew I
 wouldn't get through all the books I did try for as many as I could
-that were available at the library. 
+that were available at the library. This resulted in a slow month with
+a lot of 'vegetable reads' - novels that I think are good for me, as I
+wouldn't normally read them and they broaden my horizons. It was also
+a great reminder of why I don't read books strictly based on acclaim
+very often. A few gems were found though: let's get into it.
+
+.. _Tournament of Books: https://themorningnews.org/tob/
 
 `Warlight`_
 -----------
@@ -39,17 +45,31 @@ zone, but I won't be coming back.
     :height: 300px
 
 Ha! And I thought 'Warlight' was artsy. 'Census' was way too abstract
-for a casual reader such as myself
+for a casual reader such as myself. While I wouldn't say this was a
+'bad' book, and the Author's Note provided some much-needed and heart
+wrenching context, it was not for me.
 
 .. _Census: https://www.goodreads.com/book/show/35068746-census
 
 `The Italian Teacher`_
 ----------------------
+*Tom Rachman*
 
 .. figure:: theme/images/italian-teacher.jpg
     :align: center
     :height: 300px
 
+This was by far my favorite of the ToB reads. I loved Pinch's
+complicated relationship with both of his parents, and how that shaped
+so much of his life. It captured so well how desperate we are to be
+shown love by our parents, who are supposed to love us
+unconditionally. How despite being rejected and ignored and
+unsupported repeatedly by his father, Pinch still longs for his
+acceptance even at the cost of success in other areas of his life. I
+loved how messy Pinch's life was, how each event made sense on it's
+own but together created a story that felt unlikely and wild. If you
+like stories about family dynamics, coming of age, or the art world,
+this one is for you.
 
 .. _The Italian Teacher: https://www.goodreads.com/book/show/31937362-the-italian-teacher
 
@@ -98,5 +118,18 @@ have done *way* better. Skip this sorry feminist-wannabe.
 .. figure:: theme/images/parking-lot-attendant.jpg
     :align: center
     :height: 300px
+
+The last of my ToB reads, I think it's most telling that my library
+loan expired halfway through reading this and I didn't renew it.
+Like 'Census' it wasn't a *bad* book (will I ever say a book is a bad
+book?), but I didn't feel invested in any of the characters. I didn't
+understand the charm of the main hero, who hypnotizes an entire
+community into doing his bidding, or the sense of loyalty the leading
+lady felt for him. It was hard to care about what happened to anyone,
+and - I can't believe I'm saying this - focused way too much on the
+character dynamics and not enough on the plot. It was hard to
+understand what was happening from such a narrow perspective, and I
+admittedly can't read between the lines. Overall, this book was just a
+bit confusing and not all that interesting.
 
 .. _The Parking Lot Attendant: https://www.goodreads.com/book/show/31685809-the-parking-lot-attendant
