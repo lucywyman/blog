@@ -6,7 +6,7 @@
 low-level infrastructure components such as compute instances,
 storage, and networking. While Terraform is great at creating the
 infrastructure you need, it's not great at managing the state of your
-resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
+resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
 described it …&lt;/p&gt;</summary><content type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
 &lt;/div&gt;
@@ -14,13 +14,13 @@ described it …&lt;/p&gt;</summary><content type="html">&lt;div class="figure a
 low-level infrastructure components such as compute instances,
 storage, and networking. While Terraform is great at creating the
 infrastructure you need, it's not great at managing the state of your
-resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
+resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
 described it in a talk at OSCON 2018 as a way to get boxes that you
 can then go fill with the users, files, applications, and tools you
 need.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/terraform-all-the-things.jpg" style="height: 400px;" /&gt;
-&lt;p class="caption"&gt;Image from &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769"&gt;'Terraform All The Things'&lt;/a&gt; by Nathan Handler&lt;/p&gt;
+&lt;p class="caption"&gt;Image from &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769"&gt;'Terraform All The Things'&lt;/a&gt; by Nathan Handler&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://puppet.com/docs/bolt"&gt;Bolt&lt;/a&gt; is an open source remote task runner that can run commands,
 scripts, and puppet code across your infrastructure with a few

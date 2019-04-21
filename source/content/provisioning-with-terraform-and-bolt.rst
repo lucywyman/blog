@@ -26,8 +26,8 @@ need.
 
     Image from `'Terraform All The Things'`_ by Nathan Handler
 
-.. _'Terraform All The Things': https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769
-.. _Nathan Handler: https://www.slideshare.net/NathanHandler/scale-latest-terraform-all-the-things-90277769
+.. _'Terraform All The Things': https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769
+.. _Nathan Handler: https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769
 .. _Terraform: https://www.terraform.io/intro/index.html
 
 `Bolt`_ is an open source remote task runner that can run commands,
