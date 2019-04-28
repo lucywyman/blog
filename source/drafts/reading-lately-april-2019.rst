@@ -17,6 +17,17 @@ Reading Lately: April 2019
 
 .. _Wallflower at the Orgy: https://www.goodreads.com/book/show/523071.Wallflower_at_the_Orgy
 
+`I Feel Bad About My Neck`_
+---------------------------
+*Nora Ephron*
+
+.. figure:: theme/images/i-feel-bad-about-my-neck.jpg
+    :align: center
+    :height: 300px
+
+
+.. _I Feel Bad About My Neck:
+
 `The Library Book`_
 -------------------
 *Susan Orlean*
@@ -50,4 +61,4 @@ Reading Lately: April 2019
 `Happy City`_
 -------------
 
-
+.. _Happy City:

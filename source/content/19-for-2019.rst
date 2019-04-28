@@ -72,13 +72,13 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 
 13. Have a crossword published in the New York Times 
 
-14. Use the 1 million (jk, 20) lipsticks I have
+14. --Use the 1 million (jk, 20) lipsticks I have--
 
 15. Visit the `Living Computer Museum`_
 
 .. _Living Computer Museum: https://livingcomputers.org/
 
-16. Help Sean plant a plant during the spring
+16. --Help Sean plant a plant during the spring--
 
 17. This goal sucks because it's hard to quantify, but be nicer to
     myself. My internal dialog tends to be really negative, and while
