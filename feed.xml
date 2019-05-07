@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Sat, 13 Apr 2019 00:00:00 -0700</lastBuildDate><item><title>Promting for Sudo Password in Travis</title><link>http://blog.lucywyman.me/prompting-for-sudo-in-travis.html</link><description>&lt;p&gt;&amp;quot;Lucy, why would you want to do this? ARE YOU OK?&amp;quot;
+<rss version="2.0"><channel><title>blog</title><link>http://blog.lucywyman.me/</link><description></description><lastBuildDate>Tue, 07 May 2019 00:00:00 -0700</lastBuildDate><item><title>Reading Lately: April 2019</title><link>http://blog.lucywyman.me/reading-lately-april-2019.html</link><description>&lt;div class="section" id="wallflower-at-the-orgy"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/523071.Wallflower_at_the_Orgy"&gt;Wallflower at the Orgy&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Nora Ephron&lt;/em&gt;&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="theme/images/wallflower-at-the-orgy.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;This was the first collection of Nora Ephron essays I read, and while
+it was fine it didn't live up to my expectations. My favorite movie
+while growing up was 'When Harry Met Sally', and as a young woman
+trying to understand my own …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Tue, 07 May 2019 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2019-05-07:/reading-lately-april-2019.html</guid><category>books</category></item><item><title>Promting for Sudo Password in Travis</title><link>http://blog.lucywyman.me/prompting-for-sudo-in-travis.html</link><description>&lt;p&gt;&amp;quot;Lucy, why would you want to do this? ARE YOU OK?&amp;quot;
 It's true: making Travis print the sudo prompt and enter it's password
 is not a common use case. We were testing a new feature in &lt;a class="reference external" href="https://puppet.com/docs/bolt/"&gt;Bolt&lt;/a&gt;
 which opens a subprocess on the local machine and runs a command as …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucy Wyman</dc:creator><pubDate>Sat, 13 Apr 2019 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.lucywyman.me,2019-04-13:/prompting-for-sudo-in-travis.html</guid><category>tech</category></item><item><title>Reading Lately: March 2019</title><link>http://blog.lucywyman.me/reading-lately-march-2019.html</link><description>&lt;p&gt;The &lt;a class="reference external" href="https://themorningnews.org/tob/"&gt;Tournament of Books&lt;/a&gt; happened this month, and while I knew I
