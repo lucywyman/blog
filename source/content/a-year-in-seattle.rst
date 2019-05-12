@@ -5,17 +5,36 @@ A Year in Seattle
 :category: Experiences
 :slug: a-year-in-seattle
 :author: Lucy Wyman
-:img:
+:img: space-needle.jpg
 
 One of the `highlights of 2018`_ was moving to Seattle with my
 beloved, along with two close friends from college. This year has been
-exciting and lonely and fulfilling and new, and I've learned so much
-about myself and what makes me happy. 
+exciting and lonely and fulfilling and new, and I learned a lot about
+myself. In the scheme of things this adventure is so small - a move 3
+hours north, to a similar and slightly larger township, living with my
+boyfriend and 2 friends. I was literally an arms length away from
+people who supported and loved me for most of my days. This wasn't
+"Eat, Pray, Love" folks. Leaving Portland was a Lucy-level Big Deal
+though, and this year has been hard in unexpected ways. My career
+stalled because my boss didn't have as much visibility into my work.
+My relationship with my parents felt tense. I lost touch with my close
+friends. It was also wonderful in unexpected ways. We adopted a
+wonderful little dog. I made friends and a found my community in
+Seattle. I grew closer to my boyfriend and roommates. We watched ALL
+of Parks and Recreation. It's been a year.
 
-.. _highlights of 2018:
+.. _highlights of 2018: http://blog.lucywyman.me/reflections-on-2018.html
 
 Seattle and Portland
 --------------------
+
+.. figure:: theme/images/pike-place-seattle.jpg
+    :align: left
+    :height: 300px
+
+.. figure:: theme/images/portland-from-overlook.jpg
+    :align: left
+    :height: 300px
 
 I'm often asked how Seattle compares to Portland, and the most true
 answer is that I like Seattle more than I thought I would, but miss
@@ -43,6 +62,10 @@ sense of warmth and belonging.
 I like Seattle
 --------------
 
+.. figure:: theme/images/japantown.jpg
+    :align: center
+    :height: 400px
+
 I've enjoyed Seattle more than I anticipated. I expected the city
 to feel too big, the people to be icy, and the weather to be
 unbearable. But Seattlites are some of the warmest, nicest people I've
@@ -52,22 +75,28 @@ definitely bigger[1] and busier than Portland, much more east-coast
 hustle-and-bustle. There are so many great shows, `beautiful parks`_,
 `quirky storefronts`_, `murals`_, `events`_, and neighborhoods to
 explore. We made an effort this year to go out and experience
-our new city more than we did in Portland or Corvallis (thought
+our new city more than we did in Portland or Corvallis (though
 there's also a lot of things we missed!), and I loved getting to
-experience a lot of those things with our roommates. 
+experience a lot of those things with friends. If most of the things
+and people I loved weren't in Portland, I could 100% envision myself
+staying in Seattle. But...
 
-.. _beautiful parks:
-.. _quirky storefronts:
-.. _murals:
-.. _events:
+.. _beautiful parks: https://www.kubotagarden.org/
+.. _quirky storefronts: https://www.atlasobscura.com/things-to-do/seattle-washington
+.. _murals: https://theevergrey.com/seattle-iconic-murals-history/
+.. _events: https://www.thestranger.com/events
 
 I miss Portland
 ---------------
 
+.. figure:: theme/images/division-mural.jpg
+    :align: center
+    :height: 400px
+
 While I loved getting to live in a new city with new people in a new
 house, I was surprised by how much I missed Portland. I missed a lot
 of things that happen to be located in Portland: my family, my
-friends, my coworkers, Los Gorditos. But I also missed the city
+friends, my coworkers, `Los Gorditos`_. But I also missed the city
 itself in a way that's hard to describe. Portland and Seattle are
 similar in a lot of ways: they have similar values, are similar
 politically, have similar climates, etc. Seattle never felt like Home
@@ -84,21 +113,26 @@ in her email signature*. It was glorious.
 
 Living in Seattle for a year helped me appreciate the things I had
 taken for granted in Portland, and erased any doubt that it's where I
-eventually want to settle. 
+eventually want to settle. It solidified my relationships with my
+roommates and Eli, and helped me feel more confident in my sense of
+self. I don't regret moving to Seattle. I am also happy to be moving
+back to Portland :)
 
-What I Learned
---------------
-
-1. Working from home is not for me.
-2. Living with Eli IS for me.
-3. I can make friends anywhere (or at least anywhere in the PNW)
-4. Living close to friends makes seeing them easier.
+.. _Los Gorditos: https://www.losgorditospdx.com/
 
 Conclusion
 ----------
 
-[1] Though Seattle's population is only modestly larger, at about
-`725,000`_ compared to Portland's estimated `647,000`_
+So that's it, one year in the Emerald City, the TODO, the Big
+Coffee Cup (it'll catch on, you'll see). Learned some things. Saw some
+things. Did some things. Made some friends (good writing is all about
+details right?). Did not make any enemies (is this a metric for
+success?). And as they say - it's not 'goodbye', it's only 'see you
+later'.
+
+
+[1] Seattle's population is only modestly larger, at about `725,000`_
+compared to Portland's estimated `647,000`_
 
 .. _725,000: https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk
 .. _647,000: https://www.census.gov/data/datasets/2017/demo/popest/total-cities-and-towns.html

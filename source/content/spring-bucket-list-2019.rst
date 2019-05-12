@@ -20,7 +20,7 @@ are. Until then, we'll be making the most of our last spring in SEA!
 * Visit the `Living Computer Museum`_
 * Go to a garage sale
 * See the Seattle Japanese Garden
-* Cook a meal entirely from Farmer's Market finds
+* ~Cook a meal entirely from Farmer's Market finds~
 * ~Move to Portland!!!~
 
 Keeping it short and sweet this season - we've got a busy few months
