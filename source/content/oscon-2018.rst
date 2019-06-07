@@ -2,7 +2,7 @@ OSCON 2018
 ==========
 :date: 07-20-2018
 :tags: tech, conferences
-:category: Tech
+:category: Conferences
 :slug: oscon-2018
 :author: Lucy Wyman
 :img:

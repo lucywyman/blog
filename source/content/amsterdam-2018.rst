@@ -2,7 +2,7 @@ Amsterdam 2018
 ==============
 :date: 10-14-2018
 :tags: travel, experiences
-:category: Experiences
+:category: Travel
 :slug: amsterdam-2018
 :author: Lucy Wyman
 :img: amsterdam-church.jpg

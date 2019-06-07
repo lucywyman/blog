@@ -1,7 +1,7 @@
 OSCON 2017
 ==========
 :date: 2017-05-15
-:tags: experiences, conferences, tech
+:tags: conferences, tech
 :category: Conferences
 :slug: oscon-2017
 :author: Lucy Wyman

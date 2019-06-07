@@ -2,7 +2,7 @@ San Francisco 2016: An Adventure
 ================================
 :date: 2016-12-20
 :tags: experiences, travel, tech
-:category: Experiences
+:category: Travel
 :slug: san-francisco-2016
 :author: Lucy Wyman
 

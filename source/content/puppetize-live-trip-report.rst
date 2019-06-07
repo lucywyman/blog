@@ -1,8 +1,8 @@
 Puppetize Live 2018
 ===================
 :date: 10-14-2018
-:tags: conferences, tech, experiences
-:category: Tech
+:tags: conferences, tech, experiences, travel
+:category: Conferences
 :slug: puppetize-live-2018
 :author: Lucy Wyman
 :img: amsterdam-group.jpg
