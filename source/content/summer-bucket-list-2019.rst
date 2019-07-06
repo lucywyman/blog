@@ -30,7 +30,7 @@ Go to a concert
 
 See an outdoor movie or Shakespeare in the Park
 
-Get a plant for our patio
+--Get a plant for our patio--
 
 Take a class
 
