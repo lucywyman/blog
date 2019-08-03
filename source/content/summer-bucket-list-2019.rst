@@ -22,17 +22,17 @@ tacos. We're gonna do some hikes. We're gonna see friends, and go to
 concerts, and have barbecues, and drink on a rooftop, and fucking live
 it up. Watermelon. Every. Damn. Day.
 
-Go berry picking
+--Go berry picking--
 
-Visit the `Rose Garden`_
+--Visit the `Rose Garden`_--
 
-Go to a concert
+--Go to a concert-- (I'm counting my surprise Opera show)
 
 See an outdoor movie or Shakespeare in the Park
 
 --Get a plant for our patio--
 
-Take a class
+--Take a class-- (I learned how to repair a flat bike tire)
 
 Book a trip to Colorado to see friends
 
