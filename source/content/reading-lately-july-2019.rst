@@ -1,6 +1,6 @@
 Reading Lately: July 2019
 =========================
-:date: 10-06-2018
+:date: 08-01-2019
 :tags: books
 :category: Books
 :slug: reading-lately-july-2019

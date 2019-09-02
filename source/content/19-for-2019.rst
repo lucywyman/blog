@@ -53,7 +53,9 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 3. See every movie nominated for the Oscar's best picture - I've
    accepted failure on this one because I refuse to see 'A Star is
    Born' (HOLLYWOOD: STOP REMAKING MOVIES MAKE NEW ONES) and
-   'Bohemian Rhapsody' (70% on RT - c'mon).
+   'Bohemian Rhapsody' (`61% on RT`_ - not worth my time).
+
+.. _61% on RT: https://www.rottentomatoes.com/m/bohemian_rhapsody
 
 4. --Visit a new US state-- (I'm going to count Hawaii)
 
@@ -68,7 +70,7 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 9. --Make 1 vegan meal each week-- I've developed an arsenal of vegan
    recipes I love.
 
-10. Take a class (in anything)
+10. --Take a class (in anything)-- We ended up taking a Bike maintenance class at a local bike shop - I learned how to patch a tire!
 
 11. Bake cinnamon rolls
 
