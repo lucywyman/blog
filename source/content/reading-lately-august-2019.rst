@@ -7,6 +7,10 @@ Reading Lately: August 2019
 :author: Lucy Wyman
 :img: august-2019.jpg
 
+August was a busy month for us. We visited friends in Corvallis, and my extended family in Bend, OR. We celebrated a one year anniversary with a big backyard barbecue, and a birthday with a hike and picnic brunch. Literarily the month was less great - I chose what I thought would be fun and easy, summery books many of which just turned out to be plain bad. If there's one thing I've learned from reading so much this year, it's that there are a lot of bad books that get published. I guess 'bad' is too generic a term though, and who am I to say a book is bad? I suppose it's better to say books I can't appreciate.
+
+Here's what I read in August:
+
 `Fleishman Is in Trouble`_
 --------------------------
 *Taffy Brodesser-Akner*

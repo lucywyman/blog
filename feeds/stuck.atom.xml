@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - stuck</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/stuck.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-11-03T00:00:00-07:00</updated><entry><title>Matcha Quest</title><link href="http://blog.lucywyman.me/matcha-quest.html" rel="alternate"></link><published>2018-11-03T00:00:00-07:00</published><updated>2018-11-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-11-03:/matcha-quest.html</id><content type="html">&lt;div class="section" id="moore-coffee-shop"&gt;
+&lt;h2&gt;&lt;a class="reference external" href="https://www.instagram.com/moorecoffeeseattle/"&gt;Moore Coffee Shop&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/moore-matcha.jpg" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cafe-hitchcock"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#id2"&gt;Cafe Hitchcock&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="honor-coffee"&gt;
+&lt;span id="id2"&gt;&lt;/span&gt;&lt;h2&gt;&lt;a class="reference external" href="https://www.honorcoffee.com/"&gt;Honor Coffee&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images" style="height: 300px;" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="espresso-vivace"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#espresso-vivace"&gt;Espresso Vivace&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+</content><category term="experiences"></category></entry></feed>

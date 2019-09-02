@@ -5,7 +5,7 @@ Summer Bucket List 2019
 :category: Experiences
 :slug: summer-bucket-list-2019
 :author: Lucy Wyman
-:img: summer-bucket-list.jpg
+:img: summer-bucket-list-2019.jpg
 
 Wow, I *epically* failed my `spring bucket list`_. I barely did one of
 the items - and even then, only because of this list and without

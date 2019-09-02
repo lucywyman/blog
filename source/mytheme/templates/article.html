@@ -5,7 +5,9 @@
 <h2>{{ article.title }}</h2>
 <p>{{ article.locale_date }}</p>
 {% if article.img %}
-<img alt="" src="/theme/images/{{ article.img }}" style="height: 400px;">
+<div class='parent'>
+  <img alt="" src="/theme/images/{{ article.img }}" style="height: 400px;">
+</div>
 {% endif %}
 {% if article.img and article.photosource %}
 <p class='source'>Source: (<a href="{{ article.photolink }}">{{ article.photosource }}</a>)</p>

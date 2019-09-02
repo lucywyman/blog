@@ -7,11 +7,21 @@ h1, h2, h3, h4, h5, h6, p, a, li, tr, td, table {
   font-family: "Lato", sans-serif;
   color: #444; }
 
+h2 {
+  font-size: 1rem; }
+
 a {
   color: #C41230;
   text-decoration: none; }
   a:hover {
     color: rgba(196, 18, 48, 0.8); }
+
+img {
+  display: block;
+  max-width: 300px;
+  max-height: 400px;
+  width: auto;
+  height: auto; }
 
 pre {
   background-color: #f6f8fa;
@@ -72,8 +82,8 @@ main {
       max-width: 300px;
       max-height: 400px;
       display: block;
-      width: 100%;
-      height: auto; }
+      height: auto;
+      width: auto; }
     main .article-blurb .blurb-content {
       margin: 20px; }
 

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-09-01T00:00:00-07:00</updated><entry><title>Reading Lately: August 2019</title><link href="http://blog.lucywyman.me/reading-lately-august-2019.html" rel="alternate"></link><published>2019-09-01T00:00:00-07:00</published><updated>2019-09-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-09-01:/reading-lately-august-2019.html</id><summary type="html">&lt;div class="section" id="fleishman-is-in-trouble"&gt;
-&lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/41880602-fleishman-is-in-trouble"&gt;Fleishman Is in Trouble&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Taffy Brodesser-Akner&lt;/em&gt;&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="theme/images/fleishman-is-in-trouble.jpg" style="height: 300px;" /&gt;
-&lt;/div&gt;
-&lt;p&gt;After listening to &lt;a class="reference external" href="https://www.thecut.com/2019/06/the-cut-on-tuesdays-podcast-taffy-brodesser-akner-fleishman-is-in-trouble.html"&gt;an interview with the author&lt;/a&gt; I was overly hyped about
-this book (which I guess is the point of interviews). The protagonist, Toby
-Fleishman, is bizarrely (though apparently not overtly) reminiscent of Toby
-Flenderson from &amp;quot;The Office&amp;quot;. He's limp and pitiable …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="fleishman-is-in-trouble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2019-09-01T00:00:00-07:00</updated><entry><title>Reading Lately: August 2019</title><link href="http://blog.lucywyman.me/reading-lately-august-2019.html" rel="alternate"></link><published>2019-09-01T00:00:00-07:00</published><updated>2019-09-01T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-09-01:/reading-lately-august-2019.html</id><summary type="html">&lt;p&gt;August was a busy month for us. We visited friends in Corvallis, and my extended family in Bend, OR. We celebrated a one year anniversary with a big backyard barbecue, and a birthday with a hike and picnic brunch. Literarily the month was less great - I chose what I thought …&lt;/p&gt;</summary><content type="html">&lt;p&gt;August was a busy month for us. We visited friends in Corvallis, and my extended family in Bend, OR. We celebrated a one year anniversary with a big backyard barbecue, and a birthday with a hike and picnic brunch. Literarily the month was less great - I chose what I thought would be fun and easy, summery books many of which just turned out to be plain bad. If there's one thing I've learned from reading so much this year, it's that there are a lot of bad books that get published. I guess 'bad' is too generic a term though, and who am I to say a book is bad? I suppose it's better to say books I can't appreciate.&lt;/p&gt;
+&lt;p&gt;Here's what I read in August:&lt;/p&gt;
+&lt;div class="section" id="fleishman-is-in-trouble"&gt;
 &lt;h2&gt;&lt;a class="reference external" href="https://www.goodreads.com/book/show/41880602-fleishman-is-in-trouble"&gt;Fleishman Is in Trouble&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Taffy Brodesser-Akner&lt;/em&gt;&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
@@ -1529,15 +1522,15 @@ called 'terraform', which defaults to using the &lt;a class="reference external"
 &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/bolt_configuration_options.html"&gt;configures&lt;/a&gt; the ssh private key, user, and host key check for this
 group.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;~/terraform_provision/inventory.yaml&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;groups&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
-  &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;name&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;terraform&lt;/span&gt;
-    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;nodes&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;[]&lt;/span&gt; &lt;span class="c1"&gt;# This will be populated by the Bolt plan&lt;/span&gt;
-    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;config&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
-      &lt;span class="l l-Scalar l-Scalar-Plain"&gt;transport&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ssh&lt;/span&gt;
-      &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ssh&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
-        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;private-key&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;~/.ssh/id_rsa-phraseless&lt;/span&gt;
-        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;user&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu&lt;/span&gt;
-        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;host-key-check&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;false&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;groups&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+  &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;terraform&lt;/span&gt;
+    &lt;span class="nt"&gt;nodes&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;[]&lt;/span&gt; &lt;span class="c1"&gt;# This will be populated by the Bolt plan&lt;/span&gt;
+    &lt;span class="nt"&gt;config&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="nt"&gt;transport&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ssh&lt;/span&gt;
+      &lt;span class="nt"&gt;ssh&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="nt"&gt;private-key&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;~/.ssh/id_rsa-phraseless&lt;/span&gt;
+        &lt;span class="nt"&gt;user&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu&lt;/span&gt;
+        &lt;span class="nt"&gt;host-key-check&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;false&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Next we'll write the Bolt plan to run &lt;code&gt;terraform apply&lt;/code&gt;, collect
 the IPs of the instances it creates, and provision those instances.&lt;/p&gt;
@@ -1577,7 +1570,7 @@ running!&lt;/p&gt;
 &lt;p&gt;A bolt configuration file, to tell it where to &lt;a class="reference external" href="https://puppet.com/docs/bolt/1.x/bolt_configuration_options.html#global-configuration-options"&gt;find modules&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;~/terraform_provision/bolt.yaml&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;modulepath&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;./modules:~/githubs/modules&lt;/span&gt;
+&lt;span class="nt"&gt;modulepath&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;./modules:~/githubs/modules&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A &lt;a class="reference external" href="https://puppet.com/docs/pe/latest/puppetfile.html"&gt;Puppetfile&lt;/a&gt; with dependencies:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;~/terraform_provision/Puppetfile&lt;/strong&gt;&lt;/p&gt;

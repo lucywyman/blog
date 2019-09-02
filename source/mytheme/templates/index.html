@@ -4,10 +4,12 @@
 {% for article in articles_page.object_list %}
 <div class='article-blurb'>
 	{% if article.img %}
-	<img src='/theme/images/{{ article.img }}'>
+  <div class='parent'>
+    <img src='/theme/images/{{ article.img }}'>
+  </div>
 	{% endif %}
 	<div class='blurb-content'>
-    <h4><a href="{{ SITEURL }}/{{article.url}}">{{ article.title }}</a></h4>
+    <h2><a href="{{ SITEURL }}/{{article.url}}">{{ article.title }}</a></h2>
 	<p>{{article.locale_date}}</p>
 	<p>{{article.summary}}<a href='{{article.url}}'>read more</a></p>
 	</div>
