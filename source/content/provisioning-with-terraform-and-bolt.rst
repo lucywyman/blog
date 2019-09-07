@@ -2,7 +2,7 @@ Cloud Provisioning with Terraform and Bolt
 ==========================================
 :date: 01-23-2019
 :tags: tech
-:category: Technology
+:category: Tech
 :slug: cloud-provisioning-with-terraform-and-bolt
 :author: Lucy Wyman
 :img:

@@ -2,7 +2,7 @@ Oscar Predictions 2018
 ======================
 :date: 2018-03-02
 :tags: movies
-:category: Movies
+:category: Thoughts
 :slug: oscar-predictions-2018
 :author: Lucy Wyman
 :img: oscars.jpg

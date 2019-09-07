@@ -21,16 +21,9 @@
       </main>
       <aside>
         <div class='sidebar'>
-          <div class='social-media'>
-            <a href='https://github.com/lucywyman'>
-              <img class='social' src='/theme/images/github-icon.png'>
-            </a>
-            <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
-              <img class='social' src='/theme/images/linkedin.png'>
-            </a>
-          </div>
           <!--TODO: search, subscribe, archive-->
-          <p><a href='/feed.rss'>Subscribe via RSS <img class='social' src='/theme/images/icon-rss.png'></a></p><hr>
+          <p><a href='/feed.rss'>RSS <i class="fas fa-rss"></i></a></p>
+          <hr>
           <h3>Categories</h3>
           <ul>
             {% for category, articles in categories|sort %}
@@ -61,13 +54,9 @@
       </aside>
     </div>
     <div class='footer'>
-      <!-- TODO -->
-      <a href='https://github.com/lucywyman'>
+      <p>Made with <i class="fas fa-heart"></i> in PDX · Powered by <a href='https://docs.getpelican.com/en/3.6.3/index.html'>Pelican</a> · Code on <a href='https://github.com/lucywyman'>
         <img class='social' src='/theme/images/github-icon.png'>
-      </a>
-      <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'>
-        <img class='social' src='/theme/images/linkedin.png'>
-      </a>
+      </a></p>
     </div>
   </body>
 </html>

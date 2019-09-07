@@ -2,7 +2,7 @@ My Favorite Board Games
 =======================
 :date: 09-05-2018
 :tags: favorites
-:category: Favorites
+:category: Loves
 :slug: favorite-board-games
 :author: Lucy Wyman
 :img: 

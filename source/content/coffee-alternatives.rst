@@ -2,7 +2,7 @@ Coffee Alternatives
 ===================
 :date: 2018-03-02
 :tags: food
-:category: Food
+:category: Experiences
 :slug: coffee-alternatives
 :author: Lucy Wyman
 :img:
