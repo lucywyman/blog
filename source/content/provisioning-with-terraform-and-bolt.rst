@@ -11,6 +11,11 @@ Cloud Provisioning with Terraform and Bolt
     :align: center
     :height: 200px
 
+**NOTE**: Since writing this, we've added `inventory plugins`_ to Bolt, which allow you to dynamically load inventory from sources like Terraform, PuppetDB, and Azure. I recommend checking out `Tony Green's blog post`_ about using the Terraform plugin.
+
+.. _inventory plugins: https://puppet.com/docs/bolt/latest/inventory_file_v2.html#plugins-and-dynamic-inventory
+.. _Tony Green's blog post: https://albatrossflavour.com/2019/05/puppet-bolt-and-terraform/
+
 `Terraform`_ is a cloud provisioning tool that's great at managing
 low-level infrastructure components such as compute instances,
 storage, and networking. While Terraform is great at creating the

@@ -33,14 +33,12 @@ modify the sudo config!&lt;/p&gt;
 </content><category term="tech"></category></entry><entry><title>Cloud Provisioning with Terraform and Bolt</title><link href="http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html" rel="alternate"></link><published>2019-01-23T00:00:00-08:00</published><updated>2019-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-23:/cloud-provisioning-with-terraform-and-bolt.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Since writing this, we've added &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/inventory_file_v2.html#plugins-and-dynamic-inventory"&gt;inventory plugins&lt;/a&gt; to Bolt, which allow you to dynamically load inventory from sources like Terraform, PuppetDB, and Azure. I recommend checking out &lt;a class="reference external" href="https://albatrossflavour.com/2019/05/puppet-bolt-and-terraform/"&gt;Tony Green's blog post&lt;/a&gt; about using the Terraform plugin.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.terraform.io/intro/index.html"&gt;Terraform&lt;/a&gt; is a cloud provisioning tool that's great at managing
-low-level infrastructure components such as compute instances,
-storage, and networking. While Terraform is great at creating the
-infrastructure you need, it's not great at managing the state of your
-resources over time or enforcing certain states. &lt;a class="reference external" href="https://www.slideshare.net/NathanHandler/scale-16x-terraform-all-the-things-90277769"&gt;Nathan Handler&lt;/a&gt;
-described it …&lt;/p&gt;</summary><content type="html">&lt;div class="figure align-center"&gt;
+low-level infrastructure components …&lt;/p&gt;</summary><content type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Since writing this, we've added &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/inventory_file_v2.html#plugins-and-dynamic-inventory"&gt;inventory plugins&lt;/a&gt; to Bolt, which allow you to dynamically load inventory from sources like Terraform, PuppetDB, and Azure. I recommend checking out &lt;a class="reference external" href="https://albatrossflavour.com/2019/05/puppet-bolt-and-terraform/"&gt;Tony Green's blog post&lt;/a&gt; about using the Terraform plugin.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.terraform.io/intro/index.html"&gt;Terraform&lt;/a&gt; is a cloud provisioning tool that's great at managing
 low-level infrastructure components such as compute instances,
 storage, and networking. While Terraform is great at creating the
