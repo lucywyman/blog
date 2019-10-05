@@ -15,7 +15,7 @@ least seem more accurate. We'll try it on and see how it feels.
 To be honest I'm not excited about Fall this year. We had a mild and cloudy
 summer in Portland, which feels like it was over before it ever began. With
 Eli's new job we didn't get a change to travel much, and while we did ample
-summer-y activities something was missing. My heart just wasn't in it. I'm
+summery activities something was missing. My heart just wasn't in it. I'm
 still mourning the loss of sunshine as I write this, in a coffeeshop while it
 rains outside - the whole scene feels like a sigh.
 
@@ -26,14 +26,19 @@ goal with this list is to give myself permission to take some time for myself
 and make sure I'm not running on fumes. Hopefully you can also find some time
 for yourself in the midst of back-to-school, back-to-work, and back-to-winter.
 
-* Escape from a `Haunted Corn Maze`_
-* Watch `Hocus Pocus`_
-* Visit the `Living Computer Museum`_ while we're in Seattle for `SeaGL`_
-* Bake a treat to bring to work
-* Try every pumpkin-spice flavored yogurt I can find
+Escape from a `Haunted Corn Maze`_
+
+Watch `Hocus Pocus`_
+
+Visit the `Living Computer Museum`_ while we're in Seattle for `SeaGL`_
+
+--Bake a treat to bring to work-- I ended up making `brown butter apple muffins`_, which were easy and an office hit!
+
+Try every pumpkin-spice flavored yogurt I can find
 
 .. _Haunted Corn Maze: https://bellaorganic.com/haunted-corn-maze/
 .. _Hocus Pocus: https://www.imdb.com/title/tt0107120/
 .. _Living Computer Museum: https://livingcomputers.org/
 .. _SeaGL: https://seagl.org/
 .. _bucket lists: http://blog.lucywyman.me/tag/bucket-lists.html
+.. _brown butter apple muffins: http://recipes.lucywyman.me/apple-muffins.html
