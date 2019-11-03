@@ -26,15 +26,16 @@ goal with this list is to give myself permission to take some time for myself
 and make sure I'm not running on fumes. Hopefully you can also find some time
 for yourself in the midst of back-to-school, back-to-work, and back-to-winter.
 
-Escape from a `Haunted Corn Maze`_
+[x] Escape from a `Haunted Corn Maze`_ - It wasn't haunted, but we got to take a field trip during
+work to a pumpkin patch, and did the corn maze there
 
 Watch `Hocus Pocus`_
 
 Visit the `Living Computer Museum`_ while we're in Seattle for `SeaGL`_
 
---Bake a treat to bring to work-- I ended up making `brown butter apple muffins`_, which were easy and an office hit!
+[x] Bake a treat to bring to work I ended up making `brown butter apple muffins`_, which were easy and an office hit!
 
-Try every pumpkin-spice flavored yogurt I can find
+[x] Try every pumpkin-spice flavored yogurt I can find
 
 .. _Haunted Corn Maze: https://bellaorganic.com/haunted-corn-maze/
 .. _Hocus Pocus: https://www.imdb.com/title/tt0107120/
