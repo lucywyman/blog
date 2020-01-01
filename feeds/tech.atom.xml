@@ -30,7 +30,7 @@ then undo this sudo config. Also worth noting: you must set the
 &lt;code&gt;NOPASSWD&lt;/code&gt; line last, otherwise you won't be able to use sudo to
 modify the sudo config!&lt;/p&gt;
 &lt;p&gt;Et voila! We can test prompting for a sudo password in Travis.&lt;/p&gt;
-</content><category term="tech"></category></entry><entry><title>Cloud Provisioning with Terraform and Bolt</title><link href="http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html" rel="alternate"></link><published>2019-01-23T00:00:00-08:00</published><updated>2019-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-23:/cloud-provisioning-with-terraform-and-bolt.html</id><summary type="html">&lt;div class="figure align-center"&gt;
+</content><category term="Tech"></category><category term="tech"></category></entry><entry><title>Cloud Provisioning with Terraform and Bolt</title><link href="http://blog.lucywyman.me/cloud-provisioning-with-terraform-and-bolt.html" rel="alternate"></link><published>2019-01-23T00:00:00-08:00</published><updated>2019-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2019-01-23:/cloud-provisioning-with-terraform-and-bolt.html</id><summary type="html">&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="theme/images/bolt-logo-dark.png" style="height: 200px;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Since writing this, we've added &lt;a class="reference external" href="https://puppet.com/docs/bolt/latest/inventory_file_v2.html#plugins-and-dynamic-inventory"&gt;inventory plugins&lt;/a&gt; to Bolt, which allow you to dynamically load inventory from sources like Terraform, PuppetDB, and Azure. I recommend checking out &lt;a class="reference external" href="https://albatrossflavour.com/2019/05/puppet-bolt-and-terraform/"&gt;Tony Green's blog post&lt;/a&gt; about using the Terraform plugin.&lt;/p&gt;
@@ -245,7 +245,7 @@ simple, is just the beginning - so what are you going to build?&lt;/p&gt;
 Certification test and got 48%, and I can do this. Really, I mean no
 Puppet knowledge!&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="tech"></category></entry><entry><title>RFID (mis)Adventure</title><link href="http://blog.lucywyman.me/RFID-adventure.html" rel="alternate"></link><published>2018-05-22T00:00:00-07:00</published><updated>2018-05-22T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-05-22:/RFID-adventure.html</id><summary type="html">&lt;p&gt;Our office recently relocated to a WeWork, which has an RFID card for
+</content><category term="Tech"></category><category term="tech"></category></entry><entry><title>RFID (mis)Adventure</title><link href="http://blog.lucywyman.me/RFID-adventure.html" rel="alternate"></link><published>2018-05-22T00:00:00-07:00</published><updated>2018-05-22T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-05-22:/RFID-adventure.html</id><summary type="html">&lt;p&gt;Our office recently relocated to a WeWork, which has an RFID card for
 getting onto the floor before business hours and for getting into our
 company's suite there. Unfortunately I already have an RFID card (my
 &lt;a class="reference external" href="https://kingcounty.gov/depts/transportation/metro/fares-orca/orca-cards.aspx"&gt;Orca card&lt;/a&gt;) attached to my phone, so keeping the WeWork card there
@@ -301,7 +301,7 @@ read. Forgetting / losing my WeWork card continues to be a problem, so
 stayed tuned for other attempts at the bracelet solution or other
 creative solutions to the problem!&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="experiences"></category></entry><entry><title>Managing CoreOS With Puppet</title><link href="http://blog.lucywyman.me/managing-coreos-with-puppet.html" rel="alternate"></link><published>2017-10-03T00:00:00-07:00</published><updated>2017-10-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-10-03:/managing-coreos-with-puppet.html</id><summary type="html">&lt;div class="section" id="why"&gt;
+</content><category term="Tech"></category><category term="tech"></category><category term="experiences"></category></entry><entry><title>Managing CoreOS With Puppet</title><link href="http://blog.lucywyman.me/managing-coreos-with-puppet.html" rel="alternate"></link><published>2017-10-03T00:00:00-07:00</published><updated>2017-10-03T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-10-03:/managing-coreos-with-puppet.html</id><summary type="html">&lt;div class="section" id="why"&gt;
 &lt;h2&gt;Why&lt;/h2&gt;
 &lt;p&gt;To be perfectly honest, the only reason I wanted to do this is because I
 submitted a talk to &lt;a class="reference external" href="https://puppet.com/puppetconf"&gt;PuppetConf&lt;/a&gt; on the subject and it got accepted. Woops.
@@ -571,7 +571,7 @@ vagrant ssh coreosagent
 &lt;p&gt;&lt;a class="reference external" href="http://www.admintome.com/blog/configure-puppet-on-coreos/"&gt;http://www.admintome.com/blog/configure-puppet-on-coreos/&lt;/a&gt;
 &lt;a class="reference external" href="https://coreos.com/os/docs/latest/booting-on-vagrant.html#cloud-config"&gt;https://coreos.com/os/docs/latest/booting-on-vagrant.html#cloud-config&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="containers"></category></entry><entry><title>Installing a Package in an Openshift Container (Kind Of)</title><link href="http://blog.lucywyman.me/installing-a-package-in-an-openshift-container.html" rel="alternate"></link><published>2017-07-25T00:00:00-07:00</published><updated>2017-07-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-07-25:/installing-a-package-in-an-openshift-container.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TODO Better title. Ping me with ideas!&lt;/strong&gt;&lt;/p&gt;
+</content><category term="Tech"></category><category term="tech"></category><category term="containers"></category></entry><entry><title>Installing a Package in an Openshift Container (Kind Of)</title><link href="http://blog.lucywyman.me/installing-a-package-in-an-openshift-container.html" rel="alternate"></link><published>2017-07-25T00:00:00-07:00</published><updated>2017-07-25T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-07-25:/installing-a-package-in-an-openshift-container.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TODO Better title. Ping me with ideas!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Fair warning: This article assumes that you have a decent
 understanding of Openshift from the outset, because explaining all the
 concepts used here would take too much space. I'll try to link to
@@ -821,7 +821,7 @@ pretty good resource on the anatomy of an s2i builder, though
 definitely isn't required reading for this post.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="Openshift"></category></entry><entry><title>How to Deploy a Private Git Repo to Openshift</title><link href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><updated>2017-06-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-06-15:/deploy-private-git-repo-to-openshift.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://openshift.com"&gt;Openshift&lt;/a&gt; is &lt;a class="reference external" href="http://www.redhat.com/en"&gt;Redhat's&lt;/a&gt; platform as a service, aka a place for you
+</content><category term="Tech"></category><category term="tech"></category><category term="Openshift"></category></entry><entry><title>How to Deploy a Private Git Repo to Openshift</title><link href="http://blog.lucywyman.me/deploy-private-git-repo-to-openshift.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><updated>2017-06-15T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-06-15:/deploy-private-git-repo-to-openshift.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://openshift.com"&gt;Openshift&lt;/a&gt; is &lt;a class="reference external" href="http://www.redhat.com/en"&gt;Redhat's&lt;/a&gt; platform as a service, aka a place for you
 to deploy your application to (think Heroku, Google App Engine, or AWS
 Beanstalk). They have a tool called &lt;a class="reference external" href="https://docs.openshift.com/enterprise/3.1/architecture/core_concepts/builds_and_image_streams.html#source-build"&gt;Source 2 Image (S2I)&lt;/a&gt; that
 allows you to pass in a &lt;a class="reference external" href="https://docs.openshift.org/latest/dev_guide/builds/index.html"&gt;source&lt;/a&gt; (in the form of a docker image, git …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://openshift.com"&gt;Openshift&lt;/a&gt; is &lt;a class="reference external" href="http://www.redhat.com/en"&gt;Redhat's&lt;/a&gt; platform as a service, aka a place for you
@@ -1039,7 +1039,7 @@ works. This was super helpful for understanding what all of the
 components were, and generally getting started.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="openshift"></category></entry><entry><title>Setting a Language with Selenium Webdriver in Ruby</title><link href="http://blog.lucywyman.me/setting-a-language-with-selenium-webdriver-in-ruby.html" rel="alternate"></link><published>2017-01-23T00:00:00-08:00</published><updated>2017-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-01-23:/setting-a-language-with-selenium-webdriver-in-ruby.html</id><summary type="html">&lt;p&gt;Hello reader! This post was inspired by a project I was working on
+</content><category term="Tech"></category><category term="tech"></category><category term="openshift"></category></entry><entry><title>Setting a Language with Selenium Webdriver in Ruby</title><link href="http://blog.lucywyman.me/setting-a-language-with-selenium-webdriver-in-ruby.html" rel="alternate"></link><published>2017-01-23T00:00:00-08:00</published><updated>2017-01-23T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2017-01-23:/setting-a-language-with-selenium-webdriver-in-ruby.html</id><summary type="html">&lt;p&gt;Hello reader! This post was inspired by a project I was working on
 recently, adding a 'lang' option to a &lt;a class="reference external" href="https://rubygems.org/gems/selenium-webdriver/versions/2.53.4"&gt;Selenium-Webdriver&lt;/a&gt; (the ruby
 gem) wrapper. I needed to instantiate
 &lt;a class="reference external" href="http://www.rubydoc.info/gems/selenium-webdriver/0.0.28/Selenium/WebDriver/Driver"&gt;Selenium::Webdriver&lt;/a&gt;.for(:firefox) and (:chrome) both locally and
@@ -1108,7 +1108,7 @@ way to do it using the ruby gem. So here's what worked for me, where
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities"&gt;https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="ruby"></category><category term="selenium"></category></entry><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:/puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
+</content><category term="Tech"></category><category term="tech"></category><category term="ruby"></category><category term="selenium"></category></entry><entry><title>Puppet Orchestrator --application Example</title><link href="http://blog.lucywyman.me/puppet-orchestrator-application-flag.html" rel="alternate"></link><published>2016-10-26T00:00:00-07:00</published><updated>2016-10-26T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-26:/puppet-orchestrator-application-flag.html</id><summary type="html">&lt;p&gt;As always, this technical blog post began when I was having a problem
 and couldn't find the answer on the internet.  I'm writing tests for
 Puppet's &lt;a class="reference external" href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html"&gt;application orchestrator&lt;/a&gt; which involve setting up an
 application remotely then running some variations of &lt;code&gt;puppet job
@@ -1209,7 +1209,7 @@ generated.
 why the name needs be capitalized, but I trust that there are good and
 well thought out Reasons which just aren't documented.&lt;/p&gt;
 &lt;p&gt;So, if you don't know, now you know :)&lt;/p&gt;
-</content><category term="tech"></category><category term="puppet"></category><category term="application"></category><category term="orchestrator"></category><category term="flag"></category><category term="example"></category></entry><entry><title>Minimal Programmatic Puppet Class Creation</title><link href="http://blog.lucywyman.me/programmatic-class-creation.html" rel="alternate"></link><published>2016-10-13T00:00:00-07:00</published><updated>2016-10-13T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-13:/programmatic-class-creation.html</id><summary type="html">&lt;p&gt;This post began when I was trying to programmatically create my own
+</content><category term="Tech"></category><category term="tech"></category><category term="puppet"></category><category term="application"></category><category term="orchestrator"></category><category term="flag"></category><category term="example"></category></entry><entry><title>Minimal Programmatic Puppet Class Creation</title><link href="http://blog.lucywyman.me/programmatic-class-creation.html" rel="alternate"></link><published>2016-10-13T00:00:00-07:00</published><updated>2016-10-13T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-10-13:/programmatic-class-creation.html</id><summary type="html">&lt;p&gt;This post began when I was trying to programmatically create my own
 Puppet class, googled this exact title, and came up totally empty
 handed. After wading through dozens of StackOverflow posts and puppet
 docs, I still wasn't sure what I needed to accomplish this or how it
@@ -1386,7 +1386,7 @@ puppet though, there are some links below!  Enjoy.&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.pindi.us/blog/getting-started-puppet"&gt;Getting Started with Puppet&lt;/a&gt; by Pindi Albert&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="tech"></category><category term="puppet"></category></entry><entry><title>Openstack Image Default Username Reference</title><link href="http://blog.lucywyman.me/openstack-image-default-username-reference.html" rel="alternate"></link><published>2016-09-06T00:00:00-07:00</published><updated>2016-09-06T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-06:/openstack-image-default-username-reference.html</id><summary type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
+</content><category term="Tech"></category><category term="tech"></category><category term="puppet"></category></entry><entry><title>Openstack Image Default Username Reference</title><link href="http://blog.lucywyman.me/openstack-image-default-username-reference.html" rel="alternate"></link><published>2016-09-06T00:00:00-07:00</published><updated>2016-09-06T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-09-06:/openstack-image-default-username-reference.html</id><summary type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
 doesn't (or should at least be more searchable). These are only valid if you
 obtain an official image from the respective projects repository, and may or
 may not be the same if you use a manual image …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This seems like something that should exist on the internet and kind of
@@ -1433,7 +1433,7 @@ Please login as the user &lt;span class="pre"&gt;&amp;quot;cloud-user&amp;quot;&
 Connection to 10.32.161.253 closed.
 `&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a class="reference external" href="http://docs.openstack.org/image-guide/obtain-images.html"&gt;http://docs.openstack.org/image-guide/obtain-images.html&lt;/a&gt;&lt;/p&gt;
-</content><category term="tech"></category><category term="openstack"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><published>2016-03-19T00:00:00-07:00</published><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:/apps-to-love.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="Tech"></category><category term="tech"></category><category term="openstack"></category></entry><entry><title>Apps I Love</title><link href="http://blog.lucywyman.me/apps-to-love.html" rel="alternate"></link><published>2016-03-19T00:00:00-07:00</published><updated>2016-03-19T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2016-03-19:/apps-to-love.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;picture of me w/ phone&lt;/p&gt;
 &lt;/div&gt;
@@ -1470,4 +1470,4 @@ credit score on it, which is always good to know!&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.duolingo.com/"&gt;Duolingo&lt;/a&gt;: You've more than likely already heard of this, but if not
 it's an addictive, gamified way of learning new languages.&lt;/li&gt;
 &lt;/ol&gt;
-</content><category term="loves"></category><category term="tech"></category></entry></feed>
+</content><category term="Tech"></category><category term="loves"></category><category term="tech"></category></entry></feed>

@@ -7,27 +7,27 @@
 :author: Lucy Wyman
 :img: pinky-promise.jpg
 
-Happy New Year! I usually *hate* new years: the 'happy' part of winter
-is over, and ahead of us is 3 months of cold wet dark miserable. But
-this year I'm excited to get back to work, and excited about the year
-that just ended and the year to come. I'm not sure if it's because I
-live with Eli now, or because we have Hawaii coming up in
-mid-February, or because I've hit a groove in my job and am ready to
-hit the ground running. I think part of it too is that this vacation
-felt genuinely *restful*, and I have a lot of energy going into the
-new year. Whatever it is, I hope I'm able to keep it up for the rest
-of winter!
+.. role:: strike
+    :class: strike
 
-I'm not usually a 'resolutions' person, because I'm always setting
-goals and trying to become the person I want to be, and new year's is
-no different. But `Gretchen Rubin`_ introduced the idea of `'18 for
-2018'`_ last year, and is reprising it for this year, and I was
-inspired to participate. Many of these are goals I already had but
-hadn't yet written down, and many of them are also not so much "goals"
-but things that I know if I don't take the time to do them they will
-never get done (like getting a pedicure!). This is a pretty
-wishy-washy list - I'm not taking it too seriously, but am hoping it
-will inspire me throughout the year to seek new experiences.
+Happy New Year! I usually *hate* new years: the 'happy' part of winter is over,
+and ahead of us is 3 months of cold wet dark miserable. But this year I'm
+excited to get back to work, and excited about the year that just ended and the
+year to come. I'm not sure if it's because I live with Eli now, or because we
+have Hawaii coming up in mid-February, or because I've hit a groove in my job
+and am ready to hit the ground running. I think part of it too is that this
+vacation felt genuinely *restful*, and I have a lot of energy going into the
+new year. Whatever it is, I hope I'm able to keep it up for the rest of winter!
+
+I'm not usually a 'resolutions' person, because I'm always setting goals and
+trying to become the person I want to be, and new year's is no different. But
+`Gretchen Rubin`_ introduced the idea of `'18 for 2018'`_ last year, and is
+reprising it for this year, and I was inspired to participate. Many of these
+are goals I already had but hadn't yet written down, and many of them are also
+not so much "goals" but things that I know if I don't take the time to do them
+they will never get done (like getting a pedicure!). This is a pretty
+wishy-washy list - I'm not taking it too seriously, but am hoping it will
+inspire me throughout the year to seek new experiences.
 
 .. _Gretchen Rubin: https://gretchenrubin.com/
 .. _'18 for 2018': https://gretchenrubin.com/podcast-episode/149-happier-18-for-2018-roz-chast/
@@ -42,35 +42,37 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 
 1. Run 20 miles (without stopping)
 
-2. --Find a workout class to attend at least once per week (I'm
-   starting `this class`_ next week - we'll see how it goes!)-- Update: Eli and
-   I signed up for `Orange Theory`_ for 2 months, and plan to see how
-   it goes.
+2. :strike:`Find a workout class to attend at least once per week` Eli and I
+   started doing `Orange Theory`_, and LOVE it. I've made so many friends there, and love going each morning.
 
 .. _this class: http://www.southsidebootycamp.com/
 .. _Orange Theory: https://www.orangetheoryfitness.com/
 
-3. See every movie nominated for the Oscar's best picture - I've
-   accepted failure on this one because I refuse to see 'A Star is
-   Born' (HOLLYWOOD: STOP REMAKING MOVIES MAKE NEW ONES) and
-   'Bohemian Rhapsody' (`61% on RT`_ - not worth my time).
+3. :strike:`See every movie nominated for the Oscar's best picture` I've
+   accepted failure on this one because I refuse to see 'A Star is Born'
+   (Remade 4 times? Make a new movie, Hollywood) and 'Bohemian Rhapsody'
+   (`61% on RT`_ - not worth my time).
 
 .. _61% on RT: https://www.rottentomatoes.com/m/bohemian_rhapsody
 
-4. --Visit a new US state-- (I'm going to count Hawaii)
+4. :strike:`Visit a new US state` We went to Hawaii!
 
-5. --Get a pedicure--
+5. :strike:`Get a pedicure`
 
-6. --Delete my Facebook account-- (This is a cheat since I only deactivated it, but I admit I still want to be on instagram so...deleting was off the table)
+6. :strike:`Deactivate my Facebook account`
 
-7. --Read 100 books--
+7. :strike:`Read 100 books`
 
 8. Find a way to display my postcards
 
-9. --Make 1 vegan meal each week-- I've developed an arsenal of vegan
-   recipes I love.
+9. :strike:`Make 1 vegan meal each week` I didn't accomplish this to the
+   letter, but did accomplish the spirit of the goal in that I have several
+   vegan recipes I make regularly, like this `chickpea soup`_ (sans the parmesan)
 
-10. --Take a class (in anything)-- We ended up taking a Bike maintenance class at a local bike shop - I learned how to patch a tire!
+.. _chickpea soup: http://recipes.lucywyman.me/chickpea-vegetable-soup.html
+
+10. :strike:`Take a class (in anything)` We ended up taking a bike maintenance
+    class at a local bike shop, where we learned how to patch a tire
 
 11. Bake cinnamon rolls
 
@@ -78,26 +80,26 @@ Ok, enough typing. With that here are 19 things I hope to do in 2019:
 
 13. Have a crossword published in the New York Times 
 
-14. --Use the 1 million (jk, 20) lipsticks I have--
+14. strike:`Use the 1 million (jk, 20) lipsticks I have`
 
 15. Visit the `Living Computer Museum`_
 
 .. _Living Computer Museum: https://livingcomputers.org/
 
-16. --Help Sean plant a plant during the spring--
+16. :strike:`Help Sean plant a plant during the spring`
 
 17. This goal sucks because it's hard to quantify, but be nicer to
     myself. My internal dialog tends to be really negative, and while
     I'm in general a happy person I'm not very kind when reflecting on
     myself. I want to start having more positive self-talk
 
-18. --Take pictures of Eli and I in Hawaii - I was looking through our
+18. :strike:`Take pictures of Eli and I in Hawaii` - I was looking through our
     Japan pictures, and there are so few that have us in them. While
     it's cool to reflect on the things we saw, it's also nice to see
-    that we were there.--
+    that we were there.
 
-19. --Last but not least, get a massage! I've literally scheduled about
+19. :strike:`Last but not least, get a massage!` I've literally scheduled about
     5 massages at `Olympus`_, and have always ended up cancelling
-    because something came up. I'm determine to get there this year.--
+    because something came up. I'm determine to get there this year.
 
 .. _Olympus: https://olympusspa.com/
