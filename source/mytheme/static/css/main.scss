@@ -29,6 +29,11 @@ img {
   display: block;
   width: auto;
   height: auto; }
+ 
+p {
+  width: 100%;
+  display: inline-block;
+}
 
 i.fa-heart {
   color: red; }
@@ -144,6 +149,30 @@ aside .social-media a {
 
 .footer a {
   display: inline-block; }
+
+.padded {
+  padding: 20px;
+}
+
+.figure {
+  display: inline-block;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-center {
+  margin: auto 0;
+}
 
 @media screen and (max-width: 680px) {
   .wrapper {

@@ -11,8 +11,7 @@ h2 {
   font-size: 1rem; }
 
 .strike {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 a {
   color: #C41230;
@@ -29,6 +28,10 @@ img {
   display: block;
   width: auto;
   height: auto; }
+
+p {
+  width: 100%;
+  display: inline-block; }
 
 i.fa-heart {
   color: red; }
@@ -144,6 +147,23 @@ aside .social-media a {
 
 .footer a {
   display: inline-block; }
+
+.padded {
+  padding: 20px; }
+
+.figure {
+  display: inline-block; }
+  .figure img {
+    display: inline-block; }
+
+.align-left {
+  float: left; }
+
+.align-right {
+  float: right; }
+
+.align-center {
+  margin: auto 0; }
 
 @media screen and (max-width: 680px) {
   .wrapper {

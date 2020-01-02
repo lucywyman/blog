@@ -1,6 +1,6 @@
 Reading Lately: December 2019
 =============================
-:date: 01-01-2019
+:date: 01-01-2020
 :tags: books
 :category: Books
 :slug: reading-lately-december-2019
