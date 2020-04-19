@@ -28,10 +28,10 @@ bucket list, which I later realized reveals how in my heart of
 hearts, my deepest, truest self is a total square. So! Here is my very
 boring bucket list:
 
-☐  Become a Senior Software Engineer
+☑   Become a Senior Software Engineer
 ☑  Get a doggo
 ☐  Become financially independent (read: not need to work)
-☐  Speak a little Spanish every day
+☑   Speak a little Spanish every day
 ☐  Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)
 ☐  Visit Boston
 ☐  Get married and have a family
@@ -55,3 +55,6 @@ Lights or run a marathon or go sky diving, all common bucket list
 items that I can honestly say I have no desire to experience. So this
 is it: a relatively short and boring list of things I want to do
 before I die. #YOLO.
+
+Bonus items:
+Hike one of the Caminos in Europe
