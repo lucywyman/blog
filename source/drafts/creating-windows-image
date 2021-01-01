@@ -1,0 +1,32 @@
+In Too Deep
+===========
+
+My was simple in nature and complex in execution: to create containers in an
+Windows 2019 Azure VM and run our project's tests against them. We had just
+moved our tests from Appveyor to Github Actions, which allow us to use our own
+testing environment. This turned out not to be necessary as the default Windows
+2019 images come with Docker! This would also allow our dev team - exclusively
+*nix users - to "locally" develop and test Windows-to-Windows connections using
+the same infrastructure in Azure.
+
+I wanted our local development workflow to use an image as similar to the Github Actions environment as possible to avoid divergence, and I also wanted to avoid having to write Powershell to provision and create a VM image given my knowledge of both is "as needed". 
+
+- virtual-environments repo
+- Strip out unnecessary bits
+  - Lots of trial and error with what-is-and-isnt-necessary
+  - Lots of trial and error with what's needed to run this stupid script (hint: you need packer and azure cli!)
+    - install chocolatey
+bolt command run "powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+    - install packer
+bolt command run "powershell choco install -y packer"
+    - install azure cli "Install-Module -Name AzureRm -AllowClobber -Scope CurrentUser"
+- Github Feed token
+- import-module path-to-generateresource.ps1
+- 
+- Build image on Windows
+GenerateResourcesAndImage -SubscriptionId "
+- Creates VHD - 256 GB
+- This is on my personal account, transfer to work account
+- JK, just build it on the work account
+- Manually enable WinRM
+- Open firewall ports

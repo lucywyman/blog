@@ -28,33 +28,24 @@ bucket list, which I later realized reveals how in my heart of
 hearts, my deepest, truest self is a total square. So! Here is my very
 boring bucket list:
 
-☑   Become a Senior Software Engineer
-☑  Get a doggo
-☐  Become financially independent (read: not need to work)
-☑   Speak a little Spanish every day
-☐  Bake cinnamon rolls (or maybe just eat a lot of cinnamon rolls...)
-☐  Visit Boston
-☐  Get married and have a family
-☐  Be an extra in a film or a contestant on a game show
-☐  Fly first class
+* ☑   Become a Senior Software Engineer
+* ☑  Get a doggo
+* ☐  Become financially independent (read: not need to work)
+* ☑   Speak a little Spanish every day
+* ☐  Visit my little brother Boston
+* ☐  Get married
+* ☐  Have kiddos
+* ☐  Be an extra in a film or a contestant on a game show
+* ☐  Fly first class
 
-This honestly feels more like a list of long-term goals or a checklist
-than a fun list of adventures (with a few exceptions, like eating a
-lot of cinnamon rolls). Initially I was panicked by my apparent lack
-of ambition or wanderlust. Didn't I want more from my one life than
-this? Was being an extra in a movie really the most out-there, fun
-thing I could think to do? But after reflecting more on my own list as
-well as other common list items, I think this list is the best
-reflection of me and the life I want to live. Of course I want to
-travel more, and do more than is on this list, but I don't want it to
-be prescriptive, or to feel as though I'm just checking things off a
-list rather than pursuing new and exciting adventures. I want to leave
-room for my list to change, knowing that my life and self are likely
-to change. And honestly, I don't really want to see the Northern
-Lights or run a marathon or go sky diving, all common bucket list
-items that I can honestly say I have no desire to experience. So this
-is it: a relatively short and boring list of things I want to do
-before I die. #YOLO.
-
-Bonus items:
-Hike one of the Caminos in Europe
+This honestly feels more like a list of long-term goals or a checklist than a fun list of
+adventures. Initially I was panicked by my apparent lack of ambition or wanderlust. Didn't I want
+more from my one life than this? Was being an extra in a movie really the most out-there, fun thing
+I could think to do? But after reflecting more on my own list as well as other common list items, I
+think this list is the best reflection of me and the life I want to live.  Of course I want to
+travel more, and do more than is on this list, but I don't want it to be prescriptive, or to feel as
+though I'm just checking things off a list rather than pursuing new and exciting adventures. I want
+to leave room for my list to change, knowing that my life and self are likely to change. And
+honestly, I don't really want to see the Northern Lights or run a marathon or go sky diving, all
+common bucket list items that I can honestly say I have no desire to experience.  So this is it: a
+relatively short and boring list of things I want to do before I die. #YOLO.

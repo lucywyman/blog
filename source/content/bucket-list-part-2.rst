@@ -16,11 +16,12 @@ List it felt like adding these new ideas ruined the spirit of the
 post. So, instead, I'm writing Bucket List Part 2 to include the more
 fun (and more achievable) things I want to do before I die.
 
-* Sing karaoke
-* Take a dance class
-* Get a massage (I know I will eventually do this, but I keep putting
+* ☐ Sing karaoke
+* ☐ Take a dance class
+* ☐ Get a massage (I know I will eventually do this, but I keep putting
   it off. I need to stop and just do it)
-* Have a crossword published in the New York Times
-* Take a photography class (in person!)
+* ☐ Have a crossword published in the New York Times
+* ☐ Take a photography class (in person!)
+* ☐ Hike a Camino in Europe
 
 .. _my super boring bucket list: http://blog.lucywyman.me/my-bucket-list.html
