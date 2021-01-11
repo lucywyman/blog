@@ -7,14 +7,11 @@ Reading Lately: October 2018
 :author: Lucy Wyman
 :img:
 
-`Sadie`_
---------
-*Courtney Summers*
+`Leave Only Footprints`_: 5/5
+-----------------------------
+*Conor Knighton*
 
-.. figure:: theme/images/
-    :align: center
+.. figure:: theme/images/leave-only-footprints.jpg
     :height: 300px
 
-.. _Sadie:
-
-
+.. _Leave Only Footprints:
