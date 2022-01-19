@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Lucy Voigt</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/lucy-voigt.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2022-01-19T00:00:00-08:00</updated><entry><title>Why I'm Leaving Puppet</title><link href="http://blog.lucywyman.me/why-im-leaving-puppet.html" rel="alternate"></link><published>2022-01-19T00:00:00-08:00</published><updated>2022-01-19T00:00:00-08:00</updated><author><name>Lucy Voigt</name></author><id>tag:blog.lucywyman.me,2022-01-19:/why-im-leaving-puppet.html</id><summary type="html">&lt;p&gt;It feels like my last day at Puppet was March 13th, 2020. The physical office was a second home
+where I spent more waking hours than the series of apartments I lived in, and while in the context
+of the pandemic I felt so lucky I also came to realize …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It feels like my last day at Puppet was March 13th, 2020. The physical office was a second home
+where I spent more waking hours than the series of apartments I lived in, and while in the context
+of the pandemic I felt so lucky I also came to realize that the Puppet I had worked at was gone.
+Even when (if?) people start going to the office again it will be so different - if nothing else,
+&lt;em&gt;I'm&lt;/em&gt; an entirely different person.&lt;/p&gt;
+&lt;p&gt;Deciding to leave happened slowly then all at once. Puppet's popularity has been falling, and for a
+few years now it's felt like our new products are &amp;quot;throwing things at the wall&amp;quot; so to speak. Some
+things have stuck and some haven't, but once Bolt was deprioritized it was hard to feel energized
+about the things we were working on. Morale seems extremely low without many signs of improvement,
+and while it's easy to ascribe that to the Panorama I think high turnover and product direction are
+contributing.&lt;/p&gt;
+&lt;p&gt;All of this led me to casually start looking at other companies, and after about a month of
+searching I was lucky enough to get an offer I'm really excited about from &lt;a class="reference external" href="https://launchdarkly.com/"&gt;Launch Darkly&lt;/a&gt;. I knew that if Heidi Waterhouse and Dawn Parzych worked there it
+had to be a good place to work, and interviewing with other engineers there confirmed that folks
+were smart, friendly, and it seems like a place I'll fit into. I'm particularly excited to learn new
+technologies and repos, and create developer tools that can help develop and release features more
+smoothly.&lt;/p&gt;
+&lt;p&gt;Puppet was my first job out of university, and after five and a half years it's hard to summarize
+how working there changed me over that time. You can find a &lt;a class="reference external" href="https://blog.lucywyman.me/thank-you-puppet.html"&gt;thank you note slash love letter&lt;/a&gt;
+to my coworkers there, and &lt;a class="reference external" href="https://blog.lucywyman.me/puppet-memories.html"&gt;memories from the last 7 years (5.5 + internship) here&lt;/a&gt;. Please keep
+in touch!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Email: thelucyvoigt at gmail dot com&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.linkedin.com/in/lucy-voigt-6a755370/"&gt;Linkedin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://twitter.com/pagerbooty"&gt;Twitter: &amp;#64;pagerbooty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.meetup.com/Portland-DevOps-GroundUp/"&gt;Come to CoffeeOps!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shameless plug to &lt;a class="reference external" href="https://www.strava.com/"&gt;find me on Strava&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kisses and revolution,&lt;/p&gt;
+&lt;p&gt;Lucy&lt;/p&gt;
+</content><category term="Thoughts"></category><category term="puppet"></category></entry></feed>

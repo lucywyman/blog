@@ -32,7 +32,7 @@ boring bucket list:
 * ☑  Get a doggo
 * ☐  Become financially independent (read: not need to work)
 * ☑   Speak a little Spanish every day
-* ☐  Visit my little brother Boston
+* ☑  Visit my little brother Boston
 * ☐  Get married
 * ☐  Have kiddos
 * ☐  Be an extra in a film or a contestant on a game show

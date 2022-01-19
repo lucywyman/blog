@@ -1,5 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Thoughts</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/thoughts.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2018-08-04T00:00:00-07:00</updated><entry><title>On Being Taken Care Of</title><link href="http://blog.lucywyman.me/on-being-taken-care-of.html" rel="alternate"></link><published>2018-08-04T00:00:00-07:00</published><updated>2018-08-04T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-08-04:/on-being-taken-care-of.html</id><summary type="html">&lt;p&gt;I'm currently sitting on the rooftop deck at New Seasons in Portland,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog - Thoughts</title><link href="http://blog.lucywyman.me/" rel="alternate"></link><link href="http://blog.lucywyman.me/feeds/thoughts.atom.xml" rel="self"></link><id>http://blog.lucywyman.me/</id><updated>2022-01-19T00:00:00-08:00</updated><entry><title>It was really about the friends we made along the way</title><link href="http://blog.lucywyman.me/thank-you-puppet.html" rel="alternate"></link><published>2022-01-19T00:00:00-08:00</published><updated>2022-01-19T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2022-01-19:/thank-you-puppet.html</id><summary type="html">&lt;p&gt;Anyone will tell you that the people are what make Puppet special. I know this isn't an Oscars
+acceptance speech, but there are so many people I want to thank.&lt;/p&gt;
+&lt;p&gt;I'll never admire another engineer as much as I admired Libby Molina. Libby made me feel like I had
+a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Anyone will tell you that the people are what make Puppet special. I know this isn't an Oscars
+acceptance speech, but there are so many people I want to thank.&lt;/p&gt;
+&lt;p&gt;I'll never admire another engineer as much as I admired Libby Molina. Libby made me feel like I had
+a place in tech at a time when the guys at university were picking me last for partner assignments,
+and was someone I could confide in or complain to or laugh with. She seemed fearless, and commanded
+respect without needing to prove anything to anyone, and made me realize that tech isn't about
+fucking algorithms it's about trying to make things better. I can't thank her enough for mentoring
+me, and honestly no &amp;quot;Leaving Puppet&amp;quot; email has made me cry as much as hers did.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/puppet-winter-party-2018.jpg" style="height: 400px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;Puppet Winter Party, 2018&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Zach Reichert taught me most of what I know about software quality. John Duarte helped me understand
+Beaker and career advancement, and let me pay for lunch so I could feel like a grown-up. Chris
+Cowell reassured me when my first big project got dropped that failure was a chance to grow.&lt;/p&gt;
+&lt;p&gt;Lizzi Lindboe made sure I always felt welcomed and included and heard, and is one of the most
+resilient and caring people I know. Kara Sowles continues to be a radiant light in a dark world.
+Molly Waggett made me feel like no matter what, I always had a friend in her.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/amsterdam-group.jpg" style="height: 300px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;Puppetize Amsterdam, 2018&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Before working with Alex Dreyer I thought that what made you a good engineer was being clever and
+knowledgable. The game was to hold as much information in your head as you could and use it to write
+code that was modular and &amp;quot;clean&amp;quot; (whatever &lt;em&gt;that&lt;/em&gt; meant) and correct. But what Alex is exceptionally
+good at is Product Design, and he showed me that what you are building is just as important as how
+you build it. Alex is able to forsee problems from years away, and where it's always tempting to
+want to give people the world Alex has never had a problem saying no to features that won't provide
+a good user experience. He has a clear vision for how a product should evolve, and leads with
+clarity while asking for thoughts and feedback from the team.&lt;/p&gt;
+&lt;p&gt;But beyond good system architecting, Alex has always been kind to me. In the spring of 2019 there
+was a feature I had been working day and night on for over a month, something that would have taken
+anyone else on the team maybe 2 weeks to do, and during yet another pairing session with Alex I lost
+it and started crying. Now, I wouldn't &lt;em&gt;recommend&lt;/em&gt; crying in front of Alex, but I appreciated that
+he stayed on the call and said we could come back to it the next day, and that the next day he
+treated me with as much respect has he ever had. He never doubted I was capable of finishing the
+feature, and never hesitated to have me pick up complex tickets after that, and never treated me
+like I was delicate or &amp;quot;emotional&amp;quot;. He's been a great mentor and coworker during my time at Puppet,
+every summer, on the first hot day of the year, I'll go get ice cream.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/crayons.jpg" style="height: 300px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;Halloween, 2018&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I will never forget Joe Wagner exclaiming &amp;quot;Nick Lewis is one of my absolute favorite people to work
+with.&amp;quot; when I told him I was joining the Bolt team, and thinking &amp;quot;that is exactly what I want people
+to say about me&amp;quot;. I told Nick the following when he was promoted recently, and I hope the repetition
+doesn't make the words seem hollow - they're no less true now than they were then: &amp;quot;you're honestly
+one of the first people I think of when I imagine the kind of engineer and person I want to be. You
+don't let your ego into technical conversations or development which I think is so rare in this
+industry, and your memory and expertise are 🤯. I feel really lucky I've gotten to work
+with you for so many years.&amp;quot;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/summer-2021.jpg" style="height: 300px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;Arthur's last day, 2021&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I'm so grateful that I got to have Geoff Nichols as my manager, especially when the Pandowdy had
+just started. He was the first manager I had who was invested in my growth, who didn't make me feel
+small and like I needed to 'earn my stripes'. I didn't realize the constant fear of judgement
+I lived with until I had him as a manager and that judgement disappeared, and it made me &lt;em&gt;so&lt;/em&gt; much
+happier. Work went from something I had to do (I mean, it's not &lt;em&gt;supposed&lt;/em&gt; to be fun, right?) to
+something I genuinely looked forward to and felt inspired by. Geoff completely changed how I felt
+about work, and I'm forever grateful that I know my own worth now.&lt;/p&gt;
+&lt;p&gt;Tom! Tom Tom Tom Tom Tom. I could write a whole blog post about how much Tom has changed my life,
+but this is already long enough and Tom knows I love him without hyperbole.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/budapest-group.jpg" style="height: 400px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;Puppet Community Summit, 2019&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;AJ Johnson has always been someone that I can trust, and who has done right by me multiple times,
+and I can't thank him enough for always supporting me and being in my corner.&lt;/p&gt;
+&lt;p&gt;Steve Axthelm, Jonathan Newman, Michael Smith, and Sean McDonald have been great tech leads and
+senior engineers throughout my time here. Ethan Brown and James Pogran went above and beyond to be
+kind, and are incredibly knowledgeable. Ben Ford has basically been holding community and open
+source engagement together with duct tape for years, and is such a joyful person to work with. Anna
+Velasco is a damn good friend. I can still hear Julia Ramer's laugh ringing in my ears. Cas Donoghue
+has always inspired me to be more curious and push my limits, and will drop what he's doing to
+answer questions or mentor folks.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="theme/images/redhat-conf-2019.jpg" style="height: 300px;" /&gt;
+&lt;p class="caption"&gt;&lt;em&gt;RedHat Conf, 2018&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Of course, this list is hardly comprehensive. So many people have mentored me, answered my questions
+graciously, taken time to know me, and become good friends. You can read about &lt;a class="reference external" href="https://blog.lucywyman.me/thank-you-puppet.html"&gt;why I'm leaving here&lt;/a&gt;, and find some &lt;a class="reference external" href="https://blog.lucywyman.me/puppet-memories.html"&gt;memories from my time at Puppet
+here&lt;/a&gt;. Please keep in touch!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Email: thelucyvoigt at gmail dot com&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.linkedin.com/in/lucy-voigt-6a755370/"&gt;Linkedin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://twitter.com/pagerbooty"&gt;Twitter: &amp;#64;pagerbooty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.meetup.com/Portland-DevOps-GroundUp/"&gt;Come to CoffeeOps!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shameless plug to &lt;a class="reference external" href="https://www.strava.com/"&gt;find me on Strava&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kisses and revolution,&lt;/p&gt;
+&lt;p&gt;Lucy&lt;/p&gt;
+</content><category term="Thoughts"></category><category term="puppet"></category></entry><entry><title>Why I'm Leaving Puppet</title><link href="http://blog.lucywyman.me/why-im-leaving-puppet.html" rel="alternate"></link><published>2022-01-19T00:00:00-08:00</published><updated>2022-01-19T00:00:00-08:00</updated><author><name>Lucy Voigt</name></author><id>tag:blog.lucywyman.me,2022-01-19:/why-im-leaving-puppet.html</id><summary type="html">&lt;p&gt;It feels like my last day at Puppet was March 13th, 2020. The physical office was a second home
+where I spent more waking hours than the series of apartments I lived in, and while in the context
+of the pandemic I felt so lucky I also came to realize …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It feels like my last day at Puppet was March 13th, 2020. The physical office was a second home
+where I spent more waking hours than the series of apartments I lived in, and while in the context
+of the pandemic I felt so lucky I also came to realize that the Puppet I had worked at was gone.
+Even when (if?) people start going to the office again it will be so different - if nothing else,
+&lt;em&gt;I'm&lt;/em&gt; an entirely different person.&lt;/p&gt;
+&lt;p&gt;Deciding to leave happened slowly then all at once. Puppet's popularity has been falling, and for a
+few years now it's felt like our new products are &amp;quot;throwing things at the wall&amp;quot; so to speak. Some
+things have stuck and some haven't, but once Bolt was deprioritized it was hard to feel energized
+about the things we were working on. Morale seems extremely low without many signs of improvement,
+and while it's easy to ascribe that to the Panorama I think high turnover and product direction are
+contributing.&lt;/p&gt;
+&lt;p&gt;All of this led me to casually start looking at other companies, and after about a month of
+searching I was lucky enough to get an offer I'm really excited about from &lt;a class="reference external" href="https://launchdarkly.com/"&gt;Launch Darkly&lt;/a&gt;. I knew that if Heidi Waterhouse and Dawn Parzych worked there it
+had to be a good place to work, and interviewing with other engineers there confirmed that folks
+were smart, friendly, and it seems like a place I'll fit into. I'm particularly excited to learn new
+technologies and repos, and create developer tools that can help develop and release features more
+smoothly.&lt;/p&gt;
+&lt;p&gt;Puppet was my first job out of university, and after five and a half years it's hard to summarize
+how working there changed me over that time. You can find a &lt;a class="reference external" href="https://blog.lucywyman.me/thank-you-puppet.html"&gt;thank you note slash love letter&lt;/a&gt;
+to my coworkers there, and &lt;a class="reference external" href="https://blog.lucywyman.me/puppet-memories.html"&gt;memories from the last 7 years (5.5 + internship) here&lt;/a&gt;. Please keep
+in touch!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Email: thelucyvoigt at gmail dot com&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.linkedin.com/in/lucy-voigt-6a755370/"&gt;Linkedin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://twitter.com/pagerbooty"&gt;Twitter: &amp;#64;pagerbooty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.meetup.com/Portland-DevOps-GroundUp/"&gt;Come to CoffeeOps!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shameless plug to &lt;a class="reference external" href="https://www.strava.com/"&gt;find me on Strava&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kisses and revolution,&lt;/p&gt;
+&lt;p&gt;Lucy&lt;/p&gt;
+</content><category term="Thoughts"></category><category term="puppet"></category></entry><entry><title>Puppet Memories</title><link href="http://blog.lucywyman.me/puppet-memories.html" rel="alternate"></link><published>2022-01-18T00:00:00-08:00</published><updated>2022-01-18T00:00:00-08:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2022-01-18:/puppet-memories.html</id><summary type="html">&lt;p&gt;I got married this summer, and in thinking about what it means to spend your life with someone I've
+been thinking a lot about how much just &lt;em&gt;being there&lt;/em&gt; matters. I think at startups especially, and
+Puppet in particular which has so many long-time employees, reminiscing and reinforcing those
+experiences …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I got married this summer, and in thinking about what it means to spend your life with someone I've
+been thinking a lot about how much just &lt;em&gt;being there&lt;/em&gt; matters. I think at startups especially, and
+Puppet in particular which has so many long-time employees, reminiscing and reinforcing those
+experiences we were there for is so subconcious and common it's a conversation we easily fall into
+at lunches. This blog post is more of a 'journal entry', with myself as the primary audience, but I
+wanted to publish it because I know some people shared these experiences with me and I think
+recounting them here may have some value for them too. I tried to make the post somewhat navigable
+and chronological so you can try to find the things that are meaningful to you.&lt;/p&gt;
+&lt;p&gt;## 2014&lt;/p&gt;
+&lt;p&gt;I remember going to the OSCON after party in 2014, people crushed into the RiverTec office.
+Everything seemed so Silicon Valley, so bright and expensive. I remember there were cupcakes in
+every room (remember when cupcakes were A Thing?), and by 9 PM it was like the pit at a concert,
+crammed with people. I remember my friends and I spilling out the front door around midnight, sober
+because we weren't 21 but reveling in the Gatsby of that party.&lt;/p&gt;
+&lt;p&gt;## 2015&lt;/p&gt;
+&lt;p&gt;I remember Maggie Dreyer and I started our internships on the same day, and got to meet with Luke at
+the end of the first week. We each got to ask a question, and I asked what the one thing he could
+change would be. &amp;quot;I wouldn't make Puppet Open Source&amp;quot; he said, and my Linux heart sank. To be honest
+I don't remember what Maggie asked, but maybe she does?&lt;/p&gt;
+&lt;p&gt;I remember Hambone.&lt;/p&gt;
+&lt;p&gt;I remember going out for lunch every Friday, usually to E-San Thai, and sometimes to the DC
+Vegetarian Cart. I forget whose last day it was, but when someone left there were like 24 of us who
+wanted to go out, and we basically had the whole top floor of E-San to ourselves.&lt;/p&gt;
+&lt;p&gt;To be continued...&lt;/p&gt;
+</content><category term="Thoughts"></category><category term="puppet"></category></entry><entry><title>On Being Taken Care Of</title><link href="http://blog.lucywyman.me/on-being-taken-care-of.html" rel="alternate"></link><published>2018-08-04T00:00:00-07:00</published><updated>2018-08-04T00:00:00-07:00</updated><author><name>Lucy Wyman</name></author><id>tag:blog.lucywyman.me,2018-08-04:/on-being-taken-care-of.html</id><summary type="html">&lt;p&gt;I'm currently sitting on the rooftop deck at New Seasons in Portland,
 OR. I've been travelling to Portland for work pretty frequently since
 moving to Seattle, and among the things I love about visiting Portland
 is getting to buy food on the company's dime (or having my parents pay
